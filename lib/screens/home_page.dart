@@ -22,75 +22,16 @@ class _HomePageState extends State<HomePage> {
     var screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
+
       backgroundColor: Colors.white,
     key: scaffoldKey,
       extendBodyBehindAppBar: true,
-      appBar: PreferredSize(
-        preferredSize: Size(screenSize.width, 1000),
-        child: Container(
-        margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
-        child: Row(
-          children: [
-            Image.asset(
-              'assets/logo1.png',
-              height: 150,
-              width: 150,
-            ),
-            Spacer(),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {
-                setState(() {
-                  isHovering = value;
-                });
-              },
-              child: Text(
-                'Home',
-                style: TextStyle(
-                    color: isHovering ? Colors.red : Colors.black),
-              ),
-            ),
-            SizedBox(
-              width: screenSize.width / 20,
-            ),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {
-                setState(() {
-                  isHovering1 = value;
-                });
-              },
-              child: Text(
-                'Portfolio',
-                style: TextStyle(
-                    color: isHovering1 ? Colors.red : Colors.black),
-              ),
-            ),
-            SizedBox(
-              width: screenSize.width / 20,
-            ),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {
-                setState(() {
-                  isHovering2 = value;
-                });
-              },
-              child: Text(
-                'Services',
-                style: TextStyle(
-                    color: isHovering2 ? Colors.red :Colors.black),
-              ),
-            ),
-            SizedBox(
-              width: screenSize.width / 20,
-            ),
-
-
-          ],
-        ),
+      appBar: AppBar(
+        toolbarHeight: 20,
+       toolbarOpacity: 0.8,
+       backgroundColor: Colors.white,
+        elevation: 7,
       ),
-    ),
 body: ResponsiveWidget(
     largeScreen: LargeScreen(),
     mediumScreen: MediumScreen(),
