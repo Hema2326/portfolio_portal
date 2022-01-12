@@ -14,18 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="intial commit">
-      <change afterPath="$PROJECT_DIR$/lib/bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/app_bar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/custom_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/responsive_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/large_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,22 +93,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="intial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1641983201574">
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1641983507874">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201574" />
-    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1641983201573">
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1641983507874" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1641983507873">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201573" />
-    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1641983201572">
+    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1641983507873" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1641983507872">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201572" />
-    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1641983201574">
+    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1641983507872" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1641983507873">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201574" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1641983507873" />
     <state x="478" y="257" key="MultipleFileMergeDialog" timestamp="1641968234125">
       <screen x="0" y="25" width="1680" height="942" />
     </state>

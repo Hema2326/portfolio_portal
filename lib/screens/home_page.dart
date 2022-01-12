@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
     var screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
+      backgroundColor: Colors.white,
     key: scaffoldKey,
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
@@ -46,7 +47,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 'Home',
                 style: TextStyle(
-                    color: isHovering ? Colors.orangeAccent : Colors.black),
+                    color: isHovering ? Colors.red : Colors.black),
               ),
             ),
             SizedBox(
@@ -62,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 'Portfolio',
                 style: TextStyle(
-                    color: isHovering1 ? Colors.orangeAccent : Colors.black),
+                    color: isHovering1 ? Colors.red : Colors.black),
               ),
             ),
             SizedBox(
@@ -78,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 'Services',
                 style: TextStyle(
-                    color: isHovering2 ? Colors.orangeAccent : Colors.black),
+                    color: isHovering2 ? Colors.red :Colors.black),
               ),
             ),
             SizedBox(
