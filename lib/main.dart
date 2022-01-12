@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'bottom_app_bar.dart';
+import 'package:portfolio_portal/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Portfolio_portal',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const HomePage(),
     );
   }
 }

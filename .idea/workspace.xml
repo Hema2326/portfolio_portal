@@ -13,7 +13,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="intial commit" />
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="intial commit">
+      <change afterPath="$PROJECT_DIR$/lib/bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/app_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/custom_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/home_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/responsive_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +36,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/machd/.android/avd/Pixel_XL_API_30_5.5_inches.avd]" />
   <component name="Git.Pull.Settings">
     <option name="BRANCH" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="ProjectId" id="23aLZZWL1FPBz4hbrihARCaGU9v" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,6 +53,7 @@
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -74,6 +96,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="intial commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1641983201574">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201574" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1641983201573">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201573" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1641983201572">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201572" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1641983201574">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201574" />
     <state x="478" y="257" key="MultipleFileMergeDialog" timestamp="1641968234125">
       <screen x="0" y="25" width="1680" height="942" />
     </state>
@@ -82,10 +120,10 @@
       <screen x="0" y="25" width="1680" height="940" />
     </state>
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
-    <state x="440" y="230" key="Vcs.Push.Dialog.v2" timestamp="1641968281790">
+    <state x="440" y="230" key="Vcs.Push.Dialog.v2" timestamp="1641968788808">
       <screen x="0" y="25" width="1680" height="942" />
     </state>
     <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.25.1680.937@0.25.1680.937" timestamp="1641968062204" />
-    <state x="440" y="230" key="Vcs.Push.Dialog.v2/0.25.1680.942@0.25.1680.942" timestamp="1641968281790" />
+    <state x="440" y="230" key="Vcs.Push.Dialog.v2/0.25.1680.942@0.25.1680.942" timestamp="1641968788808" />
   </component>
 </project>
