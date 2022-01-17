@@ -2,6 +2,13 @@
   <library name="Dart Packages" type="DartPackagesLibraryType">
     <properties>
       <option name="packageNameToDirsMap">
+        <entry key="animated_text_kit">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="archive">
           <value>
             <list>
@@ -107,6 +114,20 @@
             </list>
           </value>
         </entry>
+        <entry key="flutter_web_plugins">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/packages/flutter_web_plugins/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="font_awesome_flutter">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.2.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="google_fonts">
           <value>
             <list>
@@ -125,6 +146,13 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="js">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3/lib" />
             </list>
           </value>
         </entry>
@@ -289,6 +317,62 @@
             </list>
           </value>
         </entry>
+        <entry key="url_launcher">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.18/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_android">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.14/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_ios">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.14/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_linux">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-2.0.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_macos">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-2.0.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_platform_interface">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.0.5/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_web">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.6/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="url_launcher_windows">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-2.0.2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="vector_math">
           <value>
             <list>
@@ -313,6 +397,18 @@
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.2.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.18/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.14/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.14/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-2.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-2.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.0.5/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-2.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../antonyrubyalexia/Downloads/flutter/packages/flutter_web_plugins/lib" />
+      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.8/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
       <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
