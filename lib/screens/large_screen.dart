@@ -161,9 +161,14 @@ class _LargeScreenState extends State<LargeScreen> {
                               const SizedBox(
                                 height: 50,
                               ),
-                              const Text(
-                                'ping@m2pfintech.com',
-                                style: TextStyle(color: Colors.white),
+                              GestureDetector(
+                                onTap: () async {
+                                  await launch('mailto: ping@m2pfintech.com');
+                                },
+                                child: const Text(
+                                  'ping@m2pfintech.com',
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               )
                             ],
                           ),
@@ -185,9 +190,14 @@ class _LargeScreenState extends State<LargeScreen> {
                               const SizedBox(
                                 height: 40,
                               ),
-                              const Text(
-                                '044-40554808',
-                                style: TextStyle(color: Colors.white),
+                              GestureDetector(
+                                onTap: () {
+                                  launch('tel: 044-40554808');
+                                },
+                                child: const Text(
+                                  '044-40554808',
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               )
                             ],
                           ),
@@ -209,9 +219,14 @@ class _LargeScreenState extends State<LargeScreen> {
                               const SizedBox(
                                 height: 40,
                               ),
-                              const Text(
-                                '© 2021 M2P Fintech',
-                                style: TextStyle(color: Colors.white),
+                              GestureDetector(
+                                onTap: () {
+                                  _scrollToTop();
+                                },
+                                child: const Text(
+                                  '© 2021 M2P Fintech',
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ],
                           ),
@@ -235,13 +250,27 @@ class _LargeScreenState extends State<LargeScreen> {
                               ),
                               Row(
                                 children: [
-                                  const Text(
-                                    'Legal   ',
-                                    style: TextStyle(color: Colors.white),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://m2pfintech.com/legal/";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Legal   ',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ),
-                                  const Text(
-                                    ' Privacy policy',
-                                    style: TextStyle(color: Colors.white),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://m2pfintech.com/privacy-policy/";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      ' Privacy policy',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ),
                                 ],
                               )
@@ -273,7 +302,10 @@ class _LargeScreenState extends State<LargeScreen> {
                                         ? Colors.blue[400]
                                         : Colors.white,
                                     size: 20.0),
-                                onTap: () {},
+                                onTap: () async {
+                                  const url = "https://twitter.com/m2pfintech";
+                                  await launch(url);
+                                },
                                 onHover: (value) {
                                   setState(() {
                                     isSelected1 = value;
@@ -287,7 +319,11 @@ class _LargeScreenState extends State<LargeScreen> {
                                         ? Colors.pink[400]
                                         : Colors.white,
                                     size: 20.0),
-                                onTap: () {},
+                                onTap: () async {
+                                  const url =
+                                      "https://www.instagram.com/m2pfintech/";
+                                  await launch(url);
+                                },
                                 onHover: (value) {
                                   setState(() {
                                     isSelected2 = value;
@@ -301,7 +337,11 @@ class _LargeScreenState extends State<LargeScreen> {
                                         ? Colors.blue[600]
                                         : Colors.white,
                                     size: 20.0),
-                                onTap: () {},
+                                onTap: () async {
+                                  const url =
+                                      "https://www.facebook.com/m2pfintech";
+                                  await launch(url);
+                                },
                                 onHover: (value) {
                                   setState(() {
                                     isSelected3 = value;
