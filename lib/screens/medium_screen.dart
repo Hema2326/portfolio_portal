@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:lottie/lottie.dart';
 
 class MediumScreen extends StatefulWidget {
   const MediumScreen({Key? key}) : super(key: key);
@@ -11,10 +12,14 @@ class MediumScreen extends StatefulWidget {
 
 class _MediumScreenState extends State<MediumScreen> {
   late ScrollController _scrollController;
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   bool isHovering = false;
   bool isHovering1 = false;
   bool isHovering2 = false;
-  bool isHovering3 = false;
+  bool isSelected = false;
+  bool isSelected1 = false;
+  bool isSelected2 = false;
+  bool isSelected3 = false;
 
   @override
   void initState() {
@@ -35,7 +40,94 @@ class _MediumScreenState extends State<MediumScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: PreferredSize(
+        preferredSize: Size(screenSize.width, 768),
+        child: Container(
+          margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
+          child: Row(
+            children: [
+              Image.asset(
+                'assets/logo1.png',
+                height: 150,
+                width: 150,
+              ),
+              Spacer(),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isHovering = value;
+                  });
+                },
+                child: Text(
+                  'Home',
+                  style: TextStyle(
+                      color: isHovering ? Colors.red : Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+              SizedBox(
+                width: screenSize.width / 20,
+              ),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isHovering1 = value;
+                  });
+                },
+                child: Text(
+                  'Portfolio',
+                  style: TextStyle(
+                      color: isHovering1 ? Colors.red : Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+              SizedBox(
+                width: screenSize.width / 20,
+              ),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isHovering2 = value;
+                  });
+                },
+                child: Text(
+                  'Projects',
+                  style: TextStyle(
+                      color: isHovering2 ? Colors.red : Colors.black,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+              SizedBox(
+                width: screenSize.width / 20,
+              ),
+            ],
+          ),
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(height: 100),
+            Lottie.network(
+              'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
+              height: 600.0,
+              repeat: true,
+              reverse: true,
+              animate: true,
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 250,
@@ -193,7 +285,7 @@ class _MediumScreenState extends State<MediumScreen> {
                   children: [
                     InkWell(
                       child: FaIcon(FontAwesomeIcons.linkedin,
-                          color: isHovering ? Colors.blue[700] : Colors.white,
+                          color: isSelected ? Colors.blue[700] : Colors.white,
                           size: 20.0),
                       onTap: () async {
                         const url =
@@ -202,43 +294,43 @@ class _MediumScreenState extends State<MediumScreen> {
                       },
                       onHover: (value) {
                         setState(() {
-                          isHovering = value;
+                          isSelected = value;
                         });
                       },
                     ),
                     const SizedBox(height: 10),
                     InkWell(
                       child: FaIcon(FontAwesomeIcons.twitter,
-                          color: isHovering1 ? Colors.blue[400] : Colors.white,
+                          color: isSelected1 ? Colors.blue[400] : Colors.white,
                           size: 20.0),
                       onTap: () {},
                       onHover: (value) {
                         setState(() {
-                          isHovering1 = value;
+                          isSelected1 = value;
                         });
                       },
                     ),
                     const SizedBox(height: 10),
                     InkWell(
                       child: FaIcon(FontAwesomeIcons.instagram,
-                          color: isHovering2 ? Colors.pink[400] : Colors.white,
+                          color: isSelected2 ? Colors.pink[400] : Colors.white,
                           size: 20.0),
                       onTap: () {},
                       onHover: (value) {
                         setState(() {
-                          isHovering2 = value;
+                          isSelected2 = value;
                         });
                       },
                     ),
                     const SizedBox(height: 10),
                     InkWell(
                       child: FaIcon(FontAwesomeIcons.facebook,
-                          color: isHovering3 ? Colors.blue[600] : Colors.white,
+                          color: isSelected3 ? Colors.blue[600] : Colors.white,
                           size: 20.0),
                       onTap: () {},
                       onHover: (value) {
                         setState(() {
-                          isHovering3 = value;
+                          isSelected3 = value;
                         });
                       },
                     ),
