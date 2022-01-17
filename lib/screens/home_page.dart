@@ -67,7 +67,9 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   StringResource.portfolio,
                   style: TextStyle(
-                      color: isHovering1 ? Colors.orangeAccent : Colors.black),
+                      color: isHovering1
+                          ? ColorResource.colorF58220
+                          : ColorResource.color222222),
                 ),
               ),
               SizedBox(
@@ -83,7 +85,9 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   StringResource.services,
                   style: TextStyle(
-                      color: isHovering2 ? Colors.orangeAccent : Colors.black),
+                      color: isHovering2
+                          ? ColorResource.colorF58220
+                          : ColorResource.color222222),
                 ),
               ),
               SizedBox(

@@ -1,0 +1,873 @@
+Index: .dart_tool/chrome-device/Default/shared_proto_db/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:36.996 8903 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/MANIFEST-000001\n2022/01/12-19:07:37.000 8903 Recovering log #3\n2022/01/12-19:07:37.001 8903 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/shared_proto_db/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/shared_proto_db/LOG.old	(date 1642407371856)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:36.996 8903 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/MANIFEST-000001
+-2022/01/12-19:07:37.000 8903 Recovering log #3
+-2022/01/12-19:07:37.001 8903 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/000003.log 
++2022/01/17-10:13:01.313 10503 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/shared_proto_db/MANIFEST-000001
++2022/01/17-10:13:01.314 10503 Recovering log #3
++2022/01/17-10:13:01.314 10503 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/shared_proto_db/000003.log 
+Index: .dart_tool/chrome-device/Default/Service Worker/Database/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:40.303 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Service Worker/Database/MANIFEST-000001\n2022/01/17-11:39:40.313 be03 Recovering log #3\n2022/01/17-11:39:40.315 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Service Worker/Database/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Service Worker/Database/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Service Worker/Database/LOG	(date 1642407371782)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:40.303 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Service Worker/Database/MANIFEST-000001
+-2022/01/17-11:39:40.313 be03 Recovering log #3
+-2022/01/17-11:39:40.315 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Service Worker/Database/000003.log 
++2022/01/17-11:17:02.957 9307 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Service Worker/Database/MANIFEST-000001
++2022/01/17-11:17:02.958 9307 Recovering log #3
++2022/01/17-11:17:02.958 9307 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Service Worker/Database/000003.log 
+Index: .dart_tool/chrome-device/Default/GCM Store/Encryption/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:47.964 8e03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/GCM Store/Encryption/MANIFEST-000001\n2022/01/17-11:39:47.965 8e03 Recovering log #3\n2022/01/17-11:39:47.965 8e03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/GCM Store/Encryption/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/GCM Store/Encryption/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/GCM Store/Encryption/LOG	(date 1642407371725)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:47.964 8e03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/GCM Store/Encryption/MANIFEST-000001
+-2022/01/17-11:39:47.965 8e03 Recovering log #3
+-2022/01/17-11:39:47.965 8e03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/GCM Store/Encryption/000003.log 
++2022/01/17-11:18:03.150 10307 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/GCM Store/Encryption/MANIFEST-000001
++2022/01/17-11:18:03.150 10307 Recovering log #3
++2022/01/17-11:18:03.150 10307 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/GCM Store/Encryption/000003.log 
+Index: .dart_tool/chrome-device/Default/Preferences
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"NewTabPage\":{\"PrevNavigationTime\":\"13286456433406529\"},\"account_id_migration_state\":2,\"account_tracker_service_last_update\":\"13286873380298228\",\"ack_existing_ntp_extensions\":true,\"alternate_error_pages\":{\"backup\":true},\"apps\":{\"shortcuts_arch\":\"x86_64\",\"shortcuts_version\":6},\"autocomplete\":{\"retention_policy_last_version\":97},\"autofill\":{\"orphan_rows_removed\":true},\"browser\":{\"has_seen_welcome_page\":false,\"window_placement\":{\"bottom\":940,\"left\":22,\"maximized\":false,\"right\":640,\"top\":47,\"work_area_bottom\":1035,\"work_area_left\":0,\"work_area_right\":1792,\"work_area_top\":25}},\"countryid_at_install\":18766,\"data_reduction\":{\"daily_original_length\":[\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"88088658\",\"0\",\"0\",\"0\",\"0\",\"22335957\"],\"daily_received_length\":[\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"88088658\",\"0\",\"0\",\"0\",\"0\",\"22335957\"],\"last_update_date\":\"13286831400000000\",\"last_week_services_downstream_background_kb\":{},\"last_week_services_downstream_foreground_kb\":{\"100143055\":259,\"106373593\":0,\"108986091\":133,\"112189210\":8,\"115188287\":252,\"125522256\":1,\"130931413\":0,\"21498113\":0,\"35473769\":0,\"35565745\":4,\"41424546\":3,\"47815025\":3,\"49601082\":6,\"54845618\":64085,\"56351037\":21,\"67052219\":0,\"73107389\":14,\"78917933\":39,\"82509217\":43238},\"last_week_user_traffic_contenttype_downstream_kb\":{},\"this_week_number\":2715,\"this_week_services_downstream_background_kb\":{},\"this_week_services_downstream_foreground_kb\":{\"100143055\":259,\"106373593\":0,\"112189210\":10,\"115188287\":37,\"125522256\":1,\"130931413\":0,\"21498113\":0,\"35565745\":0,\"49601082\":1,\"54845618\":12816,\"82509217\":8682},\"this_week_user_traffic_contenttype_downstream_kb\":{}},\"domain_diversity\":{\"last_reporting_timestamp\":\"13286873380301347\"},\"download\":{\"directory_upgrade\":true},\"extensions\":{\"alerts\":{\"initialized\":true},\"chrome_url_overrides\":{},\"last_chrome_version\":\"97.0.4692.71\"},\"gaia_cookie\":{\"changed_time\":1641981944.134355,\"hash\":\"2jmj7l5rSw0yVb/vlWAYkK/YBwk=\",\"last_list_accounts_data\":\"[\\\"gaia.l.a.r\\\",[]]\"},\"gcm\":{\"product_category_for_subtypes\":\"com.chrome.macosx\"},\"google\":{\"services\":{\"signin_scoped_device_id\":\"17ffb71c-99b7-4055-9a80-a28f6e56cfa3\"}},\"http_original_content_length\":\"110424615\",\"http_received_content_length\":\"110424615\",\"intl\":{\"selected_languages\":\"en-GB,en-US,en\"},\"invalidation\":{\"per_sender_topics_to_handler\":{\"1013309121859\":{},\"8181035976\":{}}},\"language_model_counters\":{\"en\":3},\"media\":{\"device_id_salt\":\"92EA2EF4F607FE2D1235496980FA3D1A\",\"engagement\":{\"schema_version\":4}},\"media_router\":{\"receiver_id_hash_token\":\"TgbeHjtHpBqkGs5lbrXDSdJYhtDHXHoWdb155DDmYDwvZmjF7yPuwZbaI4eGCYIxJ8Td/84Ia+sbkb9/ppLENA==\"},\"ntp\":{\"num_personal_suggestions\":2},\"optimization_guide\":{\"hintsfetcher\":{\"last_fetch_attempt\":\"13286873456330508\"},\"predictionmodelfetcher\":{\"last_fetch_attempt\":\"13286873447971902\",\"last_fetch_success\":\"13286873448077149\"}},\"plugins\":{\"plugins_list\":[]},\"profile\":{\"avatar_bubble_tutorial_shown\":2,\"avatar_index\":26,\"content_settings\":{\"enable_quiet_permission_ui_enabling_method\":{\"notifications\":1},\"exceptions\":{\"accessibility_events\":{},\"app_banner\":{},\"ar\":{},\"auto_select_certificate\":{},\"automatic_downloads\":{},\"autoplay\":{},\"background_sync\":{},\"bluetooth_chooser_data\":{},\"bluetooth_guard\":{},\"bluetooth_scanning\":{},\"camera_pan_tilt_zoom\":{},\"client_hints\":{},\"clipboard\":{},\"cookies\":{},\"durable_storage\":{},\"file_handling\":{},\"file_system_access_chooser_data\":{},\"file_system_last_picked_directory\":{},\"file_system_read_guard\":{},\"file_system_write_guard\":{},\"font_access\":{},\"formfill_metadata\":{},\"geolocation\":{},\"hid_chooser_data\":{},\"hid_guard\":{},\"http_allowed\":{},\"idle_detection\":{},\"images\":{},\"important_site_info\":{},\"insecure_private_network\":{},\"installed_web_app_metadata\":{},\"intent_picker_auto_display\":{},\"javascript\":{},\"javascript_jit\":{},\"legacy_cookie_access\":{},\"media_engagement\":{\"http://localhost:50579,*\":{\"expiration\":\"0\",\"last_modified\":\"13286874746331202\",\"model\":0,\"setting\":{\"hasHighScore\":false,\"lastMediaPlaybackTime\":0.0,\"mediaPlaybacks\":0,\"visits\":1}},\"http://localhost:54797,*\":{\"expiration\":\"0\",\"last_modified\":\"13286460321185753\",\"model\":0,\"setting\":{\"hasHighScore\":false,\"lastMediaPlaybackTime\":0.0,\"mediaPlaybacks\":0,\"visits\":1}},\"http://localhost:60098,*\":{\"expiration\":\"0\",\"last_modified\":\"13286463270682802\",\"model\":0,\"setting\":{\"hasHighScore\":false,\"lastMediaPlaybackTime\":0.0,\"mediaPlaybacks\":0,\"visits\":1}},\"http://localhost:62417,*\":{\"expiration\":\"0\",\"last_modified\":\"13286467147438700\",\"model\":0,\"setting\":{\"hasHighScore\":false,\"lastMediaPlaybackTime\":0.0,\"mediaPlaybacks\":0,\"visits\":1}},\"http://localhost:63422,*\":{\"expiration\":\"0\",\"last_modified\":\"13286471338243255\",\"model\":0,\"setting\":{\"hasHighScore\":false,\"lastMediaPlaybackTime\":0.0,\"mediaPlaybacks\":0,\"visits\":1}},\"https://dart-lang.github.io:443,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873660704995\",\"model\":0,\"setting\":{\"hasHighScore\":false,\"lastMediaPlaybackTime\":0.0,\"mediaPlaybacks\":0,\"visits\":3}}},\"media_stream_camera\":{},\"media_stream_mic\":{},\"midi_sysex\":{},\"mixed_script\":{},\"nfc\":{},\"notifications\":{},\"password_protection\":{},\"payment_handler\":{},\"permission_autoblocking_data\":{},\"permission_autorevocation_data\":{},\"popups\":{},\"ppapi_broker\":{},\"protocol_handler\":{},\"safe_browsing_url_check_data\":{},\"sensors\":{},\"serial_chooser_data\":{},\"serial_guard\":{},\"site_engagement\":{\"http://localhost:49810,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223830\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286831919243812e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.6,\"rawScore\":3.6}},\"http://localhost:50579,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873521056683\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286873521056632e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.6,\"rawScore\":3.6}},\"http://localhost:51095,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223809\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286832729717208e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.0,\"rawScore\":3.0}},\"http://localhost:51302,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223788\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286832865933744e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.0,\"rawScore\":3.0}},\"http://localhost:54797,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223767\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286835167545388e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.0,\"rawScore\":3.0}},\"http://localhost:60098,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223734\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286839125428416e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.6,\"rawScore\":3.6}},\"http://localhost:62417,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223716\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286843168141192e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.0,\"rawScore\":3.0}},\"http://localhost:63422,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223693\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.328684457922358e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.0,\"rawScore\":3.0}},\"https://dart-lang.github.io:443,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873654636695\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.328687365463668e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":6.0,\"rawScore\":6.0}},\"https://www.google.com:443,*\":{\"expiration\":\"0\",\"last_modified\":\"13286873379223616\",\"model\":0,\"setting\":{\"lastEngagementTime\":1.3286832778498896e+16,\"lastShortcutLaunchTime\":0.0,\"pointsAddedToday\":3.6,\"rawScore\":3.6}}},\"sound\":{},\"ssl_cert_decisions\":{},\"storage_access\":{},\"subresource_filter\":{},\"subresource_filter_data\":{},\"usb_chooser_data\":{},\"usb_guard\":{},\"vr\":{},\"webid_active_session\":{},\"webid_request\":{},\"webid_share\":{},\"window_placement\":{}},\"pref_version\":1},\"created_by_version\":\"97.0.4692.71\",\"creation_time\":\"13286455536726353\",\"exit_type\":\"Normal\",\"last_engagement_time\":\"13286873654636679\",\"last_time_obsolete_http_credentials_removed\":1641981996.783204,\"managed_user_id\":\"\",\"name\":\"Person 1\",\"password_account_storage_settings\":{},\"were_old_google_logins_removed\":true},\"safebrowsing\":{\"event_timestamps\":{\"0\":{\"12\":[\"13286456451\"]}},\"metrics_last_log_time\":\"13286873379\"},\"savefile\":{\"default_directory\":\"/Users/machd/Downloads\"},\"sessions\":{\"event_log\":[{\"crashed\":true,\"time\":\"13286456542012529\",\"type\":0},{\"crashed\":true,\"time\":\"13286458843960204\",\"type\":0},{\"did_schedule_command\":true,\"first_session_service\":true,\"tab_count\":0,\"time\":\"13286460321251889\",\"type\":2,\"window_count\":1},{\"crashed\":false,\"time\":\"13286462582050480\",\"type\":0},{\"did_schedule_command\":true,\"first_session_service\":true,\"tab_count\":1,\"time\":\"13286463270664497\",\"type\":2,\"window_count\":1},{\"crashed\":false,\"time\":\"13286466844790546\",\"type\":0},{\"did_schedule_command\":true,\"first_session_service\":true,\"tab_count\":1,\"time\":\"13286467147420274\",\"type\":2,\"window_count\":1},{\"crashed\":false,\"time\":\"13286468255873578\",\"type\":0},{\"did_schedule_command\":true,\"first_session_service\":true,\"tab_count\":1,\"time\":\"13286471338176954\",\"type\":2,\"window_count\":1},{\"crashed\":false,\"time\":\"13286873379090499\",\"type\":0},{\"did_schedule_command\":true,\"first_session_service\":true,\"tab_count\":1,\"time\":\"13286874746316094\",\"type\":2,\"window_count\":1}],\"session_data_status\":5},\"signin\":{\"allowed\":true},\"sync\":{\"requested\":false},\"token_service\":{\"dice_compatible\":true},\"translate_site_blacklist\":[],\"translate_site_blacklist_with_time\":{},\"unified_consent\":{\"migration_state\":10},\"web_apps\":{\"did_migrate_default_chrome_apps\":[],\"last_preinstall_synchronize_version\":\"97\",\"system_web_app_failure_count\":0,\"system_web_app_last_attempted_language\":\"en-GB\",\"system_web_app_last_attempted_update\":\"97.0.4692.71\",\"system_web_app_last_installed_language\":\"en-GB\",\"system_web_app_last_update\":\"97.0.4692.71\"}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Preferences	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Preferences	(date 1642407371878)
+@@ -1,1 +1,1 @@
+-{"NewTabPage":{"PrevNavigationTime":"13286456433406529"},"account_id_migration_state":2,"account_tracker_service_last_update":"13286873380298228","ack_existing_ntp_extensions":true,"alternate_error_pages":{"backup":true},"apps":{"shortcuts_arch":"x86_64","shortcuts_version":6},"autocomplete":{"retention_policy_last_version":97},"autofill":{"orphan_rows_removed":true},"browser":{"has_seen_welcome_page":false,"window_placement":{"bottom":940,"left":22,"maximized":false,"right":640,"top":47,"work_area_bottom":1035,"work_area_left":0,"work_area_right":1792,"work_area_top":25}},"countryid_at_install":18766,"data_reduction":{"daily_original_length":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","88088658","0","0","0","0","22335957"],"daily_received_length":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","88088658","0","0","0","0","22335957"],"last_update_date":"13286831400000000","last_week_services_downstream_background_kb":{},"last_week_services_downstream_foreground_kb":{"100143055":259,"106373593":0,"108986091":133,"112189210":8,"115188287":252,"125522256":1,"130931413":0,"21498113":0,"35473769":0,"35565745":4,"41424546":3,"47815025":3,"49601082":6,"54845618":64085,"56351037":21,"67052219":0,"73107389":14,"78917933":39,"82509217":43238},"last_week_user_traffic_contenttype_downstream_kb":{},"this_week_number":2715,"this_week_services_downstream_background_kb":{},"this_week_services_downstream_foreground_kb":{"100143055":259,"106373593":0,"112189210":10,"115188287":37,"125522256":1,"130931413":0,"21498113":0,"35565745":0,"49601082":1,"54845618":12816,"82509217":8682},"this_week_user_traffic_contenttype_downstream_kb":{}},"domain_diversity":{"last_reporting_timestamp":"13286873380301347"},"download":{"directory_upgrade":true},"extensions":{"alerts":{"initialized":true},"chrome_url_overrides":{},"last_chrome_version":"97.0.4692.71"},"gaia_cookie":{"changed_time":1641981944.134355,"hash":"2jmj7l5rSw0yVb/vlWAYkK/YBwk=","last_list_accounts_data":"[\"gaia.l.a.r\",[]]"},"gcm":{"product_category_for_subtypes":"com.chrome.macosx"},"google":{"services":{"signin_scoped_device_id":"17ffb71c-99b7-4055-9a80-a28f6e56cfa3"}},"http_original_content_length":"110424615","http_received_content_length":"110424615","intl":{"selected_languages":"en-GB,en-US,en"},"invalidation":{"per_sender_topics_to_handler":{"1013309121859":{},"8181035976":{}}},"language_model_counters":{"en":3},"media":{"device_id_salt":"92EA2EF4F607FE2D1235496980FA3D1A","engagement":{"schema_version":4}},"media_router":{"receiver_id_hash_token":"TgbeHjtHpBqkGs5lbrXDSdJYhtDHXHoWdb155DDmYDwvZmjF7yPuwZbaI4eGCYIxJ8Td/84Ia+sbkb9/ppLENA=="},"ntp":{"num_personal_suggestions":2},"optimization_guide":{"hintsfetcher":{"last_fetch_attempt":"13286873456330508"},"predictionmodelfetcher":{"last_fetch_attempt":"13286873447971902","last_fetch_success":"13286873448077149"}},"plugins":{"plugins_list":[]},"profile":{"avatar_bubble_tutorial_shown":2,"avatar_index":26,"content_settings":{"enable_quiet_permission_ui_enabling_method":{"notifications":1},"exceptions":{"accessibility_events":{},"app_banner":{},"ar":{},"auto_select_certificate":{},"automatic_downloads":{},"autoplay":{},"background_sync":{},"bluetooth_chooser_data":{},"bluetooth_guard":{},"bluetooth_scanning":{},"camera_pan_tilt_zoom":{},"client_hints":{},"clipboard":{},"cookies":{},"durable_storage":{},"file_handling":{},"file_system_access_chooser_data":{},"file_system_last_picked_directory":{},"file_system_read_guard":{},"file_system_write_guard":{},"font_access":{},"formfill_metadata":{},"geolocation":{},"hid_chooser_data":{},"hid_guard":{},"http_allowed":{},"idle_detection":{},"images":{},"important_site_info":{},"insecure_private_network":{},"installed_web_app_metadata":{},"intent_picker_auto_display":{},"javascript":{},"javascript_jit":{},"legacy_cookie_access":{},"media_engagement":{"http://localhost:50579,*":{"expiration":"0","last_modified":"13286874746331202","model":0,"setting":{"hasHighScore":false,"lastMediaPlaybackTime":0.0,"mediaPlaybacks":0,"visits":1}},"http://localhost:54797,*":{"expiration":"0","last_modified":"13286460321185753","model":0,"setting":{"hasHighScore":false,"lastMediaPlaybackTime":0.0,"mediaPlaybacks":0,"visits":1}},"http://localhost:60098,*":{"expiration":"0","last_modified":"13286463270682802","model":0,"setting":{"hasHighScore":false,"lastMediaPlaybackTime":0.0,"mediaPlaybacks":0,"visits":1}},"http://localhost:62417,*":{"expiration":"0","last_modified":"13286467147438700","model":0,"setting":{"hasHighScore":false,"lastMediaPlaybackTime":0.0,"mediaPlaybacks":0,"visits":1}},"http://localhost:63422,*":{"expiration":"0","last_modified":"13286471338243255","model":0,"setting":{"hasHighScore":false,"lastMediaPlaybackTime":0.0,"mediaPlaybacks":0,"visits":1}},"https://dart-lang.github.io:443,*":{"expiration":"0","last_modified":"13286873660704995","model":0,"setting":{"hasHighScore":false,"lastMediaPlaybackTime":0.0,"mediaPlaybacks":0,"visits":3}}},"media_stream_camera":{},"media_stream_mic":{},"midi_sysex":{},"mixed_script":{},"nfc":{},"notifications":{},"password_protection":{},"payment_handler":{},"permission_autoblocking_data":{},"permission_autorevocation_data":{},"popups":{},"ppapi_broker":{},"protocol_handler":{},"safe_browsing_url_check_data":{},"sensors":{},"serial_chooser_data":{},"serial_guard":{},"site_engagement":{"http://localhost:49810,*":{"expiration":"0","last_modified":"13286873379223830","model":0,"setting":{"lastEngagementTime":1.3286831919243812e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}},"http://localhost:50579,*":{"expiration":"0","last_modified":"13286873521056683","model":0,"setting":{"lastEngagementTime":1.3286873521056632e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}},"http://localhost:51095,*":{"expiration":"0","last_modified":"13286873379223809","model":0,"setting":{"lastEngagementTime":1.3286832729717208e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:51302,*":{"expiration":"0","last_modified":"13286873379223788","model":0,"setting":{"lastEngagementTime":1.3286832865933744e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:54797,*":{"expiration":"0","last_modified":"13286873379223767","model":0,"setting":{"lastEngagementTime":1.3286835167545388e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:60098,*":{"expiration":"0","last_modified":"13286873379223734","model":0,"setting":{"lastEngagementTime":1.3286839125428416e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}},"http://localhost:62417,*":{"expiration":"0","last_modified":"13286873379223716","model":0,"setting":{"lastEngagementTime":1.3286843168141192e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:63422,*":{"expiration":"0","last_modified":"13286873379223693","model":0,"setting":{"lastEngagementTime":1.328684457922358e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"https://dart-lang.github.io:443,*":{"expiration":"0","last_modified":"13286873654636695","model":0,"setting":{"lastEngagementTime":1.328687365463668e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":6.0,"rawScore":6.0}},"https://www.google.com:443,*":{"expiration":"0","last_modified":"13286873379223616","model":0,"setting":{"lastEngagementTime":1.3286832778498896e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}}},"sound":{},"ssl_cert_decisions":{},"storage_access":{},"subresource_filter":{},"subresource_filter_data":{},"usb_chooser_data":{},"usb_guard":{},"vr":{},"webid_active_session":{},"webid_request":{},"webid_share":{},"window_placement":{}},"pref_version":1},"created_by_version":"97.0.4692.71","creation_time":"13286455536726353","exit_type":"Normal","last_engagement_time":"13286873654636679","last_time_obsolete_http_credentials_removed":1641981996.783204,"managed_user_id":"","name":"Person 1","password_account_storage_settings":{},"were_old_google_logins_removed":true},"safebrowsing":{"event_timestamps":{"0":{"12":["13286456451"]}},"metrics_last_log_time":"13286873379"},"savefile":{"default_directory":"/Users/machd/Downloads"},"sessions":{"event_log":[{"crashed":true,"time":"13286456542012529","type":0},{"crashed":true,"time":"13286458843960204","type":0},{"did_schedule_command":true,"first_session_service":true,"tab_count":0,"time":"13286460321251889","type":2,"window_count":1},{"crashed":false,"time":"13286462582050480","type":0},{"did_schedule_command":true,"first_session_service":true,"tab_count":1,"time":"13286463270664497","type":2,"window_count":1},{"crashed":false,"time":"13286466844790546","type":0},{"did_schedule_command":true,"first_session_service":true,"tab_count":1,"time":"13286467147420274","type":2,"window_count":1},{"crashed":false,"time":"13286468255873578","type":0},{"did_schedule_command":true,"first_session_service":true,"tab_count":1,"time":"13286471338176954","type":2,"window_count":1},{"crashed":false,"time":"13286873379090499","type":0},{"did_schedule_command":true,"first_session_service":true,"tab_count":1,"time":"13286874746316094","type":2,"window_count":1}],"session_data_status":5},"signin":{"allowed":true},"sync":{"requested":false},"token_service":{"dice_compatible":true},"translate_site_blacklist":[],"translate_site_blacklist_with_time":{},"unified_consent":{"migration_state":10},"web_apps":{"did_migrate_default_chrome_apps":[],"last_preinstall_synchronize_version":"97","system_web_app_failure_count":0,"system_web_app_last_attempted_language":"en-GB","system_web_app_last_attempted_update":"97.0.4692.71","system_web_app_last_installed_language":"en-GB","system_web_app_last_update":"97.0.4692.71"}}
+\ No newline at end of file
++{"NewTabPage":{"PrevNavigationTime":"13286456433406529"},"account_id_migration_state":2,"account_tracker_service_last_update":"13286868181179308","ack_existing_ntp_extensions":true,"alternate_error_pages":{"backup":true},"apps":{"shortcuts_arch":"x86_64","shortcuts_version":6},"autocomplete":{"retention_policy_last_version":97},"autofill":{"orphan_rows_removed":true},"browser":{"has_seen_welcome_page":false,"window_placement":{"bottom":940,"left":22,"maximized":false,"right":590,"top":47,"work_area_bottom":959,"work_area_left":0,"work_area_right":1680,"work_area_top":25}},"countryid_at_install":18766,"data_reduction":{"daily_original_length":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","22019782","0","0","0","0","22077975"],"daily_received_length":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","22019782","0","0","0","0","22077975"],"last_update_date":"13286831400000000","last_week_services_downstream_background_kb":{},"last_week_services_downstream_foreground_kb":{"100143055":259,"106373593":0,"108986091":133,"112189210":8,"115188287":252,"125522256":1,"130931413":0,"21498113":0,"35473769":0,"35565745":6,"41424546":7,"47815025":3,"49601082":6,"54845618":64085,"56351037":21,"67052219":0,"73107389":14,"78917933":39,"82509217":43236,"8561691":0},"last_week_user_traffic_contenttype_downstream_kb":{},"this_week_number":2715,"this_week_services_downstream_background_kb":{},"this_week_services_downstream_foreground_kb":{"100143055":259,"106373593":0,"112189210":3,"115188287":111,"125522256":1,"130931413":0,"21498113":0,"35565745":0,"41424546":3,"49601082":3,"54845618":38448,"82509217":26047,"8561691":0,"99279418":1},"this_week_user_traffic_contenttype_downstream_kb":{}},"domain_diversity":{"last_reporting_timestamp":"13286868181181457"},"download":{"directory_upgrade":true},"extensions":{"alerts":{"initialized":true},"chrome_url_overrides":{},"last_chrome_version":"97.0.4692.71"},"gaia_cookie":{"changed_time":1641981944.134355,"hash":"2jmj7l5rSw0yVb/vlWAYkK/YBwk=","last_list_accounts_data":"[\"gaia.l.a.r\",[]]"},"gcm":{"product_category_for_subtypes":"com.chrome.macosx"},"google":{"services":{"signin_scoped_device_id":"aa0d7109-df43-4e8e-a340-6654003e650c"}},"http_original_content_length":"44097757","http_received_content_length":"44097757","intl":{"selected_languages":"en-GB,en-US,en"},"invalidation":{"per_sender_topics_to_handler":{"1013309121859":{},"8181035976":{}}},"media":{"device_id_salt":"92EA2EF4F607FE2D1235496980FA3D1A","engagement":{"schema_version":4}},"media_router":{"receiver_id_hash_token":"TgbeHjtHpBqkGs5lbrXDSdJYhtDHXHoWdb155DDmYDwvZmjF7yPuwZbaI4eGCYIxJ8Td/84Ia+sbkb9/ppLENA=="},"ntp":{"num_personal_suggestions":2},"optimization_guide":{"hintsfetcher":{"last_fetch_attempt":"13286875733144839"},"predictionmodelfetcher":{"last_fetch_attempt":"13286868234869118","last_fetch_success":"13286868234980882"}},"plugins":{"plugins_list":[]},"profile":{"avatar_bubble_tutorial_shown":2,"avatar_index":26,"content_settings":{"enable_quiet_permission_ui_enabling_method":{"notifications":1},"exceptions":{"accessibility_events":{},"app_banner":{},"ar":{},"auto_select_certificate":{},"automatic_downloads":{},"autoplay":{},"background_sync":{},"bluetooth_chooser_data":{},"bluetooth_guard":{},"bluetooth_scanning":{},"camera_pan_tilt_zoom":{},"client_hints":{},"clipboard":{},"cookies":{},"durable_storage":{},"file_handling":{},"file_system_access_chooser_data":{},"file_system_last_picked_directory":{},"file_system_read_guard":{},"file_system_write_guard":{},"font_access":{},"formfill_metadata":{},"geolocation":{},"hid_chooser_data":{},"hid_guard":{},"http_allowed":{},"idle_detection":{},"images":{},"important_site_info":{},"insecure_private_network":{},"installed_web_app_metadata":{},"intent_picker_auto_display":{},"javascript":{},"javascript_jit":{},"legacy_cookie_access":{},"media_engagement":{},"media_stream_camera":{},"media_stream_mic":{},"midi_sysex":{},"mixed_script":{},"nfc":{},"notifications":{},"password_protection":{},"payment_handler":{},"permission_autoblocking_data":{},"permission_autorevocation_data":{},"popups":{},"ppapi_broker":{},"protocol_handler":{},"safe_browsing_url_check_data":{},"sensors":{},"serial_chooser_data":{},"serial_guard":{},"site_engagement":{"http://localhost:49269,*":{"expiration":"0","last_modified":"13286868180394266","model":0,"setting":{"lastEngagementTime":1.3286839380393996e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":8.399999999999999,"rawScore":8.399999999999999}},"http://localhost:49810,*":{"expiration":"0","last_modified":"13286868180394242","model":0,"setting":{"lastEngagementTime":1.3286826946682824e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}},"http://localhost:49816,*":{"expiration":"0","last_modified":"13286868181320584","model":0,"setting":{"lastEngagementTime":1.328686818132057e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:50691,*":{"expiration":"0","last_modified":"13286869273608087","model":0,"setting":{"lastEngagementTime":1.3286869273608076e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:51095,*":{"expiration":"0","last_modified":"13286868180394222","model":0,"setting":{"lastEngagementTime":1.328682775715622e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:51302,*":{"expiration":"0","last_modified":"13286868180394204","model":0,"setting":{"lastEngagementTime":1.3286827893372758e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.0,"rawScore":3.0}},"http://localhost:51719,*":{"expiration":"0","last_modified":"13286868180394184","model":0,"setting":{"lastEngagementTime":1.3286829011437196e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}},"http://localhost:52784,*":{"expiration":"0","last_modified":"13286874069497244","model":0,"setting":{"lastEngagementTime":1.328687406949722e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":4.8,"rawScore":4.8}},"http://localhost:57157,*":{"expiration":"0","last_modified":"13286868180394152","model":0,"setting":{"lastEngagementTime":1.3286831947198756e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}},"http://localhost:59415,*":{"expiration":"0","last_modified":"13286868180394129","model":0,"setting":{"lastEngagementTime":1.3286837149249308e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":5.999999999999999,"rawScore":5.999999999999999}},"https://www.google.com:443,*":{"expiration":"0","last_modified":"13286868180394045","model":0,"setting":{"lastEngagementTime":1.3286827805937908e+16,"lastShortcutLaunchTime":0.0,"pointsAddedToday":3.6,"rawScore":3.6}}},"sound":{},"ssl_cert_decisions":{},"storage_access":{},"subresource_filter":{},"subresource_filter_data":{},"usb_chooser_data":{},"usb_guard":{},"vr":{},"webid_active_session":{},"webid_request":{},"webid_share":{},"window_placement":{}},"pref_version":1},"created_by_version":"97.0.4692.71","creation_time":"13286455536726353","exit_type":"Normal","last_engagement_time":"13286874069497221","last_time_obsolete_http_credentials_removed":1641981996.783204,"managed_user_id":"","name":"Person 1","password_account_storage_settings":{},"were_old_google_logins_removed":true},"safebrowsing":{"event_timestamps":{"0":{"12":["13286456451"]}},"metrics_last_log_time":"13286868180"},"savefile":{"default_directory":"/Users/machd/Downloads"},"sessions":{"event_log":[{"crashed":false,"time":"13286455536774282","type":0},{"crashed":true,"time":"13286456400296030","type":0},{"crashed":true,"time":"13286456542012529","type":0},{"crashed":true,"time":"13286456822498886","type":0},{"crashed":true,"time":"13286460579862090","type":0},{"crashed":true,"time":"13286462360464525","type":0},{"crashed":true,"time":"13286467477991399","type":0},{"crashed":true,"time":"13286868180222155","type":0},{"crashed":false,"time":"13286869272632720","type":0},{"crashed":true,"time":"13286872022111936","type":0}],"session_data_status":1},"signin":{"allowed":true},"sync":{"requested":false},"token_service":{"dice_compatible":true},"translate_site_blacklist":[],"translate_site_blacklist_with_time":{},"unified_consent":{"migration_state":10},"web_apps":{"did_migrate_default_chrome_apps":[],"last_preinstall_synchronize_version":"97","system_web_app_failure_count":0,"system_web_app_last_attempted_language":"en-GB","system_web_app_last_attempted_update":"97.0.4692.71","system_web_app_last_installed_language":"en-GB","system_web_app_last_update":"97.0.4692.71"}}
+\ No newline at end of file
+Index: .dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:39.139 13903 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Sync Data/LevelDB/MANIFEST-000001\n2022/01/17-11:39:39.143 13903 Recovering log #3\n2022/01/17-11:39:39.144 13903 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Sync Data/LevelDB/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG	(date 1642407371867)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:39.139 13903 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Sync Data/LevelDB/MANIFEST-000001
+-2022/01/17-11:39:39.143 13903 Recovering log #3
+-2022/01/17-11:39:39.144 13903 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Sync Data/LevelDB/000003.log 
++2022/01/17-11:17:02.115 e603 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Sync Data/LevelDB/MANIFEST-000001
++2022/01/17-11:17:02.115 e603 Recovering log #3
++2022/01/17-11:17:02.115 e603 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Sync Data/LevelDB/000003.log 
+Index: .dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:40.396 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/metadata/MANIFEST-000001\n2022/01/17-11:39:40.400 be03 Recovering log #3\n2022/01/17-11:39:40.400 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/metadata/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG	(date 1642407371859)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:40.396 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/metadata/MANIFEST-000001
+-2022/01/17-11:39:40.400 be03 Recovering log #3
+-2022/01/17-11:39:40.400 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/metadata/000003.log 
++2022/01/17-11:17:03.086 fe03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/shared_proto_db/metadata/MANIFEST-000001
++2022/01/17-11:17:03.087 fe03 Recovering log #3
++2022/01/17-11:17:03.088 fe03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/shared_proto_db/metadata/000003.log 
+Index: .dart_tool/chrome-device/Default/Extension State/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:36.896 fb03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension State/MANIFEST-000001\n2022/01/12-19:07:36.899 fb03 Recovering log #3\n2022/01/12-19:07:36.900 fb03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension State/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Extension State/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Extension State/LOG.old	(date 1642407371845)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:36.896 fb03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension State/MANIFEST-000001
+-2022/01/12-19:07:36.899 fb03 Recovering log #3
+-2022/01/12-19:07:36.900 fb03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension State/000003.log 
++2022/01/17-10:13:01.262 8d07 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/Extension State/MANIFEST-000001
++2022/01/17-10:13:01.263 8d07 Recovering log #3
++2022/01/17-10:13:01.263 8d07 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/Extension State/000003.log 
+Index: .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Network Persistent State
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"net\":{\"http_server_properties\":{\"servers\":[],\"version\":5},\"network_qualities\":{\"CAISABiAgICA+P////8B\":\"4G\"}}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Network Persistent State	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Network Persistent State	(date 1642407371827)
+@@ -1,1 +1,1 @@
+-{"net":{"http_server_properties":{"servers":[],"version":5},"network_qualities":{"CAISABiAgICA+P////8B":"4G"}}}
+\ No newline at end of file
++{"net":{"network_qualities":{"CAISABiAgICA+P////8B":"4G"}}}
+\ No newline at end of file
+Index: .dart_tool/chrome-device/Default/Network Persistent State
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"net\":{\"http_server_properties\":{\"servers\":[{\"alternative_service\":[{\"advertised_alpns\":[\"h3\"],\"expiration\":\"13289465380425869\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-29\"],\"expiration\":\"13289465380425871\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-Q050\"],\"expiration\":\"13289465380425873\",\"port\":443,\"protocol_str\":\"quic\"}],\"isolation\":[],\"network_stats\":{\"srtt\":8099},\"server\":\"https://accounts.google.com\",\"supports_spdy\":true},{\"alternative_service\":[{\"advertised_alpns\":[\"h3\"],\"expiration\":\"13289465448223287\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-29\"],\"expiration\":\"13289465448223291\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-Q050\"],\"expiration\":\"13289465448223295\",\"port\":443,\"protocol_str\":\"quic\"}],\"isolation\":[],\"network_stats\":{\"srtt\":12404},\"server\":\"https://optimizationguide-pa.googleapis.com\",\"supports_spdy\":true},{\"isolation\":[],\"server\":\"https://dart-lang.github.io\",\"supports_spdy\":true},{\"alternative_service\":[{\"advertised_alpns\":[\"h3\"],\"expiration\":\"13289465545527895\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-29\"],\"expiration\":\"13289465545527897\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-Q050\"],\"expiration\":\"13289465545527901\",\"port\":443,\"protocol_str\":\"quic\"}],\"isolation\":[],\"network_stats\":{\"srtt\":6965},\"server\":\"https://fonts.googleapis.com\",\"supports_spdy\":true},{\"isolation\":[],\"server\":\"https://unpkg.com\",\"supports_spdy\":true},{\"alternative_service\":[{\"advertised_alpns\":[\"h3\"],\"expiration\":\"13289465545949622\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-29\"],\"expiration\":\"13289465545949624\",\"port\":443,\"protocol_str\":\"quic\"},{\"advertised_alpns\":[\"h3-Q050\"],\"expiration\":\"13289465545949626\",\"port\":443,\"protocol_str\":\"quic\"}],\"isolation\":[],\"network_stats\":{\"srtt\":30634},\"server\":\"https://fonts.gstatic.com\",\"supports_spdy\":true}],\"supports_quic\":{\"address\":\"192.168.0.103\",\"used_quic\":true},\"version\":5},\"network_qualities\":{\"CAISABiAgICA+P////8B\":\"4G\"}}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Network Persistent State	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Network Persistent State	(date 1642407371846)
+@@ -1,1 +1,1 @@
+-{"net":{"http_server_properties":{"servers":[{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289465380425869","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289465380425871","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289465380425873","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":8099},"server":"https://accounts.google.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289465448223287","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289465448223291","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289465448223295","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":12404},"server":"https://optimizationguide-pa.googleapis.com","supports_spdy":true},{"isolation":[],"server":"https://dart-lang.github.io","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289465545527895","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289465545527897","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289465545527901","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":6965},"server":"https://fonts.googleapis.com","supports_spdy":true},{"isolation":[],"server":"https://unpkg.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289465545949622","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289465545949624","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289465545949626","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":30634},"server":"https://fonts.gstatic.com","supports_spdy":true}],"supports_quic":{"address":"192.168.0.103","used_quic":true},"version":5},"network_qualities":{"CAISABiAgICA+P////8B":"4G"}}}
+\ No newline at end of file
++{"net":{"http_server_properties":{"servers":[{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289460235185231","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289460235185232","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289460235185234","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":10108},"server":"https://optimizationguide-pa.googleapis.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289464023084061","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289464023084063","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289464023084065","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":9564},"server":"https://accounts.google.com","supports_spdy":true},{"isolation":[],"server":"https://unpkg.com","supports_spdy":true},{"isolation":[],"server":"https://assets4.lottiefiles.com","supports_spdy":true},{"alternative_service":[{"advertised_alpns":["h3"],"expiration":"13289467648035578","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-29"],"expiration":"13289467648035580","port":443,"protocol_str":"quic"},{"advertised_alpns":["h3-Q050"],"expiration":"13289467648035582","port":443,"protocol_str":"quic"}],"isolation":[],"network_stats":{"srtt":31487},"server":"https://fonts.gstatic.com","supports_spdy":true}],"supports_quic":{"address":"192.168.1.6","used_quic":true},"version":5},"network_qualities":{"CAISABiAgICA+P////8B":"4G"}}}
+\ No newline at end of file
+Index: .dart_tool/chrome-device/Default/TransportSecurity
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"expect_ct\":[{\"expect_ct_enforce\":false,\"expect_ct_expiry\":1642587640.655562,\"expect_ct_observed\":1641982840.655562,\"expect_ct_report_uri\":\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\",\"host\":\"EicebtwIum3gOjV6EiwsUWQW+l5j01x9PrzbdzOgujY=\",\"nik\":[]},{\"expect_ct_enforce\":false,\"expect_ct_expiry\":1642587640.681106,\"expect_ct_observed\":1641982840.681106,\"expect_ct_report_uri\":\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\",\"host\":\"E10e7Gwg5+phsYD4E8qNYFsQySXnIHPAfo4zloUPESc=\",\"nik\":[]},{\"expect_ct_enforce\":false,\"expect_ct_expiry\":1642587644.634723,\"expect_ct_observed\":1641982844.634723,\"expect_ct_report_uri\":\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\",\"host\":\"PjohuWTPDYlyyRezdVchvVLbGxe9B7xuSNeJMX6EYhY=\",\"nik\":[]},{\"expect_ct_enforce\":false,\"expect_ct_expiry\":1642587647.814978,\"expect_ct_observed\":1641982847.814978,\"expect_ct_report_uri\":\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\",\"host\":\"b3FK2P93bdh8FayUkfWTK+nvLn14ynQ/tjB315uaZ6Y=\",\"nik\":[]},{\"expect_ct_enforce\":false,\"expect_ct_expiry\":1643004583.780459,\"expect_ct_observed\":1642399783.780459,\"expect_ct_report_uri\":\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\",\"host\":\"e3SziuwfuO2UvuBno+qkR1ObHAzZmSUoJhrc7dbP1Uo=\",\"nik\":[]}],\"sts\":[{\"expiry\":1657762840.681094,\"host\":\"E10e7Gwg5+phsYD4E8qNYFsQySXnIHPAfo4zloUPESc=\",\"mode\":\"force-https\",\"sts_include_subdomains\":false,\"sts_observed\":1641982840.681099},{\"expiry\":1673518840.676187,\"host\":\"M4bfUnCmQAi4PNb3B8aI/2+SVJhHKsMfMMT7fzi6ij4=\",\"mode\":\"force-https\",\"sts_include_subdomains\":true,\"sts_observed\":1641982840.67619},{\"expiry\":1673518847.814961,\"host\":\"b3FK2P93bdh8FayUkfWTK+nvLn14ynQ/tjB315uaZ6Y=\",\"mode\":\"force-https\",\"sts_include_subdomains\":false,\"sts_observed\":1641982847.814966},{\"expiry\":1673935783.780446,\"host\":\"e3SziuwfuO2UvuBno+qkR1ObHAzZmSUoJhrc7dbP1Uo=\",\"mode\":\"force-https\",\"sts_include_subdomains\":true,\"sts_observed\":1642399783.780451},{\"expiry\":1673518841.154093,\"host\":\"gnD8J8OjoAh/qpETsmC9Izlwf0EoJTQfQZyqciVLZb0=\",\"mode\":\"force-https\",\"sts_include_subdomains\":true,\"sts_observed\":1641982841.154097},{\"expiry\":1673935945.528018,\"host\":\"nAuqgR4iEWti7SOdT3UHPl6rmZU/DeaIm38P2O2OkgA=\",\"mode\":\"force-https\",\"sts_include_subdomains\":false,\"sts_observed\":1642399945.52802},{\"expiry\":1673518840.574678,\"host\":\"qaDeFdT1UTirY0OQe+c5LKw+zjx6vF/+3vFh7CgrAOY=\",\"mode\":\"force-https\",\"sts_include_subdomains\":true,\"sts_observed\":1641982840.574682},{\"expiry\":1673518843.983049,\"host\":\"5EdUoB7YUY9zZV+2DkgVXgho8WUvp+D+6KpeUOhNQIM=\",\"mode\":\"force-https\",\"sts_include_subdomains\":false,\"sts_observed\":1641982843.983053},{\"expiry\":1673935780.425977,\"host\":\"8/RrMmQlCD2Gsp14wUCE1P8r7B2C5+yE0+g79IPyRsc=\",\"mode\":\"force-https\",\"sts_include_subdomains\":false,\"sts_observed\":1642399780.425979}],\"version\":2}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/TransportSecurity	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/TransportSecurity	(date 1642407371803)
+@@ -1,1 +1,1 @@
+-{"expect_ct":[{"expect_ct_enforce":false,"expect_ct_expiry":1642587640.655562,"expect_ct_observed":1641982840.655562,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"EicebtwIum3gOjV6EiwsUWQW+l5j01x9PrzbdzOgujY=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1642587640.681106,"expect_ct_observed":1641982840.681106,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"E10e7Gwg5+phsYD4E8qNYFsQySXnIHPAfo4zloUPESc=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1642587644.634723,"expect_ct_observed":1641982844.634723,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"PjohuWTPDYlyyRezdVchvVLbGxe9B7xuSNeJMX6EYhY=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1642587647.814978,"expect_ct_observed":1641982847.814978,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"b3FK2P93bdh8FayUkfWTK+nvLn14ynQ/tjB315uaZ6Y=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1643004583.780459,"expect_ct_observed":1642399783.780459,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"e3SziuwfuO2UvuBno+qkR1ObHAzZmSUoJhrc7dbP1Uo=","nik":[]}],"sts":[{"expiry":1657762840.681094,"host":"E10e7Gwg5+phsYD4E8qNYFsQySXnIHPAfo4zloUPESc=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1641982840.681099},{"expiry":1673518840.676187,"host":"M4bfUnCmQAi4PNb3B8aI/2+SVJhHKsMfMMT7fzi6ij4=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1641982840.67619},{"expiry":1673518847.814961,"host":"b3FK2P93bdh8FayUkfWTK+nvLn14ynQ/tjB315uaZ6Y=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1641982847.814966},{"expiry":1673935783.780446,"host":"e3SziuwfuO2UvuBno+qkR1ObHAzZmSUoJhrc7dbP1Uo=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1642399783.780451},{"expiry":1673518841.154093,"host":"gnD8J8OjoAh/qpETsmC9Izlwf0EoJTQfQZyqciVLZb0=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1641982841.154097},{"expiry":1673935945.528018,"host":"nAuqgR4iEWti7SOdT3UHPl6rmZU/DeaIm38P2O2OkgA=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1642399945.52802},{"expiry":1673518840.574678,"host":"qaDeFdT1UTirY0OQe+c5LKw+zjx6vF/+3vFh7CgrAOY=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1641982840.574682},{"expiry":1673518843.983049,"host":"5EdUoB7YUY9zZV+2DkgVXgho8WUvp+D+6KpeUOhNQIM=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1641982843.983053},{"expiry":1673935780.425977,"host":"8/RrMmQlCD2Gsp14wUCE1P8r7B2C5+yE0+g79IPyRsc=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1642399780.425979}],"version":2}
+\ No newline at end of file
++{"expect_ct":[{"expect_ct_enforce":false,"expect_ct_expiry":1642587640.655562,"expect_ct_observed":1641982840.655562,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"EicebtwIum3gOjV6EiwsUWQW+l5j01x9PrzbdzOgujY=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1642587640.681106,"expect_ct_observed":1641982840.681106,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"E10e7Gwg5+phsYD4E8qNYFsQySXnIHPAfo4zloUPESc=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1642587644.634723,"expect_ct_observed":1641982844.634723,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"PjohuWTPDYlyyRezdVchvVLbGxe9B7xuSNeJMX6EYhY=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1642587647.814978,"expect_ct_observed":1641982847.814978,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"b3FK2P93bdh8FayUkfWTK+nvLn14ynQ/tjB315uaZ6Y=","nik":[]},{"expect_ct_enforce":false,"expect_ct_expiry":1643003227.187608,"expect_ct_observed":1642398427.187608,"expect_ct_report_uri":"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct","host":"e3SziuwfuO2UvuBno+qkR1ObHAzZmSUoJhrc7dbP1Uo=","nik":[]}],"sts":[{"expiry":1657762840.681094,"host":"E10e7Gwg5+phsYD4E8qNYFsQySXnIHPAfo4zloUPESc=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1641982840.681099},{"expiry":1673518840.676187,"host":"M4bfUnCmQAi4PNb3B8aI/2+SVJhHKsMfMMT7fzi6ij4=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1641982840.67619},{"expiry":1673518847.814961,"host":"b3FK2P93bdh8FayUkfWTK+nvLn14ynQ/tjB315uaZ6Y=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1641982847.814966},{"expiry":1673934427.187581,"host":"e3SziuwfuO2UvuBno+qkR1ObHAzZmSUoJhrc7dbP1Uo=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1642398427.187583},{"expiry":1673518841.154093,"host":"gnD8J8OjoAh/qpETsmC9Izlwf0EoJTQfQZyqciVLZb0=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1641982841.154097},{"expiry":1673518840.574678,"host":"qaDeFdT1UTirY0OQe+c5LKw+zjx6vF/+3vFh7CgrAOY=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1641982840.574682},{"expiry":1673518843.983049,"host":"5EdUoB7YUY9zZV+2DkgVXgho8WUvp+D+6KpeUOhNQIM=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1641982843.983053},{"expiry":1673934423.084207,"host":"8/RrMmQlCD2Gsp14wUCE1P8r7B2C5+yE0+g79IPyRsc=","mode":"force-https","sts_include_subdomains":false,"sts_observed":1642398423.084209}],"version":2}
+\ No newline at end of file
+Index: .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-16:30:45.107 5003 Creating DB /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb since it was missing.\n2022/01/12-16:30:45.261 5003 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/MANIFEST-000001\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/LOG	(date 1642407371839)
+@@ -1,2 +1,3 @@
+-2022/01/12-16:30:45.107 5003 Creating DB /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb since it was missing.
+-2022/01/12-16:30:45.261 5003 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/MANIFEST-000001
++2022/01/12-18:54:39.042 5303 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.OZlYX7/flutter_tools_chrome_device.JNNWQh/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/MANIFEST-000001
++2022/01/12-18:54:39.079 5303 Recovering log #3
++2022/01/12-18:54:39.090 5303 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.OZlYX7/flutter_tools_chrome_device.JNNWQh/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Local Storage/leveldb/000003.log 
+Index: .dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:35.964 13b03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Sync Data/LevelDB/MANIFEST-000001\n2022/01/12-19:07:36.022 13b03 Recovering log #3\n2022/01/12-19:07:36.023 13b03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Sync Data/LevelDB/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG.old	(date 1642407371868)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:35.964 13b03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Sync Data/LevelDB/MANIFEST-000001
+-2022/01/12-19:07:36.022 13b03 Recovering log #3
+-2022/01/12-19:07:36.023 13b03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Sync Data/LevelDB/000003.log 
++2022/01/17-10:13:00.222 bf03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/Sync Data/LevelDB/MANIFEST-000001
++2022/01/17-10:13:00.222 bf03 Recovering log #3
++2022/01/17-10:13:00.222 bf03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/Sync Data/LevelDB/000003.log 
+Index: .dart_tool/chrome-device/Default/Extension Scripts/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:35.961 ef03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension Scripts/MANIFEST-000001\n2022/01/12-19:07:36.010 ef03 Recovering log #3\n2022/01/12-19:07:36.011 ef03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension Scripts/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Extension Scripts/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Extension Scripts/LOG.old	(date 1642407371764)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:35.961 ef03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension Scripts/MANIFEST-000001
+-2022/01/12-19:07:36.010 ef03 Recovering log #3
+-2022/01/12-19:07:36.011 ef03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Extension Scripts/000003.log 
++2022/01/17-10:31:12.645 13e03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Extension Scripts/MANIFEST-000001
++2022/01/17-10:31:12.645 13e03 Recovering log #3
++2022/01/17-10:31:12.645 13e03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Extension Scripts/000003.log 
+Index: .dart_tool/chrome-device/Default/Extension State/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:40.354 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension State/MANIFEST-000001\n2022/01/17-11:39:40.357 be03 Recovering log #3\n2022/01/17-11:39:40.358 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension State/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Extension State/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Extension State/LOG	(date 1642407371844)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:40.354 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension State/MANIFEST-000001
+-2022/01/17-11:39:40.357 be03 Recovering log #3
+-2022/01/17-11:39:40.358 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension State/000003.log 
++2022/01/17-11:17:03.037 fb03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Extension State/MANIFEST-000001
++2022/01/17-11:17:03.037 fb03 Recovering log #3
++2022/01/17-11:17:03.037 fb03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Extension State/000003.log 
+Index: .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-16:31:00.433 2b07 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/MANIFEST-000001\n2022/01/12-16:31:00.436 2b07 Recovering log #3\n2022/01/12-16:31:00.437 2b07 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/LOG	(date 1642407371820)
+@@ -1,3 +1,3 @@
+-2022/01/12-16:31:00.433 2b07 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/MANIFEST-000001
+-2022/01/12-16:31:00.436 2b07 Recovering log #3
+-2022/01/12-16:31:00.437 2b07 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.Vn6eXO/flutter_tools_chrome_device.51SqKC/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/000003.log 
++2022/01/12-18:54:55.809 4c03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.OZlYX7/flutter_tools_chrome_device.JNNWQh/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/MANIFEST-000001
++2022/01/12-18:54:55.818 4c03 Recovering log #3
++2022/01/12-18:54:55.821 4c03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.OZlYX7/flutter_tools_chrome_device.JNNWQh/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/000003.log 
+Index: .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/CURRENT
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>MANIFEST-000010\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/CURRENT	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/CURRENT	(date 1642407371870)
+@@ -1,1 +1,1 @@
+-MANIFEST-000010
++MANIFEST-000004
+Index: .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:47.872 8e03 Recovering log #9\n2022/01/17-11:39:47.937 8e03 Delete type=0 #7\n2022/01/17-11:39:47.937 8e03 Delete type=0 #5\n2022/01/17-11:39:47.937 8e03 Delete type=0 #3\n2022/01/17-11:39:47.937 8e03 Delete type=3 #8\n2022/01/17-11:39:47.938 8e03 Delete type=3 #6\n2022/01/17-11:39:47.938 8e03 Delete type=3 #4\n2022/01/17-11:39:47.938 8e03 Delete type=3 #2\n2022/01/17-11:39:47.938 8e03 Delete type=0 #9\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/LOG	(date 1642407371870)
+@@ -1,9 +1,3 @@
+-2022/01/17-11:39:47.872 8e03 Recovering log #9
+-2022/01/17-11:39:47.937 8e03 Delete type=0 #7
+-2022/01/17-11:39:47.937 8e03 Delete type=0 #5
+-2022/01/17-11:39:47.937 8e03 Delete type=0 #3
+-2022/01/17-11:39:47.937 8e03 Delete type=3 #8
+-2022/01/17-11:39:47.938 8e03 Delete type=3 #6
+-2022/01/17-11:39:47.938 8e03 Delete type=3 #4
+-2022/01/17-11:39:47.938 8e03 Delete type=3 #2
+-2022/01/17-11:39:47.938 8e03 Delete type=0 #9
++2022/01/17-11:18:03.110 10307 Recovering log #3
++2022/01/17-11:18:03.137 10307 Delete type=0 #3
++2022/01/17-11:18:03.137 10307 Delete type=3 #2
+Index: .dart_tool/chrome-device/Default/Service Worker/Database/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:36.861 de03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Service Worker/Database/MANIFEST-000001\n2022/01/12-19:07:36.867 de03 Recovering log #3\n2022/01/12-19:07:36.867 de03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Service Worker/Database/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Service Worker/Database/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Service Worker/Database/LOG.old	(date 1642407371784)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:36.861 de03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Service Worker/Database/MANIFEST-000001
+-2022/01/12-19:07:36.867 de03 Recovering log #3
+-2022/01/12-19:07:36.867 de03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Service Worker/Database/000003.log 
++2022/01/17-10:31:13.508 e403 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Service Worker/Database/MANIFEST-000001
++2022/01/17-10:31:13.508 e403 Recovering log #3
++2022/01/17-10:31:13.508 e403 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Service Worker/Database/000003.log 
+Index: .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-15:35:59.140 4f03 Creating DB /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.wxepto/flutter_tools_chrome_device.nweaWd/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage since it was missing.\n2022/01/12-15:35:59.169 4f03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.wxepto/flutter_tools_chrome_device.nweaWd/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/MANIFEST-000001\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/LOG.old	(date 1642407371821)
+@@ -1,2 +1,3 @@
+-2022/01/12-15:35:59.140 4f03 Creating DB /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.wxepto/flutter_tools_chrome_device.nweaWd/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage since it was missing.
+-2022/01/12-15:35:59.169 4f03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.wxepto/flutter_tools_chrome_device.nweaWd/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/MANIFEST-000001
++2022/01/12-17:00:02.187 2d03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.h790cP/flutter_tools_chrome_device.lq3Nhq/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/MANIFEST-000001
++2022/01/12-17:00:02.190 2d03 Recovering log #3
++2022/01/12-17:00:02.209 2d03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.h790cP/flutter_tools_chrome_device.lq3Nhq/Default/Storage/ext/gfdkimpbcpahaombhbimeihdjnejgicl/def/Session Storage/000003.log 
+Index: .dart_tool/chrome-device/Default/Local Storage/leveldb/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:39.448 5207 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Local Storage/leveldb/MANIFEST-000001\n2022/01/17-11:39:39.456 5207 Recovering log #3\n2022/01/17-11:39:39.459 5207 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Local Storage/leveldb/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Local Storage/leveldb/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Local Storage/leveldb/LOG	(date 1642407371876)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:39.448 5207 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Local Storage/leveldb/MANIFEST-000001
+-2022/01/17-11:39:39.456 5207 Recovering log #3
+-2022/01/17-11:39:39.459 5207 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Local Storage/leveldb/000003.log 
++2022/01/17-11:17:02.343 5003 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Local Storage/leveldb/MANIFEST-000001
++2022/01/17-11:17:02.345 5003 Recovering log #3
++2022/01/17-11:17:02.346 5003 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Local Storage/leveldb/000003.log 
+Index: .dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:36.968 8903 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/metadata/MANIFEST-000001\n2022/01/12-19:07:36.972 8903 Recovering log #3\n2022/01/12-19:07:36.973 8903 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/metadata/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG.old	(date 1642407371859)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:36.968 8903 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/metadata/MANIFEST-000001
+-2022/01/12-19:07:36.972 8903 Recovering log #3
+-2022/01/12-19:07:36.973 8903 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/shared_proto_db/metadata/000003.log 
++2022/01/17-10:13:01.310 10503 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/shared_proto_db/metadata/MANIFEST-000001
++2022/01/17-10:13:01.310 10503 Recovering log #3
++2022/01/17-10:13:01.310 10503 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/shared_proto_db/metadata/000003.log 
+Index: .dart_tool/chrome-device/Default/Session Storage/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:39.448 2f03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Session Storage/MANIFEST-000001\n2022/01/17-11:39:39.454 2f03 Recovering log #3\n2022/01/17-11:39:39.457 2f03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Session Storage/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Session Storage/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Session Storage/LOG	(date 1642407371691)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:39.448 2f03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Session Storage/MANIFEST-000001
+-2022/01/17-11:39:39.454 2f03 Recovering log #3
+-2022/01/17-11:39:39.457 2f03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Session Storage/000003.log 
++2022/01/17-10:31:12.842 2e03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Session Storage/MANIFEST-000001
++2022/01/17-10:31:12.846 2e03 Recovering log #3
++2022/01/17-10:31:12.847 2e03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Session Storage/000003.log 
+Index: .dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:35.991 de03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Site Characteristics Database/MANIFEST-000001\n2022/01/12-19:07:36.044 de03 Recovering log #3\n2022/01/12-19:07:36.045 de03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Site Characteristics Database/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old	(date 1642407371750)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:35.991 de03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Site Characteristics Database/MANIFEST-000001
+-2022/01/12-19:07:36.044 de03 Recovering log #3
+-2022/01/12-19:07:36.045 de03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Site Characteristics Database/000003.log 
++2022/01/17-10:31:12.626 bd03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Site Characteristics Database/MANIFEST-000001
++2022/01/17-10:31:12.626 bd03 Recovering log #3
++2022/01/17-10:31:12.626 bd03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/Site Characteristics Database/000003.log 
+Index: .dart_tool/chrome-device/Default/shared_proto_db/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:40.410 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/MANIFEST-000001\n2022/01/17-11:39:40.413 be03 Recovering log #3\n2022/01/17-11:39:40.413 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/shared_proto_db/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/shared_proto_db/LOG	(date 1642407371856)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:40.410 be03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/MANIFEST-000001
+-2022/01/17-11:39:40.413 be03 Recovering log #3
+-2022/01/17-11:39:40.413 be03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/shared_proto_db/000003.log 
++2022/01/17-11:17:03.092 fe03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/shared_proto_db/MANIFEST-000001
++2022/01/17-11:17:03.092 fe03 Recovering log #3
++2022/01/17-11:17:03.093 fe03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/shared_proto_db/000003.log 
+Index: .dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:43.569 6d03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/GCM Store/Encryption/MANIFEST-000001\n2022/01/12-19:07:43.571 6d03 Recovering log #3\n2022/01/12-19:07:43.572 6d03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/GCM Store/Encryption/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old	(date 1642407371729)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:43.569 6d03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/GCM Store/Encryption/MANIFEST-000001
+-2022/01/12-19:07:43.571 6d03 Recovering log #3
+-2022/01/12-19:07:43.572 6d03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/GCM Store/Encryption/000003.log 
++2022/01/17-10:31:19.033 7703 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/GCM Store/Encryption/MANIFEST-000001
++2022/01/17-10:31:19.034 7703 Recovering log #3
++2022/01/17-10:31:19.034 7703 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.NOarig/flutter_tools_chrome_device.5WeDaf/Default/GCM Store/Encryption/000003.log 
+Index: .dart_tool/chrome-device/Default/Secure Preferences
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"extensions\":{\"settings\":{\"ahfgeienlihckogmohjhadlkjgocpleb\":{\"active_permissions\":{\"api\":[\"management\",\"system.display\",\"system.storage\",\"webstorePrivate\",\"system.cpu\",\"system.memory\",\"system.network\"],\"manifest_permissions\":[]},\"app_launcher_ordinal\":\"t\",\"commands\":{},\"content_settings\":[],\"creation_flags\":1,\"events\":[],\"from_webstore\":false,\"incognito_content_settings\":[],\"incognito_preferences\":{},\"install_time\":\"13286458843963424\",\"location\":5,\"manifest\":{\"app\":{\"launch\":{\"web_url\":\"https://chrome.google.com/webstore\"},\"urls\":[\"https://chrome.google.com/webstore\"]},\"description\":\"Discover great apps, games, extensions and themes for Google Chrome.\",\"icons\":{\"128\":\"webstore_icon_128.png\",\"16\":\"webstore_icon_16.png\"},\"key\":\"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtl3tO0osjuzRsf6xtD2SKxPlTfuoy7AWoObysitBPvH5fE1NaAA1/2JkPWkVDhdLBWLaIBPYeXbzlHp3y4Vv/4XG+aN5qFE3z+1RU/NqkzVYHtIpVScf3DjTYtKVL66mzVGijSoAIwbFCC3LpGdaoe6Q1rSRDp76wR6jjFzsYwQIDAQAB\",\"name\":\"Web Store\",\"permissions\":[\"webstorePrivate\",\"management\",\"system.cpu\",\"system.display\",\"system.memory\",\"system.network\",\"system.storage\"],\"version\":\"0.2\"},\"needs_sync\":true,\"page_ordinal\":\"n\",\"path\":\"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/web_store\",\"preferences\":{},\"regular_only_preferences\":{},\"state\":1,\"was_installed_by_default\":false,\"was_installed_by_oem\":false},\"gfdkimpbcpahaombhbimeihdjnejgicl\":{\"active_permissions\":{\"api\":[\"feedbackPrivate\"],\"explicit_host\":[\"chrome://resources/*\"],\"manifest_permissions\":[]},\"commands\":{},\"content_settings\":[],\"creation_flags\":1,\"events\":[\"feedbackPrivate.onFeedbackRequested\"],\"from_webstore\":false,\"incognito_content_settings\":[],\"incognito_preferences\":{},\"install_time\":\"13286458843966635\",\"location\":5,\"manifest\":{\"app\":{\"background\":{\"scripts\":[\"js/event_handler.js\"]},\"content_security_policy\":\"default-src 'none'; script-src 'self' blob: filesystem: chrome://resources; style-src 'unsafe-inline' blob: chrome: file: filesystem: data: *; img-src * blob: chrome: file: filesystem: data:; media-src 'self' blob: filesystem:\"},\"description\":\"Send Feedback to Google\",\"display_in_launcher\":false,\"display_in_new_tab_page\":false,\"externally_connectable\":{\"ids\":[\"*\"],\"matches\":[\"chrome://file-manager/*\"]},\"icons\":{\"192\":\"images/icon192.png\",\"48\":\"images/icon48.png\"},\"incognito\":\"split\",\"key\":\"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMZElzFX2J1g1nRQ/8S3rg/1CjFyDltWOxQg+9M8aVgNVxbutEWFQz+oQzIP9BB67mJifULgiv12ToFKsae4NpEUR8sPZjiKDIHumc6pUdixOm8SJ5Rs16SMR6+VYxFUjlVW+5CA3IILptmNBxgpfyqoK0qRpBDIhGk1KDEZ4zqQIDAQAB\",\"manifest_version\":2,\"name\":\"Feedback\",\"permissions\":[\"feedbackPrivate\",\"chrome://resources/\"],\"version\":\"1.0\"},\"path\":\"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/feedback\",\"preferences\":{},\"regular_only_preferences\":{},\"running\":false,\"state\":1,\"was_installed_by_default\":false,\"was_installed_by_oem\":false},\"kmendfapggjehodndflmmgagdbamhnfd\":{\"active_permissions\":{\"api\":[\"cryptotokenPrivate\",\"externally_connectable.all_urls\",\"tabs\"],\"explicit_host\":[\"http://*/*\",\"https://*/*\"],\"manifest_permissions\":[]},\"commands\":{},\"content_settings\":[],\"creation_flags\":1,\"events\":[\"runtime.onConnectExternal\"],\"from_webstore\":false,\"incognito_content_settings\":[],\"incognito_preferences\":{},\"install_time\":\"13286458843968852\",\"location\":5,\"manifest\":{\"background\":{\"persistent\":false,\"scripts\":[\"util.js\",\"b64.js\",\"cbor.js\",\"sha256.js\",\"timer.js\",\"countdown.js\",\"countdowntimer.js\",\"devicestatuscodes.js\",\"approvedorigins.js\",\"errorcodes.js\",\"webrequest.js\",\"messagetypes.js\",\"factoryregistry.js\",\"requesthelper.js\",\"asn1.js\",\"enroller.js\",\"requestqueue.js\",\"signer.js\",\"origincheck.js\",\"textfetcher.js\",\"appid.js\",\"watchdog.js\",\"logging.js\",\"webrequestsender.js\",\"window-timer.js\",\"cryptotokenorigincheck.js\",\"cryptotokenapprovedorigins.js\",\"inherits.js\",\"individualattest.js\",\"googlecorpindividualattest.js\",\"cryptotokenbackground.js\"]},\"description\":\"CryptoToken Component Extension\",\"externally_connectable\":{\"ids\":[\"fjajfjhkeibgmiggdfehjplbhmfkialk\"],\"matches\":[\"https://*/*\"]},\"incognito\":\"split\",\"key\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7zRobvA+AVlvNqkHSSVhh1sEWsHSqz4oR/XptkDe/Cz3+gW9ZGumZ20NCHjaac8j1iiesdigp8B1LJsd/2WWv2Dbnto4f8GrQ5MVphKyQ9WJHwejEHN2K4vzrTcwaXqv5BSTXwxlxS/mXCmXskTfryKTLuYrcHEWK8fCHb+0gvr8b/kvsi75A1aMmb6nUnFJvETmCkOCPNX5CHTdy634Ts/x0fLhRuPlahk63rdf7agxQv5viVjQFk+tbgv6aa9kdSd11Js/RZ9yZjrFgHOBWgP4jTBqud4+HUglrzu8qynFipyNRLCZsaxhm+NItTyNgesxLdxZcwOz56KD1Q4IQIDAQAB\",\"manifest_version\":2,\"name\":\"CryptoTokenExtension\",\"permissions\":[\"cryptotokenPrivate\",\"externally_connectable.all_urls\",\"tabs\",\"https://*/*\",\"http://*/*\"],\"version\":\"0.9.74\"},\"path\":\"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/cryptotoken\",\"preferences\":{},\"regular_only_preferences\":{},\"state\":1,\"was_installed_by_default\":false,\"was_installed_by_oem\":false},\"mhjfbmdgcfjbbpaeojofohoefgiehjai\":{\"active_permissions\":{\"api\":[\"contentSettings\",\"fileSystem\",\"fileSystem.write\",\"metricsPrivate\",\"tabs\",\"resourcesPrivate\"],\"explicit_host\":[\"chrome://resources/*\"],\"manifest_permissions\":[]},\"commands\":{},\"content_settings\":[],\"creation_flags\":1,\"events\":[],\"from_webstore\":false,\"incognito_content_settings\":[],\"incognito_preferences\":{},\"install_time\":\"13286458843964275\",\"location\":5,\"manifest\":{\"content_security_policy\":\"script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources; object-src * blob: externalfile: file: filesystem: data:\",\"description\":\"\",\"incognito\":\"split\",\"key\":\"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDN6hM0rsDYGbzQPQfOygqlRtQgKUXMfnSjhIBL7LnReAVBEd7ZmKtyN2qmSasMl4HZpMhVe2rPWVVwBDl6iyNE/Kok6E6v6V3vCLGsOpQAuuNVye/3QxzIldzG/jQAdWZiyXReRVapOhZtLjGfywCvlWq7Sl/e3sbc0vWybSDI2QIDAQAB\",\"manifest_version\":2,\"mime_types\":[\"application/pdf\"],\"mime_types_handler\":\"index.html\",\"name\":\"Chrome PDF Viewer\",\"offline_enabled\":true,\"permissions\":[\"chrome://resources/\",\"contentSettings\",\"metricsPrivate\",\"resourcesPrivate\",\"tabs\",{\"fileSystem\":[\"write\"]}],\"version\":\"1\"},\"path\":\"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/pdf\",\"preferences\":{},\"regular_only_preferences\":{},\"state\":1,\"was_installed_by_default\":false,\"was_installed_by_oem\":false},\"neajdppkdcdipfabeoofebfddakdcjhd\":{\"active_permissions\":{\"api\":[\"systemPrivate\",\"ttsEngine\"],\"explicit_host\":[\"https://www.google.com/*\"],\"manifest_permissions\":[]},\"commands\":{},\"content_settings\":[],\"creation_flags\":1,\"events\":[\"ttsEngine.onPause\",\"ttsEngine.onResume\",\"ttsEngine.onSpeak\",\"ttsEngine.onStop\"],\"from_webstore\":false,\"incognito_content_settings\":[],\"incognito_preferences\":{},\"install_time\":\"13286458843968260\",\"location\":5,\"manifest\":{\"background\":{\"persistent\":false,\"scripts\":[\"tts_extension.js\"]},\"description\":\"Component extension providing speech via the Google network text-to-speech service.\",\"key\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8GSbNUMGygqQTNDMFGIjZNcwXsHLzkNkHjWbuY37PbNdSDZ4VqlVjzbWqODSe+MjELdv5Keb51IdytnoGYXBMyqKmWpUrg+RnKvQ5ibWr4MW9pyIceOIdp9GrzC1WZGgTmZismYR3AjaIpufZ7xDdQQv+XrghPWCkdVqLN+qZDA1HU+DURznkMICiDDSH2sU0egm9UbWfS218bZqzKeQDiC3OnTPlaxcbJtKUuupIm5knjze3Wo9Ae9poTDMzKgchg0VlFCv3uqox+wlD8sjXBoyBCCK9HpImdVAF1a7jpdgiUHpPeV/26oYzM9/grltwNR3bzECQgSpyXp0eyoegwIDAQAB\",\"manifest_version\":2,\"name\":\"Google Network Speech\",\"permissions\":[\"systemPrivate\",\"ttsEngine\",\"https://www.google.com/\"],\"tts_engine\":{\"voices\":[{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"de-DE\",\"remote\":true,\"voice_name\":\"Google Deutsch\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"en-US\",\"remote\":true,\"voice_name\":\"Google US English\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"en-GB\",\"remote\":true,\"voice_name\":\"Google UK English Female\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"male\",\"lang\":\"en-GB\",\"remote\":true,\"voice_name\":\"Google UK English Male\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"es-ES\",\"remote\":true,\"voice_name\":\"Google español\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"es-US\",\"remote\":true,\"voice_name\":\"Google español de Estados Unidos\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"fr-FR\",\"remote\":true,\"voice_name\":\"Google français\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"hi-IN\",\"remote\":true,\"voice_name\":\"Google हिन्दी\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"id-ID\",\"remote\":true,\"voice_name\":\"Google Bahasa Indonesia\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"it-IT\",\"remote\":true,\"voice_name\":\"Google italiano\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"ja-JP\",\"remote\":true,\"voice_name\":\"Google 日本語\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"ko-KR\",\"remote\":true,\"voice_name\":\"Google 한국의\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"nl-NL\",\"remote\":true,\"voice_name\":\"Google Nederlands\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"pl-PL\",\"remote\":true,\"voice_name\":\"Google polski\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"pt-BR\",\"remote\":true,\"voice_name\":\"Google português do Brasil\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"ru-RU\",\"remote\":true,\"voice_name\":\"Google русский\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"zh-CN\",\"remote\":true,\"voice_name\":\"Google 普通话（中国大陆）\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"zh-HK\",\"remote\":true,\"voice_name\":\"Google 粤語（香港）\"},{\"event_types\":[\"start\",\"end\",\"error\"],\"gender\":\"female\",\"lang\":\"zh-TW\",\"remote\":true,\"voice_name\":\"Google 國語（臺灣）\"}]},\"version\":\"1.0\"},\"path\":\"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/network_speech_synthesis\",\"preferences\":{},\"regular_only_preferences\":{},\"state\":1,\"was_installed_by_default\":false,\"was_installed_by_oem\":false},\"nkeimhogjdpnpccoofpliimaahmaaome\":{\"active_permissions\":{\"api\":[\"desktopCapture\",\"processes\",\"webrtcAudioPrivate\",\"webrtcDesktopCapturePrivate\",\"webrtcLoggingPrivate\",\"system.cpu\",\"enterprise.hardwarePlatform\"],\"manifest_permissions\":[]},\"commands\":{},\"content_settings\":[],\"creation_flags\":1,\"events\":[\"runtime.onConnectExternal\"],\"from_webstore\":false,\"incognito_content_settings\":[],\"incognito_preferences\":{},\"install_time\":\"13286458843966092\",\"location\":5,\"manifest\":{\"background\":{\"page\":\"background.html\",\"persistent\":false},\"externally_connectable\":{\"matches\":[\"https://*.google.com/*\"]},\"incognito\":\"split\",\"key\":\"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAQt2ZDdPfoSe/JI6ID5bgLHRCnCu9T36aYczmhw/tnv6QZB2I6WnOCMZXJZlRdqWc7w9jo4BWhYS50Vb4weMfh/I0On7VcRwJUgfAxW2cHB+EkmtI1v4v/OU24OqIa1Nmv9uRVeX0GjhQukdLNhAE6ACWooaf5kqKlCeK+1GOkQIDAQAB\",\"manifest_version\":2,\"name\":\"Google Hangouts\",\"permissions\":[\"desktopCapture\",\"enterprise.hardwarePlatform\",\"processes\",\"system.cpu\",\"webrtcAudioPrivate\",\"webrtcDesktopCapturePrivate\",\"webrtcLoggingPrivate\"],\"version\":\"1.3.16\"},\"path\":\"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/hangout_services\",\"preferences\":{},\"regular_only_preferences\":{},\"state\":1,\"was_installed_by_default\":false,\"was_installed_by_oem\":false}}},\"pinned_tabs\":[],\"protection\":{\"macs\":{\"browser\":{\"show_home_button\":\"6C0AA46ABC45313B0E44B6F77AA32FF4BC5B4E988CF7C5EB82AF29BE9AE82477\"},\"default_search_provider_data\":{\"template_url_data\":\"7E6B387E2FE6D690B21F12E70602C9EF2686A12458EF4F1508090A6A428AED1D\"},\"extensions\":{\"settings\":{\"ahfgeienlihckogmohjhadlkjgocpleb\":\"1924071EF9C5464FA4BF16491A268E8E205B445E1AECD8A03423B222F9C28211\",\"gfdkimpbcpahaombhbimeihdjnejgicl\":\"6658B98948BF3CA8DA3E17EFB7F526579A4830E199CE85A3E85751B906566222\",\"kmendfapggjehodndflmmgagdbamhnfd\":\"63162D72C17DFF2311B06EB42F31329646192B1E57DFD2729B111FC60DD3D8BC\",\"mhjfbmdgcfjbbpaeojofohoefgiehjai\":\"D63944D6AB5935743DC231EEDEBF3083F36B7E9964CE6B1B3313940134916BE9\",\"neajdppkdcdipfabeoofebfddakdcjhd\":\"B8524133A2A80DFE2732E09FC7E9E76330C7AA35D28730A4767FB7137D3E0DE3\",\"nkeimhogjdpnpccoofpliimaahmaaome\":\"D426D0CE7E1FD0E1EF89F756E72FC0C916D6EED76DA1BDF42F3129EEF747E7B0\"}},\"google\":{\"services\":{\"account_id\":\"DF6E8F33E03468969A139C715C775B480159F844D8439EE1EAC86513E66C2468\",\"last_account_id\":\"C9F15B36DBD310FF728DE440A01E58F505DB747440B1B3708930F13A0DB8EF73\",\"last_username\":\"3B903B46A421D21A30076AD3362CF4858BD13DDDD93311D4ADEF9C468C0F30B6\"}},\"homepage\":\"65406F46085E0D9B561588AECF48A90D920CA7A3C5B32A913A4B554798F17917\",\"homepage_is_newtabpage\":\"CD81C1A569D744B51B390E1A1D8F396D93589AA7282C2A3FA75F9113591DA941\",\"media\":{\"storage_id_salt\":\"51D00231E1F56BC3A39ED25E0CF60B143165D583A9E8624DB0C98F311B5D3B3C\"},\"pinned_tabs\":\"7EEDAB5BE478CD540B84B40E7E8DF2038DE896AA2D5FA31C15FAF15BDD6E114B\",\"prefs\":{\"preference_reset_time\":\"8E6E702E20DF339123566C991FDD89D14A7B5B65180435615D052BB67A0BDC11\"},\"safebrowsing\":{\"incidents_sent\":\"6D6A278B1542075F151277E5AE6830B5A6F5F431B218DA58236A5FC22C9BBFBD\"},\"search_provider_overrides\":\"E3FB3EF761B3694CE9EAF487FEA271CD390CF86DBC6AC649ADADEB52EB4A6BDB\",\"session\":{\"restore_on_startup\":\"CB8E0B748B45F406A7B993FA63DB3459F41C9780D5E3763A0B6AE8C70BD9A357\",\"startup_urls\":\"C137FF76D37DE7950BB90F343C5D52E8FD3CFEA5EFAB586F43850F6C99CE319F\"}},\"super_mac\":\"6C39D72C8CAC04AFE449DBAEAADAD4435CF7763565239110287683D2701D2A4D\"}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Secure Preferences	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Secure Preferences	(date 1642407371861)
+@@ -1,1 +1,1 @@
+-{"extensions":{"settings":{"ahfgeienlihckogmohjhadlkjgocpleb":{"active_permissions":{"api":["management","system.display","system.storage","webstorePrivate","system.cpu","system.memory","system.network"],"manifest_permissions":[]},"app_launcher_ordinal":"t","commands":{},"content_settings":[],"creation_flags":1,"events":[],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286458843963424","location":5,"manifest":{"app":{"launch":{"web_url":"https://chrome.google.com/webstore"},"urls":["https://chrome.google.com/webstore"]},"description":"Discover great apps, games, extensions and themes for Google Chrome.","icons":{"128":"webstore_icon_128.png","16":"webstore_icon_16.png"},"key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtl3tO0osjuzRsf6xtD2SKxPlTfuoy7AWoObysitBPvH5fE1NaAA1/2JkPWkVDhdLBWLaIBPYeXbzlHp3y4Vv/4XG+aN5qFE3z+1RU/NqkzVYHtIpVScf3DjTYtKVL66mzVGijSoAIwbFCC3LpGdaoe6Q1rSRDp76wR6jjFzsYwQIDAQAB","name":"Web Store","permissions":["webstorePrivate","management","system.cpu","system.display","system.memory","system.network","system.storage"],"version":"0.2"},"needs_sync":true,"page_ordinal":"n","path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/web_store","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"gfdkimpbcpahaombhbimeihdjnejgicl":{"active_permissions":{"api":["feedbackPrivate"],"explicit_host":["chrome://resources/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["feedbackPrivate.onFeedbackRequested"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286458843966635","location":5,"manifest":{"app":{"background":{"scripts":["js/event_handler.js"]},"content_security_policy":"default-src 'none'; script-src 'self' blob: filesystem: chrome://resources; style-src 'unsafe-inline' blob: chrome: file: filesystem: data: *; img-src * blob: chrome: file: filesystem: data:; media-src 'self' blob: filesystem:"},"description":"Send Feedback to Google","display_in_launcher":false,"display_in_new_tab_page":false,"externally_connectable":{"ids":["*"],"matches":["chrome://file-manager/*"]},"icons":{"192":"images/icon192.png","48":"images/icon48.png"},"incognito":"split","key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMZElzFX2J1g1nRQ/8S3rg/1CjFyDltWOxQg+9M8aVgNVxbutEWFQz+oQzIP9BB67mJifULgiv12ToFKsae4NpEUR8sPZjiKDIHumc6pUdixOm8SJ5Rs16SMR6+VYxFUjlVW+5CA3IILptmNBxgpfyqoK0qRpBDIhGk1KDEZ4zqQIDAQAB","manifest_version":2,"name":"Feedback","permissions":["feedbackPrivate","chrome://resources/"],"version":"1.0"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/feedback","preferences":{},"regular_only_preferences":{},"running":false,"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"kmendfapggjehodndflmmgagdbamhnfd":{"active_permissions":{"api":["cryptotokenPrivate","externally_connectable.all_urls","tabs"],"explicit_host":["http://*/*","https://*/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["runtime.onConnectExternal"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286458843968852","location":5,"manifest":{"background":{"persistent":false,"scripts":["util.js","b64.js","cbor.js","sha256.js","timer.js","countdown.js","countdowntimer.js","devicestatuscodes.js","approvedorigins.js","errorcodes.js","webrequest.js","messagetypes.js","factoryregistry.js","requesthelper.js","asn1.js","enroller.js","requestqueue.js","signer.js","origincheck.js","textfetcher.js","appid.js","watchdog.js","logging.js","webrequestsender.js","window-timer.js","cryptotokenorigincheck.js","cryptotokenapprovedorigins.js","inherits.js","individualattest.js","googlecorpindividualattest.js","cryptotokenbackground.js"]},"description":"CryptoToken Component Extension","externally_connectable":{"ids":["fjajfjhkeibgmiggdfehjplbhmfkialk"],"matches":["https://*/*"]},"incognito":"split","key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7zRobvA+AVlvNqkHSSVhh1sEWsHSqz4oR/XptkDe/Cz3+gW9ZGumZ20NCHjaac8j1iiesdigp8B1LJsd/2WWv2Dbnto4f8GrQ5MVphKyQ9WJHwejEHN2K4vzrTcwaXqv5BSTXwxlxS/mXCmXskTfryKTLuYrcHEWK8fCHb+0gvr8b/kvsi75A1aMmb6nUnFJvETmCkOCPNX5CHTdy634Ts/x0fLhRuPlahk63rdf7agxQv5viVjQFk+tbgv6aa9kdSd11Js/RZ9yZjrFgHOBWgP4jTBqud4+HUglrzu8qynFipyNRLCZsaxhm+NItTyNgesxLdxZcwOz56KD1Q4IQIDAQAB","manifest_version":2,"name":"CryptoTokenExtension","permissions":["cryptotokenPrivate","externally_connectable.all_urls","tabs","https://*/*","http://*/*"],"version":"0.9.74"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/cryptotoken","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"mhjfbmdgcfjbbpaeojofohoefgiehjai":{"active_permissions":{"api":["contentSettings","fileSystem","fileSystem.write","metricsPrivate","tabs","resourcesPrivate"],"explicit_host":["chrome://resources/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":[],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286458843964275","location":5,"manifest":{"content_security_policy":"script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources; object-src * blob: externalfile: file: filesystem: data:","description":"","incognito":"split","key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDN6hM0rsDYGbzQPQfOygqlRtQgKUXMfnSjhIBL7LnReAVBEd7ZmKtyN2qmSasMl4HZpMhVe2rPWVVwBDl6iyNE/Kok6E6v6V3vCLGsOpQAuuNVye/3QxzIldzG/jQAdWZiyXReRVapOhZtLjGfywCvlWq7Sl/e3sbc0vWybSDI2QIDAQAB","manifest_version":2,"mime_types":["application/pdf"],"mime_types_handler":"index.html","name":"Chrome PDF Viewer","offline_enabled":true,"permissions":["chrome://resources/","contentSettings","metricsPrivate","resourcesPrivate","tabs",{"fileSystem":["write"]}],"version":"1"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/pdf","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"neajdppkdcdipfabeoofebfddakdcjhd":{"active_permissions":{"api":["systemPrivate","ttsEngine"],"explicit_host":["https://www.google.com/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["ttsEngine.onPause","ttsEngine.onResume","ttsEngine.onSpeak","ttsEngine.onStop"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286458843968260","location":5,"manifest":{"background":{"persistent":false,"scripts":["tts_extension.js"]},"description":"Component extension providing speech via the Google network text-to-speech service.","key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8GSbNUMGygqQTNDMFGIjZNcwXsHLzkNkHjWbuY37PbNdSDZ4VqlVjzbWqODSe+MjELdv5Keb51IdytnoGYXBMyqKmWpUrg+RnKvQ5ibWr4MW9pyIceOIdp9GrzC1WZGgTmZismYR3AjaIpufZ7xDdQQv+XrghPWCkdVqLN+qZDA1HU+DURznkMICiDDSH2sU0egm9UbWfS218bZqzKeQDiC3OnTPlaxcbJtKUuupIm5knjze3Wo9Ae9poTDMzKgchg0VlFCv3uqox+wlD8sjXBoyBCCK9HpImdVAF1a7jpdgiUHpPeV/26oYzM9/grltwNR3bzECQgSpyXp0eyoegwIDAQAB","manifest_version":2,"name":"Google Network Speech","permissions":["systemPrivate","ttsEngine","https://www.google.com/"],"tts_engine":{"voices":[{"event_types":["start","end","error"],"gender":"female","lang":"de-DE","remote":true,"voice_name":"Google Deutsch"},{"event_types":["start","end","error"],"gender":"female","lang":"en-US","remote":true,"voice_name":"Google US English"},{"event_types":["start","end","error"],"gender":"female","lang":"en-GB","remote":true,"voice_name":"Google UK English Female"},{"event_types":["start","end","error"],"gender":"male","lang":"en-GB","remote":true,"voice_name":"Google UK English Male"},{"event_types":["start","end","error"],"gender":"female","lang":"es-ES","remote":true,"voice_name":"Google español"},{"event_types":["start","end","error"],"gender":"female","lang":"es-US","remote":true,"voice_name":"Google español de Estados Unidos"},{"event_types":["start","end","error"],"gender":"female","lang":"fr-FR","remote":true,"voice_name":"Google français"},{"event_types":["start","end","error"],"gender":"female","lang":"hi-IN","remote":true,"voice_name":"Google हिन्दी"},{"event_types":["start","end","error"],"gender":"female","lang":"id-ID","remote":true,"voice_name":"Google Bahasa Indonesia"},{"event_types":["start","end","error"],"gender":"female","lang":"it-IT","remote":true,"voice_name":"Google italiano"},{"event_types":["start","end","error"],"gender":"female","lang":"ja-JP","remote":true,"voice_name":"Google 日本語"},{"event_types":["start","end","error"],"gender":"female","lang":"ko-KR","remote":true,"voice_name":"Google 한국의"},{"event_types":["start","end","error"],"gender":"female","lang":"nl-NL","remote":true,"voice_name":"Google Nederlands"},{"event_types":["start","end","error"],"gender":"female","lang":"pl-PL","remote":true,"voice_name":"Google polski"},{"event_types":["start","end","error"],"gender":"female","lang":"pt-BR","remote":true,"voice_name":"Google português do Brasil"},{"event_types":["start","end","error"],"gender":"female","lang":"ru-RU","remote":true,"voice_name":"Google русский"},{"event_types":["start","end","error"],"gender":"female","lang":"zh-CN","remote":true,"voice_name":"Google 普通话（中国大陆）"},{"event_types":["start","end","error"],"gender":"female","lang":"zh-HK","remote":true,"voice_name":"Google 粤語（香港）"},{"event_types":["start","end","error"],"gender":"female","lang":"zh-TW","remote":true,"voice_name":"Google 國語（臺灣）"}]},"version":"1.0"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/network_speech_synthesis","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"nkeimhogjdpnpccoofpliimaahmaaome":{"active_permissions":{"api":["desktopCapture","processes","webrtcAudioPrivate","webrtcDesktopCapturePrivate","webrtcLoggingPrivate","system.cpu","enterprise.hardwarePlatform"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["runtime.onConnectExternal"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286458843966092","location":5,"manifest":{"background":{"page":"background.html","persistent":false},"externally_connectable":{"matches":["https://*.google.com/*"]},"incognito":"split","key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAQt2ZDdPfoSe/JI6ID5bgLHRCnCu9T36aYczmhw/tnv6QZB2I6WnOCMZXJZlRdqWc7w9jo4BWhYS50Vb4weMfh/I0On7VcRwJUgfAxW2cHB+EkmtI1v4v/OU24OqIa1Nmv9uRVeX0GjhQukdLNhAE6ACWooaf5kqKlCeK+1GOkQIDAQAB","manifest_version":2,"name":"Google Hangouts","permissions":["desktopCapture","enterprise.hardwarePlatform","processes","system.cpu","webrtcAudioPrivate","webrtcDesktopCapturePrivate","webrtcLoggingPrivate"],"version":"1.3.16"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/hangout_services","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false}}},"pinned_tabs":[],"protection":{"macs":{"browser":{"show_home_button":"6C0AA46ABC45313B0E44B6F77AA32FF4BC5B4E988CF7C5EB82AF29BE9AE82477"},"default_search_provider_data":{"template_url_data":"7E6B387E2FE6D690B21F12E70602C9EF2686A12458EF4F1508090A6A428AED1D"},"extensions":{"settings":{"ahfgeienlihckogmohjhadlkjgocpleb":"1924071EF9C5464FA4BF16491A268E8E205B445E1AECD8A03423B222F9C28211","gfdkimpbcpahaombhbimeihdjnejgicl":"6658B98948BF3CA8DA3E17EFB7F526579A4830E199CE85A3E85751B906566222","kmendfapggjehodndflmmgagdbamhnfd":"63162D72C17DFF2311B06EB42F31329646192B1E57DFD2729B111FC60DD3D8BC","mhjfbmdgcfjbbpaeojofohoefgiehjai":"D63944D6AB5935743DC231EEDEBF3083F36B7E9964CE6B1B3313940134916BE9","neajdppkdcdipfabeoofebfddakdcjhd":"B8524133A2A80DFE2732E09FC7E9E76330C7AA35D28730A4767FB7137D3E0DE3","nkeimhogjdpnpccoofpliimaahmaaome":"D426D0CE7E1FD0E1EF89F756E72FC0C916D6EED76DA1BDF42F3129EEF747E7B0"}},"google":{"services":{"account_id":"DF6E8F33E03468969A139C715C775B480159F844D8439EE1EAC86513E66C2468","last_account_id":"C9F15B36DBD310FF728DE440A01E58F505DB747440B1B3708930F13A0DB8EF73","last_username":"3B903B46A421D21A30076AD3362CF4858BD13DDDD93311D4ADEF9C468C0F30B6"}},"homepage":"65406F46085E0D9B561588AECF48A90D920CA7A3C5B32A913A4B554798F17917","homepage_is_newtabpage":"CD81C1A569D744B51B390E1A1D8F396D93589AA7282C2A3FA75F9113591DA941","media":{"storage_id_salt":"51D00231E1F56BC3A39ED25E0CF60B143165D583A9E8624DB0C98F311B5D3B3C"},"pinned_tabs":"7EEDAB5BE478CD540B84B40E7E8DF2038DE896AA2D5FA31C15FAF15BDD6E114B","prefs":{"preference_reset_time":"8E6E702E20DF339123566C991FDD89D14A7B5B65180435615D052BB67A0BDC11"},"safebrowsing":{"incidents_sent":"6D6A278B1542075F151277E5AE6830B5A6F5F431B218DA58236A5FC22C9BBFBD"},"search_provider_overrides":"E3FB3EF761B3694CE9EAF487FEA271CD390CF86DBC6AC649ADADEB52EB4A6BDB","session":{"restore_on_startup":"CB8E0B748B45F406A7B993FA63DB3459F41C9780D5E3763A0B6AE8C70BD9A357","startup_urls":"C137FF76D37DE7950BB90F343C5D52E8FD3CFEA5EFAB586F43850F6C99CE319F"}},"super_mac":"6C39D72C8CAC04AFE449DBAEAADAD4435CF7763565239110287683D2701D2A4D"}}
+\ No newline at end of file
++{"extensions":{"settings":{"ahfgeienlihckogmohjhadlkjgocpleb":{"active_permissions":{"api":["management","system.display","system.storage","webstorePrivate","system.cpu","system.memory","system.network"],"manifest_permissions":[]},"app_launcher_ordinal":"t","commands":{},"content_settings":[],"creation_flags":1,"events":[],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286467477998207","location":5,"manifest":{"app":{"launch":{"web_url":"https://chrome.google.com/webstore"},"urls":["https://chrome.google.com/webstore"]},"description":"Discover great apps, games, extensions and themes for Google Chrome.","icons":{"128":"webstore_icon_128.png","16":"webstore_icon_16.png"},"key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtl3tO0osjuzRsf6xtD2SKxPlTfuoy7AWoObysitBPvH5fE1NaAA1/2JkPWkVDhdLBWLaIBPYeXbzlHp3y4Vv/4XG+aN5qFE3z+1RU/NqkzVYHtIpVScf3DjTYtKVL66mzVGijSoAIwbFCC3LpGdaoe6Q1rSRDp76wR6jjFzsYwQIDAQAB","name":"Web Store","permissions":["webstorePrivate","management","system.cpu","system.display","system.memory","system.network","system.storage"],"version":"0.2"},"needs_sync":true,"page_ordinal":"n","path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/web_store","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"gfdkimpbcpahaombhbimeihdjnejgicl":{"active_permissions":{"api":["feedbackPrivate"],"explicit_host":["chrome://resources/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["feedbackPrivate.onFeedbackRequested"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286467478001872","location":5,"manifest":{"app":{"background":{"scripts":["js/event_handler.js"]},"content_security_policy":"default-src 'none'; script-src 'self' blob: filesystem: chrome://resources; style-src 'unsafe-inline' blob: chrome: file: filesystem: data: *; img-src * blob: chrome: file: filesystem: data:; media-src 'self' blob: filesystem:"},"description":"Send Feedback to Google","display_in_launcher":false,"display_in_new_tab_page":false,"externally_connectable":{"ids":["*"],"matches":["chrome://file-manager/*"]},"icons":{"192":"images/icon192.png","48":"images/icon48.png"},"incognito":"split","key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMZElzFX2J1g1nRQ/8S3rg/1CjFyDltWOxQg+9M8aVgNVxbutEWFQz+oQzIP9BB67mJifULgiv12ToFKsae4NpEUR8sPZjiKDIHumc6pUdixOm8SJ5Rs16SMR6+VYxFUjlVW+5CA3IILptmNBxgpfyqoK0qRpBDIhGk1KDEZ4zqQIDAQAB","manifest_version":2,"name":"Feedback","permissions":["feedbackPrivate","chrome://resources/"],"version":"1.0"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/feedback","preferences":{},"regular_only_preferences":{},"running":false,"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"kmendfapggjehodndflmmgagdbamhnfd":{"active_permissions":{"api":["cryptotokenPrivate","externally_connectable.all_urls","tabs"],"explicit_host":["http://*/*","https://*/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["runtime.onConnectExternal"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286467478004149","location":5,"manifest":{"background":{"persistent":false,"scripts":["util.js","b64.js","cbor.js","sha256.js","timer.js","countdown.js","countdowntimer.js","devicestatuscodes.js","approvedorigins.js","errorcodes.js","webrequest.js","messagetypes.js","factoryregistry.js","requesthelper.js","asn1.js","enroller.js","requestqueue.js","signer.js","origincheck.js","textfetcher.js","appid.js","watchdog.js","logging.js","webrequestsender.js","window-timer.js","cryptotokenorigincheck.js","cryptotokenapprovedorigins.js","inherits.js","individualattest.js","googlecorpindividualattest.js","cryptotokenbackground.js"]},"description":"CryptoToken Component Extension","externally_connectable":{"ids":["fjajfjhkeibgmiggdfehjplbhmfkialk"],"matches":["https://*/*"]},"incognito":"split","key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7zRobvA+AVlvNqkHSSVhh1sEWsHSqz4oR/XptkDe/Cz3+gW9ZGumZ20NCHjaac8j1iiesdigp8B1LJsd/2WWv2Dbnto4f8GrQ5MVphKyQ9WJHwejEHN2K4vzrTcwaXqv5BSTXwxlxS/mXCmXskTfryKTLuYrcHEWK8fCHb+0gvr8b/kvsi75A1aMmb6nUnFJvETmCkOCPNX5CHTdy634Ts/x0fLhRuPlahk63rdf7agxQv5viVjQFk+tbgv6aa9kdSd11Js/RZ9yZjrFgHOBWgP4jTBqud4+HUglrzu8qynFipyNRLCZsaxhm+NItTyNgesxLdxZcwOz56KD1Q4IQIDAQAB","manifest_version":2,"name":"CryptoTokenExtension","permissions":["cryptotokenPrivate","externally_connectable.all_urls","tabs","https://*/*","http://*/*"],"version":"0.9.74"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/cryptotoken","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"mhjfbmdgcfjbbpaeojofohoefgiehjai":{"active_permissions":{"api":["contentSettings","fileSystem","fileSystem.write","metricsPrivate","tabs","resourcesPrivate"],"explicit_host":["chrome://resources/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":[],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286467477999194","location":5,"manifest":{"content_security_policy":"script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources; object-src * blob: externalfile: file: filesystem: data:","description":"","incognito":"split","key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDN6hM0rsDYGbzQPQfOygqlRtQgKUXMfnSjhIBL7LnReAVBEd7ZmKtyN2qmSasMl4HZpMhVe2rPWVVwBDl6iyNE/Kok6E6v6V3vCLGsOpQAuuNVye/3QxzIldzG/jQAdWZiyXReRVapOhZtLjGfywCvlWq7Sl/e3sbc0vWybSDI2QIDAQAB","manifest_version":2,"mime_types":["application/pdf"],"mime_types_handler":"index.html","name":"Chrome PDF Viewer","offline_enabled":true,"permissions":["chrome://resources/","contentSettings","metricsPrivate","resourcesPrivate","tabs",{"fileSystem":["write"]}],"version":"1"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/pdf","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"neajdppkdcdipfabeoofebfddakdcjhd":{"active_permissions":{"api":["systemPrivate","ttsEngine"],"explicit_host":["https://www.google.com/*"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["ttsEngine.onPause","ttsEngine.onResume","ttsEngine.onSpeak","ttsEngine.onStop"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286467478003348","location":5,"manifest":{"background":{"persistent":false,"scripts":["tts_extension.js"]},"description":"Component extension providing speech via the Google network text-to-speech service.","key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8GSbNUMGygqQTNDMFGIjZNcwXsHLzkNkHjWbuY37PbNdSDZ4VqlVjzbWqODSe+MjELdv5Keb51IdytnoGYXBMyqKmWpUrg+RnKvQ5ibWr4MW9pyIceOIdp9GrzC1WZGgTmZismYR3AjaIpufZ7xDdQQv+XrghPWCkdVqLN+qZDA1HU+DURznkMICiDDSH2sU0egm9UbWfS218bZqzKeQDiC3OnTPlaxcbJtKUuupIm5knjze3Wo9Ae9poTDMzKgchg0VlFCv3uqox+wlD8sjXBoyBCCK9HpImdVAF1a7jpdgiUHpPeV/26oYzM9/grltwNR3bzECQgSpyXp0eyoegwIDAQAB","manifest_version":2,"name":"Google Network Speech","permissions":["systemPrivate","ttsEngine","https://www.google.com/"],"tts_engine":{"voices":[{"event_types":["start","end","error"],"gender":"female","lang":"de-DE","remote":true,"voice_name":"Google Deutsch"},{"event_types":["start","end","error"],"gender":"female","lang":"en-US","remote":true,"voice_name":"Google US English"},{"event_types":["start","end","error"],"gender":"female","lang":"en-GB","remote":true,"voice_name":"Google UK English Female"},{"event_types":["start","end","error"],"gender":"male","lang":"en-GB","remote":true,"voice_name":"Google UK English Male"},{"event_types":["start","end","error"],"gender":"female","lang":"es-ES","remote":true,"voice_name":"Google español"},{"event_types":["start","end","error"],"gender":"female","lang":"es-US","remote":true,"voice_name":"Google español de Estados Unidos"},{"event_types":["start","end","error"],"gender":"female","lang":"fr-FR","remote":true,"voice_name":"Google français"},{"event_types":["start","end","error"],"gender":"female","lang":"hi-IN","remote":true,"voice_name":"Google हिन्दी"},{"event_types":["start","end","error"],"gender":"female","lang":"id-ID","remote":true,"voice_name":"Google Bahasa Indonesia"},{"event_types":["start","end","error"],"gender":"female","lang":"it-IT","remote":true,"voice_name":"Google italiano"},{"event_types":["start","end","error"],"gender":"female","lang":"ja-JP","remote":true,"voice_name":"Google 日本語"},{"event_types":["start","end","error"],"gender":"female","lang":"ko-KR","remote":true,"voice_name":"Google 한국의"},{"event_types":["start","end","error"],"gender":"female","lang":"nl-NL","remote":true,"voice_name":"Google Nederlands"},{"event_types":["start","end","error"],"gender":"female","lang":"pl-PL","remote":true,"voice_name":"Google polski"},{"event_types":["start","end","error"],"gender":"female","lang":"pt-BR","remote":true,"voice_name":"Google português do Brasil"},{"event_types":["start","end","error"],"gender":"female","lang":"ru-RU","remote":true,"voice_name":"Google русский"},{"event_types":["start","end","error"],"gender":"female","lang":"zh-CN","remote":true,"voice_name":"Google 普通话（中国大陆）"},{"event_types":["start","end","error"],"gender":"female","lang":"zh-HK","remote":true,"voice_name":"Google 粤語（香港）"},{"event_types":["start","end","error"],"gender":"female","lang":"zh-TW","remote":true,"voice_name":"Google 國語（臺灣）"}]},"version":"1.0"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/network_speech_synthesis","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false},"nkeimhogjdpnpccoofpliimaahmaaome":{"active_permissions":{"api":["desktopCapture","processes","webrtcAudioPrivate","webrtcDesktopCapturePrivate","webrtcLoggingPrivate","system.cpu","enterprise.hardwarePlatform"],"manifest_permissions":[]},"commands":{},"content_settings":[],"creation_flags":1,"events":["runtime.onConnectExternal"],"from_webstore":false,"incognito_content_settings":[],"incognito_preferences":{},"install_time":"13286467478001332","location":5,"manifest":{"background":{"page":"background.html","persistent":false},"externally_connectable":{"matches":["https://*.google.com/*"]},"incognito":"split","key":"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAQt2ZDdPfoSe/JI6ID5bgLHRCnCu9T36aYczmhw/tnv6QZB2I6WnOCMZXJZlRdqWc7w9jo4BWhYS50Vb4weMfh/I0On7VcRwJUgfAxW2cHB+EkmtI1v4v/OU24OqIa1Nmv9uRVeX0GjhQukdLNhAE6ACWooaf5kqKlCeK+1GOkQIDAQAB","manifest_version":2,"name":"Google Hangouts","permissions":["desktopCapture","enterprise.hardwarePlatform","processes","system.cpu","webrtcAudioPrivate","webrtcDesktopCapturePrivate","webrtcLoggingPrivate"],"version":"1.3.16"},"path":"/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/97.0.4692.71/Resources/hangout_services","preferences":{},"regular_only_preferences":{},"state":1,"was_installed_by_default":false,"was_installed_by_oem":false}}},"protection":{"macs":{"browser":{"show_home_button":"7A6B9349CFDCD5820DC8220FFB0304EC5C5DCA3E533B4E7D7EBB5743C2773383"},"default_search_provider_data":{"template_url_data":"2516DB3C1E20ABAAEF67BF4D2075510EE0167FDF77780F26443C41528ACC14C1"},"extensions":{"settings":{"ahfgeienlihckogmohjhadlkjgocpleb":"1F6563787992DAE896341114AC24A6F2B7B8036C30D9DB130B1C1E5FA97C32E7","gfdkimpbcpahaombhbimeihdjnejgicl":"82BB0C481C504B0447FCBA8F15E6FC2367E3DBD97CD1E225044436AF56AE576E","kmendfapggjehodndflmmgagdbamhnfd":"2A753882A17F52F6EE46E25A5557DCBA93AF32CF9DCB730256E260BC7C7CA33F","mhjfbmdgcfjbbpaeojofohoefgiehjai":"31C4466427C0FDCC9D0F34E778ECB5B463F57F1912EFFF91E90275C572C675F8","neajdppkdcdipfabeoofebfddakdcjhd":"744AD0A0CCB20EB007CA7D56065540A08A85827709FF4C065A6A34391E09B1F8","nkeimhogjdpnpccoofpliimaahmaaome":"9D62B38EEA6CEC46468D47CC312607CE48193CBBC29E47B49704E9B2429DAA84"}},"google":{"services":{"account_id":"73FE3B7D774D588A759ABB6C60F55138B468FD37E96DCE8331D7E5BB654F381A","last_account_id":"F36AD0DE1275A4D210CD13FB3D11E573CA76B24FFFE059707D1C2DC9A530F3EC","last_username":"2D54368A24D74EDEA9FB88AF2DEA1883DB5C686D1BBE908AF3AEF747E49CEAC5"}},"homepage":"7E8425F96683A717905981023D0270154D980F76B58236CEAD6D0C94B9A0AFA5","homepage_is_newtabpage":"546974401B52C058B61111D4D3B57DA1D8ED28A02A0390FA998EBA519CDBCCFE","media":{"storage_id_salt":"1D6B6288AE5BD433278F611CE74C59133CAF8598C98AB026F1358D385ED5E297"},"pinned_tabs":"387A48641FD07C0C44CD342B2C5A2920D3F02CF33B1AA9EAF6163A7B664CF23A","prefs":{"preference_reset_time":"640EA726E517D77875A592405D9A67BB8D26F7DC889905A8CF5A64A17093B2BB"},"safebrowsing":{"incidents_sent":"16E8A74650BE513F61E06AF00BCC2F9B10255BEA0FE0A11186D892C5C294A242"},"search_provider_overrides":"96276FD779F220D8E8747BBF78808FFBEEA94FF52599067E2DFFE29EB11B19BB","session":{"restore_on_startup":"E947BDFB74931D6842B3C1D46938E3F06A6EC61CD36AB5E5775CEDCB8069DEBC","startup_urls":"C4889C3AFF12AED017A09F9738829A69756C73E1DA5E6236A2782952B87A4FCE"}},"super_mac":"2934A3BDDF1FDBEA05190D835DA35D794F6466D7B59CCBA0AEC98C0689482676"}}
+\ No newline at end of file
+Index: .dart_tool/chrome-device/Default/Session Storage/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:36.218 5207 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Session Storage/MANIFEST-000001\n2022/01/12-19:07:36.241 5207 Recovering log #3\n2022/01/12-19:07:36.243 5207 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Session Storage/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Session Storage/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Session Storage/LOG.old	(date 1642407371695)
+@@ -1,3 +1,3 @@
+-2022/01/12-19:07:36.218 5207 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Session Storage/MANIFEST-000001
+-2022/01/12-19:07:36.241 5207 Recovering log #3
+-2022/01/12-19:07:36.243 5207 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.dzpT4I/flutter_tools_chrome_device.AxmGKO/Default/Session Storage/000003.log 
++2022/01/12-18:54:55.796 5303 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.OZlYX7/flutter_tools_chrome_device.JNNWQh/Default/Session Storage/MANIFEST-000001
++2022/01/12-18:54:55.804 5303 Recovering log #3
++2022/01/12-18:54:55.805 5303 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.OZlYX7/flutter_tools_chrome_device.JNNWQh/Default/Session Storage/000003.log 
+Index: .dart_tool/chrome-device/Default/Extension Scripts/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:39.139 11007 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension Scripts/MANIFEST-000001\n2022/01/17-11:39:39.143 11007 Recovering log #3\n2022/01/17-11:39:39.144 11007 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension Scripts/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Extension Scripts/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Extension Scripts/LOG	(date 1642407371763)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:39.139 11007 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension Scripts/MANIFEST-000001
+-2022/01/17-11:39:39.143 11007 Recovering log #3
+-2022/01/17-11:39:39.144 11007 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Extension Scripts/000003.log 
++2022/01/17-11:17:02.118 13e03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Extension Scripts/MANIFEST-000001
++2022/01/17-11:17:02.119 13e03 Recovering log #3
++2022/01/17-11:17:02.119 13e03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Extension Scripts/000003.log 
+Index: .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/LOG.old
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/12-19:07:43.454 6d03 Recovering log #7\n2022/01/12-19:07:43.524 6d03 Delete type=0 #7\n2022/01/12-19:07:43.524 6d03 Delete type=0 #5\n2022/01/12-19:07:43.524 6d03 Delete type=0 #3\n2022/01/12-19:07:43.524 6d03 Delete type=3 #6\n2022/01/12-19:07:43.524 6d03 Delete type=3 #4\n2022/01/12-19:07:43.524 6d03 Delete type=3 #2\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/LOG.old	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/data_reduction_proxy_leveldb/LOG.old	(date 1642407371872)
+@@ -1,7 +1,2 @@
+-2022/01/12-19:07:43.454 6d03 Recovering log #7
+-2022/01/12-19:07:43.524 6d03 Delete type=0 #7
+-2022/01/12-19:07:43.524 6d03 Delete type=0 #5
+-2022/01/12-19:07:43.524 6d03 Delete type=0 #3
+-2022/01/12-19:07:43.524 6d03 Delete type=3 #6
+-2022/01/12-19:07:43.524 6d03 Delete type=3 #4
+-2022/01/12-19:07:43.524 6d03 Delete type=3 #2
++2022/01/17-10:13:06.641 8903 Creating DB /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.8hdyYn/flutter_tools_chrome_device.EusOak/Default/data_reduction_proxy_leveldb since it was missing.
++2022/01/17-10:13:06.833 8903 Delete type=3 #1
+Index: .dart_tool/chrome-device/Default/Site Characteristics Database/LOG
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2022/01/17-11:39:39.140 11b03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Site Characteristics Database/MANIFEST-000001\n2022/01/17-11:39:39.143 11b03 Recovering log #3\n2022/01/17-11:39:39.145 11b03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Site Characteristics Database/000003.log \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .dart_tool/chrome-device/Default/Site Characteristics Database/LOG	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .dart_tool/chrome-device/Default/Site Characteristics Database/LOG	(date 1642407371749)
+@@ -1,3 +1,3 @@
+-2022/01/17-11:39:39.140 11b03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Site Characteristics Database/MANIFEST-000001
+-2022/01/17-11:39:39.143 11b03 Recovering log #3
+-2022/01/17-11:39:39.145 11b03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.zFPvFC/flutter_tools_chrome_device.tFLcbM/Default/Site Characteristics Database/000003.log 
++2022/01/17-11:17:02.109 7403 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Site Characteristics Database/MANIFEST-000001
++2022/01/17-11:17:02.110 7403 Recovering log #3
++2022/01/17-11:17:02.110 7403 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.ajiZoX/flutter_tools_chrome_device.rRyQBk/Default/Site Characteristics Database/000003.log 
+Index: .idea/libraries/Dart_Packages.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"libraryTable\">\n  <library name=\"Dart Packages\" type=\"DartPackagesLibraryType\">\n    <properties>\n      <option name=\"packageNameToDirsMap\">\n        <entry key=\"async\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"boolean_selector\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"characters\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"charcode\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"clock\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"collection\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"cupertino_icons\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"fake_async\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/packages/flutter/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter_lints\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"flutter_test\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/packages/flutter_test/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"lints\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"matcher\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"meta\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"path\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"sky_engine\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/bin/cache/pkg/sky_engine/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"source_span\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"stack_trace\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"stream_channel\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"string_scanner\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"term_glyph\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"test_api\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.7/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"typed_data\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/lib\" />\n            </list>\n          </value>\n        </entry>\n        <entry key=\"vector_math\">\n          <value>\n            <list>\n              <option value=\"$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1/lib\" />\n            </list>\n          </value>\n        </entry>\n      </option>\n    </properties>\n    <CLASSES>\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.7/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/bin/cache/pkg/sky_engine/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/packages/flutter/lib\" />\n      <root url=\"file://$PROJECT_DIR$/../flutter/packages/flutter_test/lib\" />\n    </CLASSES>\n    <JAVADOC />\n    <SOURCES />\n  </library>\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Dart_Packages.xml	(revision b910a1a1c5e3c9313e16708f27c6d12013946a36)
++++ .idea/libraries/Dart_Packages.xml	(date 1642404920465)
+@@ -5,198 +5,342 @@
+         <entry key="async">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="boolean_selector">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="characters">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="charcode">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="clock">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="collection">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="crypto">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="cupertino_icons">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="fake_async">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="ffi">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.1.2/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="file">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="flutter">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/packages/flutter/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/packages/flutter/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="flutter_lints">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="flutter_test">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/packages/flutter_test/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/packages/flutter_test/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="google_fonts">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.2.0/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="http">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="http_parser">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="lints">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="matcher">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="meta">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="path">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.8/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider_android">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.11/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider_ios">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.7/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider_linux">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.5/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider_macos">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.5/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider_platform_interface">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.3/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="path_provider_windows">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="platform">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.1.0/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="plugin_platform_interface">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="process">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="sky_engine">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/bin/cache/pkg/sky_engine/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/bin/cache/pkg/sky_engine/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="source_span">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="stack_trace">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="stream_channel">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="string_scanner">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="term_glyph">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="test_api">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.7/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.7/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="typed_data">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/lib" />
+             </list>
+           </value>
+         </entry>
+         <entry key="vector_math">
+           <value>
+             <list>
+-              <option value="$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1/lib" />
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="win32">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.3.3/lib" />
++            </list>
++          </value>
++        </entry>
++        <entry key="xdg_directories">
++          <value>
++            <list>
++              <option value="$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0/lib" />
+             </list>
+           </value>
+         </entry>
+       </option>
+     </properties>
+     <CLASSES>
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.7/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/bin/cache/pkg/sky_engine/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/packages/flutter/lib" />
+-      <root url="file://$PROJECT_DIR$/../flutter/packages/flutter_test/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.3.1/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.1.2/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.2.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.8/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.11/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.7/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.5/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.5/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.3/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.1.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.7/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.3.3/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/bin/cache/pkg/sky_engine/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/packages/flutter/lib" />
++      <root url="file://$PROJECT_DIR$/../../../seema/Downloads/flutter/packages/flutter_test/lib" />
+     </CLASSES>
+     <JAVADOC />
+     <SOURCES />
