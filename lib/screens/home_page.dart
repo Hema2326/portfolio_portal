@@ -3,6 +3,7 @@ import 'package:portfolio_portal/screens/custom_screen.dart';
 import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/medium_screen.dart';
 import 'package:portfolio_portal/screens/small_screen.dart';
+
 import 'package:portfolio_portal/widgets/responsive_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,29 +15,32 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool isHovering = false;
+
   bool isHovering1 = false;
+
   bool isHovering2 = false;
+
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
-
       backgroundColor: Colors.white,
-    key: scaffoldKey,
+      key: scaffoldKey,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         toolbarHeight: 20,
-       toolbarOpacity: 0.8,
-       backgroundColor: Colors.white,
+        toolbarOpacity: 0.8,
+        backgroundColor: Colors.white,
         elevation: 7,
       ),
-body: ResponsiveWidget(
-    largeScreen: LargeScreen(),
-    mediumScreen: MediumScreen(),
-    smallScreen: SmallScreen(),
-    customScreen: CustomScreen()),
+      body: const ResponsiveWidget(
+          largeScreen: LargeScreen(),
+          mediumScreen: MediumScreen(),
+          smallScreen: SmallScreen(),
+          customScreen: CustomScreen()),
     );
   }
 }
