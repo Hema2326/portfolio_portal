@@ -3,6 +3,9 @@ import 'package:portfolio_portal/screens/custom_screen.dart';
 import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/medium_screen.dart';
 import 'package:portfolio_portal/screens/small_screen.dart';
+import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/image_resource.dart';
+import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:portfolio_portal/widgets/responsive_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,79 +25,79 @@ class _HomePageState extends State<HomePage> {
     var screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
-    key: scaffoldKey,
+      key: scaffoldKey,
       extendBodyBehindAppBar: true,
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 1000),
         child: Container(
-        margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
-        child: Row(
-          children: [
-            Image.asset(
-              'assets/logo1.png',
-              height: 150,
-              width: 150,
-            ),
-            Spacer(),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {
-                setState(() {
-                  isHovering = value;
-                });
-              },
-              child: Text(
-                'Home',
-                style: TextStyle(
-                    color: isHovering ? Colors.orangeAccent : Colors.black),
+          margin: const EdgeInsets.fromLTRB(30, 0, 20, 0),
+          child: Row(
+            children: [
+              Image.asset(
+                ImageResource.yaplogo,
+                height: 150,
+                width: 150,
               ),
-            ),
-            SizedBox(
-              width: screenSize.width / 20,
-            ),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {
-                setState(() {
-                  isHovering1 = value;
-                });
-              },
-              child: Text(
-                'Portfolio',
-                style: TextStyle(
-                    color: isHovering1 ? Colors.orangeAccent : Colors.black),
+              const Spacer(),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isHovering = value;
+                  });
+                },
+                child: Text(
+                  StringResource.home,
+                  style: TextStyle(
+                      color: isHovering
+                          ? ColorResource.colorF58220
+                          : ColorResource.color222222),
+                ),
               ),
-            ),
-            SizedBox(
-              width: screenSize.width / 20,
-            ),
-            InkWell(
-              onTap: () {},
-              onHover: (value) {
-                setState(() {
-                  isHovering2 = value;
-                });
-              },
-              child: Text(
-                'Services',
-                style: TextStyle(
-                    color: isHovering2 ? Colors.orangeAccent : Colors.black),
+              SizedBox(
+                width: screenSize.width / 20,
               ),
-            ),
-            SizedBox(
-              width: screenSize.width / 20,
-            ),
-
-
-          ],
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isHovering1 = value;
+                  });
+                },
+                child: Text(
+                  StringResource.portfolio,
+                  style: TextStyle(
+                      color: isHovering1 ? Colors.orangeAccent : Colors.black),
+                ),
+              ),
+              SizedBox(
+                width: screenSize.width / 20,
+              ),
+              InkWell(
+                onTap: () {},
+                onHover: (value) {
+                  setState(() {
+                    isHovering2 = value;
+                  });
+                },
+                child: Text(
+                  StringResource.services,
+                  style: TextStyle(
+                      color: isHovering2 ? Colors.orangeAccent : Colors.black),
+                ),
+              ),
+              SizedBox(
+                width: screenSize.width / 20,
+              ),
+            ],
+          ),
         ),
       ),
-    ),
-body: ResponsiveWidget(
-    largeScreen: LargeScreen(),
-    mediumScreen: MediumScreen(),
-    smallScreen: SmallScreen(),
-    customScreen: CustomScreen()),
+      body: const ResponsiveWidget(
+          largeScreen: LargeScreen(),
+          mediumScreen: MediumScreen(),
+          smallScreen: SmallScreen(),
+          customScreen: CustomScreen()),
     );
   }
 }
