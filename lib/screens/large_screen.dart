@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -74,7 +72,7 @@ class _LargeScreenState extends State<LargeScreen> {
                     style: TextStyle(
                         color: isHovering ? Colors.red : Colors.black,
                         fontSize: 18,
-                        fontWeight: FontWeight.w600),
+                        fontWeight: FontWeight.normal),
                   ),
                 ),
                 SizedBox(
@@ -92,7 +90,7 @@ class _LargeScreenState extends State<LargeScreen> {
                     style: TextStyle(
                         color: isHovering1 ? Colors.red : Colors.black,
                         fontSize: 18,
-                        fontWeight: FontWeight.w600),
+                        fontWeight: FontWeight.normal),
                   ),
                 ),
                 SizedBox(
@@ -110,7 +108,7 @@ class _LargeScreenState extends State<LargeScreen> {
                     style: TextStyle(
                         color: isHovering2 ? Colors.red : Colors.black,
                         fontSize: 18,
-                        fontWeight: FontWeight.w600),
+                        fontWeight: FontWeight.normal),
                   ),
                 ),
                 SizedBox(
@@ -323,7 +321,7 @@ class _LargeScreenState extends State<LargeScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
 
-                Container(height: 900),
+                Container(height: 680),
                 Column(
                   children: [
                 Container(
@@ -360,7 +358,7 @@ class _LargeScreenState extends State<LargeScreen> {
 
 
                     SizedBox(
-                      height: 59
+                      height: 55
                     ),
                     ElevatedButton(onPressed: (){
 
@@ -373,12 +371,15 @@ class _LargeScreenState extends State<LargeScreen> {
                   ],
                 ),
                 Spacer(),
-                    Lottie.network(
-                      'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
-                      height: 600.0,
-                      repeat: true,
-                      reverse: true,
-                      animate: true,
+                    Container(
+                      padding: EdgeInsets.only(top: 20),
+                      child: Lottie.network(
+                        'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
+                        height: 600.0,
+                        repeat: true,
+                        reverse: true,
+                        animate: true,
+                      ),
                     ),
 
                   ],

@@ -1,5 +1,7 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 
@@ -67,7 +69,7 @@ class _MediumScreenState extends State<MediumScreen> {
                   style: TextStyle(
                       color: isHovering ? Colors.red : Colors.black,
                       fontSize: 18,
-                      fontWeight: FontWeight.w600),
+                      fontWeight: FontWeight.normal),
                 ),
               ),
               SizedBox(
@@ -85,7 +87,7 @@ class _MediumScreenState extends State<MediumScreen> {
                   style: TextStyle(
                       color: isHovering1 ? Colors.red : Colors.black,
                       fontSize: 18,
-                      fontWeight: FontWeight.w600),
+                      fontWeight: FontWeight.normal),
                 ),
               ),
               SizedBox(
@@ -103,7 +105,7 @@ class _MediumScreenState extends State<MediumScreen> {
                   style: TextStyle(
                       color: isHovering2 ? Colors.red : Colors.black,
                       fontSize: 18,
-                      fontWeight: FontWeight.w600),
+                      fontWeight: FontWeight.normal),
                 ),
               ),
               SizedBox(
@@ -117,7 +119,54 @@ class _MediumScreenState extends State<MediumScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(height: 100),
+            // Container(height: 100),
+            Center(
+              child: Container(
+                margin: EdgeInsets.fromLTRB(70, 0, 0, 0),
+                height: 300,
+                width: 500,
+                child: Center(
+                  child: AnimatedTextKit(
+
+                    // repeatForever: true,
+
+                    animatedTexts: [
+                      TypewriterAnimatedText('The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of CiceroDe finibus bonorum et malorum The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum suggesting that the galley type of that page was mixed up to make the dummy text seen today.',
+                          textAlign: TextAlign.center,
+                          textStyle: GoogleFonts.aBeeZee(
+                            textStyle: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w400,
+
+                            ),
+                          ),
+
+                          cursor: '|'),
+
+
+                    ],
+                    displayFullTextOnTap: true,
+                    totalRepeatCount: 1,
+                    isRepeatingAnimation: false,
+                  ),
+                ),
+              ),
+            ),
+
+
+
+            SizedBox(
+                height: 59
+            ),
+            ElevatedButton(onPressed: (){
+
+            }, child: Text('Portfolio'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.red, // background
+                // onPrimary: Colors.yellow, // foreground
+              ),
+            ),
+            // Spacer(),
             Lottie.network(
               'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
               height: 600.0,
