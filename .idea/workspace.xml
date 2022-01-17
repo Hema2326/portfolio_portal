@@ -13,21 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="intial commit">
-      <change afterPath="$PROJECT_DIR$/lib/bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/app_bar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/custom_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/responsive_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="intial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +73,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
