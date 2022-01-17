@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 
@@ -46,7 +48,7 @@ class _MediumScreenState extends State<MediumScreen> {
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 768),
         child: Container(
-          margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
+          margin: const EdgeInsets.fromLTRB(30, 0, 20, 0),
           child: Row(
             children: [
               Image.asset(
@@ -54,7 +56,7 @@ class _MediumScreenState extends State<MediumScreen> {
                 height: 150,
                 width: 150,
               ),
-              Spacer(),
+              const Spacer(),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -63,9 +65,11 @@ class _MediumScreenState extends State<MediumScreen> {
                   });
                 },
                 child: Text(
-                  'Home',
+                  StringResource.home,
                   style: TextStyle(
-                      color: isHovering ? Colors.red : Colors.black,
+                      color: isHovering
+                          ? ColorResource.colorEC1C24
+                          : ColorResource.color222222,
                       fontSize: 18,
                       fontWeight: FontWeight.w600),
                 ),
@@ -83,7 +87,9 @@ class _MediumScreenState extends State<MediumScreen> {
                 child: Text(
                   'Portfolio',
                   style: TextStyle(
-                      color: isHovering1 ? Colors.red : Colors.black,
+                      color: isHovering
+                          ? ColorResource.colorEC1C24
+                          : ColorResource.color222222,
                       fontSize: 18,
                       fontWeight: FontWeight.w600),
                 ),
@@ -101,7 +107,9 @@ class _MediumScreenState extends State<MediumScreen> {
                 child: Text(
                   'Projects',
                   style: TextStyle(
-                      color: isHovering2 ? Colors.red : Colors.black,
+                      color: isHovering
+                          ? ColorResource.colorEC1C24
+                          : ColorResource.color222222,
                       fontSize: 18,
                       fontWeight: FontWeight.w600),
                 ),

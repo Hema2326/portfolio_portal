@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio_portal/screens/app_bar.dart';
@@ -52,11 +54,12 @@ class _SmallScreenState extends State<SmallScreen> {
           child: Column(
             children: [
               Image.asset(
-                'assets/logo1.png',
+                ImageResource.yaplogo,
+                // 'assets/logo1.png',
                 height: 150,
                 width: 150,
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -68,12 +71,14 @@ class _SmallScreenState extends State<SmallScreen> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent),
+                    border: Border.all(color: ColorResource.colorff5252),
                   ),
                   child: Text(
                     'Home',
                     style: TextStyle(
-                        color: isHovering ? Colors.red : Colors.black,
+                        color: isHovering
+                            ? ColorResource.colorEC1C24
+                            : ColorResource.color222222,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -94,12 +99,14 @@ class _SmallScreenState extends State<SmallScreen> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent),
+                    border: Border.all(color: ColorResource.colorff5252),
                   ),
                   child: Text(
                     'Portfolio',
                     style: TextStyle(
-                        color: isHovering1 ? Colors.red : Colors.black,
+                        color: isHovering
+                            ? ColorResource.colorEC1C24
+                            : ColorResource.color222222,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -120,12 +127,14 @@ class _SmallScreenState extends State<SmallScreen> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent),
+                    border: Border.all(color: ColorResource.colorff5252),
                   ),
                   child: Text(
                     'Projects',
                     style: TextStyle(
-                        color: isHovering2 ? Colors.red : Colors.black,
+                        color: isHovering
+                            ? ColorResource.colorEC1C24
+                            : ColorResource.color222222,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -177,7 +186,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                 const Text(
                                   'Chennai, INDIA',
                                   style: TextStyle(
-                                      color: Colors.white,
+                                      color: ColorResource.colorFFFFFF,
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -197,7 +206,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                 const Text(
                                   'Mumbai, INDIA',
                                   style: TextStyle(
-                                      color: Colors.white,
+                                      color: ColorResource.colorFFFFFF,
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold),
                                 ),

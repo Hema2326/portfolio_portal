@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/image_resource.dart';
+import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 
@@ -45,19 +48,19 @@ class _LargeScreenState extends State<LargeScreen> {
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(
         extendBodyBehindAppBar: true,
-        backgroundColor: Colors.white,
+        backgroundColor: ColorResource.colorFFFFFF,
         appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 1000),
           child: Container(
-            margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
+            margin: const EdgeInsets.fromLTRB(30, 0, 20, 0),
             child: Row(
               children: [
                 Image.asset(
-                  'assets/logo1.png',
+                  ImageResource.yaplogo,
                   height: 150,
                   width: 150,
                 ),
-                Spacer(),
+                const Spacer(),
                 InkWell(
                   onTap: () {},
                   onHover: (value) {
@@ -66,9 +69,11 @@ class _LargeScreenState extends State<LargeScreen> {
                     });
                   },
                   child: Text(
-                    'Home',
+                    StringResource.home,
                     style: TextStyle(
-                        color: isHovering ? Colors.red : Colors.black,
+                        color: isHovering
+                            ? ColorResource.colorEC1C24
+                            : ColorResource.color222222,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -84,9 +89,11 @@ class _LargeScreenState extends State<LargeScreen> {
                     });
                   },
                   child: Text(
-                    'Portfolio',
+                    StringResource.portfolio,
                     style: TextStyle(
-                        color: isHovering1 ? Colors.red : Colors.black,
+                        color: isHovering1
+                            ? ColorResource.colorEC1C24
+                            : ColorResource.color222222,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -102,9 +109,11 @@ class _LargeScreenState extends State<LargeScreen> {
                     });
                   },
                   child: Text(
-                    'Projects',
+                    StringResource.services,
                     style: TextStyle(
-                        color: isHovering2 ? Colors.red : Colors.black,
+                        color: isHovering2
+                            ? ColorResource.colorEC1C24
+                            : ColorResource.color222222,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -134,7 +143,7 @@ class _LargeScreenState extends State<LargeScreen> {
                 height: 250,
                 width: double.maxFinite,
                 decoration: const BoxDecoration(
-                    color: Colors.black,
+                    color: ColorResource.color222222,
                     borderRadius:
                         BorderRadius.vertical(top: Radius.circular(30.0))),
                 child: Padding(
@@ -149,21 +158,23 @@ class _LargeScreenState extends State<LargeScreen> {
                               const Text(
                                 'Chennai, INDIA',
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: ColorResource.colorFFFFFF,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(height: 25),
                               const Text(
                                 'M2P Fintech,\n3rd Floor, MM Complex, \n30/10, Hopman Street 2nd Street,\nAlandur, Chennai - 600016.TamilNadu. \nIndia',
-                                style: TextStyle(color: Colors.white60),
+                                style:
+                                    TextStyle(color: ColorResource.colorFFFFFF),
                               ),
                               const SizedBox(
                                 height: 50,
                               ),
                               const Text(
                                 'ping@m2pfintech.com',
-                                style: TextStyle(color: Colors.white),
+                                style:
+                                    TextStyle(color: ColorResource.colorFFFFFF),
                               )
                             ],
                           ),
@@ -173,7 +184,7 @@ class _LargeScreenState extends State<LargeScreen> {
                               const Text(
                                 'Mumbai, INDIA',
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: ColorResource.colorFFFFFF,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -187,7 +198,8 @@ class _LargeScreenState extends State<LargeScreen> {
                               ),
                               const Text(
                                 '044-40554808',
-                                style: TextStyle(color: Colors.white),
+                                style:
+                                    TextStyle(color: ColorResource.colorFFFFFF),
                               )
                             ],
                           ),
@@ -197,21 +209,23 @@ class _LargeScreenState extends State<LargeScreen> {
                               const Text(
                                 'Abu Dhabi, UAE',
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: ColorResource.colorFFFFFF,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(height: 20),
                               const Text(
                                 'M2P Solutions Ltd,\nOffice No.2452, 24 - Al Sila Tower, \nAbu Dhabi Global Market Square,\nAl Maryah Island\nAbu Dhabi,\nUnited Arab Emirates.',
-                                style: TextStyle(color: Colors.white60),
+                                style:
+                                    TextStyle(color: ColorResource.colorffffff),
                               ),
                               const SizedBox(
                                 height: 40,
                               ),
                               const Text(
                                 '© 2021 M2P Fintech',
-                                style: TextStyle(color: Colors.white),
+                                style:
+                                    TextStyle(color: ColorResource.colorFFFFFF),
                               ),
                             ],
                           ),
@@ -221,14 +235,15 @@ class _LargeScreenState extends State<LargeScreen> {
                               const Text(
                                 'Dubai, UAE',
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: ColorResource.colorFFFFFF,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(height: 20),
                               const Text(
                                 'M2P Solutions Ltd,\nSuite 105-106, \nBuilding 1, Bay Square,\nBusiness Bay,\nDubai.',
-                                style: TextStyle(color: Colors.white60),
+                                style:
+                                    TextStyle(color: ColorResource.colorffffff),
                               ),
                               const SizedBox(
                                 height: 55,
@@ -237,11 +252,13 @@ class _LargeScreenState extends State<LargeScreen> {
                                 children: [
                                   const Text(
                                     'Legal   ',
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: ColorResource.colorFFFFFF),
                                   ),
                                   const Text(
                                     ' Privacy policy',
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: ColorResource.colorFFFFFF),
                                   ),
                                 ],
                               )
@@ -252,8 +269,8 @@ class _LargeScreenState extends State<LargeScreen> {
                               InkWell(
                                 child: FaIcon(FontAwesomeIcons.linkedin,
                                     color: isHovering
-                                        ? Colors.blue[700]
-                                        : Colors.white,
+                                        ? ColorResource.color1976d2
+                                        : ColorResource.colorFFFFFF,
                                     size: 20.0),
                                 onTap: () async {
                                   const url =
@@ -270,10 +287,14 @@ class _LargeScreenState extends State<LargeScreen> {
                               InkWell(
                                 child: FaIcon(FontAwesomeIcons.twitter,
                                     color: isSelected1
-                                        ? Colors.blue[400]
-                                        : Colors.white,
+                                        ? ColorResource.color42a5f5
+                                        : ColorResource.colorFFFFFF,
                                     size: 20.0),
-                                onTap: () {},
+                                onTap: () async {
+                                  const url =
+                                      "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D";
+                                  await launch(url);
+                                },
                                 onHover: (value) {
                                   setState(() {
                                     isSelected1 = value;
@@ -284,10 +305,14 @@ class _LargeScreenState extends State<LargeScreen> {
                               InkWell(
                                 child: FaIcon(FontAwesomeIcons.instagram,
                                     color: isSelected2
-                                        ? Colors.pink[400]
-                                        : Colors.white,
+                                        ? ColorResource.colorec407a
+                                        : ColorResource.colorFFFFFF,
                                     size: 20.0),
-                                onTap: () {},
+                                onTap: () async {
+                                  const url =
+                                      'https://www.instagram.com/accounts/login/';
+                                  await launch(url);
+                                },
                                 onHover: (value) {
                                   setState(() {
                                     isSelected2 = value;
@@ -298,10 +323,13 @@ class _LargeScreenState extends State<LargeScreen> {
                               InkWell(
                                 child: FaIcon(FontAwesomeIcons.facebook,
                                     color: isSelected3
-                                        ? Colors.blue[600]
-                                        : Colors.white,
+                                        ? ColorResource.color1e88e5
+                                        : ColorResource.colorFFFFFF,
                                     size: 20.0),
-                                onTap: () {},
+                                onTap: () async {
+                                  const url = "https://www.facebook.com/";
+                                  await launch(url);
+                                },
                                 onHover: (value) {
                                   setState(() {
                                     isSelected3 = value;
@@ -312,11 +340,11 @@ class _LargeScreenState extends State<LargeScreen> {
                               InkWell(
                                 child: Container(
                                     decoration: const BoxDecoration(
-                                        color: Colors.red,
+                                        color: ColorResource.colorEC1C24,
                                         shape: BoxShape.circle),
                                     child: const Icon(
                                       Icons.arrow_upward,
-                                      color: Colors.white,
+                                      color: ColorResource.colorFFFFFF,
                                     )),
                                 onTap: () {
                                   _scrollToTop();
