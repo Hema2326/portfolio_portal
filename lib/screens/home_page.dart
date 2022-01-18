@@ -3,6 +3,7 @@ import 'package:portfolio_portal/screens/custom_screen.dart';
 import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/medium_screen.dart';
 import 'package:portfolio_portal/screens/small_screen.dart';
+import 'package:portfolio_portal/utils/color_resource.dart';
 
 import 'package:portfolio_portal/widgets/responsive_widget.dart';
 
@@ -27,13 +28,13 @@ class _HomePageState extends State<HomePage> {
     var screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: ColorResource.colorFFFFFF,
       key: scaffoldKey,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         toolbarHeight: 20,
         toolbarOpacity: 0.8,
-        backgroundColor: Colors.white,
+        backgroundColor: ColorResource.colorFFFFFF,
         elevation: 7,
       ),
       body: const ResponsiveWidget(
