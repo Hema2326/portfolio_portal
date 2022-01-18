@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:marquee/marquee.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
@@ -12,7 +13,8 @@ class LargeScreen extends StatefulWidget {
   _LargeScreenState createState() => _LargeScreenState();
 }
 
-class _LargeScreenState extends State<LargeScreen> {
+class _LargeScreenState extends State<LargeScreen>
+    with SingleTickerProviderStateMixin {
   late ScrollController _scrollController;
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -24,16 +26,18 @@ class _LargeScreenState extends State<LargeScreen> {
   bool isSelected1 = false;
   bool isSelected2 = false;
   bool isSelected3 = false;
+  TabController? _tabController;
 
   @override
   void initState() {
     super.initState();
-    _scrollController = ScrollController();
+    // _scrollController = ScrollController();
+    _tabController = TabController(vsync: this, length: 3);
   }
 
   @override
   void dispose() {
-    _scrollController.dispose();
+    // _scrollController.dispose();
     super.dispose();
   }
 
@@ -50,72 +54,172 @@ class _LargeScreenState extends State<LargeScreen> {
         backgroundColor: Colors.white,
         appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 1000),
-          child: Container(
-            margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
-            child: Row(
-              children: [
-                Image.asset(
-                  'assets/logo1.png',
-                  height: 150,
-                  width: 150,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(70, 40, 0, 0),
+                    child: Image.asset(
+                      'assets/flutterlogo.png',
+                      // height: 60,
+                      width: 60,
+                    ),
+                  ),
+                  Spacer(),
+                  Flexible(
+                    child: Container(
+                      color: Colors.white,
+                      // height: 50,
+                      // width: 10,
+
+                      margin: EdgeInsets.fromLTRB(0, 15, 10, 0),
+                      child: TabBar(
+                          controller: _tabController,
+                          isScrollable: false,
+                          indicatorSize: TabBarIndicatorSize.label,
+                          indicatorPadding: EdgeInsets.zero,
+                          padding: EdgeInsets.zero,
+                          indicatorColor: Colors.lightBlueAccent,
+                          labelColor: Colors.black,
+                          tabs: [
+                            Tab(
+                              text: 'Home',
+                            ),
+                            Tab(text: 'Portfolio'),
+                            Tab(text: 'Projects'),
+                          ]),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                color: Colors.lightBlueAccent,
+                child: Center(
+                  child: Marquee(
+                    text:
+                        'Flutter is Google’s free and open-source UI framework for creating native mobile applications. Released in 2017, Flutter allows developers to build mobile applications for both iOS and Android with a single codebase and programming language. This capability makes building iOS and Android apps simpler and faster.',
+
+                    style:  GoogleFonts.aBeeZee(
+                    textStyle:
+                    TextStyle(
+                        fontSize: 14,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400),
+                  ),),
                 ),
-                Spacer(),
-                InkWell(
-                  onTap: () {},
-                  onHover: (value) {
-                    setState(() {
-                      isHovering = value;
-                    });
-                  },
-                  child: Text(
-                    'Home',
-                    style: TextStyle(
-                        color: isHovering ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.normal),
+              ),
+              Flexible(
+                child: Container(
+                  child: TabBarView(
+                    controller: _tabController,
+                    children: [
+                      SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Stack(
+                              children: [
+                                Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/flutter-engage.png',
+                                      fit: BoxFit.cover,
+                                      height: 560,
+                                      // width: MediaQuery.of(context).size.width,
+                                    ),
+                                    Image.asset(
+                                      'assets/flutter-engage.png',
+                                      fit: BoxFit.cover,
+                                      height: 560,
+                                      // width: MediaQuery.of(context).size.width,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  height:40,
+                                  width: 150,
+                                  padding:EdgeInsets.all(10),
+                                  decoration:BoxDecoration(
+borderRadius: BorderRadius.circular(15),
+                                    color: Colors.lightBlue
+                            ),
+                                    child: Center(child: Text('Fast',
+                                      style: TextStyle(
+                                        color: Colors.white
+                                      ),
+                                    ))),
+                                Container(
+                                    height:40,
+                                    width: 150,
+                                    padding:EdgeInsets.all(10),
+                                    decoration:BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.lightBlue
+                                    ),
+                                    child: Center(child: Text('Fast',
+                                      style: TextStyle(
+                                          color: Colors.white
+                                      ),
+                                    ))),
+                                SizedBox(width: 40),
+                                Container(
+                                    height:40,
+                                    width: 150,
+                                    padding:EdgeInsets.all(10),
+                                    decoration:BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.lightBlue
+                                    ),
+                                    child: Center(child: Text('Fast',
+                                      style: TextStyle(
+                                          color: Colors.white
+                                      ),
+                                    ))),
+                                Spacer(),
+                                Container(
+                                  color: Colors.white,
+                                  padding: EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
+                                    height: 500.0,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Container(
+                              width: MediaQuery.of(context).size.width,
+                              color: Colors.white,
+                              padding: EdgeInsets.only(bottom: 20),
+                              child: Lottie.network(
+                                'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
+                                height: 600.0,
+                                repeat: true,
+                                reverse: true,
+                                animate: true,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Icon(Icons.directions_bike),
+                      Icon(Icons.movie),
+                    ],
                   ),
                 ),
-                SizedBox(
-                  width: screenSize.width / 20,
-                ),
-                InkWell(
-                  onTap: () {},
-                  onHover: (value) {
-                    setState(() {
-                      isHovering1 = value;
-                    });
-                  },
-                  child: Text(
-                    'Portfolio',
-                    style: TextStyle(
-                        color: isHovering1 ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.normal),
-                  ),
-                ),
-                SizedBox(
-                  width: screenSize.width / 20,
-                ),
-                InkWell(
-                  onTap: () {},
-                  onHover: (value) {
-                    setState(() {
-                      isHovering2 = value;
-                    });
-                  },
-                  child: Text(
-                    'Projects',
-                    style: TextStyle(
-                        color: isHovering2 ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.normal),
-                  ),
-                ),
-                SizedBox(
-                  width: screenSize.width / 20,
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         bottomNavigationBar: BottomAppBar(
@@ -125,7 +229,7 @@ class _LargeScreenState extends State<LargeScreen> {
                 decoration: const BoxDecoration(
                     color: Colors.black,
                     borderRadius:
-                    BorderRadius.vertical(top: Radius.circular(30.0))),
+                        BorderRadius.vertical(top: Radius.circular(30.0))),
                 child: Padding(
                     padding: const EdgeInsets.only(top: 38.0),
                     child: Row(
@@ -314,86 +418,6 @@ class _LargeScreenState extends State<LargeScreen> {
                             ],
                           )
                         ])))),
-      body: SingleChildScrollView(
-        child:Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-
-                Container(height: 680),
-                Column(
-                  children: [
-                Container(
-                  margin: EdgeInsets.fromLTRB(70, 0, 0, 0),
-                  height: 300,
-                  width: 500,
-                  child: Center(
-                  child: AnimatedTextKit(
-
-                  // repeatForever: true,
-
-                    animatedTexts: [
-                      TypewriterAnimatedText('The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of CiceroDe finibus bonorum et malorum The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum suggesting that the galley type of that page was mixed up to make the dummy text seen today.',
-                        textAlign: TextAlign.center,
-                        textStyle: GoogleFonts.aBeeZee(
-                          textStyle: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400,
-
-                          ),
-                        ),
-
-                        cursor: '|'),
-
-
-                    ],
-                    displayFullTextOnTap: true,
-                    totalRepeatCount: 1,
-                    isRepeatingAnimation: false,
-                  ),
-      ),
-                ),
-
-
-
-                    SizedBox(
-                      height: 55
-                    ),
-                    ElevatedButton(onPressed: (){
-
-                    }, child: Text('Portfolio'),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.red, // background
-                        // onPrimary: Colors.yellow, // foreground
-                      ),
-                    )
-                  ],
-                ),
-                Spacer(),
-                    Container(
-                      padding: EdgeInsets.only(top: 20),
-                      child: Lottie.network(
-                        'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
-                        height: 600.0,
-                        repeat: true,
-                        reverse: true,
-                        animate: true,
-                      ),
-                    ),
-
-                  ],
-                ),
-            Container(
-              color: Colors.red,
-            )
-
-              ],
-            ),
-
-
-
-      ),
-    );
+        body: Text(''));
   }
 }
