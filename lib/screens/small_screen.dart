@@ -1,9 +1,7 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio_portal/utils/color_resource.dart';
-import 'package:portfolio_portal/utils/custom_text.dart';
-import 'package:portfolio_portal/utils/image_resource.dart';
-import 'package:portfolio_portal/utils/string_resource.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio_portal/screens/app_bar.dart';
@@ -56,12 +54,11 @@ class _SmallScreenState extends State<SmallScreen> {
           child: Column(
             children: [
               Image.asset(
-                ImageResource.yaplogo,
-                // 'assets/logo1.png',
+                'assets/logo1.png',
                 height: 150,
                 width: 150,
               ),
-              const SizedBox(height: 50),
+              SizedBox(height: 50),
               InkWell(
                 onTap: () {},
                 onHover: (value) {
@@ -73,14 +70,12 @@ class _SmallScreenState extends State<SmallScreen> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: ColorResource.colorff5252),
+                    border: Border.all(color: Colors.redAccent),
                   ),
-                  child: CustomText(
-                    StringResource.home,
+                  child: Text(
+                    'Home',
                     style: TextStyle(
-                        color: isHovering
-                            ? ColorResource.colorEC1C24
-                            : ColorResource.color222222,
+                        color: isHovering ? Colors.red : Colors.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -101,14 +96,12 @@ class _SmallScreenState extends State<SmallScreen> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: ColorResource.colorff5252),
+                    border: Border.all(color: Colors.redAccent),
                   ),
-                  child: CustomText(
-                    StringResource.portfolio,
+                  child: Text(
+                    'Portfolio',
                     style: TextStyle(
-                        color: isHovering
-                            ? ColorResource.colorEC1C24
-                            : ColorResource.color222222,
+                        color: isHovering1 ? Colors.red : Colors.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -129,14 +122,12 @@ class _SmallScreenState extends State<SmallScreen> {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: ColorResource.colorff5252),
+                    border: Border.all(color: Colors.redAccent),
                   ),
-                  child: CustomText(
-                    StringResource.services,
+                  child: Text(
+                    'Projects',
                     style: TextStyle(
-                        color: isHovering
-                            ? ColorResource.colorEC1C24
-                            : ColorResource.color222222,
+                        color: isHovering2 ? Colors.red : Colors.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600),
                   ),
@@ -153,7 +144,53 @@ class _SmallScreenState extends State<SmallScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(height: 100),
+              Container(height: 60),
+              Center(
+                child: Container(
+                  margin: EdgeInsets.fromLTRB(70, 0, 60, 0),
+                  height: 300,
+                  width: 500,
+                  child: Center(
+                    child: AnimatedTextKit(
+
+                      // repeatForever: true,
+
+                      animatedTexts: [
+                        TypewriterAnimatedText('The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of CiceroDe finibus bonorum et malorum The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum suggesting that the galley type of that page was mixed up to make the dummy text seen today.',
+                            textAlign: TextAlign.center,
+                            textStyle: GoogleFonts.aBeeZee(
+                              textStyle: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w400,
+
+                              ),
+                            ),
+
+                            cursor: '|'),
+
+
+                      ],
+                      displayFullTextOnTap: true,
+                      totalRepeatCount: 1,
+                      isRepeatingAnimation: false,
+                    ),
+                  ),
+                ),
+              ),
+
+
+
+              SizedBox(
+                  height: 59
+              ),
+              ElevatedButton(onPressed: (){
+
+              }, child: Text('Portfolio'),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.red, // background
+                  // onPrimary: Colors.yellow, // foreground
+                ),
+              ),
               Lottie.network(
                 'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
                 height: 600.0,
@@ -188,7 +225,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                 const Text(
                                   'Chennai, INDIA',
                                   style: TextStyle(
-                                      color: ColorResource.colorFFFFFF,
+                                      color: Colors.white,
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -208,7 +245,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                 const Text(
                                   'Mumbai, INDIA',
                                   style: TextStyle(
-                                      color: ColorResource.colorFFFFFF,
+                                      color: Colors.white,
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -260,70 +297,42 @@ class _SmallScreenState extends State<SmallScreen> {
                                 const SizedBox(
                                   height: 55,
                                 ),
+                                const Text(
+                                  'ping@m2pfintech.com',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Text(
+                                  '044-40554808',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Text(
+                                  '© 2021 M2P Fintech',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Text(
+                                  'Legal ',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Text(
+                                  'Privacy policy',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
                               ],
-                            ),
-                            GestureDetector(
-                              onTap: () async {
-                                await launch('mailto: ping@m2pfintech.com');
-                              },
-                              child: const Text(
-                                'ping@m2pfintech.com',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                launch('tel: 044-40554808');
-                              },
-                              child: const Text(
-                                '044-40554808',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                _scrollToTop();
-                              },
-                              child: const Text(
-                                '© 2021 M2P Fintech',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            GestureDetector(
-                              onTap: () async {
-                                const url = "https://m2pfintech.com/legal/";
-                                await launch(url);
-                              },
-                              child: const Text(
-                                'Legal ',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            GestureDetector(
-                              onTap: () async {
-                                const url =
-                                    "https://m2pfintech.com/privacy-policy/";
-                                await launch(url);
-                              },
-                              child: const Text(
-                                'Privacy policy',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
                             ),
                           ],
                         ),
@@ -354,10 +363,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                     ? Colors.blue[400]
                                     : Colors.white,
                                 size: 20.0),
-                            onTap: () async {
-                              const url = "https://twitter.com/m2pfintech";
-                              await launch(url);
-                            },
+                            onTap: () {},
                             onHover: (value) {
                               setState(() {
                                 isSelected1 = value;
@@ -371,11 +377,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                     ? Colors.pink[400]
                                     : Colors.white,
                                 size: 20.0),
-                            onTap: () async {
-                              const url =
-                                  "https://www.instagram.com/m2pfintech/";
-                              await launch(url);
-                            },
+                            onTap: () {},
                             onHover: (value) {
                               setState(() {
                                 isSelected2 = value;
@@ -389,10 +391,7 @@ class _SmallScreenState extends State<SmallScreen> {
                                     ? Colors.blue[600]
                                     : Colors.white,
                                 size: 20.0),
-                            onTap: () async {
-                              const url = "https://www.facebook.com/m2pfintech";
-                              await launch(url);
-                            },
+                            onTap: () {},
                             onHover: (value) {
                               setState(() {
                                 isSelected3 = value;
