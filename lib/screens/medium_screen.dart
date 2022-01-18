@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -240,15 +242,17 @@ class _MediumScreenState extends State<MediumScreen> {
                           const SizedBox(
                             height: 20,
                           ),
-                          GestureDetector(
-                            onTap: () {
-                              launch('tel: 044-40554808');
-                            },
-                            child: const Text(
-                              '044-40554808',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                          ),
+                          Platform.isAndroid && Platform.isIOS
+                              ? GestureDetector(
+                                  onTap: () {
+                                    launch('tel: 044-40554808');
+                                  },
+                                  child: const Text(
+                                    '044-40554808',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                )
+                              : Container(),
                           const SizedBox(
                             height: 20,
                           ),
