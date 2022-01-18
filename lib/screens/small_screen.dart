@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
+import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio_portal/screens/app_bar.dart';
@@ -73,8 +75,8 @@ class _SmallScreenState extends State<SmallScreen> {
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ColorResource.colorff5252),
                   ),
-                  child: Text(
-                    'Home',
+                  child: CustomText(
+                    StringResource.home,
                     style: TextStyle(
                         color: isHovering
                             ? ColorResource.colorEC1C24
@@ -101,8 +103,8 @@ class _SmallScreenState extends State<SmallScreen> {
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ColorResource.colorff5252),
                   ),
-                  child: Text(
-                    'Portfolio',
+                  child: CustomText(
+                    StringResource.portfolio,
                     style: TextStyle(
                         color: isHovering
                             ? ColorResource.colorEC1C24
@@ -129,8 +131,8 @@ class _SmallScreenState extends State<SmallScreen> {
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ColorResource.colorff5252),
                   ),
-                  child: Text(
-                    'Projects',
+                  child: CustomText(
+                    StringResource.services,
                     style: TextStyle(
                         color: isHovering
                             ? ColorResource.colorEC1C24

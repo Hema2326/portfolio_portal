@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -68,7 +69,7 @@ class _LargeScreenState extends State<LargeScreen> {
                       isHovering = value;
                     });
                   },
-                  child: Text(
+                  child: CustomText(
                     StringResource.home,
                     style: TextStyle(
                         color: isHovering
@@ -88,7 +89,7 @@ class _LargeScreenState extends State<LargeScreen> {
                       isHovering1 = value;
                     });
                   },
-                  child: Text(
+                  child: CustomText(
                     StringResource.portfolio,
                     style: TextStyle(
                         color: isHovering1
@@ -108,7 +109,7 @@ class _LargeScreenState extends State<LargeScreen> {
                       isHovering2 = value;
                     });
                   },
-                  child: Text(
+                  child: CustomText(
                     StringResource.services,
                     style: TextStyle(
                         color: isHovering2
