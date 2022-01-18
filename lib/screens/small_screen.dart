@@ -153,7 +153,15 @@ class _SmallScreenState extends State<SmallScreen> {
               height: 250,
               width: double.maxFinite,
               decoration: const BoxDecoration(
-                  color: Colors.black,
+                  gradient: LinearGradient(
+                      begin: Alignment.bottomLeft,
+                      end: Alignment.topRight,
+                      colors: [
+                        Colors.blue,
+                        Colors.orange,
+                        Colors.blue,
+                        Colors.purple
+                      ]),
                   borderRadius:
                       BorderRadius.vertical(top: Radius.circular(30.0))),
               child: Padding(
