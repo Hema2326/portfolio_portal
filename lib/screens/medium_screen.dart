@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/custom_text.dart';
+import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
@@ -52,7 +54,7 @@ class _MediumScreenState extends State<MediumScreen> {
           child: Row(
             children: [
               Image.asset(
-                'assets/logo1.png',
+                ImageResource.yaplogo,
                 height: 150,
                 width: 150,
               ),
@@ -64,7 +66,7 @@ class _MediumScreenState extends State<MediumScreen> {
                     isHovering = value;
                   });
                 },
-                child: Text(
+                child: CustomText(
                   StringResource.home,
                   style: TextStyle(
                       color: isHovering
@@ -84,7 +86,7 @@ class _MediumScreenState extends State<MediumScreen> {
                     isHovering1 = value;
                   });
                 },
-                child: Text(
+                child: CustomText(
                   'Portfolio',
                   style: TextStyle(
                       color: isHovering
@@ -104,7 +106,7 @@ class _MediumScreenState extends State<MediumScreen> {
                     isHovering2 = value;
                   });
                 },
-                child: Text(
+                child: CustomText(
                   'Projects',
                   style: TextStyle(
                       color: isHovering
