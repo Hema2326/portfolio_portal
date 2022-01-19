@@ -193,7 +193,10 @@ class _LargeScreenState extends State<LargeScreen> {
                                 },
                                 child: const Text(
                                   'Terms & Conditions',
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                               const SizedBox(height: 30),
@@ -205,7 +208,10 @@ class _LargeScreenState extends State<LargeScreen> {
                                 },
                                 child: const Text(
                                   'Privacy policy',
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                             ],
