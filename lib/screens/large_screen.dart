@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:marquee/marquee.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 
@@ -10,7 +12,8 @@ class LargeScreen extends StatefulWidget {
   _LargeScreenState createState() => _LargeScreenState();
 }
 
-class _LargeScreenState extends State<LargeScreen> {
+class _LargeScreenState extends State<LargeScreen>
+    with SingleTickerProviderStateMixin {
   late ScrollController _scrollController;
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -22,9 +25,11 @@ class _LargeScreenState extends State<LargeScreen> {
   bool isSelected1 = false;
   bool isSelected2 = false;
   bool isSelected3 = false;
+  TabController? _tabController;
 
   @override
   void initState() {
+    _tabController = TabController(vsync: this, length: 3);
     super.initState();
     _scrollController = ScrollController();
   }
@@ -48,72 +53,168 @@ class _LargeScreenState extends State<LargeScreen> {
         backgroundColor: Colors.white,
         appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 1000),
-          child: Container(
-            margin: const EdgeInsets.fromLTRB(30, 0, 20, 0),
-            child: Row(
-              children: [
-                Image.asset(
-                  'assets/logo1.png',
-                  height: 150,
-                  width: 150,
-                ),
-                const Spacer(),
-                InkWell(
-                  onTap: () {},
-                  onHover: (value) {
-                    setState(() {
-                      isHovering = value;
-                    });
-                  },
-                  child: Text(
-                    'Home',
-                    style: TextStyle(
-                        color: isHovering ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(70, 40, 0, 0),
+                    child: Image.asset(
+                      'assets/flutterlogo.png',
+                      // height: 60,
+                      width: 60,
+                    ),
+                  ),
+                  const Spacer(),
+                  Flexible(
+                    child: Container(
+                      color: Colors.white,
+                      // height: 50,
+                      // width: 10,
+
+                      margin: const EdgeInsets.fromLTRB(0, 15, 10, 0),
+                      child: TabBar(
+                          controller: _tabController,
+                          isScrollable: false,
+                          indicatorSize: TabBarIndicatorSize.label,
+                          indicatorPadding: EdgeInsets.zero,
+                          padding: EdgeInsets.zero,
+                          indicatorColor: Colors.lightBlueAccent,
+                          labelColor: Colors.black,
+                          tabs: [
+                            const Tab(
+                              text: 'Home',
+                            ),
+                            const Tab(text: 'Portfolio'),
+                            const Tab(text: 'Projects'),
+                          ]),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width,
+                color: Colors.lightBlueAccent,
+                child: Center(
+                  child: Marquee(
+                    text:
+                        'Flutter is Google’s free and open-source UI framework for creating native mobile applications. Released in 2017, Flutter allows developers to build mobile applications for both iOS and Android with a single codebase and programming language. This capability makes building iOS and Android apps simpler and faster.',
+                    style: GoogleFonts.aBeeZee(
+                      textStyle: const TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                 ),
-                SizedBox(
-                  width: screenSize.width / 20,
-                ),
-                InkWell(
-                  onTap: () {},
-                  onHover: (value) {
-                    setState(() {
-                      isHovering1 = value;
-                    });
-                  },
-                  child: Text(
-                    'Portfolio',
-                    style: TextStyle(
-                        color: isHovering1 ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
+              ),
+              Flexible(
+                child: Container(
+                  child: TabBarView(
+                    controller: _tabController,
+                    children: [
+                      SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            Stack(
+                              children: [
+                                Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/flutter-engage.png',
+                                      fit: BoxFit.cover,
+                                      height: 560,
+                                      // width: MediaQuery.of(context).size.width,
+                                    ),
+                                    Image.asset(
+                                      'assets/flutter-engage.png',
+                                      fit: BoxFit.cover,
+                                      height: 560,
+                                      // width: MediaQuery.of(context).size.width,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                    height: 40,
+                                    width: 150,
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.lightBlue),
+                                    child: const Center(
+                                        child: const Text(
+                                      'Fast',
+                                      style: TextStyle(color: Colors.white),
+                                    ))),
+                                Container(
+                                    height: 40,
+                                    width: 150,
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.lightBlue),
+                                    child: const Center(
+                                        child: Text(
+                                      'Fast',
+                                      style: TextStyle(color: Colors.white),
+                                    ))),
+                                const SizedBox(width: 40),
+                                Container(
+                                    height: 40,
+                                    width: 150,
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.lightBlue),
+                                    child: const Center(
+                                        child: const Text(
+                                      'Fast',
+                                      style: TextStyle(color: Colors.white),
+                                    ))),
+                                const Spacer(),
+                                Container(
+                                  color: Colors.white,
+                                  padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
+                                    height: 500.0,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Container(
+                              width: MediaQuery.of(context).size.width,
+                              color: Colors.white,
+                              padding: const EdgeInsets.only(bottom: 20),
+                              child: Lottie.network(
+                                'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
+                                height: 600.0,
+                                repeat: true,
+                                reverse: true,
+                                animate: true,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Icon(Icons.directions_bike),
+                      const Icon(Icons.movie),
+                    ],
                   ),
                 ),
-                SizedBox(
-                  width: screenSize.width / 20,
-                ),
-                InkWell(
-                  onTap: () {},
-                  onHover: (value) {
-                    setState(() {
-                      isHovering2 = value;
-                    });
-                  },
-                  child: Text(
-                    'Projects',
-                    style: TextStyle(
-                        color: isHovering2 ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
-                  ),
-                ),
-                SizedBox(
-                  width: screenSize.width / 20,
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
         body: SingleChildScrollView(

@@ -322,13 +322,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.7"
-  tridimensional_drawer:
-    dependency: "direct main"
-    description:
-      name: tridimensional_drawer
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.1"
   typed_data:
     dependency: transitive
     description:
