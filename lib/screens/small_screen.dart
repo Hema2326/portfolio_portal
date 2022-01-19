@@ -2,6 +2,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tridimensional_drawer/tridimensional_drawer_controller.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio_portal/screens/app_bar.dart';
@@ -28,6 +29,9 @@ class _SmallScreenState extends State<SmallScreen>
   bool isSelected3 = false;
   bool isSelected4 = false;
   late AnimationController _controller;
+
+  final TridimensionalDrawerController controller =
+      TridimensionalDrawerController();
 
   @override
   void initState() {
