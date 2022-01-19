@@ -116,173 +116,87 @@ class _MediumScreenState extends State<MediumScreen> {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(height: 100),
-            Lottie.network(
-              'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
-              height: 600.0,
-              repeat: true,
-              reverse: true,
-              animate: true,
-            ),
-            Container(
-              height: 250,
-              width: double.maxFinite,
-              decoration: const BoxDecoration(
-                  color: Colors.black,
-                  borderRadius:
-                      BorderRadius.vertical(top: Radius.circular(30.0))),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 38.0, left: 38, right: 38),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Scrollbar(
-                      isAlwaysShown: true,
-                      hoverThickness: double.infinity,
-                      showTrackOnHover: true,
-                      child: SingleChildScrollView(
-                        child: Column(
+        child: Column(children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Container(height: 900),
+              Lottie.network(
+                'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
+                height: 600.0,
+                repeat: true,
+                reverse: true,
+                animate: true,
+              ),
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                  height: 250,
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                          begin: Alignment.bottomLeft,
+                          end: Alignment.topRight,
+                          colors: [
+                            Colors.blue.shade600,
+                            Colors.blueAccent.shade100
+                          ]),
+                      borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(30.0))),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 38.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Wrap(
-                              direction: Axis.vertical,
-                              alignment: WrapAlignment.center,
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'Chennai, INDIA',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(height: 25),
-                                    const Text(
-                                      'M2P Fintech,\n3rd Floor, MM Complex, \n30/10, Hopman Street 2nd Street,\nAlandur, Chennai - 600016.TamilNadu. \nIndia',
-                                      style: TextStyle(color: Colors.white60),
-                                    ),
-                                    const SizedBox(
-                                      height: 50,
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'Mumbai, INDIA',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(height: 20),
-                                    const Text(
-                                      'M2P Fintech,\n91Springboard, 1st Floor,\nKagalwala House,Plot No. 175,\nCST Road, Behind Mercedes\nBenz showroom,\nKalina, MUMBAI - 400 098.',
-                                      style: TextStyle(color: Colors.white60),
-                                    ),
-                                    const SizedBox(
-                                      height: 40,
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'Abu Dhabi, UAE',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(height: 20),
-                                    const Text(
-                                      'M2P Solutions Ltd,\nOffice No.2452, 24 - Al Sila Tower, \nAbu Dhabi Global Market Square,\nAl Maryah Island\nAbu Dhabi,\nUnited Arab Emirates.',
-                                      style: TextStyle(color: Colors.white60),
-                                    ),
-                                    const SizedBox(
-                                      height: 40,
-                                    ),
-                                  ],
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text(
-                                      'Dubai, UAE',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(height: 20),
-                                    const Text(
-                                      'M2P Solutions Ltd,\nSuite 105-106, \nBuilding 1, Bay Square,\nBusiness Bay,\nDubai.',
-                                      style: TextStyle(color: Colors.white60),
-                                    ),
-                                    const SizedBox(
-                                      height: 55,
-                                    ),
-                                  ],
-                                ),
-                              ],
+                            const Text(
+                              'Home',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
                             ),
-                            GestureDetector(
-                              onTap: () async {
-                                await launch('mailto: ping@m2pfintech.com');
-                              },
-                              child: const Text(
-                                'ping@m2pfintech.com',
-                                style: TextStyle(color: Colors.white),
-                              ),
+                            const SizedBox(height: 25),
+                            const Text(
+                              'Portfolio',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
                             ),
-                            const SizedBox(
-                              height: 20,
+                            const SizedBox(height: 25),
+                            const Text(
+                              'Projects',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
                             ),
-                            GestureDetector(
-                              onTap: () {
-                                launch('tel: 044-40554808');
-                              },
-                              child: const Text(
-                                '044-40554808',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            GestureDetector(
-                              onTap: () {
-                                _scrollToTop();
-                              },
-                              child: const Text(
-                                '© 2021 M2P Fintech',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 20,
-                            ),
+                            const SizedBox(height: 20)
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
                             GestureDetector(
                               onTap: () async {
                                 const url = "https://m2pfintech.com/legal/";
                                 await launch(url);
                               },
                               child: const Text(
-                                'Legal ',
-                                style: TextStyle(color: Colors.white),
+                                'Terms & Conditions',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold),
                               ),
                             ),
-                            const SizedBox(
-                              height: 20,
-                            ),
+                            const SizedBox(height: 30),
                             GestureDetector(
                               onTap: () async {
                                 const url =
@@ -291,103 +205,108 @@ class _MediumScreenState extends State<MediumScreen> {
                               },
                               child: const Text(
                                 'Privacy policy',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold),
                               ),
-                            ),
-                            const SizedBox(
-                              height: 20,
                             ),
                           ],
                         ),
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        InkWell(
-                          child: FaIcon(FontAwesomeIcons.linkedin,
-                              color:
-                                  isSelected ? Colors.blue[700] : Colors.white,
-                              size: 20.0),
-                          onTap: () async {
-                            const url =
-                                "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH40bJuvpRNdAAAAX5O0iFIuWCj7F96IZOHbTDfHM_AN4cwx0-wzPOj1PFgLBfxB9L85nUiD4I2sqXjVcN4qT66e_ZUEm2Wczqs-049m4ctLkq193R5q9hmdTHz1DsOahwt8-M=&originalReferer=https://www.m2pfintech.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fm2pfintech";
-                            await launch(url);
-                          },
-                          onHover: (value) {
-                            setState(() {
-                              isSelected = value;
-                            });
-                          },
-                        ),
-                        const SizedBox(height: 10),
-                        InkWell(
-                          child: FaIcon(FontAwesomeIcons.twitter,
-                              color:
-                                  isSelected1 ? Colors.blue[400] : Colors.white,
-                              size: 20.0),
-                          onTap: () async {
-                            const url = "https://twitter.com/m2pfintech";
-                            await launch(url);
-                          },
-                          onHover: (value) {
-                            setState(() {
-                              isSelected1 = value;
-                            });
-                          },
-                        ),
-                        const SizedBox(height: 10),
-                        InkWell(
-                          child: FaIcon(FontAwesomeIcons.instagram,
-                              color:
-                                  isSelected2 ? Colors.pink[400] : Colors.white,
-                              size: 20.0),
-                          onTap: () async {
-                            const url = "https://www.instagram.com/m2pfintech/";
-                            await launch(url);
-                          },
-                          onHover: (value) {
-                            setState(() {
-                              isSelected2 = value;
-                            });
-                          },
-                        ),
-                        const SizedBox(height: 10),
-                        InkWell(
-                          child: FaIcon(FontAwesomeIcons.facebook,
-                              color:
-                                  isSelected3 ? Colors.blue[600] : Colors.white,
-                              size: 20.0),
-                          onTap: () async {
-                            const url = "https://www.facebook.com/m2pfintech";
-                            await launch(url);
-                          },
-                          onHover: (value) {
-                            setState(() {
-                              isSelected3 = value;
-                            });
-                          },
-                        ),
-                        const SizedBox(height: 50),
-                        InkWell(
-                          child: Container(
-                              decoration: const BoxDecoration(
-                                  color: Colors.red, shape: BoxShape.circle),
-                              child: const Icon(
-                                Icons.arrow_upward,
-                                color: Colors.white,
-                              )),
-                          onTap: () {
-                            _scrollToTop();
-                          },
+                        Column(
+                          children: [
+                            InkWell(
+                              child: FaIcon(FontAwesomeIcons.linkedin,
+                                  color: isHovering
+                                      ? Colors.blue[700]
+                                      : Colors.white,
+                                  size: 30.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH40bJuvpRNdAAAAX5O0iFIuWCj7F96IZOHbTDfHM_AN4cwx0-wzPOj1PFgLBfxB9L85nUiD4I2sqXjVcN4qT66e_ZUEm2Wczqs-049m4ctLkq193R5q9hmdTHz1DsOahwt8-M=&originalReferer=https://www.m2pfintech.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fm2pfintech";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isHovering = value;
+                                });
+                              },
+                            ),
+                            const SizedBox(height: 10),
+                            InkWell(
+                              child: FaIcon(FontAwesomeIcons.twitter,
+                                  color: isSelected1
+                                      ? Colors.blue[400]
+                                      : Colors.white,
+                                  size: 30.0),
+                              onTap: () async {
+                                const url = "https://twitter.com/m2pfintech";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected1 = value;
+                                });
+                              },
+                            ),
+                            const SizedBox(height: 10),
+                            InkWell(
+                              child: FaIcon(FontAwesomeIcons.instagram,
+                                  color: isSelected2
+                                      ? Colors.pink[400]
+                                      : Colors.white,
+                                  size: 30.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.instagram.com/m2pfintech/";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected2 = value;
+                                });
+                              },
+                            ),
+                            const SizedBox(height: 10),
+                            InkWell(
+                              child: FaIcon(FontAwesomeIcons.facebook,
+                                  color: isSelected3
+                                      ? Colors.blue[600]
+                                      : Colors.white,
+                                  size: 30.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.facebook.com/m2pfintech";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected3 = value;
+                                });
+                              },
+                            ),
+                            const SizedBox(height: 50),
+                          ],
                         ),
                       ],
                     ),
-                  ],
+                  )),
+              Positioned(
+                right: 30,
+                bottom: 20,
+                child: InkWell(
+                  child: const Icon(
+                    Icons.arrow_circle_up,
+                    color: Colors.white,
+                  ),
+                  onTap: () {
+                    _scrollToTop();
+                  },
                 ),
               ),
-            ),
-          ],
-        ),
+            ],
+          )
+        ]),
       ),
     );
   }
