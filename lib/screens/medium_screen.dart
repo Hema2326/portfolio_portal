@@ -48,7 +48,7 @@ class _MediumScreenState extends State<MediumScreen> {
       appBar: PreferredSize(
         preferredSize: Size(screenSize.width, 768),
         child: Container(
-          margin: EdgeInsets.fromLTRB(30, 0, 20, 0),
+          margin: const EdgeInsets.fromLTRB(30, 0, 20, 0),
           child: Row(
             children: [
               Image.asset(
@@ -56,7 +56,7 @@ class _MediumScreenState extends State<MediumScreen> {
                 height: 150,
                 width: 150,
               ),
-              Spacer(),
+              const Spacer(),
               InkWell(
                 onTap: () {},
                 onHover: (value) {

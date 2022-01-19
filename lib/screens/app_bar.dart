@@ -3,6 +3,8 @@ import 'package:portfolio_portal/widgets/responsive_widget.dart';
 
 AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
     AppBar(
+
+
       backgroundColor: Colors.white,
 elevation: 2,
 leading: !ResponsiveWidget.isSmallSceenSize(context)

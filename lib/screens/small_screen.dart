@@ -1,5 +1,7 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio_portal/screens/app_bar.dart';
@@ -176,31 +178,31 @@ class _SmallScreenState extends State<SmallScreen> {
                         children: <Widget>[
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text(
+                            children: const [
+                              Text(
                                 'Home',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
-                              const SizedBox(height: 25),
-                              const Text(
+                              SizedBox(height: 25),
+                              Text(
                                 'Portfolio',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
-                              const SizedBox(height: 25),
-                              const Text(
+                              SizedBox(height: 25),
+                              Text(
                                 'Projects',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
-                              const SizedBox(height: 20)
+                              SizedBox(height: 20)
                             ],
                           ),
                           Column(

@@ -1,3 +1,9 @@
-2022/01/18-19:21:20.211 b803 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.vPukC1/flutter_tools_chrome_device.FJVaoA/Default/Extension Scripts/MANIFEST-000001
-2022/01/18-19:21:20.211 b803 Recovering log #3
-2022/01/18-19:21:20.211 b803 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.vPukC1/flutter_tools_chrome_device.FJVaoA/Default/Extension Scripts/000003.log 
+<<<<<<< HEAD
+2022/01/19-09:48:23.916 6707 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.MX141z/flutter_tools_chrome_device.jCQvzG/Default/Extension Scripts/MANIFEST-000001
+2022/01/19-09:48:23.916 6707 Recovering log #3
+2022/01/19-09:48:23.916 6707 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.MX141z/flutter_tools_chrome_device.jCQvzG/Default/Extension Scripts/000003.log 
+=======
+2022/01/18-20:41:00.417 de03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.jjiSV6/flutter_tools_chrome_device.2AyXrd/Default/Extension Scripts/MANIFEST-000001
+2022/01/18-20:41:00.417 de03 Recovering log #3
+2022/01/18-20:41:00.418 de03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.jjiSV6/flutter_tools_chrome_device.2AyXrd/Default/Extension Scripts/000003.log 
+>>>>>>> 7745d0250f44bb40f4ebf82f1ee91fa2b74fb774

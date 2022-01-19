@@ -40,6 +40,9 @@ dependencies:
   
   lottie: ^1.2.1
   google_fonts: ^2.2.0
+  animated_text_kit: ^4.2.1
+  marquee: ^2.2.0
+  carousel_slider: ^4.0.0
 
 dev_dependencies:
   flutter_lints: ^1.0.0
@@ -57,7 +60,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/logo1.png
+    - assets/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
