@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
@@ -52,12 +53,11 @@ class _SmallScreenState extends State<SmallScreen> {
         extendBodyBehindAppBar: true,
         appBar: topNavigationBar(context, scaffoldKey),
         drawer: Drawer(
-          backgroundColor: Colors.white,
+          backgroundColor: ColorResource.colorFFFFFF,
           child: Column(
             children: [
               Image.asset(
                 ImageResource.yaplogo,
-                // 'assets/logo1.png',
                 height: 150,
                 width: 150,
               ),
@@ -70,7 +70,7 @@ class _SmallScreenState extends State<SmallScreen> {
                   });
                 },
                 child: Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ColorResource.colorff5252),
@@ -98,7 +98,7 @@ class _SmallScreenState extends State<SmallScreen> {
                   });
                 },
                 child: Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ColorResource.colorff5252),
@@ -126,7 +126,7 @@ class _SmallScreenState extends State<SmallScreen> {
                   });
                 },
                 child: Container(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(color: ColorResource.colorff5252),

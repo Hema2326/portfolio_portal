@@ -87,7 +87,7 @@ class _MediumScreenState extends State<MediumScreen> {
                   });
                 },
                 child: CustomText(
-                  'Portfolio',
+                  StringResource.portfolio,
                   style: TextStyle(
                       color: isHovering
                           ? ColorResource.colorEC1C24
@@ -107,7 +107,7 @@ class _MediumScreenState extends State<MediumScreen> {
                   });
                 },
                 child: CustomText(
-                  'Projects',
+                  StringResource.services,
                   style: TextStyle(
                       color: isHovering
                           ? ColorResource.colorEC1C24
