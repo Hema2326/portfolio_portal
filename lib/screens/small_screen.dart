@@ -15,7 +15,7 @@ class SmallScreen extends StatefulWidget {
 }
 
 class _SmallScreenState extends State<SmallScreen>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late ScrollController _scrollController;
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -29,6 +29,14 @@ class _SmallScreenState extends State<SmallScreen>
   bool isSelected4 = false;
   late AnimationController _controller;
 
+  late final AnimationController controller = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
+  late final Animation<double> _animation = CurvedAnimation(
+    parent: controller,
+    curve: Curves.bounceIn,
+  );
   @override
   void initState() {
     super.initState();
@@ -46,8 +54,8 @@ class _SmallScreenState extends State<SmallScreen>
   @override
   void dispose() {
     _controller.dispose();
+    controller.dispose();
     _scrollController.dispose();
-
     super.dispose();
   }
 
@@ -159,14 +167,7 @@ class _SmallScreenState extends State<SmallScreen>
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(height: 900),
-                Lottie.network(
-                  'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
-                  height: 600.0,
-                  repeat: true,
-                  reverse: true,
-                  animate: true,
-                ),
+                Container(height: 100),
               ],
             ),
             Stack(
@@ -262,10 +263,29 @@ class _SmallScreenState extends State<SmallScreen>
                       ),
                       Column(
                         children: [
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.medium,
+                                  color:
+                                      isSelected4 ? Colors.black : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://github.com/flutter";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected4 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
                           InkWell(
                             child: FaIcon(FontAwesomeIcons.github,
                                 color:
-                                    isSelected4 ? Colors.black : Colors.white,
+                                    isSelected3 ? Colors.black : Colors.white,
                                 size: 25.0),
                             onTap: () async {
                               const url = "https://github.com/flutter";
@@ -273,7 +293,7 @@ class _SmallScreenState extends State<SmallScreen>
                             },
                             onHover: (value) {
                               setState(() {
-                                isSelected4 = value;
+                                isSelected3 = value;
                               });
                             },
                           ),
@@ -314,10 +334,8 @@ class _SmallScreenState extends State<SmallScreen>
                           ),
                           const SizedBox(height: 10),
                           InkWell(
-                            child: FaIcon(FontAwesomeIcons.instagram,
-                                color: isSelected2
-                                    ? Colors.pink[400]
-                                    : Colors.white,
+                            child: FaIcon(FontAwesomeIcons.youtube,
+                                color: isSelected2 ? Colors.red : Colors.white,
                                 size: 25.0),
                             onTap: () async {
                               const url =
@@ -331,23 +349,6 @@ class _SmallScreenState extends State<SmallScreen>
                             },
                           ),
                           const SizedBox(height: 10),
-                          InkWell(
-                            child: FaIcon(FontAwesomeIcons.facebook,
-                                color: isSelected3
-                                    ? Colors.blue[600]
-                                    : Colors.white,
-                                size: 25.0),
-                            onTap: () async {
-                              const url = "https://www.facebook.com/m2pfintech";
-                              await launch(url);
-                            },
-                            onHover: (value) {
-                              setState(() {
-                                isSelected3 = value;
-                              });
-                            },
-                          ),
-                          // const SizedBox(height: 50),
                         ],
                       ),
                     ],
