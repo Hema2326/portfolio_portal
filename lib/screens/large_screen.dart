@@ -288,31 +288,64 @@ class _LargeScreenState extends State<LargeScreen>
                     children: <Widget>[
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
-                            'Home',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
+                        children: [
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Careers',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          SizedBox(height: 25),
-                          Text(
-                            'Portfolio',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://medium.com/flutter";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'News',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          SizedBox(height: 25),
-                          Text(
-                            'Projects',
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://flutter.dev/brand";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Brand',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          SizedBox(height: 20)
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://flutter.dev/culture";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Culture',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
                         ],
                       ),
                       Column(
@@ -320,33 +353,64 @@ class _LargeScreenState extends State<LargeScreen>
                         children: [
                           GestureDetector(
                             onTap: () async {
-                              const url = "https://m2pfintech.com/legal/";
+                              const url =
+                                  "https://flutter.dev/multi-platform/mobile";
                               await launch(url);
                             },
                             child: const Text(
-                              'Terms & Conditions',
+                              'Mobile',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 20),
                           GestureDetector(
                             onTap: () async {
                               const url =
-                                  "https://m2pfintech.com/privacy-policy/";
+                                  "https://flutter.dev/multi-platform/web";
                               await launch(url);
                             },
                             child: const Text(
-                              'Privacy policy',
+                              'Web',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://flutter.dev/multi-platform/desktop";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Desktop',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://flutter.dev/multi-platform/embedded";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Embedded',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
                         ],
                       ),
                       Column(
