@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:marquee/marquee.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
+import 'dart:math' as math;
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key? key}) : super(key: key);
@@ -13,10 +14,11 @@ class LargeScreen extends StatefulWidget {
 }
 
 class _LargeScreenState extends State<LargeScreen>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late ScrollController _scrollController;
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+
   bool isHovering = false;
   bool isHovering1 = false;
   bool isHovering2 = false;
@@ -25,18 +27,49 @@ class _LargeScreenState extends State<LargeScreen>
   bool isSelected1 = false;
   bool isSelected2 = false;
   bool isSelected3 = false;
+  bool isSelected4 = false;
+
   TabController? _tabController;
+
+  late AnimationController _controller;
+
+  late final AnimationController controller = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
+
+  late final Animation<double> _animation = CurvedAnimation(
+    parent: controller,
+    curve: Curves.bounceIn,
+  );
+
+  late final AnimationController arrow = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
+
+  late final Animation<double> _arrowAnimation =
+      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   @override
   void initState() {
-    _tabController = TabController(vsync: this, length: 3);
-    super.initState();
     _scrollController = ScrollController();
+    _tabController = TabController(vsync: this, length: 3);
+    _controller = AnimationController(
+      value: 0.0,
+      duration: const Duration(seconds: 25),
+      upperBound: 1,
+      lowerBound: -3,
+      vsync: this,
+    )..repeat();
+    super.initState();
   }
 
   @override
   void dispose() {
     _scrollController.dispose();
+    _controller.dispose();
+    controller.dispose();
     super.dispose();
   }
 
@@ -222,195 +255,255 @@ class _LargeScreenState extends State<LargeScreen>
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(height: 900),
-                Lottie.network(
-                  'https://assets4.lottiefiles.com/packages/lf20_rfDuEU.json',
-                  height: 600.0,
-                  repeat: true,
-                  reverse: true,
-                  animate: true,
-                ),
+                Container(height: 100),
               ],
             ),
             Stack(
               children: [
-                AnimatedContainer(
-                    duration: const Duration(milliseconds: 100),
-                    curve: Curves.easeInOutQuad,
-                    height: 250,
-                    width: double.maxFinite,
-                    decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            begin: Alignment.bottomLeft,
-                            end: Alignment.topRight,
-                            colors: [
-                              Colors.blue.shade600,
-                              Colors.blueAccent.shade100
-                            ]),
-                        borderRadius: const BorderRadius.vertical(
-                            top: Radius.circular(30.0))),
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 38.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text(
-                                'Home',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              const SizedBox(height: 25),
-                              const Text(
-                                'Portfolio',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              const SizedBox(height: 25),
-                              const Text(
-                                'Projects',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              const SizedBox(height: 20)
-                            ],
+                AnimatedBuilder(
+                    animation: _controller,
+                    builder: (BuildContext context, Widget? child) {
+                      return ClipPath(
+                          clipper: DrawClip(_controller.value),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                                height: 270,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.bottomLeft,
+                                      end: Alignment.topRight,
+                                      colors: [
+                                        Colors.blue.shade600,
+                                        Colors.blueAccent.shade100
+                                      ]),
+                                )),
+                          ));
+                    }),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            'Home',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://m2pfintech.com/legal/";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Terms & Conditions',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 30),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://m2pfintech.com/privacy-policy/";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Privacy policy',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                            ],
+                          SizedBox(height: 25),
+                          Text(
+                            'Portfolio',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
                           ),
-                          Column(
-                            children: [
-                              InkWell(
-                                child: FaIcon(FontAwesomeIcons.linkedin,
-                                    color: isHovering
-                                        ? Colors.blue[700]
-                                        : Colors.white,
-                                    size: 30.0),
-                                onTap: () async {
-                                  const url =
-                                      "https://www.linkedin.com/authwall?trk=gf&trkInfo=AQH40bJuvpRNdAAAAX5O0iFIuWCj7F96IZOHbTDfHM_AN4cwx0-wzPOj1PFgLBfxB9L85nUiD4I2sqXjVcN4qT66e_ZUEm2Wczqs-049m4ctLkq193R5q9hmdTHz1DsOahwt8-M=&originalReferer=https://www.m2pfintech.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fm2pfintech";
-                                  await launch(url);
-                                },
-                                onHover: (value) {
-                                  setState(() {
-                                    isHovering = value;
-                                  });
-                                },
-                              ),
-                              const SizedBox(height: 10),
-                              InkWell(
-                                child: FaIcon(FontAwesomeIcons.twitter,
-                                    color: isSelected1
-                                        ? Colors.blue[400]
-                                        : Colors.white,
-                                    size: 30.0),
-                                onTap: () async {
-                                  const url = "https://twitter.com/m2pfintech";
-                                  await launch(url);
-                                },
-                                onHover: (value) {
-                                  setState(() {
-                                    isSelected1 = value;
-                                  });
-                                },
-                              ),
-                              const SizedBox(height: 10),
-                              InkWell(
-                                child: FaIcon(FontAwesomeIcons.instagram,
-                                    color: isSelected2
-                                        ? Colors.pink[400]
-                                        : Colors.white,
-                                    size: 30.0),
-                                onTap: () async {
-                                  const url =
-                                      "https://www.instagram.com/m2pfintech/";
-                                  await launch(url);
-                                },
-                                onHover: (value) {
-                                  setState(() {
-                                    isSelected2 = value;
-                                  });
-                                },
-                              ),
-                              const SizedBox(height: 10),
-                              InkWell(
-                                child: FaIcon(FontAwesomeIcons.facebook,
-                                    color: isSelected3
-                                        ? Colors.blue[600]
-                                        : Colors.white,
-                                    size: 30.0),
-                                onTap: () async {
-                                  const url =
-                                      "https://www.facebook.com/m2pfintech";
-                                  await launch(url);
-                                },
-                                onHover: (value) {
-                                  setState(() {
-                                    isSelected3 = value;
-                                  });
-                                },
-                              ),
-                              const SizedBox(height: 50),
-                            ],
+                          SizedBox(height: 25),
+                          Text(
+                            'Projects',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
                           ),
+                          SizedBox(height: 20)
                         ],
                       ),
-                    )),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://m2pfintech.com/legal/";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Terms & Conditions',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 30),
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://m2pfintech.com/privacy-policy/";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Privacy policy',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 30),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.medium,
+                                  color:
+                                      isSelected ? Colors.black : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://medium.com/flutter";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.meetup,
+                                  color: isSelected2
+                                      ? Colors.red[700]
+                                      : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.meetup.com/pro/flutter/";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected2 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.github,
+                                  color:
+                                      isSelected1 ? Colors.black : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://github.com/flutter";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected1 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.twitter,
+                                  color: isSelected3
+                                      ? Colors.blue[400]
+                                      : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://twitter.com/flutterdev";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected3 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.youtube,
+                                  color:
+                                      isSelected4 ? Colors.red : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.youtube.com/flutterdev";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected4 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
                 Positioned(
                   right: 30,
-                  bottom: 20,
-                  child: InkWell(
-                    child: const Icon(
-                      Icons.arrow_circle_up,
-                      color: Colors.white,
+                  bottom: 70,
+                  child: RotationTransition(
+                    turns: _arrowAnimation,
+                    child: InkWell(
+                      child: const Icon(
+                        Icons.arrow_circle_up,
+                        color: Colors.white,
+                      ),
+                      onTap: () {
+                        _scrollToTop();
+                      },
                     ),
-                    onTap: () {
-                      _scrollToTop();
-                    },
                   ),
                 ),
               ],
             )
           ]),
         ));
+  }
+}
+
+class DrawClip extends CustomClipper<Path> {
+  double move = 0;
+  double slice = math.pi;
+  DrawClip(this.move);
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+
+    path.lineTo(0, size.height * 0.6);
+
+    double xCenter =
+        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
+    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
+    path.quadraticBezierTo(
+      xCenter,
+      yCenter,
+      size.width,
+      size.height * 0.8,
+    );
+
+    path.lineTo(size.width, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return true;
   }
 }
