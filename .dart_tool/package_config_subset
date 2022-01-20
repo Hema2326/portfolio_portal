@@ -2,6 +2,10 @@ portfolio_portal
 2.16
 file:///Users/seema/Desktop/portfolio_portal/
 file:///Users/seema/Desktop/portfolio_portal/lib/
+animated_text_kit
+2.12
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1/
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1/lib/
 archive
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.8/
@@ -14,6 +18,10 @@ boolean_selector
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib/
+carousel_slider
+2.12
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.0.0/
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.0.0/lib/
 characters
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.0/
@@ -38,6 +46,10 @@ cupertino_icons
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib/
+fading_edge_scrollview
+2.12
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fading_edge_scrollview-2.0.1/
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fading_edge_scrollview-2.0.1/lib/
 fake_async
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/
@@ -82,6 +94,10 @@ lottie
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/lottie-1.2.1/
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/lottie-1.2.1/lib/
+marquee
+2.12
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/marquee-2.2.0/
+file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/marquee-2.2.0/lib/
 matcher
 2.12
 file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.11/

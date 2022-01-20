@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animated_text_kit",
+      "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.8",
       "packageUri": "lib/",
@@ -16,6 +22,12 @@
     {
       "name": "boolean_selector",
       "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "carousel_slider",
+      "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -52,6 +64,12 @@
     {
       "name": "cupertino_icons",
       "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "fading_edge_scrollview",
+      "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fading_edge_scrollview-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -136,6 +154,12 @@
     {
       "name": "lottie",
       "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/lottie-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "marquee",
+      "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/marquee-2.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -338,7 +362,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-01-18T10:28:25.895546Z",
+  "generated": "2022-01-19T04:21:49.278169Z",
   "generator": "pub",
   "generatorVersion": "2.16.0-36.0.dev"
 }
