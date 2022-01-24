@@ -332,9 +332,17 @@ class _LargeScreenState extends State<LargeScreen>
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                Container(
-                                  child: Text('dbfhhddudh'),
-                                )
+                                Stack(alignment: Alignment.topRight, children: [
+                                  Container(
+                                    height: 300,
+                                    width: 300,
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                ImageResource.dart))),
+                                    child: CustomText(StringResource.fast),
+                                  ),
+                                ])
                               ],
                             ),
                             Row(
