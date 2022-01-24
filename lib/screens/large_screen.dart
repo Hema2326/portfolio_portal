@@ -217,7 +217,7 @@ class _LargeScreenState extends State<LargeScreen>
                                           color: Colors.lightBlue),
                                       child: const Center(
                                           child: const Text(
-                                        'Multi Plateform',
+                                        'Multi Platform',
                                         style: TextStyle(color: Colors.white),
                                       ))),
                                   Spacer(),
@@ -250,7 +250,7 @@ class _LargeScreenState extends State<LargeScreen>
                                           color: Colors.lightBlue),
                                       child: const Center(
                                           child: const Text(
-                                        'Plateform',
+                                        'Platform',
                                         style: TextStyle(color: Colors.white),
                                       ))),
                                   Spacer(),
