@@ -32,6 +32,16 @@ class _LargeScreenState extends State<LargeScreen>
   bool isSelected3 = false;
   TabController? _tabController;
 
+  List<MaterialColor> colorizeColors = [
+    Colors.purple,
+    Colors.blue,
+    Colors.yellow,
+  ];
+
+  static const colorizeTextStyle = TextStyle(
+    fontSize: 40.0,
+    fontFamily: 'SF',
+  );
   @override
   void initState() {
     super.initState();
@@ -80,16 +90,10 @@ class _LargeScreenState extends State<LargeScreen>
                     padding: const EdgeInsets.only(top: 40),
                     child: AnimatedTextKit(
                       animatedTexts: [
-                        ScaleAnimatedText(
+                        ColorizeAnimatedText(
                           StringResource.welcomeflutter,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                          // duration:
+                          textStyle: colorizeTextStyle,
+                          colors: colorizeColors,
                         ),
                       ],
                       displayFullTextOnTap: true,
@@ -228,7 +232,7 @@ class _LargeScreenState extends State<LargeScreen>
                                   height: 30,
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 30),
+                                  padding: const EdgeInsets.only(left: 60),
                                   child: Container(
                                     alignment: Alignment.bottomLeft,
                                     child: AnimatedTextKit(animatedTexts: [
