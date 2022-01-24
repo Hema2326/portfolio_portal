@@ -1,6 +1,21 @@
-2022/01/21-16:25:01.657 4d03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.7XtkXs/flutter_tools_chrome_device.ygNgW6/Default/Local Storage/leveldb/MANIFEST-000001
-2022/01/21-16:25:01.659 4d03 Recovering log #5
-2022/01/21-16:25:01.660 4d03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.7XtkXs/flutter_tools_chrome_device.ygNgW6/Default/Local Storage/leveldb/000005.log 
-2022/01/21-16:25:01.662 4d03 Delete type=0 #4
-2022/01/21-16:25:01.662 4d03 Delete type=0 #3
-2022/01/21-16:25:01.663 4d03 Delete type=2 #3
+<<<<<<< HEAD
+2022/01/24-10:05:10.311 2b03 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.tMheF5/flutter_tools_chrome_device.ibrCuP/Default/Local Storage/leveldb/MANIFEST-000001
+2022/01/24-10:05:10.314 2b03 Recovering log #6
+2022/01/24-10:05:10.314 2b03 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.tMheF5/flutter_tools_chrome_device.ibrCuP/Default/Local Storage/leveldb/000006.log 
+2022/01/24-10:05:10.315 2b03 Delete type=0 #4
+2022/01/24-10:05:10.315 2b03 Delete type=0 #5
+2022/01/24-10:05:10.315 2b03 Delete type=0 #3
+2022/01/24-10:05:10.315 2b03 Delete type=2 #6
+=======
+2022/01/24-10:24:39.799 2e03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.s7jJHJ/flutter_tools_chrome_device.ofQsd9/Default/Local Storage/leveldb/MANIFEST-000001
+2022/01/24-10:24:39.801 2e03 Recovering log #5
+2022/01/24-10:24:39.802 2e03 Level-0 table #8: started
+2022/01/24-10:24:39.808 2e03 Level-0 table #8: 17197 bytes OK
+2022/01/24-10:24:39.809 2e03 Recovering log #6
+2022/01/24-10:24:39.810 2e03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.s7jJHJ/flutter_tools_chrome_device.ofQsd9/Default/Local Storage/leveldb/000006.log 
+2022/01/24-10:24:39.829 2e03 Delete type=0 #4
+2022/01/24-10:24:39.829 2e03 Delete type=0 #5
+2022/01/24-10:24:39.830 2e03 Delete type=0 #3
+2022/01/24-10:24:39.830 2e03 Delete type=2 #3
+2022/01/24-10:24:39.831 2e03 Delete type=2 #7
+>>>>>>> a19736d642f15f953b58139a4a125b1f7ba9a62e

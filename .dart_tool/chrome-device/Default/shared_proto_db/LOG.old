@@ -1,3 +1,9 @@
-2022/01/21-16:25:02.628 8c07 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.7XtkXs/flutter_tools_chrome_device.ygNgW6/Default/shared_proto_db/MANIFEST-000001
-2022/01/21-16:25:02.629 8c07 Recovering log #3
-2022/01/21-16:25:02.629 8c07 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.7XtkXs/flutter_tools_chrome_device.ygNgW6/Default/shared_proto_db/000003.log 
+<<<<<<< HEAD
+2022/01/24-10:05:11.635 f403 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.tMheF5/flutter_tools_chrome_device.ibrCuP/Default/shared_proto_db/MANIFEST-000001
+2022/01/24-10:05:11.636 f403 Recovering log #3
+2022/01/24-10:05:11.636 f403 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.tMheF5/flutter_tools_chrome_device.ibrCuP/Default/shared_proto_db/000003.log 
+=======
+2022/01/24-10:24:40.689 fb03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.s7jJHJ/flutter_tools_chrome_device.ofQsd9/Default/shared_proto_db/MANIFEST-000001
+2022/01/24-10:24:40.689 fb03 Recovering log #3
+2022/01/24-10:24:40.689 fb03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.s7jJHJ/flutter_tools_chrome_device.ofQsd9/Default/shared_proto_db/000003.log 
+>>>>>>> a19736d642f15f953b58139a4a125b1f7ba9a62e
