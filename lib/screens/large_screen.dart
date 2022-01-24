@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -150,24 +151,114 @@ class _LargeScreenState extends State<LargeScreen>
           Flexible(
             child: TabBarView(controller: _tabController, children: [
               SingleChildScrollView(
-                  child: Stack(children: [
+                  child: Column(
+                   crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Stack(children: [
                 Row(
-                  children: [
-                    Image.asset(
-                      'assets/flutter-engage.png',
-                      fit: BoxFit.cover,
-                      height: 560,
-                      // width: MediaQuery.of(context).size.width,
-                    ),
-                    Image.asset(
-                      'assets/flutter-engage.png',
-                      fit: BoxFit.cover,
-                      height: 560,
-                      // width: MediaQuery.of(context).size.width,
-                    ),
-                  ],
+                      children: [
+                        Image.asset(
+                          'assets/flutter-engage.png',
+                          fit: BoxFit.cover,
+                          height: 560,
+                          // width: MediaQuery.of(context).size.width,
+                        ),
+                        Image.asset(
+                          'assets/flutter-engage.png',
+                          fit: BoxFit.cover,
+                          height: 560,
+                          // width: MediaQuery.of(context).size.width,
+                        ),
+                      ],
                 ),
-              ])),
+
+              ]),
+            CarouselSlider(
+              items: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child:  Row(
+                    children: [
+    Container(
+                height: 40,
+                width: 150,
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.lightBlue),
+                child: const Center(
+                    child: const Text(
+                      'Fast',
+                      style: TextStyle(color: Colors.white),
+                    ))),
+                      Spacer(),
+                      Container(
+                        color: Colors.white,
+                        padding: const EdgeInsets.only(bottom: 20),
+                        child: Lottie.network(
+                          'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
+                          height: 400.0,
+                          width: 500,
+                          repeat: true,
+                          reverse: true,
+                          animate: true,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+    children: [
+    Container(
+    height: 40,
+    width: 150,
+    padding: const EdgeInsets.all(10),
+    decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(15),
+    color: Colors.lightBlue),
+    child: const Center(
+    child: const Text(
+    'Multi Plateform',
+    style: TextStyle(color: Colors.white),
+    ))),
+      Spacer(),
+    Container(
+    color: Colors.white,
+    padding: const EdgeInsets.only(bottom: 20),
+    child: Lottie.network(
+    'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
+    height: 400.0,
+    width: 500,
+    repeat: true,
+    reverse: true,
+    animate: true,
+    ),
+    ),
+    ],
+    ),
+    ),
+
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Text('Desktop'),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Text('Web'),
+                )
+              ],
+              //Slider Container properties
+              options: CarouselOptions(
+                autoPlay: true,
+              ),
+            ),
+
+
+
+                    ],
+                  )),
               const Icon(Icons.directions_bike),
               const Icon(Icons.movie),
             ]),

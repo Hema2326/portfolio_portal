@@ -22,7 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit" />
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Preferences" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Reporting and NEL" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Reporting and NEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Session Storage/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Visited Links" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Visited Links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/large_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642773580653</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="conflicts changes">
+      <created>1642773806856</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642773806856</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,26 +174,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="conflicts changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1642769552332">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="241" key="GridCell.Tab.0.bottom" timestamp="1642924979654">
+      <screen x="0" y="25" width="1680" height="937" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1642769552332" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.25.1680.934@0.25.1680.934" timestamp="1642530423150" />
-    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1642769552331">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
+    <state width="1638" height="241" key="GridCell.Tab.0.center" timestamp="1642924979653">
+      <screen x="0" y="25" width="1680" height="937" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1642769552331" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.25.1680.934@0.25.1680.934" timestamp="1642530423147" />
-    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1642769552330">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="241" key="GridCell.Tab.0.center/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
+    <state width="1638" height="241" key="GridCell.Tab.0.left" timestamp="1642924979653">
+      <screen x="0" y="25" width="1680" height="937" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1642769552330" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.25.1680.934@0.25.1680.934" timestamp="1642530423146" />
-    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1642769552331">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="241" key="GridCell.Tab.0.left/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
+    <state width="1638" height="241" key="GridCell.Tab.0.right" timestamp="1642924979654">
+      <screen x="0" y="25" width="1680" height="937" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1642769552331" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1642530423148" />
+    <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
     <state x="175" y="60" key="MergeDialog" timestamp="1642410964624">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -179,9 +207,10 @@
     </state>
     <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642762681545" />
     <state x="478" y="257" key="MultipleFileMergeDialog/0.25.1680.942@0.25.1680.942" timestamp="1641968234125" />
-    <state x="349" y="128" key="SettingsEditor" timestamp="1641968437449">
-      <screen x="0" y="25" width="1680" height="940" />
+    <state x="349" y="115" key="SettingsEditor" timestamp="1642924137025">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1642924137025" />
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1642762550509">
       <screen x="0" y="0" width="1680" height="1050" />
