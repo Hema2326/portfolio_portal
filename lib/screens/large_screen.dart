@@ -1,5 +1,6 @@
 import 'dart:html';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -24,15 +25,12 @@ class _LargeScreenState extends State<LargeScreen>
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
-  bool isHovering = false;
-  bool isHovering1 = false;
-  bool isHovering2 = false;
-  bool isHovering3 = false;
   bool isSelected = false;
   bool isSelected1 = false;
   bool isSelected2 = false;
   bool isSelected3 = false;
   bool isSelected4 = false;
+  TextEditingController emailController = TextEditingController();
 
   TabController? _tabController;
 
@@ -285,67 +283,198 @@ class _LargeScreenState extends State<LargeScreen>
                       ),
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 10, right: 10),
-                    height: 150,
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        gradient: LinearGradient(
-                          begin: Alignment.topRight,
-                          end: Alignment.bottomLeft,
-                          colors: [
-                            Colors.redAccent.shade100,
-                            Colors.blueAccent,
-                          ],
-                        )),
-                    child: Column(
-                      children: [
-                        SizedBox(height: 15),
-                        Text('Get Started',
-                            style: GoogleFonts.aBeeZee(
-                                textStyle: TextStyle(
-                              color: ColorResource.colorFFFFFF,
-                              fontWeight: FontWeight.bold,
-                            ))),
-                        SizedBox(height: 20),
-                        Text(
-                          'Instant access to the power of the Flutter framework',
-                          style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
-                              color: ColorResource.colorFFFFFF,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                  Stack(
+                    alignment: Alignment.bottomRight,
+                    children: [
+                      // Spacer(),
+                      Container(
+                        margin: EdgeInsets.only(top: 15),
+                        color: Colors.white,
+                        // padding: const EdgeInsets.only(bottom: 20),
+                        child: Lottie.network(
+                          'https://assets4.lottiefiles.com/packages/lf20_WjWoQM.json',
+                          height: 400.0,
+                          width: 500,
+                          repeat: true,
+                          reverse: true,
+                          animate: true,
                         ),
-                        SizedBox(height: 20),
-                        ElevatedButton(
-                                onPressed: () async {
-                                  const url =
-                                      "https://docs.flutter.dev/get-started/install";
-                                  await launch(url);
-                                },
-
-                                child: Text(
-                                  'Install',
-                                  style: GoogleFonts.aBeeZee(
-                                    textStyle: TextStyle(
-                                      color: Colors.lightBlueAccent,
-                                      fontWeight: FontWeight.bold,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(left: 10, right: 10),
+                        height: 180,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            gradient: LinearGradient(
+                              begin: Alignment.topRight,
+                              end: Alignment.bottomLeft,
+                              colors: [
+                                Colors.redAccent.shade100,
+                                Colors.blueAccent,
+                              ],
+                            )),
+                        child: Container(
+                          margin: EdgeInsets.only(left: 40, bottom: 20),
+                          child: Row(
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 15),
+                                  Text('Get Started',
+                                      style: GoogleFonts.sourceSansPro(
+                                          textStyle: TextStyle(
+                                        color: ColorResource.colorFFFFFF,
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold,
+                                      ))),
+                                  SizedBox(height: 15),
+                                  Text(
+                                    'Instant access to the power of the Flutter framework',
+                                    style: GoogleFonts.sourceSansPro(
+                                      textStyle: TextStyle(
+                                        color: ColorResource.colorFFFFFF,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                      ),
                                     ),
                                   ),
+                                  SizedBox(height: 16),
+                                  Row(
+                                    children: [
+                                      ElevatedButton(
+                                        onPressed: () async {
+                                          const url =
+                                              "https://docs.flutter.dev/get-started/install";
+                                          await launch(url);
+                                        },
+                                        child: Text(
+                                          'Install',
+                                          style: GoogleFonts.sourceSansPro(
+                                            textStyle: TextStyle(
+                                              color: Colors.lightBlueAccent,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                        style: ElevatedButton.styleFrom(
+                                            primary: ColorResource.colorFFFFFF,
+                                            shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(30.0),
+                                                side: BorderSide(
+                                                    color: Colors.white)),
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: 30, vertical: 20),
+                                            textStyle: TextStyle(
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      SizedBox(width: 10),
+                                      InkWell(
+                                        onTap: () async {
+                                          const url =
+                                              "https://docs.flutter.dev";
+                                          await launch(url);
+                                        },
+                                        child: Row(
+                                          children: [
+                                            Text(
+                                              'See the Documentation',
+                                              style: GoogleFonts.aBeeZee(
+                                                textStyle: TextStyle(
+                                                  color:
+                                                      ColorResource.colorFFFFFF,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                            Icon(
+                                              Icons.arrow_forward,
+                                              color: ColorResource.colorFFFFFF,
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Row(
+                       mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20,top: 30),
+                            child: Text('Join our News Letter Keep up with the latest Flutter news, releases, and more',
+                              style: GoogleFonts.aBeeZee(
+                                textStyle: TextStyle(
+                                  color:
+                                  ColorResource.color222222,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 30
                                 ),
-                                style: ElevatedButton.styleFrom(
-                                    primary: ColorResource.colorFFFFFF,
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 30, vertical: 20),
-                                    textStyle: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold)),
-
+                              ),
                             ),
-                      ],
-                    ),
+                          ),
+
+                        ],
+                      ),
+                      SizedBox(height: 40),
+                      Container(
+                        height: 100,
+                        width: 300,
+                        child: TextField(
+                          controller: emailController,
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(30)),
+                            labelText: 'E-mail',
+                            prefixIcon: Icon(Icons.mail_outline),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 10),
+                        child: ElevatedButton(
+                          onPressed: () async {
+                            const url =
+                                "https://docs.flutter.dev/get-started/install";
+                            await launch(url);
+                          },
+                          child: Text(
+                            'Subcribe',
+                            style: GoogleFonts.sourceSansPro(
+                              textStyle: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              primary: Colors.blueAccent,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius:
+                                  BorderRadius.circular(30.0),
+                                  side: BorderSide(
+                                      color: Colors.blueAccent)),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 30, vertical: 20),
+                              textStyle: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold)),
+                        ),
+                      ),
+
+                    ],
                   ),
                   Stack(
                     children: [
