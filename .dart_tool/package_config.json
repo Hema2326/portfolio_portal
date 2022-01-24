@@ -116,6 +116,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_zoom_drawer",
+      "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_zoom_drawer-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "font_awesome_flutter",
       "rootUri": "file:///Users/seema/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.2.0",
       "packageUri": "lib/",
@@ -362,7 +368,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-01-19T04:21:49.278169Z",
+  "generated": "2022-01-24T05:43:47.533885Z",
   "generator": "pub",
   "generatorVersion": "2.16.0-36.0.dev"
 }

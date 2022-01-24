@@ -329,6 +329,12 @@ class _LargeScreenState extends State<LargeScreen>
                                     ],
                                   ),
                                 ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Container(
+                                  child: Text('dbfhhddudh'),
+                                )
                               ],
                             ),
                             Row(

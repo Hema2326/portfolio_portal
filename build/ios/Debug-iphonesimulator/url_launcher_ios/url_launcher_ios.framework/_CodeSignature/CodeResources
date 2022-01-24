@@ -14,7 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
+<<<<<<< HEAD
 		jKybjkUyF4rwKky7pE/2bHMdzjQ=
+=======
+		sMouAGtK6+oDSqV66dDUCXWcAPA=
+>>>>>>> b16f4e2708ff0e6ee0ba6893e31f5f9a6b698d41
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
