@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -27,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit" />
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,12 +154,12 @@
       <option name="project" value="LOCAL" />
       <updated>1643018104600</updated>
     </task>
-    <task id="LOCAL-00013" summary="conflicts resolved">
-      <created>1643374958136</created>
+    <task id="LOCAL-00013" summary="conflicts">
+      <created>1643018837417</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1643374958137</updated>
+      <updated>1643018837417</updated>
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
@@ -184,51 +181,50 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="intial commit" />
+    <MESSAGE value="conflicts commit" />
     <MESSAGE value="conflict resolved" />
     <MESSAGE value="conflicts changes" />
     <MESSAGE value="conflicts" />
-    <MESSAGE value="conflicts resolved" />
-    <MESSAGE value="conflicts commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="conflicts commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="conflicts" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643602008825">
+    <state width="1638" height="241" key="GridCell.Tab.0.bottom" timestamp="1643019501963">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008825" />
+    <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643019501963" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.25.1680.934@0.25.1680.934" timestamp="1642530423150" />
     <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
-    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1643602008816">
+    <state width="1638" height="241" key="GridCell.Tab.0.center" timestamp="1643019501961">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008816" />
+    <state width="1638" height="241" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643019501961" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.25.1680.934@0.25.1680.934" timestamp="1642530423147" />
     <state width="1638" height="241" key="GridCell.Tab.0.center/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
-    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1643602008815">
+    <state width="1638" height="241" key="GridCell.Tab.0.left" timestamp="1643019501960">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008815" />
+    <state width="1638" height="241" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643019501960" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.25.1680.934@0.25.1680.934" timestamp="1642530423146" />
     <state width="1638" height="241" key="GridCell.Tab.0.left/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
-    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1643602008816">
+    <state width="1638" height="241" key="GridCell.Tab.0.right" timestamp="1643019501962">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008816" />
+    <state width="1638" height="241" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643019501962" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1642530423148" />
     <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
-    <state x="175" y="60" key="MergeDialog" timestamp="1643375062257">
+    <state x="175" y="60" key="MergeDialog" timestamp="1642410964624">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375062257" />
-    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643375069662">
+    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642410964624" />
+    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1642762681545">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375069662" />
+    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642762681545" />
     <state x="478" y="257" key="MultipleFileMergeDialog/0.25.1680.942@0.25.1680.942" timestamp="1641968234125" />
-    <state x="349" y="115" key="SettingsEditor" timestamp="1643563291614">
+    <state x="349" y="115" key="SettingsEditor" timestamp="1642924137025">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1643563291614" />
+    <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1642924137025" />
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643018108367">
       <screen x="0" y="0" width="1680" height="1050" />
