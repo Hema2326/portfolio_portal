@@ -1,15 +1,17 @@
-import 'dart:html';
-
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:marquee/marquee.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
-import 'package:url_launcher/link.dart';
+import 'package:portfolio_portal/widgets/flip_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:lottie/lottie.dart';
-import 'dart:math' as math;
+
+import '../models.dart/models.dart';
+import '../widgets/draw_clip.dart';
+import 'custom_screen.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key? key}) : super(key: key);
@@ -75,6 +77,7 @@ class _LargeScreenState extends State<LargeScreen>
     _scrollController.dispose();
     _controller.dispose();
     controller.dispose();
+    arrow.dispose();
     super.dispose();
   }
 
@@ -98,7 +101,6 @@ class _LargeScreenState extends State<LargeScreen>
                 margin: const EdgeInsets.fromLTRB(70, 40, 0, 0),
                 child: Image.asset(
                   'assets/flutterlogo.png',
-                  // height: 60,
                   width: 60,
                 ),
               ),
@@ -108,8 +110,8 @@ class _LargeScreenState extends State<LargeScreen>
         body: Column(children: [
           Row(
             children: [
-              Text(''),
-              Spacer(),
+              const Text(''),
+              const Spacer(),
               Flexible(
                 child: Container(
                   color: Colors.white,
@@ -153,6 +155,7 @@ class _LargeScreenState extends State<LargeScreen>
           ),
           Flexible(
             child: TabBarView(controller: _tabController, children: [
+              const PortfolioScreen(),
               SingleChildScrollView(
                   child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -189,7 +192,7 @@ class _LargeScreenState extends State<LargeScreen>
                                         'Fast',
                                         style: TextStyle(color: Colors.white),
                                       ))),
-                                  Spacer(),
+                                  const Spacer(),
                                   Container(
                                     color: Colors.white,
                                     // padding: const EdgeInsets.only(bottom: 20),
@@ -222,7 +225,7 @@ class _LargeScreenState extends State<LargeScreen>
                                         'Multi Plateform',
                                         style: TextStyle(color: Colors.white),
                                       ))),
-                                  Spacer(),
+                                  const Spacer(),
                                   Container(
                                     color: Colors.white,
                                     // padding: const EdgeInsets.only(bottom: 20),
@@ -255,7 +258,7 @@ class _LargeScreenState extends State<LargeScreen>
                                         'Plateform',
                                         style: TextStyle(color: Colors.white),
                                       ))),
-                                  Spacer(),
+                                  const Spacer(),
                                   Container(
                                     color: Colors.white,
                                     // padding: const EdgeInsets.only(bottom: 20),
@@ -286,7 +289,7 @@ class _LargeScreenState extends State<LargeScreen>
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 10, right: 10),
+                    margin: const EdgeInsets.only(left: 10, right: 10),
                     height: 150,
                     width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
@@ -301,49 +304,46 @@ class _LargeScreenState extends State<LargeScreen>
                         )),
                     child: Column(
                       children: [
-                        SizedBox(height: 15),
+                        const SizedBox(height: 15),
                         Text('Get Started',
                             style: GoogleFonts.aBeeZee(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                               color: ColorResource.colorFFFFFF,
                               fontWeight: FontWeight.bold,
                             ))),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         Text(
                           'Instant access to the power of the Flutter framework',
                           style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               color: ColorResource.colorFFFFFF,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                         ),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         ElevatedButton(
-                                onPressed: () async {
-                                  const url =
-                                      "https://docs.flutter.dev/get-started/install";
-                                  await launch(url);
-                                },
-
-                                child: Text(
-                                  'Install',
-                                  style: GoogleFonts.aBeeZee(
-                                    textStyle: TextStyle(
-                                      color: Colors.lightBlueAccent,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                                style: ElevatedButton.styleFrom(
-                                    primary: ColorResource.colorFFFFFF,
-                                    padding: EdgeInsets.symmetric(
-                                        horizontal: 30, vertical: 20),
-                                    textStyle: TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold)),
-
+                          onPressed: () async {
+                            const url =
+                                "https://docs.flutter.dev/get-started/install";
+                            await launch(url);
+                          },
+                          child: Text(
+                            'Install',
+                            style: GoogleFonts.aBeeZee(
+                              textStyle: const TextStyle(
+                                color: Colors.lightBlueAccent,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              primary: ColorResource.colorFFFFFF,
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 30, vertical: 20),
+                              textStyle: const TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ),
                       ],
                     ),
                   ),
@@ -632,7 +632,6 @@ class _LargeScreenState extends State<LargeScreen>
                   ),
                 ],
               )),
-              const Icon(Icons.directions_bike),
               const Icon(Icons.movie),
             ]),
           ),
@@ -640,34 +639,186 @@ class _LargeScreenState extends State<LargeScreen>
   }
 }
 
-class DrawClip extends CustomClipper<Path> {
-  double move = 0;
-  double slice = math.pi;
-
-  DrawClip(this.move);
+class PortfolioScreen extends StatefulWidget {
+  const PortfolioScreen({Key? key}) : super(key: key);
 
   @override
-  Path getClip(Size size) {
-    Path path = Path();
+  State<PortfolioScreen> createState() => _PortfolioScreenState();
+}
 
-    path.lineTo(0, size.height * 0.6);
+class _PortfolioScreenState extends State<PortfolioScreen> {
+  late FixedExtentScrollController controller;
+  static const double _itemHeight = 300;
+  static const int _itemCount = 100;
 
-    double xCenter =
-        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
-    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
-    path.quadraticBezierTo(
-      xCenter,
-      yCenter,
-      size.width,
-      size.height * 0.8,
-    );
+  @override
+  void initState() {
+    controller = FixedExtentScrollController();
 
-    path.lineTo(size.width, 0);
-    return path;
+    super.initState();
   }
 
   @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return true;
+  void dispose() {
+    controller.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    List<PortfolioModel> digits = [
+      PortfolioModel('assets/flutter-engage.png', 'Mari', onTap: () {
+        print('dd');
+      }
+
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(builder: (context) => MariScreen()),
+          // );
+          ),
+      PortfolioModel('assets/flutter-engage.png', 'Chinnadurai', onTap: () {
+        print('dd');
+      }),
+      PortfolioModel('assets/alexia.png', 'Alexia', onTap: () {
+        print('dd');
+      }),
+      PortfolioModel('assets/flutter-engage.png', 'Hema', onTap: () {
+        print('dd');
+      }),
+      PortfolioModel('assets/flutter-engage.png', 'Seema', onTap: () {
+        print('dd');
+      }),
+      PortfolioModel('assets/flutter-engage.png', 'Nandhakumar', onTap: () {
+        print('dd');
+      }),
+      PortfolioModel('assets/flutter-engage.png', 'Jones', onTap: () {
+        print('dd');
+      }),
+    ];
+    return Stack(
+      alignment: Alignment.topLeft,
+      children: [
+        Positioned(
+          left: 50,
+          top: 70,
+          child: Container(
+            color: Colors.black,
+            child: FlipPanel.builder(
+              itemBuilder: (context, index) => Container(
+                width: 106.0,
+                height: 128.0,
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.all(Radius.circular(4.0)),
+                ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset(
+                        '${digits[index].image}',
+                        fit: BoxFit.fill,
+                        height: 50,
+                        width: 50,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        '${digits[index].name}',
+                        style: const TextStyle(
+                            fontSize: 14.0, color: Colors.yellow),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              itemsCount: digits.length,
+              period: const Duration(milliseconds: 1000),
+              loop: -1,
+            ),
+          ),
+        ),
+        ClickableListWheelScrollView(
+          scrollController: controller,
+          onItemTapCallback: (index) {
+            digits[index].onTap;
+            // '${digits[index].onTap}';
+            // print("onItemTapCallback index: $index");
+          },
+          itemHeight: _itemHeight,
+          itemCount: digits.length,
+          child: ListWheelScrollView.useDelegate(
+              itemExtent: _itemHeight,
+              diameterRatio: 1,
+              controller: controller,
+              onSelectedItemChanged: (index) {
+                '${digits[index].onTap}';
+                // print("onSelectedItemChanged index: $index");
+              },
+              childDelegate: ListWheelChildBuilderDelegate(
+                  childCount: digits.length,
+                  builder: (context, index) {
+                    return GestureDetector(
+                      behavior: HitTestBehavior.translucent,
+                      onTap: () {},
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            '${digits[index].image}',
+                            fit: BoxFit.fill,
+                            height: 250,
+                            width: 250,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              '${digits[index].name}',
+                              style: const TextStyle(
+                                  fontSize: 20.0,
+                                  color: Colors.blue,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  })),
+        ),
+        Positioned(
+          right: 100,
+          bottom: 90,
+          child: FloatingActionButton.small(
+            onPressed: () {},
+            // digits[index].onTap,
+
+            // onPressed: () {
+
+            //   final nextIndex = controller.selectedItem + 1;
+
+            //   controller.animateToItem(nextIndex,
+            //       duration: const Duration(seconds: 1), curve: Curves.bounceIn);
+            // },
+            child: const Icon(Icons.arrow_forward_sharp),
+          ),
+        ),
+      ],
+      clipBehavior: Clip.hardEdge,
+    );
+  }
+}
+
+class MariScreen extends StatefulWidget {
+  @override
+  State<MariScreen> createState() => _MariScreenState();
+}
+
+class _MariScreenState extends State<MariScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [],
+    );
   }
 }

@@ -44,6 +44,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "clickable_list_wheel_view",
+      "rootUri": "file:///Users/antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/clickable_list_wheel_view-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///Users/antonyrubyalexia/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0",
       "packageUri": "lib/",
@@ -368,7 +374,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-01-24T06:47:02.688552Z",
+  "generated": "2022-01-26T13:20:10.012170Z",
   "generator": "pub",
   "generatorVersion": "2.16.0-36.0.dev"
 }
