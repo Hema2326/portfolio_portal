@@ -47,98 +47,98 @@ class _CustomScreenState extends State<CustomScreen> {
     return Scaffold(
         key: scaffoldKey,
         extendBodyBehindAppBar: true,
-        appBar: topNavigationBar(context, scaffoldKey),
-        drawer: Drawer(
-          backgroundColor: Colors.white,
-          child: Column(
-            children: [
-              Image.asset(
-                'assets/logo1.png',
-                height: 150,
-                width: 150,
-              ),
-              SizedBox(height: 50),
-              InkWell(
-                onTap: () {},
-                onHover: (value) {
-                  setState(() {
-                    isHovering = value;
-                  });
-                },
-                child: Container(
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent),
-                  ),
-                  child: Text(
-                    'Home',
-                    style: TextStyle(
-                        color: isHovering ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: screenSize.width / 20,
-                height: 30,
-              ),
-              InkWell(
-                onTap: () {},
-                onHover: (value) {
-                  setState(() {
-                    isHovering1 = value;
-                  });
-                },
-                child: Container(
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent),
-                  ),
-                  child: Text(
-                    'Portfolio',
-                    style: TextStyle(
-                        color: isHovering1 ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: screenSize.width / 20,
-                height: 30,
-              ),
-              InkWell(
-                onTap: () {},
-                onHover: (value) {
-                  setState(() {
-                    isHovering2 = value;
-                  });
-                },
-                child: Container(
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.redAccent),
-                  ),
-                  child: Text(
-                    'Projects',
-                    style: TextStyle(
-                        color: isHovering2 ? Colors.red : Colors.black,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: screenSize.width / 20,
-                height: 30,
-              ),
-            ],
-          ),
-        ),
+        // appBar: topNavigationBar(context, scaffoldKey),
+        // drawer: Drawer(
+        //   backgroundColor: Colors.white,
+        //   child: Column(
+        //     children: [
+        //       Image.asset(
+        //         'assets/logo1.png',
+        //         height: 150,
+        //         width: 150,
+        //       ),
+        //       SizedBox(height: 50),
+        //       InkWell(
+        //         onTap: () {},
+        //         onHover: (value) {
+        //           setState(() {
+        //             isHovering = value;
+        //           });
+        //         },
+        //         child: Container(
+        //           padding: EdgeInsets.all(10),
+        //           decoration: BoxDecoration(
+        //             borderRadius: BorderRadius.circular(20),
+        //             border: Border.all(color: Colors.redAccent),
+        //           ),
+        //           child: Text(
+        //             'Home',
+        //             style: TextStyle(
+        //                 color: isHovering ? Colors.red : Colors.black,
+        //                 fontSize: 18,
+        //                 fontWeight: FontWeight.w600),
+        //           ),
+        //         ),
+        //       ),
+        //       SizedBox(
+        //         width: screenSize.width / 20,
+        //         height: 30,
+        //       ),
+        //       InkWell(
+        //         onTap: () {},
+        //         onHover: (value) {
+        //           setState(() {
+        //             isHovering1 = value;
+        //           });
+        //         },
+        //         child: Container(
+        //           padding: EdgeInsets.all(10),
+        //           decoration: BoxDecoration(
+        //             borderRadius: BorderRadius.circular(20),
+        //             border: Border.all(color: Colors.redAccent),
+        //           ),
+        //           child: Text(
+        //             'Portfolio',
+        //             style: TextStyle(
+        //                 color: isHovering1 ? Colors.red : Colors.black,
+        //                 fontSize: 18,
+        //                 fontWeight: FontWeight.w600),
+        //           ),
+        //         ),
+        //       ),
+        //       SizedBox(
+        //         width: screenSize.width / 20,
+        //         height: 30,
+        //       ),
+        //       InkWell(
+        //         onTap: () {},
+        //         onHover: (value) {
+        //           setState(() {
+        //             isHovering2 = value;
+        //           });
+        //         },
+        //         child: Container(
+        //           padding: EdgeInsets.all(10),
+        //           decoration: BoxDecoration(
+        //             borderRadius: BorderRadius.circular(20),
+        //             border: Border.all(color: Colors.redAccent),
+        //           ),
+        //           child: Text(
+        //             'Projects',
+        //             style: TextStyle(
+        //                 color: isHovering2 ? Colors.red : Colors.black,
+        //                 fontSize: 18,
+        //                 fontWeight: FontWeight.w600),
+        //           ),
+        //         ),
+        //       ),
+        //       SizedBox(
+        //         width: screenSize.width / 20,
+        //         height: 30,
+        //       ),
+        //     ],
+        //   ),
+        // ),
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
