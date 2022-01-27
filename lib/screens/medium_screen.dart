@@ -1,9 +1,13 @@
+import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:math' as math;
 
+import '../models.dart/models.dart';
 import '../widgets/draw_clip.dart';
+import '../widgets/flip_widget.dart';
+import 'large_screen.dart';
 
 class MediumScreen extends StatefulWidget {
   const MediumScreen({Key? key}) : super(key: key);
@@ -74,6 +78,7 @@ class _MediumScreenState extends State<MediumScreen>
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(
+        extendBodyBehindAppBar: true,
         backgroundColor: Colors.white,
         appBar: PreferredSize(
           preferredSize: Size(screenSize.width, 768),
@@ -106,7 +111,13 @@ class _MediumScreenState extends State<MediumScreen>
                   width: screenSize.width / 20,
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PortfolioScreen()),
+                    );
+                  },
                   onHover: (value) {
                     setState(() {
                       isHovering1 = value;
