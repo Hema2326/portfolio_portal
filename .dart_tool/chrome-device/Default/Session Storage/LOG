@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2022/01/26-20:58:45.122 1b07 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.OomfZ2/flutter_tools_chrome_device.AqVIGW/Default/Session Storage/MANIFEST-000001
 2022/01/26-20:58:45.125 1b07 Recovering log #3
 2022/01/26-20:58:45.126 1b07 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.OomfZ2/flutter_tools_chrome_device.AqVIGW/Default/Session Storage/000003.log 
+=======
+2022/01/24-19:55:36.622 2f03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.MpWtkg/flutter_tools_chrome_device.B5CCNQ/Default/Session Storage/MANIFEST-000001
+2022/01/24-19:55:36.637 2f03 Recovering log #4
+2022/01/24-19:55:36.644 2f03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.MpWtkg/flutter_tools_chrome_device.B5CCNQ/Default/Session Storage/000004.log 
+>>>>>>> 729bc652ff4b7fc52c07d892ebe4ba03770b77b5
