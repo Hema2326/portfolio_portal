@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
@@ -1339,20 +1341,55 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
                         onTap: () {},
                         child: Column(
                           children: [
-                            Image.asset(
-                              '${digits[index].image}',
-                              fit: BoxFit.fill,
-                              height: 350,
-                              width: 350,
+                            Container(
+                              height: 250,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: Image.asset(
+                                      '${digits[index].image}',
+                                      fit: BoxFit.cover,
+                                    ).image,
+                                  ),
+                                  shape: BoxShape.rectangle,
+                                  border: Border.all(
+                                    color: Colors.blue,
+                                    width: 8,
+                                  ),
+                                  borderRadius: BorderRadius.circular(15),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                      color: Colors.black,
+                                      offset: Offset(
+                                        5.0,
+                                        5.0,
+                                      ), //Offset
+                                      blurRadius: 10.0,
+                                      spreadRadius: 2.0,
+                                    )
+                                  ]),
+                              child: ClipRRect(
+                                  child: BackdropFilter(
+                                filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                                child: Container(
+                                    alignment: Alignment.center,
+                                    color: Colors.grey.withOpacity(0.1),
+                                    child: Image.asset(
+                                      '${digits[index].image}',
+                                      height: 180,
+                                      width: 180,
+                                    )),
+                              )),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(top: 18.0),
                               child: Text(
                                 '${digits[index].name}',
                                 style: const TextStyle(
                                     fontSize: 20.0,
                                     color: Colors.white,
-                                    fontStyle: FontStyle.italic),
+                                    fontStyle: FontStyle.italic,
+                                    fontWeight: FontWeight.w600),
                               ),
                             ),
                           ],
@@ -1374,18 +1411,45 @@ class MariScreen extends StatefulWidget {
   State<MariScreen> createState() => _MariScreenState();
 }
 
-class _MariScreenState extends State<MariScreen> {
+class _MariScreenState extends State<MariScreen> with TickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation _sizeAnimation;
+  late final int seconds = 10;
+
+  bool reverse = false;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _animationController =
+        AnimationController(vsync: this, duration: Duration(seconds: seconds))
+          ..addStatusListener((status) {
+            if (status == AnimationStatus.completed) {
+              _animationController.repeat(reverse: !reverse);
+              reverse = !reverse;
+            }
+          });
+
+    _sizeAnimation =
+        Tween<double>(begin: 50.0, end: 100.0).animate(_animationController);
+    _animationController.forward();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: CircleAvatar(
-                maxRadius: 100,
-                backgroundImage: AssetImage('assets/flutter-engage.png'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AnimatedBuilder(
+                animation: _sizeAnimation,
+                builder: (context, child) => const CircleAvatar(
+                  maxRadius: 100,
+                  backgroundImage: AssetImage('assets/flutter-engage.png'),
+                ),
               ),
             ),
             const Text(
