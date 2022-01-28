@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -81,17 +79,6 @@ class _LargeScreenState extends State<LargeScreen>
         duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
   }
 
-  List<MaterialColor> colorizeColors = [
-    Colors.purple,
-    Colors.blue,
-    Colors.yellow,
-  ];
-
-  static const colorizeTextStyle = TextStyle(
-    fontSize: 40.0,
-    fontFamily: 'SF',
-  );
-
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -102,13 +89,12 @@ class _LargeScreenState extends State<LargeScreen>
           preferredSize: Size(screenSize.width, 1000),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 margin: const EdgeInsets.fromLTRB(70, 40, 0, 0),
                 child: Image.asset(
                   ImageResource.flutterlogo,
-                  // 'assets/flutterlogo.png',
-                  // height: 60,
                   width: 60,
                 ),
               ),
@@ -116,22 +102,17 @@ class _LargeScreenState extends State<LargeScreen>
                 width: 50,
               ),
               Padding(
-                padding: const EdgeInsets.only(
-                  top: 40,
-                ),
-                child: AnimatedTextKit(
-                  animatedTexts: [
-                    ColorizeAnimatedText(
-                      StringResource.welcomeflutter,
-                      textStyle: colorizeTextStyle,
-                      colors: colorizeColors,
-                    ),
-                  ],
-                  displayFullTextOnTap: true,
-                  totalRepeatCount: 10,
-                  isRepeatingAnimation: true,
-                ),
-              ),
+                  padding: const EdgeInsets.only(
+                    top: 40,
+                  ),
+                  child: CustomText(
+                    StringResource.welcomeflutter,
+                    style: GoogleFonts.lato(
+                        textStyle: const TextStyle(
+                            color: ColorResource.color222222,
+                            fontSize: 50,
+                            fontWeight: FontWeight.w400)),
+                  )),
             ],
           ),
         ),
@@ -141,7 +122,7 @@ class _LargeScreenState extends State<LargeScreen>
               const Spacer(),
               Flexible(
                 child: Container(
-                  color: Colors.white,
+                  color: ColorResource.colorFFFFFF,
                   margin: const EdgeInsets.fromLTRB(0, 45, 0, 0),
                   child: TabBar(
                       controller: _tabController,
@@ -150,7 +131,7 @@ class _LargeScreenState extends State<LargeScreen>
                       indicatorPadding: EdgeInsets.zero,
                       padding: EdgeInsets.zero,
                       indicatorColor: Colors.lightBlueAccent,
-                      labelColor: Colors.black,
+                      labelColor: ColorResource.color222222,
                       tabs: [
                         const Tab(
                           text: 'Home',
@@ -195,7 +176,7 @@ class _LargeScreenState extends State<LargeScreen>
                     ),
                   ]),
                   const SizedBox(
-                    height: 20,
+                    height: 80,
                   ),
                   CustomText(
                     StringResource.flutter,
@@ -205,149 +186,24 @@ class _LargeScreenState extends State<LargeScreen>
                       fontSize: 60,
                     )),
                   ),
-                  AnimatedTextKit(
-                    animatedTexts: [
-                      WavyAnimatedText(
-                        StringResource.buildapps,
-                        textAlign: TextAlign.center,
-                        textStyle: GoogleFonts.aBeeZee(
-                          textStyle: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ],
-                    displayFullTextOnTap: true,
-                    totalRepeatCount: 10,
-                    isRepeatingAnimation: true,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  AnimatedTextKit(
-                    animatedTexts: [
-                      TypewriterAnimatedText(StringResource.opensource,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                          cursor: '|'),
-                    ],
-                    displayFullTextOnTap: true,
-                    totalRepeatCount: 10,
-                    isRepeatingAnimation: true,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 60),
-                    child: Container(
-                      alignment: Alignment.bottomLeft,
-                      child: AnimatedTextKit(
-                        animatedTexts: [
-                          TyperAnimatedText(
-                            StringResource.sevenways,
-                            textAlign: TextAlign.start,
-                            textStyle: GoogleFonts.aBeeZee(
-                              textStyle: const TextStyle(
-                                fontSize: 40,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ),
-                        ],
-                        isRepeatingAnimation: true,
-                        displayFullTextOnTap: true,
-                        totalRepeatCount: 10,
-                      ),
-                    ),
-                  ),
                   const SizedBox(
                     height: 20,
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    child: AnimatedTextKit(
-                      animatedTexts: [
-                        ScaleAnimatedText(
-                          StringResource.singlecodebase,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        ScaleAnimatedText(
-                          StringResource.efficient,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        ScaleAnimatedText(
-                          StringResource.hotreloadimg,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        ScaleAnimatedText(
-                          StringResource.mvp,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        ScaleAnimatedText(
-                          StringResource.utilization,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        ScaleAnimatedText(
-                          StringResource.easydevelopment,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        ScaleAnimatedText(
-                          StringResource.easysetup,
-                          textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.aBeeZee(
-                            textStyle: const TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                      ],
-                      displayFullTextOnTap: true,
-                      totalRepeatCount: 10,
-                      isRepeatingAnimation: true,
+                  CustomText(
+                    StringResource.buildapps,
+                    style: GoogleFonts.aBeeZee(fontSize: 18),
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 30, right: 30),
+                    child: CustomText(
+                      StringResource.opensource,
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.aBeeZee(
+                        textStyle: const TextStyle(fontSize: 30),
+                      ),
                     ),
                   ),
                   Center(
@@ -366,61 +222,57 @@ class _LargeScreenState extends State<LargeScreen>
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      AnimatedTextKit(
-                                        animatedTexts: [
-                                          WavyAnimatedText(
-                                            StringResource.flutterways,
-                                            textAlign: TextAlign.center,
-                                            textStyle: GoogleFonts.aBeeZee(
-                                              textStyle: const TextStyle(
-                                                fontSize: 40,
-                                                fontWeight: FontWeight.w400,
-                                              ),
-                                            ),
+                                      CustomText(
+                                        StringResource.flutterways,
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.aBeeZee(
+                                          textStyle: const TextStyle(
+                                            fontSize: 35,
+                                            fontWeight: FontWeight.w400,
                                           ),
-                                        ],
-                                        displayFullTextOnTap: true,
-                                        totalRepeatCount: 10,
-                                        isRepeatingAnimation: true,
+                                        ),
                                       ),
-                                      AnimatedTextKit(animatedTexts: [
-                                        ScaleAnimatedText(
-                                          StringResource.fast,
-                                          textAlign: TextAlign.center,
-                                          textStyle: GoogleFonts.aBeeZee(
-                                            textStyle: const TextStyle(
-                                              fontSize: 25,
-                                              fontWeight: FontWeight.w400,
-                                            ),
-                                          ),
-                                        ),
-                                      ]),
-                                      AnimatedTextKit(animatedTexts: [
-                                        ScaleAnimatedText(
-                                          StringResource.productive,
-                                          textAlign: TextAlign.center,
-                                          textStyle: GoogleFonts.aBeeZee(
-                                            textStyle: const TextStyle(
-                                              fontSize: 25,
-                                              fontWeight: FontWeight.w400,
-                                            ),
-                                          ),
-                                        ),
-                                      ]),
-                                      AnimatedTextKit(animatedTexts: [
-                                        ScaleAnimatedText(
-                                          StringResource.flexible,
-                                          textAlign: TextAlign.center,
-                                          textStyle: GoogleFonts.aBeeZee(
-                                            textStyle: const TextStyle(
-                                              fontSize: 25,
-                                              fontWeight: FontWeight.w400,
-                                            ),
-                                          ),
-                                        ),
-                                      ]),
                                       const SizedBox(
-                                        height: 10,
+                                        height: 20,
+                                      ),
+                                      CustomText(
+                                        StringResource.fast,
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.aBeeZee(
+                                          textStyle: const TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w400,
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
+                                      CustomText(
+                                        StringResource.productive,
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.aBeeZee(
+                                          textStyle: const TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w400,
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
+                                      CustomText(
+                                        StringResource.flexible,
+                                        textAlign: TextAlign.center,
+                                        style: GoogleFonts.aBeeZee(
+                                          textStyle: const TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w400,
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
                                       ),
                                       GestureDetector(
                                         onTap: () async {
@@ -475,27 +327,39 @@ class _LargeScreenState extends State<LargeScreen>
                                       CustomText(StringResource.multiplatform,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 40,
+                                            fontSize: 35,
                                           ))),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
                                       CustomText(StringResource.mobile,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
                                       CustomText(StringResource.web,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
                                       CustomText(StringResource.desktop,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
                                       CustomText(StringResource.embedded,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
                                     ],
                                   ),
@@ -527,7 +391,7 @@ class _LargeScreenState extends State<LargeScreen>
                                       CustomText(StringResource.dartlanguage,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 40,
+                                            fontSize: 35,
                                           ))),
                                       const SizedBox(
                                         height: 20,
@@ -535,33 +399,26 @@ class _LargeScreenState extends State<LargeScreen>
                                       CustomText(StringResource.dartlanguage1,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
                                       CustomText(StringResource.dartlanguage2,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
                                       CustomText(StringResource.dartlanguage3,
                                           style: GoogleFonts.aBeeZee(
                                               textStyle: const TextStyle(
-                                            fontSize: 25,
+                                            fontSize: 20,
                                           ))),
                                     ],
                                   ),
-                                  // Container(
-                                  //     height: 40,
-                                  //     width: 150,
-                                  //     padding: const EdgeInsets.all(10),
-                                  //     decoration: BoxDecoration(
-                                  //         borderRadius:
-                                  //             BorderRadius.circular(15),
-                                  //         color: Colors.lightBlue),
-                                  //     child: const Center(
-                                  //         child: const Text(
-                                  //       'Platform',
-                                  //       style: TextStyle(color: Colors.white),
-                                  //     ))),
                                   const Spacer(),
                                   Container(
                                     color: ColorResource.colorFFFFFF,
@@ -597,7 +454,7 @@ class _LargeScreenState extends State<LargeScreen>
                     children: [
                       // Spacer(),
                       Container(
-                        margin: EdgeInsets.only(top: 15),
+                        margin: const EdgeInsets.only(top: 15),
                         color: Colors.white,
                         // padding: const EdgeInsets.only(bottom: 20),
                         child: Lottie.network(
@@ -610,7 +467,7 @@ class _LargeScreenState extends State<LargeScreen>
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 10, right: 10),
+                        margin: const EdgeInsets.only(left: 10, right: 10),
                         height: 180,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
@@ -624,32 +481,32 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             )),
                         child: Container(
-                          margin: EdgeInsets.only(left: 40, bottom: 20),
+                          margin: const EdgeInsets.only(left: 40, bottom: 20),
                           child: Row(
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  SizedBox(height: 15),
+                                  const SizedBox(height: 15),
                                   Text('Get Started',
                                       style: GoogleFonts.sourceSansPro(
-                                          textStyle: TextStyle(
+                                          textStyle: const TextStyle(
                                         color: ColorResource.colorFFFFFF,
                                         fontSize: 28,
                                         fontWeight: FontWeight.bold,
                                       ))),
-                                  SizedBox(height: 15),
+                                  const SizedBox(height: 15),
                                   Text(
                                     'Instant access to the power of the Flutter framework',
                                     style: GoogleFonts.sourceSansPro(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                         color: ColorResource.colorFFFFFF,
                                         fontSize: 20,
                                         fontWeight: FontWeight.normal,
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 16),
+                                  const SizedBox(height: 16),
                                   Row(
                                     children: [
                                       ElevatedButton(
@@ -661,7 +518,7 @@ class _LargeScreenState extends State<LargeScreen>
                                         child: Text(
                                           'Install',
                                           style: GoogleFonts.sourceSansPro(
-                                            textStyle: TextStyle(
+                                            textStyle: const TextStyle(
                                               color: Colors.lightBlueAccent,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -672,15 +529,15 @@ class _LargeScreenState extends State<LargeScreen>
                                             shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(30.0),
-                                                side: BorderSide(
+                                                side: const BorderSide(
                                                     color: Colors.white)),
-                                            padding: EdgeInsets.symmetric(
+                                            padding: const EdgeInsets.symmetric(
                                                 horizontal: 30, vertical: 20),
-                                            textStyle: TextStyle(
+                                            textStyle: const TextStyle(
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold)),
                                       ),
-                                      SizedBox(width: 10),
+                                      const SizedBox(width: 10),
                                       InkWell(
                                         onTap: () async {
                                           const url =
@@ -692,14 +549,14 @@ class _LargeScreenState extends State<LargeScreen>
                                             Text(
                                               'See the Documentation',
                                               style: GoogleFonts.aBeeZee(
-                                                textStyle: TextStyle(
+                                                textStyle: const TextStyle(
                                                   color:
                                                       ColorResource.colorFFFFFF,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
                                             ),
-                                            Icon(
+                                            const Icon(
                                               Icons.arrow_forward,
                                               color: ColorResource.colorFFFFFF,
                                             ),
@@ -722,11 +579,11 @@ class _LargeScreenState extends State<LargeScreen>
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20, top: 30),
+                            margin: const EdgeInsets.only(left: 20, top: 30),
                             child: Text(
                               'Join our News Letter Keep up with the latest Flutter news, releases, and more',
                               style: GoogleFonts.aBeeZee(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                     color: ColorResource.color222222,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 30),
@@ -735,7 +592,7 @@ class _LargeScreenState extends State<LargeScreen>
                           ),
                         ],
                       ),
-                      SizedBox(height: 40),
+                      const SizedBox(height: 40),
                       Container(
                         height: 100,
                         width: 300,
@@ -745,12 +602,12 @@ class _LargeScreenState extends State<LargeScreen>
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(30)),
                             labelText: 'E-mail',
-                            prefixIcon: Icon(Icons.mail_outline),
+                            prefixIcon: const Icon(Icons.mail_outline),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(bottom: 10),
+                        padding: const EdgeInsets.only(bottom: 10),
                         child: ElevatedButton(
                           onPressed: () async {
                             const url =
@@ -760,7 +617,7 @@ class _LargeScreenState extends State<LargeScreen>
                           child: Text(
                             'Subcribe',
                             style: GoogleFonts.sourceSansPro(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -770,10 +627,11 @@ class _LargeScreenState extends State<LargeScreen>
                               primary: Colors.blueAccent,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30.0),
-                                  side: BorderSide(color: Colors.blueAccent)),
-                              padding: EdgeInsets.symmetric(
+                                  side: const BorderSide(
+                                      color: Colors.blueAccent)),
+                              padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -1170,7 +1028,316 @@ class _LargeScreenState extends State<LargeScreen>
                 ],
               )),
               const Icon(Icons.directions_bike),
-              const Icon(Icons.movie),
+              Stack(
+                children: [
+                  Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(ImageResource.projects),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CustomText(
+                        StringResource.flutterprojects,
+                        style: GoogleFonts.aBeeZee(
+                            textStyle: const TextStyle(
+                                fontSize: 50,
+                                fontWeight: FontWeight.bold,
+                                color: ColorResource.colorFFFFFF)),
+                      ),
+                    ],
+                  ),
+                  Center(
+                    child: Container(
+                      color: ColorResource.colorFFFFFF,
+                      height: 700,
+                      child: Padding(
+                        padding: EdgeInsets.zero,
+                        child: CarouselSlider(
+                          items: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 80),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      CustomText(
+                                        StringResource.icici,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 50,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
+                                      CustomText(
+                                        StringResource.module1,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.normal)),
+                                      ),
+                                      const SizedBox(
+                                        height: 40,
+                                      ),
+                                      AnimatedTextKit(
+                                        animatedTexts: [
+                                          TyperAnimatedText(
+                                            StringResource.api,
+                                            textStyle: GoogleFonts.aBeeZee(
+                                                textStyle: const TextStyle(
+                                                    fontSize: 25,
+                                                    fontWeight:
+                                                        FontWeight.normal)),
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(
+                                        height: 50,
+                                      ),
+                                      CustomText(
+                                        StringResource.bitbucketlink,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.normal)),
+                                      ),
+                                      const SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                        width: 120,
+                                        height: 50,
+                                        child: ElevatedButton(
+                                            onPressed: () async {
+                                              const url =
+                                                  "https://bitbucket.org/abstractdevfactory/icici_pockets/src/master/";
+                                              await launch(url);
+                                            },
+                                            child: CustomText(
+                                              'ICICI',
+                                              style: GoogleFonts.aBeeZee(
+                                                  textStyle: const TextStyle(
+                                                      fontSize: 25,
+                                                      fontWeight:
+                                                          FontWeight.normal)),
+                                            )),
+                                      ),
+                                    ],
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: 350,
+                                    height: 350,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: const DecorationImage(
+                                            image: AssetImage(
+                                                ImageResource.pockets))),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            //2nd Image of Slider
+
+                            Padding(
+                              padding: const EdgeInsets.only(top: 80),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      CustomText(
+                                        StringResource.generic,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 50,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
+                                      CustomText(
+                                        StringResource.genericcomponents,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.normal)),
+                                      ),
+                                      const SizedBox(
+                                        height: 40,
+                                      ),
+                                      CustomText(
+                                        StringResource.bitbucketlink,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.normal)),
+                                      ),
+                                      const SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                        width: 200,
+                                        height: 80,
+                                        child: ElevatedButton(
+                                            onPressed: () async {
+                                              const url =
+                                                  "https://bitbucket.org/Mariganesh55/generic_components/src/master/";
+                                              await launch(url);
+                                            },
+                                            child: CustomText(
+                                              StringResource.generic,
+                                              style: GoogleFonts.aBeeZee(
+                                                  textStyle: const TextStyle(
+                                                      fontSize: 25,
+                                                      fontWeight:
+                                                          FontWeight.normal)),
+                                            )),
+                                      ),
+                                    ],
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: 350,
+                                    height: 350,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: const DecorationImage(
+                                            image: AssetImage(ImageResource
+                                                .genericcomponenets))),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            //3rd Image of Slider
+                            Padding(
+                              padding: const EdgeInsets.only(top: 80),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      CustomText(
+                                        StringResource.visa,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 50,
+                                                fontWeight: FontWeight.bold)),
+                                      ),
+                                      const SizedBox(
+                                        height: 20,
+                                      ),
+                                      CustomText(
+                                        StringResource.visa1,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.normal)),
+                                      ),
+                                      const SizedBox(
+                                        height: 40,
+                                      ),
+                                      AnimatedTextKit(animatedTexts: [
+                                        TyperAnimatedText(
+                                          StringResource.yet,
+                                          textStyle: GoogleFonts.aBeeZee(
+                                              textStyle: const TextStyle(
+                                                  fontSize: 25,
+                                                  fontWeight:
+                                                      FontWeight.normal)),
+                                        )
+                                      ]),
+                                      const SizedBox(
+                                        height: 50,
+                                      ),
+                                      CustomText(
+                                        StringResource.bitbucketlink,
+                                        style: GoogleFonts.aBeeZee(
+                                            textStyle: const TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.normal)),
+                                      ),
+                                      const SizedBox(
+                                        height: 50,
+                                      ),
+                                      Container(
+                                        width: 180,
+                                        height: 80,
+                                        child: ElevatedButton(
+                                            onPressed: () {},
+                                            child: CustomText(
+                                              StringResource.visa,
+                                              style: GoogleFonts.aBeeZee(
+                                                  textStyle: const TextStyle(
+                                                      fontSize: 25,
+                                                      fontWeight:
+                                                          FontWeight.normal)),
+                                            )),
+                                      ),
+                                    ],
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    alignment: Alignment.center,
+                                    width: 350,
+                                    height: 350,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(8),
+                                        image: const DecorationImage(
+                                            image: AssetImage(
+                                                ImageResource.visa))),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            // 4thslider
+                            Container(
+                                alignment: Alignment.center,
+                                margin: EdgeInsets.all(6.0),
+                                child: AnimatedTextKit(animatedTexts: [
+                                  TyperAnimatedText(
+                                    StringResource.moreprojects,
+                                    textStyle: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                            fontSize: 25,
+                                            fontWeight: FontWeight.normal)),
+                                  )
+                                ])),
+                          ],
+                          options: CarouselOptions(
+                            // height: 180.0,
+                            enlargeCenterPage: true,
+                            autoPlay: true,
+                            // aspectRatio: 16 / 9,
+                            autoPlayCurve: Curves.fastOutSlowIn,
+                            enableInfiniteScroll: true,
+                            autoPlayAnimationDuration:
+                                Duration(milliseconds: 800),
+                            viewportFraction: 0.8,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              )
             ]),
           ),
         ]));
