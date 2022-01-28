@@ -1317,89 +1317,116 @@ class _LargeScreenState extends State<LargeScreen>
                         ],
                       ),
                     ),
+                   
                     Container(
-                      padding: EdgeInsets.only(left: 60),
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.pink,
+                      padding: EdgeInsets.only(top:40,left:35),
+                      decoration: BoxDecoration(
+                        color: Colors.pink,
+                      ),
                       child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  margin:EdgeInsets.only(top:20),
-                                  padding: EdgeInsets.all(20),
-                                  height: 170,
-                                  width: 300,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                      color: Colors.white,
-                                      boxShadow: [
-                                        BoxShadow(
-                                          blurRadius: 6,
-                                          offset: Offset(1, 2),
-                                        )
-                                      ]),
-                                  child: Text(
-                                    'Prepaid Card',
-                                    style: TextStyle(
-                                      fontSize: 60,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black,
-                                    ),
-                                  ),
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                'API Docs',
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
                                 ),
-
-                                Container(
-                                  margin:EdgeInsets.only(top:20,bottom:30),
-                                  padding: EdgeInsets.all(20),
-                                  height: 170,
-                                  width: 320,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(16),
-                                      color: Colors.white,
-                                      boxShadow: [
-                                        BoxShadow(
-                                          blurRadius: 6,
-                                          offset: Offset(1, 2),
-                                        )
-                                      ]),
-                                  child: Text(
-                                    'Neo Banking',
-                                    style: TextStyle(
-                                      fontSize: 60,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                ),
-                              ]),
-                          Container(
-                            margin:EdgeInsets.only(top:20,left:20),
-                            padding: EdgeInsets.all(20),
-                            height: 170,
-                            width: 300,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                color: Colors.white,
-                                boxShadow: [
-                                  BoxShadow(
-                                    blurRadius: 6,
-                                    offset: Offset(1, 2),
-                                  )
-                                ]),
-                            child: Text(
-                              'Credit Card',
-                              style: TextStyle(
-                                fontSize: 60,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black,
                               ),
-                            ),
+                              SizedBox(height: 30),
+                              Text(
+                                'Build your Fintech Product',
+                                style: TextStyle(
+                                  fontSize: 40,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              
+                              SizedBox(height: 30),
+                              Text(
+                                'Check out our API docs to jump-start your product journey.',
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.white.withOpacity(0.7),
+                                ),
+                              ),
+                              SizedBox(height: 60),
+                              ElevatedButton(
+                                onPressed: () async {
+                                  const url =
+                                      "https://docs.yappay.in/singledocs#error_msg";
+                                  await launch(url);
+                                },
+                                child: Row(
+                                  children: [
+                                    Text('Explore'),
+                                    SizedBox(width: 10),
+                                    Icon(Icons.arrow_forward_rounded),
+                                  ],
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.grey.withOpacity(0.6),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                        side: const BorderSide(
+                                            color: Colors.white)),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 30, vertical: 20),
+                                    textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold)),
+                              ),
+                            ],
                           ),
+                          Spacer(),
+                          Image.asset('assets/docs.png'),
                         ],
                       ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left:30,top:40),
+                      child:Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Developers First'),
+                          SizedBox(height:30),
+                          Container(
+                            margin:EdgeInsets.only(left:90,right:60),
+                            child: Row(
+                              children: [
+                                Icon(Icons.markunread_mailbox_rounded),
+                                Text('Get'),
+                                Spacer(),
+                                Icon(Icons.arrow_forward_ios),
+                                Text('Set'),
+                                Spacer(),
+                                Icon(Icons.flag_outlined),
+                                Text('Go'),
+                              ],
+                            ),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:90,right:90),
+                          //   child: Row(
+                          //     children: [
+                          //       Text('Browse through detailed documentation'),
+                          //       Spacer(),
+                          //   Text('Use our online sandbox to experience the APIs right away.'),
+                          //       Spacer(),
+                          //   Text('Develop, test, iterate and take off Build your product'),
+                          //     ],
+                          //   ),
+                          // ),
+                        ],
+                      )
                     ),
                     Stack(
                       children: [
@@ -1567,7 +1594,8 @@ class _LargeScreenState extends State<LargeScreen>
                                               : Colors.white,
                                           size: 25.0),
                                       onTap: () async {
-                                        const url = "https://medium.com/flutter";
+                                        const url =
+                                            "https://medium.com/flutter";
                                         await launch(url);
                                       },
                                       onHover: (value) {
@@ -1608,7 +1636,8 @@ class _LargeScreenState extends State<LargeScreen>
                                               : Colors.white,
                                           size: 25.0),
                                       onTap: () async {
-                                        const url = "https://github.com/flutter";
+                                        const url =
+                                            "https://github.com/flutter";
                                         await launch(url);
                                       },
                                       onHover: (value) {

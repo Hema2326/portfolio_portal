@@ -1,6 +1,14 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
+import 'package:portfolio_portal/screens/m2pProducts_screen.dart';
+import 'package:portfolio_portal/utils/color_resource.dart';
+import 'package:portfolio_portal/utils/custom_text.dart';
+import 'package:portfolio_portal/utils/image_resource.dart';
+import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../widgets/draw_clip.dart';
@@ -13,6 +21,7 @@ class SmallScreen extends StatefulWidget {
 }
 
 class _SmallScreenState extends State<SmallScreen> {
+
   @override
   Widget build(BuildContext context) {
     return ZoomDrawer(
@@ -59,13 +68,13 @@ class _SideBarState extends State<SideBar> {
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.redAccent),
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'Home',
                 style: TextStyle(
-                    color: isHovering ? Colors.red : Colors.black,
+                    color: isHovering ? Colors.white : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
@@ -85,18 +94,19 @@ class _SideBarState extends State<SideBar> {
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.redAccent),
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'Portfolio',
                 style: TextStyle(
-                    color: isHovering1 ? Colors.red : Colors.black,
+                    color: isHovering1 ? Colors.white : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
             ),
           ),
+
           SizedBox(
             width: screenSize.width / 20,
             height: 30,
@@ -111,13 +121,13 @@ class _SideBarState extends State<SideBar> {
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.redAccent),
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+                border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'Projects',
                 style: TextStyle(
-                    color: isHovering2 ? Colors.red : Colors.black,
+                    color: isHovering2 ? Colors.white : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
@@ -127,6 +137,26 @@ class _SideBarState extends State<SideBar> {
             width: screenSize.width / 20,
             height: 30,
           ),
+      InkWell(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => M2PproductScreen()));
+        },
+        child: Container(
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(15)),
+            border: Border.all(color: Colors.white),
+          ),
+          child: Text(
+            'M2P products',
+            style: TextStyle(
+                color: isHovering ? Colors.white : Colors.black,
+                fontSize: 18,
+                fontWeight: FontWeight.w600),
+          ),
+        ),
+      ),
+
         ],
       ),
     );
@@ -150,6 +180,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
   bool isSelected2 = false;
   bool isSelected3 = false;
   bool isSelected4 = false;
+  TextEditingController emailController = TextEditingController();
   late AnimationController _controller;
 
   double value = 0;
@@ -201,18 +232,628 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
         appBar: AppBar(
             leading: IconButton(
                 onPressed: () => ZoomDrawer.of(context)!.toggle(),
                 icon: const Icon(Icons.menu))),
-        body: SingleChildScrollView(
-          child: Column(children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+        body:  SingleChildScrollView(
+            child: Column(
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(height: 100),
-              ],
-            ),
+                AspectRatio(
+                  aspectRatio: 3.0,
+                  child: Image.asset(
+                    ImageResource.flutterengage,
+                    fit: BoxFit.fill,
+                    height: 600,
+                    width: MediaQuery.of(context).size.width,
+                  ),
+                ),
+                Center(
+                  child: Container(
+                    height: 700,
+                    child: Padding(
+                      padding: EdgeInsets.zero,
+                      child: CarouselSlider(
+                        items: [
+                          Padding(
+                            padding: EdgeInsets.zero,
+                            child: Column(
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(left: 30, right: 10),
+                                      height: 180,
+                                      width: 500,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(15),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.blueAccent.shade100,
+                                              Colors.blueAccent,
+                                            ],
+                                          )),
+                                      child: Container(
+                                        margin: const EdgeInsets.only(left: 40, bottom: 20),
+                                        child: Row(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                const SizedBox(height: 15),
+                                                CustomText(StringResource.dart,
+                                                    style: GoogleFonts.aBeeZee(
+                                                        textStyle: const TextStyle(
+                                                          color: ColorResource.colorFFFFFF,
+                                                          fontSize: 20,
+                                                          fontWeight: FontWeight.bold,
+                                                        ))),
+                                                const SizedBox(height: 15),
+                                                CustomText(
+                                                  StringResource.dart1,
+                                                  style: GoogleFonts.aBeeZee(
+                                                    textStyle: const TextStyle(
+                                                      color: ColorResource.colorFFFFFF,
+                                                      fontSize: 12,
+                                                      fontWeight: FontWeight.normal,
+                                                    ),
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 16),
+                                                Row(
+                                                  children: [
+                                                    ElevatedButton(
+                                                      onPressed: () async {
+                                                        const url = "https://dart.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: CustomText(
+                                                        StringResource.dartdev,
+                                                        style: GoogleFonts.aBeeZee(
+                                                          textStyle: const TextStyle(
+                                                            color: Colors.lightBlueAccent,
+                                                            fontWeight: FontWeight.normal,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      style: ElevatedButton.styleFrom(
+                                                          primary: ColorResource.colorFFFFFF,
+                                                          shape: RoundedRectangleBorder(
+                                                              borderRadius:
+                                                              BorderRadius.circular(30.0),
+                                                              side: const BorderSide(
+                                                                  color: Colors.white)),
+                                                          padding: const EdgeInsets.symmetric(
+                                                              horizontal: 30, vertical: 20),
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 20,
+                                                              fontWeight: FontWeight.bold)),
+                                                    ),
+                                                    const SizedBox(width: 10),
+                                                    InkWell(
+                                                      onTap: () async {
+                                                        const url = "https://pub.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: Row(
+                                                        children: [
+                                                          CustomText(
+                                                            StringResource.getpackages,
+                                                            style: GoogleFonts.aBeeZee(
+                                                              textStyle: const TextStyle(
+                                                                color: ColorResource.colorFFFFFF,
+                                                                fontWeight: FontWeight.bold,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          const Icon(
+                                                            Icons.arrow_forward,
+                                                            color: ColorResource.colorFFFFFF,
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                // const Spacer(),
+                                Container(
+                                  color: Colors.white,
+                                  // padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
+                                    height: 500.0,
+                                    width: 600,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.zero,
+                            child: Column(
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: EdgeInsets.only(left: 30, right: 10),
+                                      height: 180,
+
+                                      width: 800,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(15),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.redAccent.shade100,
+                                              Colors.blueAccent,
+                                            ],
+                                          )),
+                                      child: Container(
+                                        margin: EdgeInsets.only(left: 40, bottom: 20),
+                                        child: Column(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                SizedBox(height: 15),
+                                                Text('Get Started',
+                                                    style: GoogleFonts.sourceSansPro(
+                                                        textStyle: TextStyle(
+                                                          color: ColorResource.colorFFFFFF,
+                                                          fontSize: 28,
+                                                          fontWeight: FontWeight.bold,
+                                                        ))),
+                                                SizedBox(height: 15),
+                                                Text(
+                                                  'Instant access to the power of the Flutter framework',
+                                                  style: GoogleFonts.sourceSansPro(
+                                                    textStyle: TextStyle(
+                                                      color: ColorResource.colorFFFFFF,
+                                                      fontSize: 20,
+                                                      fontWeight: FontWeight.normal,
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(height: 16),
+                                                Row(
+                                                  children: [
+                                                    ElevatedButton(
+                                                      onPressed: () async {
+                                                        const url =
+                                                            "https://docs.flutter.dev/get-started/install";
+                                                        await launch(url);
+                                                      },
+                                                      child: Text(
+                                                        'Install',
+                                                        style: GoogleFonts.sourceSansPro(
+                                                          textStyle: TextStyle(
+                                                            color: Colors.lightBlueAccent,
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      style: ElevatedButton.styleFrom(
+                                                          primary: ColorResource.colorFFFFFF,
+                                                          shape: RoundedRectangleBorder(
+                                                              borderRadius:
+                                                              BorderRadius.circular(30.0),
+                                                              side: BorderSide(
+                                                                  color: Colors.white)),
+                                                          padding: EdgeInsets.symmetric(
+                                                              horizontal: 30, vertical: 20),
+                                                          textStyle: TextStyle(
+                                                              fontSize: 20,
+                                                              fontWeight: FontWeight.bold)),
+                                                    ),
+                                                    SizedBox(width: 10),
+                                                    InkWell(
+                                                      onTap: () async {
+                                                        const url =
+                                                            "https://docs.flutter.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: Row(
+                                                        children: [
+                                                          Text(
+                                                            'See the Documentation',
+                                                            style: GoogleFonts.aBeeZee(
+                                                              textStyle: TextStyle(
+                                                                color:
+                                                                ColorResource.colorFFFFFF,
+                                                                fontWeight: FontWeight.bold,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Icon(
+                                                            Icons.arrow_forward,
+                                                            color: ColorResource.colorFFFFFF,
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+                                Container(
+                                  color: Colors.white,
+                                  // padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets3.lottiefiles.com/packages/lf20_awhygdgw.json',
+                                    height: 500.0,
+                                    width: 600,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.zero,
+                            child: Column(
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment:
+                                  CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(left: 40, right: 10),
+                                      height: 180,
+                                      width: 800,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(15),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.blueAccent.shade100,
+                                              Colors.blueAccent,
+                                            ],
+                                          )),
+                                      child: Container(
+                                        margin: const EdgeInsets.only(left: 40, bottom: 20),
+                                        child: Column(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: [
+                                                const SizedBox(height: 15),
+                                                CustomText(StringResource.dart,
+                                                    style: GoogleFonts.aBeeZee(
+                                                        textStyle: const TextStyle(
+                                                          color: ColorResource.colorFFFFFF,
+                                                          fontSize: 20,
+                                                          fontWeight: FontWeight.bold,
+                                                        ))),
+                                                const SizedBox(height: 15),
+                                                CustomText(
+                                                  StringResource.dart1,
+                                                  style: GoogleFonts.aBeeZee(
+                                                    textStyle: const TextStyle(
+                                                      color: ColorResource.colorFFFFFF,
+                                                      fontSize: 12,
+                                                      fontWeight: FontWeight.normal,
+                                                    ),
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 16),
+                                                Row(
+                                                  children: [
+                                                    ElevatedButton(
+                                                      onPressed: () async {
+                                                        const url = "https://dart.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: CustomText(
+                                                        StringResource.dartdev,
+                                                        style: GoogleFonts.aBeeZee(
+                                                          textStyle: const TextStyle(
+                                                            color: Colors.lightBlueAccent,
+                                                            fontWeight: FontWeight.normal,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      style: ElevatedButton.styleFrom(
+                                                          primary: ColorResource.colorFFFFFF,
+                                                          shape: RoundedRectangleBorder(
+                                                              borderRadius:
+                                                              BorderRadius.circular(30.0),
+                                                              side: const BorderSide(
+                                                                  color: Colors.white)),
+                                                          padding: const EdgeInsets.symmetric(
+                                                              horizontal: 30, vertical: 20),
+                                                          textStyle: const TextStyle(
+                                                              fontSize: 20,
+                                                              fontWeight: FontWeight.bold)),
+                                                    ),
+                                                    const SizedBox(width: 10),
+                                                    InkWell(
+                                                      onTap: () async {
+                                                        const url = "https://pub.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: Row(
+                                                        children: [
+                                                          CustomText(
+                                                            StringResource.getpackages,
+                                                            style: GoogleFonts.aBeeZee(
+                                                              textStyle: const TextStyle(
+                                                                color: ColorResource.colorFFFFFF,
+                                                                fontWeight: FontWeight.bold,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          const Icon(
+                                                            Icons.arrow_forward,
+                                                            color: ColorResource.colorFFFFFF,
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+
+                                Container(
+                                  color: ColorResource.colorFFFFFF,
+                                  // padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets2.lottiefiles.com/packages/lf20_lvgmrl5j.json',
+                                    height: 500.0,
+                                    width: 600,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                        //Slider Container properties
+                        options: CarouselOptions(
+                          autoPlayCurve: Curves.fastOutSlowIn,
+                          disableCenter: true,
+                          enlargeCenterPage: true,
+                          aspectRatio: 2.5,
+                          autoPlay: true,
+                          viewportFraction: 1,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Stack(
+                  alignment: Alignment.bottomRight,
+                  children: [
+                    // Spacer(),
+                    Container(
+                      margin: EdgeInsets.only(top: 15),
+                      color: Colors.white,
+                      // padding: const EdgeInsets.only(bottom: 20),
+                      child: Lottie.network(
+                        'https://assets4.lottiefiles.com/packages/lf20_WjWoQM.json',
+                        height: 400.0,
+                        width: 500,
+                        repeat: true,
+                        reverse: true,
+                        animate: true,
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 20, right: 10),
+                      height: 180,
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [
+                              Colors.redAccent.shade100,
+                              Colors.blueAccent,
+                            ],
+                          )),
+                      child: Container(
+                        margin: EdgeInsets.only(left: 20, bottom: 20),
+                        child: Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 15),
+                                Text('Get Started',
+                                    style: GoogleFonts.sourceSansPro(
+                                        textStyle: TextStyle(
+                                          color: ColorResource.colorFFFFFF,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                        ))),
+                                SizedBox(height: 15),
+                                Text(
+                                  'Instant access to the power of the Flutter framework',
+                                  style: GoogleFonts.sourceSansPro(
+                                    textStyle: TextStyle(
+                                      color: ColorResource.colorFFFFFF,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 16),
+                                Row(
+                                  children: [
+                                    ElevatedButton(
+                                      onPressed: () async {
+                                        const url =
+                                            "https://docs.flutter.dev/get-started/install";
+                                        await launch(url);
+                                      },
+                                      child: Text(
+                                        'Install',
+                                        style: GoogleFonts.sourceSansPro(
+                                          textStyle: TextStyle(
+                                            color: Colors.lightBlueAccent,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          primary: ColorResource.colorFFFFFF,
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                              BorderRadius.circular(30.0),
+                                              side: BorderSide(
+                                                  color: Colors.white)),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 30, vertical: 20),
+                                          textStyle: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold)),
+                                    ),
+                                    SizedBox(width: 10),
+                                    InkWell(
+                                      onTap: () async {
+                                        const url =
+                                            "https://docs.flutter.dev";
+                                        await launch(url);
+                                      },
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            'See the Documentation',
+                                            style: GoogleFonts.aBeeZee(
+                                              textStyle: TextStyle(
+                                                color:
+                                                ColorResource.colorFFFFFF,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.arrow_forward,
+                                            color: ColorResource.colorFFFFFF,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 20, top: 30),
+                          child: Text(
+                            'Join our News Letter Keep up with the latest Flutter news, releases, and more',
+                            style: GoogleFonts.aBeeZee(
+                              textStyle: TextStyle(
+                                  color: ColorResource.color222222,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 14),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 40),
+                    Container(
+                      height: 100,
+                      width: 200,
+                      child: TextField(
+                        controller: emailController,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(30)),
+                          labelText: 'E-mail',
+                          prefixIcon: Icon(Icons.mail_outline),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 10),
+                      child: ElevatedButton(
+                        onPressed: () async {
+                          const url =
+                              "https://docs.flutter.dev/get-started/install";
+                          await launch(url);
+                        },
+                        child: Text(
+                          'Subcribe',
+                          style: GoogleFonts.sourceSansPro(
+                            textStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.blueAccent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                                side: BorderSide(color: Colors.blueAccent)),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 30, vertical: 20),
+                            textStyle: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ],
+                ),
+
+
+
+
             Stack(
               children: [
                 AnimatedBuilder(
