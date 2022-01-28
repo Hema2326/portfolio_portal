@@ -1,11 +1,7 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:math' as math;
-
-import '../widgets/draw_clip.dart';
 
 class M2PproductScreen extends StatefulWidget {
   const M2PproductScreen({Key? key}) : super(key: key);
@@ -14,8 +10,7 @@ class M2PproductScreen extends StatefulWidget {
   _M2PproductScreenState createState() => _M2PproductScreenState();
 }
 
-class _M2PproductScreenState extends State<M2PproductScreen>
-    with TickerProviderStateMixin {
+class _M2PproductScreenState extends State<M2PproductScreen> with TickerProviderStateMixin {
   late ScrollController _scrollController;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   bool isSelected = false;
@@ -27,8 +22,6 @@ class _M2PproductScreenState extends State<M2PproductScreen>
 
   TabController? _tabController;
   late AnimationController _controller;
-  late AnimationController animation;
-  late Animation<double> _fadeInFadeOut;
 
   late final AnimationController controller = AnimationController(
     duration: const Duration(seconds: 2),
@@ -46,8 +39,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
   )..repeat(reverse: true);
 
   late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
-
+  CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
   void initState() {
     _scrollController = ScrollController();
     _tabController = TabController(vsync: this, length: 4);
@@ -58,22 +50,6 @@ class _M2PproductScreenState extends State<M2PproductScreen>
       lowerBound: -3,
       vsync: this,
     )..repeat();
-    animation = AnimationController(
-      vsync: this,
-      duration: Duration(seconds: 3),
-    );
-    _fadeInFadeOut = CurvedAnimation(
-        parent: controller, curve: Curves.fastLinearToSlowEaseIn);
-    // _fadeInFadeOut = Tween<double>(begin: 0.0, end: 0.5).animate(animation);
-
-    animation.addStatusListener((status) {
-      if (status == AnimationStatus.completed) {
-        animation.reverse();
-      } else if (status == AnimationStatus.dismissed) {
-        animation.forward();
-      }
-    });
-    animation.forward();
     super.initState();
   }
 
@@ -89,7 +65,6 @@ class _M2PproductScreenState extends State<M2PproductScreen>
     _scrollController.animateTo(_scrollController.position.minScrollExtent,
         duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
   }
-
   List<MaterialColor> colorizeColors = [
     Colors.purple,
     Colors.blue,
@@ -100,15 +75,14 @@ class _M2PproductScreenState extends State<M2PproductScreen>
     fontSize: 40.0,
     fontFamily: 'SF',
   );
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body:SingleChildScrollView(
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 65),
+              margin: EdgeInsets.only(left: 25),
               child: Row(
                 children: [
                   Column(
@@ -117,43 +91,21 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                       Text(
                         'We',
                         style: TextStyle(
-                          fontSize: 35,
+                          fontSize: 45,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      AnimatedTextKit(
-                        isRepeatingAnimation: true,
-                        animatedTexts: [
-                          ScaleAnimatedText(
-                            'Enable',
-                            textStyle: TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          ScaleAnimatedText(
-                            'Embed',
-                            textStyle: TextStyle(
-                              fontSize: 40,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                        onTap: () {
-                          print("Tap Event");
-                        },
+                      Text(
+                        'Enable',
+                        style: TextStyle(
+                          fontSize: 50,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                      // Text(
-                      //   'Enable',
-                      //   style: TextStyle(
-                      //     fontSize: 70,
-                      //     fontWeight: FontWeight.bold,
-                      //   ),
-                      // ),
                       Text(
                         'Fintech',
                         style: TextStyle(
-                          fontSize: 60,
+                          fontSize: 70,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -169,8 +121,146 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                 ],
               ),
             ),
+            // Container(
+            //   padding: EdgeInsets.only(left: 60),
+            //   // width: MediaQuery.of(context).size.width,
+            //   color: Colors.pink,
+            //   child: Column(
+            //     mainAxisAlignment: MainAxisAlignment.start,
+            //     crossAxisAlignment: CrossAxisAlignment.start,
+            //     children: [
+            //       CarouselSlider(
+            //         items: [
+            //           Container(
+            //             margin: EdgeInsets.only(top: 20),
+            //             padding: EdgeInsets.all(20),
+            //             height: 50,
+            //             width: 150,
+            //             decoration: BoxDecoration(
+            //                 borderRadius: BorderRadius.circular(16),
+            //                 color: Colors.white,
+            //                 boxShadow: [
+            //                   BoxShadow(
+            //                     blurRadius: 6,
+            //                     offset: Offset(1, 2),
+            //                   )
+            //                 ]),
+            //             child: Text(
+            //               'Prepaid Card',
+            //               style: TextStyle(
+            //                 fontSize: 60,
+            //                 fontWeight: FontWeight.bold,
+            //                 color: Colors.black,
+            //               ),
+            //             ),
+            //           ),
+            //           Container(
+            //             margin: EdgeInsets.only(top: 20, bottom: 30),
+            //             padding: EdgeInsets.all(20),
+            //             height: 150,
+            //             width: 150,
+            //             decoration: BoxDecoration(
+            //                 borderRadius: BorderRadius.circular(16),
+            //                 color: Colors.white,
+            //                 boxShadow: [
+            //                   BoxShadow(
+            //                     blurRadius: 6,
+            //                     offset: Offset(1, 2),
+            //                   )
+            //                 ]),
+            //             child: Text(
+            //               'Neo Banking',
+            //               style: TextStyle(
+            //                 fontSize: 60,
+            //                 fontWeight: FontWeight.bold,
+            //                 color: Colors.black,
+            //               ),
+            //             ),
+            //           ),
+            //           Container(
+            //             margin: EdgeInsets.only(top: 20, bottom: 30),
+            //             padding: EdgeInsets.all(20),
+            //             height: 150,
+            //             width: 150,
+            //             decoration: BoxDecoration(
+            //                 borderRadius: BorderRadius.circular(16),
+            //                 color: Colors.white,
+            //                 boxShadow: [
+            //                   BoxShadow(
+            //                     blurRadius: 6,
+            //                     offset: Offset(1, 2),
+            //                   )
+            //                 ]),
+            //             child: Text(
+            //               'Neo Banking',
+            //               style: TextStyle(
+            //                 fontSize: 60,
+            //                 fontWeight: FontWeight.bold,
+            //                 color: Colors.black,
+            //               ),
+            //             ),
+            //           ),
+            //           Container(
+            //             margin: EdgeInsets.only(top: 20, bottom: 30),
+            //             padding: EdgeInsets.all(20),
+            //             height: 150,
+            //             width: 150,
+            //             decoration: BoxDecoration(
+            //                 borderRadius: BorderRadius.circular(16),
+            //                 color: Colors.white,
+            //                 boxShadow: [
+            //                   BoxShadow(
+            //                     blurRadius: 6,
+            //                     offset: Offset(1, 2),
+            //                   )
+            //                 ]),
+            //             child: Text(
+            //               'Neo Banking',
+            //               style: TextStyle(
+            //                 fontSize: 60,
+            //                 fontWeight: FontWeight.bold,
+            //                 color: Colors.black,
+            //               ),
+            //             ),
+            //           ),
+            //           Container(
+            //             margin: EdgeInsets.only(top: 20, left: 20),
+            //             padding: EdgeInsets.all(20),
+            //             height: 100,
+            //             width: 150,
+            //             decoration: BoxDecoration(
+            //                 borderRadius: BorderRadius.circular(16),
+            //                 color: Colors.white,
+            //                 boxShadow: [
+            //                   BoxShadow(
+            //                     blurRadius: 6,
+            //                     offset: Offset(1, 2),
+            //                   )
+            //                 ]),
+            //             child: Text(
+            //               'Credit Card',
+            //               style: TextStyle(
+            //                 fontSize: 60,
+            //                 fontWeight: FontWeight.bold,
+            //                 color: Colors.black,
+            //               ),
+            //             ),
+            //           ),
+            //         ],
+            //         options: CarouselOptions(
+            //           autoPlayCurve: Curves.fastOutSlowIn,
+            //           disableCenter: true,
+            //           enlargeCenterPage: true,
+            //           aspectRatio: 1,
+            //           autoPlay: true,
+            //           viewportFraction: 1,
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
             Container(
-              padding: EdgeInsets.only(top: 40, left: 25),
+              padding: EdgeInsets.only(top:40,left:35),
               decoration: BoxDecoration(
                 color: Colors.pink,
               ),
@@ -188,7 +278,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(height: 30),
+                      SizedBox(height: 20),
                       Text(
                         'Build your Fintech Product',
                         style: TextStyle(
@@ -197,262 +287,54 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(height: 30),
-                      Container(
-                        width: 300,
-                        child: Text(
-                          'Check out our API docs to jump-start your product journey.',
-                          maxLines: 2,
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.normal,
-                            color: Colors.white.withOpacity(0.7),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 40),
-                      Container(
-                        margin: EdgeInsets.only(bottom: 20),
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            const url =
-                                "https://docs.yappay.in/singledocs#error_msg";
-                            await launch(url);
-                          },
-                          child: Row(
-                            children: [
-                              Text('Explore'),
-                              SizedBox(width: 10),
-                              Icon(Icons.arrow_forward_rounded),
-                            ],
-                          ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.grey.withOpacity(0.6),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15.0),
-                                  side: const BorderSide(color: Colors.white)),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              textStyle: const TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold)),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Spacer(),
-                  Image.asset(
-                    'assets/docs.png',
-                    height: 200,
-                  ),
-                ],
-              ),
-            ),
-            Container(
-                margin: EdgeInsets.only(top: 20),
-                child: Text('OUR VALUES',
-                    style:
-                        TextStyle(fontSize: 30, fontWeight: FontWeight.bold))),
-            Image.asset(
-              'assets/value.png',
-              height: 500,
-              width: 700,
-            ),
-            Container(
-              padding: EdgeInsets.only(bottom: 30, top: 10),
-              color: Colors.orangeAccent,
-              width: MediaQuery.of(context).size.width,
-              child: Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.only(bottom: 30),
-                    child: Text('M2P PRODUCTS',
-                        style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.bold)),
-                  ),
-                  Wrap(
-                    clipBehavior: Clip.antiAlias,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(left: 20),
-                        child: InkWell(
-                          onTap: () async {
-                            const url =
-                                "https://m2pfintech.com/card-issuing-platform/";
-                            await launch(url);
-                          },
-                          child: FadeTransition(
-                            opacity: _fadeInFadeOut,
-                            child: Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.white,
-                                border: Border.all(color: Colors.white),
-                              ),
-                              child: Text('Card Issuance'),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 50),
-                      InkWell(
-                        onTap: () async {
-                          const url =
-                              "https://m2pfintech.com/issue-credit-cards/";
-                          await launch(url);
-                        },
-                        child: FadeTransition(
-                          opacity: _fadeInFadeOut,
-                          child: Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.white,
-                                border: Border.all(color: Colors.white),
-                              ),
-                              child: Text('Credit Card')),
-                        ),
-                      ),
-                      SizedBox(width: 50),
-                      InkWell(
-                        onTap: () async {
-                          const url =
-                              "https://m2pfintech.com/neobanking-platform/";
-                          await launch(url);
-                        },
-                        child: FadeTransition(
-                          opacity: _fadeInFadeOut,
-                          child: Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.white,
-                                border: Border.all(color: Colors.white),
-                              ),
-                              child: Text('Neo Banking')),
-                        ),
-                      ),
-                      SizedBox(width: 50),
-                      InkWell(
-                        onTap: () async {
-                          const url = "https://m2pfintech.com/fleet-drive/";
-                          await launch(url);
-                        },
-                        child: FadeTransition(
-                          opacity: _fadeInFadeOut,
-                          child: Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.white,
-                                border: Border.all(color: Colors.white),
-                              ),
-                              child: Text('Fleet Drive')),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 50,
-                      ),
-                      Center(
-                        child: Container(
-                          margin: EdgeInsets.only(top: 20),
-                          child: InkWell(
-                            onTap: () async {
-                              const url =
-                                  "https://m2pfintech.com/buy-now-pay-later/";
-                              await launch(url);
-                            },
-                            child: FadeTransition(
-                              opacity: _fadeInFadeOut,
-                              child: Container(
-                                  padding: EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(15),
-                                    color: Colors.white,
-                                    border: Border.all(color: Colors.white),
-                                  ),
-                                  child: Text('Buy Now Pay later')),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            Row(
-              children: [
-                Image.asset(
-                  'assets/fintech.png',
-                  height: 250,
-                ),
-                Container(
-                  // height: 300,
-                  width: 330 ,
-                  margin: EdgeInsets.only(left: 20, top: 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        'CONTACT US',
-                        style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold)),
-                      ),
-                      SizedBox(height: 30),
-                      Text(
-                        'Redefine Innovation With Us',
-                        style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
-                                fontSize: 12, fontWeight: FontWeight.normal)),
-                      ),
-                      SizedBox(height: 30),
-                      Container(
 
-                        child: Wrap(
+                      SizedBox(height: 30),
+                      Text(
+                        'Check out our API docs to jump-start your product journey.',
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.normal,
+                          color: Colors.white.withOpacity(0.7),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      ElevatedButton(
+                        onPressed: () async {
+                          const url =
+                              "https://docs.yappay.in/singledocs#error_msg";
+                          await launch(url);
+                        },
+                        child: Row(
                           children: [
-                            Text(
-                              'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
-                              // maxLines: 2,
-                              style: GoogleFonts.aBeeZee(
-                                  textStyle: TextStyle(
-                                      fontSize: 12, fontWeight: FontWeight.normal)),
-                            ),
+                            Text('Explore'),
+                            SizedBox(width: 10),
+                            Icon(Icons.arrow_forward_rounded),
                           ],
                         ),
-                      ),
-                      SizedBox(height: 30),
-                      Container(
-                        width: 180,
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            const url = "https://m2pfintech.com/contact-us/";
-                            await launch(url);
-                          },
-                          child: Row(
-                            children: [
-                              Text('Contact us'),
-                              SizedBox(width: 10),
-                              Icon(Icons.arrow_forward_rounded),
-                            ],
-                          ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.blueAccent,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15.0),
-                                  side: const BorderSide(color: Colors.white)),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              textStyle: const TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold)),
-                        ),
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.grey.withOpacity(0.6),
+                            shape: RoundedRectangleBorder(
+                                borderRadius:
+                                BorderRadius.circular(30.0),
+                                side: const BorderSide(
+                                    color: Colors.white)),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 30, vertical: 20),
+                            textStyle: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold)),
                       ),
                     ],
                   ),
-                ),
-              ],
+
+                  Image.asset('assets/docs.png',
+                    height: 240,
+                  ),
+                ],
+              ),
+            ),
+            Container(
+                child:Text('')
             ),
             Stack(
               children: [
@@ -615,11 +497,13 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                             turns: _animation,
                             child: InkWell(
                               child: FaIcon(FontAwesomeIcons.medium,
-                                  color:
-                                      isSelected ? Colors.black : Colors.white,
+                                  color: isSelected
+                                      ? Colors.black
+                                      : Colors.white,
                                   size: 25.0),
                               onTap: () async {
-                                const url = "https://medium.com/flutter";
+                                const url =
+                                    "https://medium.com/flutter";
                                 await launch(url);
                               },
                               onHover: (value) {
@@ -655,11 +539,13 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                             turns: _animation,
                             child: InkWell(
                               child: FaIcon(FontAwesomeIcons.github,
-                                  color:
-                                      isSelected1 ? Colors.black : Colors.white,
+                                  color: isSelected1
+                                      ? Colors.black
+                                      : Colors.white,
                                   size: 25.0),
                               onTap: () async {
-                                const url = "https://github.com/flutter";
+                                const url =
+                                    "https://github.com/flutter";
                                 await launch(url);
                               },
                               onHover: (value) {
@@ -679,7 +565,8 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                                       : Colors.white,
                                   size: 25.0),
                               onTap: () async {
-                                const url = "https://twitter.com/flutterdev";
+                                const url =
+                                    "https://twitter.com/flutterdev";
                                 await launch(url);
                               },
                               onHover: (value) {
@@ -694,8 +581,9 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                             turns: _animation,
                             child: InkWell(
                               child: FaIcon(FontAwesomeIcons.youtube,
-                                  color:
-                                      isSelected4 ? Colors.red : Colors.white,
+                                  color: isSelected4
+                                      ? Colors.red
+                                      : Colors.white,
                                   size: 25.0),
                               onTap: () async {
                                 const url =
@@ -739,3 +627,33 @@ class _M2PproductScreenState extends State<M2PproductScreen>
     );
   }
 }
+class DrawClip extends CustomClipper<Path> {
+  double move = 0;
+  double slice = math.pi;
+  DrawClip(this.move);
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+
+    path.lineTo(0, size.height * 0.6);
+
+    double xCenter =
+        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
+    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
+    path.quadraticBezierTo(
+      xCenter,
+      yCenter,
+      size.width,
+      size.height * 0.8,
+    );
+
+    path.lineTo(size.width, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return true;
+  }
+}
+

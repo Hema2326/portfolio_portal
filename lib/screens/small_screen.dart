@@ -10,7 +10,8 @@ import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:math' as math;
+
+import '../widgets/draw_clip.dart';
 
 class SmallScreen extends StatefulWidget {
   const SmallScreen({Key? key}) : super(key: key);
@@ -35,36 +36,6 @@ class _SmallScreenState extends State<SmallScreen> {
       openCurve: Curves.easeIn,
       closeCurve: Curves.easeInOut,
     );
-  }
-}
-
-class DrawClip extends CustomClipper<Path> {
-  double move = 0;
-  double slice = math.pi;
-  DrawClip(this.move);
-  @override
-  Path getClip(Size size) {
-    Path path = Path();
-
-    path.lineTo(0, size.height * 0.6);
-
-    double xCenter =
-        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
-    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
-    path.quadraticBezierTo(
-      xCenter,
-      yCenter,
-      size.width,
-      size.height * 0.8,
-    );
-
-    path.lineTo(size.width, 0);
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return true;
   }
 }
 
@@ -166,25 +137,25 @@ class _SideBarState extends State<SideBar> {
             width: screenSize.width / 20,
             height: 30,
           ),
-          InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => M2PproductScreen()));
-            },
-            child: Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(15)),
-                border: Border.all(color: Colors.white),
-              ),
-              child: Text(
-                'M2P products',
-                style: TextStyle(
-                    color: isHovering ? Colors.white : Colors.black,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600),
-              ),
-            ),
+      InkWell(
+        onTap: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => M2PproductScreen()));
+        },
+        child: Container(
+          padding: const EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(15)),
+            border: Border.all(color: Colors.white),
           ),
+          child: Text(
+            'M2P products',
+            style: TextStyle(
+                color: isHovering ? Colors.white : Colors.black,
+                fontSize: 18,
+                fontWeight: FontWeight.w600),
+          ),
+        ),
+      ),
 
         ],
       ),
@@ -229,7 +200,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
     vsync: this,
   )..repeat(reverse: true);
   late final Animation<double> _arrowAnimation =
-  CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   @override
   void initState() {
@@ -261,14 +232,14 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+      backgroundColor: Colors.white,
         appBar: AppBar(
             leading: IconButton(
                 onPressed: () => ZoomDrawer.of(context)!.toggle(),
                 icon: const Icon(Icons.menu))),
         body:  SingleChildScrollView(
-          child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
+            child: Column(
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 AspectRatio(
                   aspectRatio: 3.0,
@@ -883,286 +854,286 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
 
 
 
-                Stack(
-                  children: [
-                    AnimatedBuilder(
-                        animation: _controller,
-                        builder: (BuildContext context, Widget? child) {
-                          return ClipPath(
-                              clipper: DrawClip(_controller.value),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                    height: 270,
-                                    width: double.maxFinite,
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                          begin: Alignment.bottomLeft,
-                                          end: Alignment.topRight,
-                                          colors: [
-                                            Colors.blue.shade600,
-                                            Colors.blueAccent.shade100
-                                          ]),
-                                    )),
-                              ));
-                        }),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Careers',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://medium.com/flutter";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'News',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://flutter.dev/brand";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Brand',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://flutter.dev/culture";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Culture',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                            ],
+            Stack(
+              children: [
+                AnimatedBuilder(
+                    animation: _controller,
+                    builder: (BuildContext context, Widget? child) {
+                      return ClipPath(
+                          clipper: DrawClip(_controller.value),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                                height: 270,
+                                width: double.maxFinite,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.bottomLeft,
+                                      end: Alignment.topRight,
+                                      colors: [
+                                        Colors.blue.shade600,
+                                        Colors.blueAccent.shade100
+                                      ]),
+                                )),
+                          ));
+                    }),
+                Padding(
+                  padding: const EdgeInsets.only(top: 20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Careers',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/mobile";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Mobile',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/web";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Web',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/desktop";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Desktop',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/embedded";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Embedded',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                            ],
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://medium.com/flutter";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'News',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          Column(
-                            children: [
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.medium,
-                                      color:
-                                      isSelected ? Colors.black : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url = "https://medium.com/flutter";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.meetup,
-                                      color: isSelected2
-                                          ? Colors.red[700]
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url =
-                                        "https://www.meetup.com/pro/flutter/";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected2 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.github,
-                                      color:
-                                      isSelected1 ? Colors.black : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url = "https://github.com/flutter";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected1 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.twitter,
-                                      color: isSelected3
-                                          ? Colors.blue[400]
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url = "https://twitter.com/flutterdev";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected3 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.youtube,
-                                      color:
-                                      isSelected4 ? Colors.red : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url =
-                                        "https://www.youtube.com/flutterdev";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected4 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                            ],
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://flutter.dev/brand";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Brand',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url = "https://flutter.dev/culture";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Culture',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
                         ],
                       ),
-                    ),
-                    Positioned(
-                      right: 30,
-                      bottom: 70,
-                      child: RotationTransition(
-                        turns: _arrowAnimation,
-                        child: InkWell(
-                          child: const Icon(
-                            Icons.arrow_circle_up,
-                            color: Colors.white,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://flutter.dev/multi-platform/mobile";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Mobile',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          onTap: () {
-                            _scrollToTop();
-                          },
-                        ),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://flutter.dev/multi-platform/web";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Web',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://flutter.dev/multi-platform/desktop";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Desktop',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          GestureDetector(
+                            onTap: () async {
+                              const url =
+                                  "https://flutter.dev/multi-platform/embedded";
+                              await launch(url);
+                            },
+                            child: const Text(
+                              'Embedded',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                        ],
                       ),
+                      Column(
+                        children: [
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.medium,
+                                  color:
+                                      isSelected ? Colors.black : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://medium.com/flutter";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.meetup,
+                                  color: isSelected2
+                                      ? Colors.red[700]
+                                      : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.meetup.com/pro/flutter/";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected2 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.github,
+                                  color:
+                                      isSelected1 ? Colors.black : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://github.com/flutter";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected1 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.twitter,
+                                  color: isSelected3
+                                      ? Colors.blue[400]
+                                      : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url = "https://twitter.com/flutterdev";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected3 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          RotationTransition(
+                            turns: _animation,
+                            child: InkWell(
+                              child: FaIcon(FontAwesomeIcons.youtube,
+                                  color:
+                                      isSelected4 ? Colors.red : Colors.white,
+                                  size: 25.0),
+                              onTap: () async {
+                                const url =
+                                    "https://www.youtube.com/flutterdev";
+                                await launch(url);
+                              },
+                              onHover: (value) {
+                                setState(() {
+                                  isSelected4 = value;
+                                });
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  right: 30,
+                  bottom: 70,
+                  child: RotationTransition(
+                    turns: _arrowAnimation,
+                    child: InkWell(
+                      child: const Icon(
+                        Icons.arrow_circle_up,
+                        color: Colors.white,
+                      ),
+                      onTap: () {
+                        _scrollToTop();
+                      },
                     ),
-                  ],
-                )
-              ]),
+                  ),
+                ),
+              ],
+            )
+          ]),
         ));
   }
 }

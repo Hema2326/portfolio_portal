@@ -1066,7 +1066,126 @@ class _MediumScreenState extends State<MediumScreen>
                   )),
               const Icon(Icons.directions_bike),
               const Icon(Icons.movie),
-              const Icon(Icons.movie),
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 95),
+                      child: Row(
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'We',
+                                style: TextStyle(
+                                  fontSize: 55,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Enable',
+                                style: TextStyle(
+                                  fontSize: 70,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Fintech',
+                                style: TextStyle(
+                                  fontSize: 90,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Spacer(),
+                          Container(
+                            child: Image.asset(
+                              'assets/camera.png',
+                              height: 400,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(top:40,left:35),
+                      decoration: BoxDecoration(
+                        color: Colors.pink,
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                'API Docs',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(height: 30),
+                              Text(
+                                'Build your Fintech Product',
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                ),
+                              ),
+
+                              SizedBox(height: 30),
+                              Text(
+                                'Check out our API docs to jump-start your product journey.',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.white.withOpacity(0.7),
+                                ),
+                              ),
+                              SizedBox(height: 60),
+                              ElevatedButton(
+                                onPressed: () async {
+                                  const url =
+                                      "https://docs.yappay.in/singledocs#error_msg";
+                                  await launch(url);
+                                },
+                                child: Row(
+                                  children: [
+                                    Text('Explore'),
+                                    SizedBox(width: 10),
+                                    Icon(Icons.arrow_forward_rounded),
+                                  ],
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.grey.withOpacity(0.6),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                        BorderRadius.circular(30.0),
+                                        side: const BorderSide(
+                                            color: Colors.white)),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 30, vertical: 20),
+                                    textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold)),
+                              ),
+                            ],
+                          ),
+                          Spacer(),
+                          Image.asset('assets/docs.png',
+                            height: 300,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ]),
           ),
         ])); }}
