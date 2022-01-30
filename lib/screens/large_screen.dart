@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
@@ -187,7 +189,6 @@ class _LargeScreenState extends State<LargeScreen>
             child: TabBarView(controller: _tabController, children: [
               SingleChildScrollView(
                   child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Stack(children: [
                     Image.asset(
@@ -600,7 +601,7 @@ class _LargeScreenState extends State<LargeScreen>
                     children: [
                       // Spacer(),
                       Container(
-                        margin: EdgeInsets.only(top: 15),
+                        margin: const EdgeInsets.only(top: 15),
                         color: Colors.white,
                         // padding: const EdgeInsets.only(bottom: 20),
                         child: Lottie.network(
@@ -613,7 +614,7 @@ class _LargeScreenState extends State<LargeScreen>
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 10, right: 10),
+                        margin: const EdgeInsets.only(left: 10, right: 10),
                         height: 180,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
@@ -627,32 +628,32 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             )),
                         child: Container(
-                          margin: EdgeInsets.only(left: 40, bottom: 20),
+                          margin: const EdgeInsets.only(left: 40, bottom: 20),
                           child: Row(
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  SizedBox(height: 15),
+                                  const SizedBox(height: 15),
                                   Text('Get Started',
                                       style: GoogleFonts.sourceSansPro(
-                                          textStyle: TextStyle(
+                                          textStyle: const TextStyle(
                                         color: ColorResource.colorFFFFFF,
                                         fontSize: 28,
                                         fontWeight: FontWeight.bold,
                                       ))),
-                                  SizedBox(height: 15),
+                                  const SizedBox(height: 15),
                                   Text(
                                     'Instant access to the power of the Flutter framework',
                                     style: GoogleFonts.sourceSansPro(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                         color: ColorResource.colorFFFFFF,
                                         fontSize: 20,
                                         fontWeight: FontWeight.normal,
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 16),
+                                  const SizedBox(height: 16),
                                   Row(
                                     children: [
                                       ElevatedButton(
@@ -664,7 +665,7 @@ class _LargeScreenState extends State<LargeScreen>
                                         child: Text(
                                           'Install',
                                           style: GoogleFonts.sourceSansPro(
-                                            textStyle: TextStyle(
+                                            textStyle: const TextStyle(
                                               color: Colors.lightBlueAccent,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -675,15 +676,15 @@ class _LargeScreenState extends State<LargeScreen>
                                             shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(30.0),
-                                                side: BorderSide(
+                                                side: const BorderSide(
                                                     color: Colors.white)),
-                                            padding: EdgeInsets.symmetric(
+                                            padding: const EdgeInsets.symmetric(
                                                 horizontal: 30, vertical: 20),
-                                            textStyle: TextStyle(
+                                            textStyle: const TextStyle(
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold)),
                                       ),
-                                      SizedBox(width: 10),
+                                      const SizedBox(width: 10),
                                       InkWell(
                                         onTap: () async {
                                           const url =
@@ -695,14 +696,14 @@ class _LargeScreenState extends State<LargeScreen>
                                             Text(
                                               'See the Documentation',
                                               style: GoogleFonts.aBeeZee(
-                                                textStyle: TextStyle(
+                                                textStyle: const TextStyle(
                                                   color:
                                                       ColorResource.colorFFFFFF,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
                                             ),
-                                            Icon(
+                                            const Icon(
                                               Icons.arrow_forward,
                                               color: ColorResource.colorFFFFFF,
                                             ),
@@ -725,11 +726,11 @@ class _LargeScreenState extends State<LargeScreen>
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(left: 20, top: 30),
+                            margin: const EdgeInsets.only(left: 20, top: 30),
                             child: Text(
                               'Join our News Letter Keep up with the latest Flutter news, releases, and more',
                               style: GoogleFonts.aBeeZee(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                     color: ColorResource.color222222,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 30),
@@ -738,7 +739,7 @@ class _LargeScreenState extends State<LargeScreen>
                           ),
                         ],
                       ),
-                      SizedBox(height: 40),
+                      const SizedBox(height: 40),
                       Container(
                         height: 100,
                         width: 300,
@@ -748,12 +749,12 @@ class _LargeScreenState extends State<LargeScreen>
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(30)),
                             labelText: 'E-mail',
-                            prefixIcon: Icon(Icons.mail_outline),
+                            prefixIcon: const Icon(Icons.mail_outline),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(bottom: 10),
+                        padding: const EdgeInsets.only(bottom: 10),
                         child: ElevatedButton(
                           onPressed: () async {
                             const url =
@@ -763,7 +764,7 @@ class _LargeScreenState extends State<LargeScreen>
                           child: Text(
                             'Subcribe',
                             style: GoogleFonts.sourceSansPro(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -773,10 +774,11 @@ class _LargeScreenState extends State<LargeScreen>
                               primary: Colors.blueAccent,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30.0),
-                                  side: BorderSide(color: Colors.blueAccent)),
-                              padding: EdgeInsets.symmetric(
+                                  side: const BorderSide(
+                                      color: Colors.blueAccent)),
+                              padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold)),
                         ),
                       ),
@@ -1189,8 +1191,8 @@ class PortfolioScreen extends StatefulWidget {
 
 class _PortfolioScreenState extends State<PortfolioScreen> {
   late FixedExtentScrollController controller;
-  static const double _itemHeight = 300;
-  static const int _itemCount = 100;
+  static const double _itemHeight = 450;
+  // static const int _itemCount = 100;
 
   @override
   void initState() {
@@ -1209,157 +1211,1707 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
   @override
   Widget build(BuildContext context) {
     List<PortfolioModel> digits = [
-      PortfolioModel('assets/flutter-engage.png', 'Mari', onTap: () {
-        print('dd');
-      }
-
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(builder: (context) => MariScreen()),
-          // );
-          ),
-      PortfolioModel('assets/flutter-engage.png', 'Chinnadurai', onTap: () {
-        print('dd');
-      }),
-      PortfolioModel('assets/alexia.png', 'Alexia', onTap: () {
-        print('dd');
-      }),
-      PortfolioModel('assets/flutter-engage.png', 'Hema', onTap: () {
-        print('dd');
-      }),
-      PortfolioModel('assets/flutter-engage.png', 'Seema', onTap: () {
-        print('dd');
-      }),
-      PortfolioModel('assets/flutter-engage.png', 'Nandhakumar', onTap: () {
-        print('dd');
-      }),
-      PortfolioModel('assets/flutter-engage.png', 'Jones', onTap: () {
-        print('dd');
-      }),
+      PortfolioModel('assets/flutter-engage.png', 'Mari'),
+      PortfolioModel('assets/flutter-engage.png', 'Chinnadurai'),
+      PortfolioModel('assets/alexia.png', 'Alexia'),
+      PortfolioModel('assets/flutter-engage.png', 'Hema'),
+      PortfolioModel('assets/flutter-engage.png', 'Seema'),
+      PortfolioModel('assets/flutter-engage.png', 'Nandhakumar'),
+      PortfolioModel('assets/flutter-engage.png', 'Jones'),
     ];
-    return Stack(
-      alignment: Alignment.topLeft,
-      children: [
-        Positioned(
-          left: 50,
-          top: 70,
-          child: Container(
-            color: Colors.black,
-            child: FlipPanel.builder(
-              itemBuilder: (context, index) => Container(
-                width: 106.0,
-                height: 128.0,
-                decoration: const BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.all(Radius.circular(4.0)),
-                ),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset(
-                        '${digits[index].image}',
-                        fit: BoxFit.fill,
-                        height: 50,
-                        width: 50,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0),
-                      child: Text(
-                        '${digits[index].name}',
-                        style: const TextStyle(
-                            fontSize: 14.0, color: Colors.yellow),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              itemsCount: digits.length,
-              period: const Duration(milliseconds: 1000),
-              loop: -1,
-            ),
-          ),
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.blue.shade600,
+                Colors.blueAccent.shade100,
+                Colors.pink
+              ]),
         ),
-        ClickableListWheelScrollView(
-          scrollController: controller,
-          onItemTapCallback: (index) {
-            digits[index].onTap;
-            // '${digits[index].onTap}';
-            // print("onItemTapCallback index: $index");
-          },
-          itemHeight: _itemHeight,
-          itemCount: digits.length,
-          child: ListWheelScrollView.useDelegate(
-              itemExtent: _itemHeight,
-              diameterRatio: 1,
-              controller: controller,
-              onSelectedItemChanged: (index) {
-                '${digits[index].onTap}';
-                // print("onSelectedItemChanged index: $index");
-              },
-              childDelegate: ListWheelChildBuilderDelegate(
-                  childCount: digits.length,
-                  builder: (context, index) {
-                    return GestureDetector(
-                      behavior: HitTestBehavior.translucent,
-                      onTap: () {},
-                      child: Column(
-                        children: [
-                          Image.asset(
+        child: Stack(
+          alignment: Alignment.topLeft,
+          children: [
+            Positioned(
+              left: 50,
+              top: 70,
+              child: Container(
+                color: Colors.black,
+                child: FlipPanel.builder(
+                  itemBuilder: (context, index) => Container(
+                    width: 136.0,
+                    height: 148.0,
+                    decoration: const BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.all(Radius.circular(4.0)),
+                    ),
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.asset(
                             '${digits[index].image}',
                             fit: BoxFit.fill,
-                            height: 250,
-                            width: 250,
+                            height: 60,
+                            width: 60,
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              '${digits[index].name}',
-                              style: const TextStyle(
-                                  fontSize: 20.0,
-                                  color: Colors.blue,
-                                  fontStyle: FontStyle.italic),
-                            ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                          child: Text(
+                            '${digits[index].name}',
+                            style: const TextStyle(
+                                fontSize: 14.0, color: Colors.yellow),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  itemsCount: digits.length,
+                  period: const Duration(milliseconds: 1000),
+                  loop: -1,
+                ),
+              ),
+            ),
+            ClickableListWheelScrollView(
+              scrollController: controller,
+              onItemTapCallback: (index) {
+                switch (index) {
+                  case 0:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MariScreen()),
                     );
-                  })),
+                    break;
+
+                  case 1:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ChinnaduraiScreen()),
+                    );
+                    break;
+                  case 2:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AlexiaScreen()),
+                    );
+                    break;
+                  case 3:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HemaScreen()),
+                    );
+                    break;
+                  case 4:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SeemaScreen()),
+                    );
+                    break;
+                  case 5:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => NadhaScreen()),
+                    );
+                    break;
+                  case 6:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => JonesScreen()),
+                    );
+                    break;
+
+                  default:
+                }
+              },
+              itemHeight: _itemHeight,
+              itemCount: digits.length,
+              child: ListWheelScrollView.useDelegate(
+                  itemExtent: _itemHeight,
+                  diameterRatio: 1,
+                  controller: controller,
+                  onSelectedItemChanged: (index) {},
+                  childDelegate: ListWheelChildBuilderDelegate(
+                      childCount: digits.length,
+                      builder: (context, index) {
+                        return GestureDetector(
+                          behavior: HitTestBehavior.translucent,
+                          onTap: () {},
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 250,
+                                width: 250,
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: Image.asset(
+                                        '${digits[index].image}',
+                                        fit: BoxFit.cover,
+                                      ).image,
+                                    ),
+                                    shape: BoxShape.rectangle,
+                                    border: Border.all(
+                                      color: Colors.blue,
+                                      width: 8,
+                                    ),
+                                    borderRadius: BorderRadius.circular(15),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black,
+                                        offset: Offset(
+                                          5.0,
+                                          5.0,
+                                        ), //Offset
+                                        blurRadius: 10.0,
+                                        spreadRadius: 2.0,
+                                      )
+                                    ]),
+                                child: ClipRRect(
+                                    child: BackdropFilter(
+                                  filter:
+                                      ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                                  child: Container(
+                                      alignment: Alignment.center,
+                                      color: Colors.grey.withOpacity(0.1),
+                                      child: Image.asset(
+                                        '${digits[index].image}',
+                                        height: 180,
+                                        width: 180,
+                                      )),
+                                )),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 18.0),
+                                child: Text(
+                                  '${digits[index].name}',
+                                  style: const TextStyle(
+                                      fontSize: 20.0,
+                                      color: Colors.white,
+                                      fontStyle: FontStyle.italic,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      })),
+            ),
+          ],
+          clipBehavior: Clip.hardEdge,
         ),
-        Positioned(
-          right: 100,
-          bottom: 90,
-          child: FloatingActionButton.small(
-            onPressed: () {},
-            // digits[index].onTap,
-
-            // onPressed: () {
-
-            //   final nextIndex = controller.selectedItem + 1;
-
-            //   controller.animateToItem(nextIndex,
-            //       duration: const Duration(seconds: 1), curve: Curves.bounceIn);
-            // },
-            child: const Icon(Icons.arrow_forward_sharp),
-          ),
-        ),
-      ],
-      clipBehavior: Clip.hardEdge,
+      ),
     );
   }
 }
 
 class MariScreen extends StatefulWidget {
+  const MariScreen({Key? key}) : super(key: key);
+
   @override
   State<MariScreen> createState() => _MariScreenState();
 }
 
-class _MariScreenState extends State<MariScreen> {
+class _MariScreenState extends State<MariScreen> with TickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation _sizeAnimation;
+  late final int seconds = 10;
+
+  bool reverse = false;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _animationController =
+        AnimationController(vsync: this, duration: Duration(seconds: seconds))
+          ..addStatusListener((status) {
+            if (status == AnimationStatus.completed) {
+              _animationController.repeat(reverse: !reverse);
+              reverse = !reverse;
+            }
+          });
+
+    _sizeAnimation =
+        Tween<double>(begin: 50.0, end: 100.0).animate(_animationController);
+    _animationController.forward();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [],
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AnimatedBuilder(
+                animation: _sizeAnimation,
+                builder: (context, child) => const CircleAvatar(
+                  maxRadius: 100,
+                  backgroundImage: AssetImage('assets/flutter-engage.png'),
+                ),
+              ),
+            ),
+            const Text(
+              "Mari",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Senior Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class ChinnaduraiScreen extends StatefulWidget {
+  const ChinnaduraiScreen({Key? key}) : super(key: key);
+
+  @override
+  _ChinnaduraiScreenState createState() => _ChinnaduraiScreenState();
+}
+
+class _ChinnaduraiScreenState extends State<ChinnaduraiScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                maxRadius: 100,
+                backgroundImage: AssetImage('assets/flutter-engage.png'),
+              ),
+            ),
+            const Text(
+              "Chinnadurai",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Senior Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class AlexiaScreen extends StatefulWidget {
+  @override
+  _AlexiaScreenState createState() => _AlexiaScreenState();
+}
+
+class _AlexiaScreenState extends State<AlexiaScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                maxRadius: 100,
+                backgroundImage: AssetImage('assets/flutter-engage.png'),
+              ),
+            ),
+            const Text(
+              "Alexia",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class HemaScreen extends StatefulWidget {
+  @override
+  _HemaScreenState createState() => _HemaScreenState();
+}
+
+class _HemaScreenState extends State<HemaScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                maxRadius: 100,
+                backgroundImage: AssetImage('assets/flutter-engage.png'),
+              ),
+            ),
+            const Text(
+              "Hema",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class SeemaScreen extends StatefulWidget {
+  @override
+  _SeemaScreenState createState() => _SeemaScreenState();
+}
+
+class _SeemaScreenState extends State<SeemaScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                maxRadius: 100,
+                backgroundImage: AssetImage('assets/flutter-engage.png'),
+              ),
+            ),
+            const Text(
+              "Seema",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class NadhaScreen extends StatefulWidget {
+  @override
+  _NadhaScreenState createState() => _NadhaScreenState();
+}
+
+class _NadhaScreenState extends State<NadhaScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                maxRadius: 100,
+                backgroundImage: AssetImage('assets/flutter-engage.png'),
+              ),
+            ),
+            const Text(
+              "NadhaKumar",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class JonesScreen extends StatefulWidget {
+  @override
+  _JonesScreenState createState() => _JonesScreenState();
+}
+
+class _JonesScreenState extends State<JonesScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                maxRadius: 100,
+                backgroundImage: AssetImage('assets/flutter-engage.png'),
+              ),
+            ),
+            const Text(
+              "Jones",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              "Software Engineer",
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 60),
+            const Text("Introduction",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Text("About Me",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Expanded(
+                child: Text(
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(28.0),
+              child: Text("Experience",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(38.0),
+              child: Column(children: [
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                        const SizedBox(
+                            height: 80,
+                            width: 20,
+                            child: VerticalDivider(color: Colors.blue)),
+                        Container(
+                            padding: const EdgeInsets.all(12.0),
+                            decoration: const BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                            )),
+                      ],
+                    ),
+                    const Expanded(
+                      child: Text(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry"),
+                    )
+                  ],
+                ),
+              ]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 10),
+                  const Text("email.com", style: TextStyle(fontSize: 16)),
+                  const SizedBox(width: 40),
+                  InkWell(
+                    child: const FaIcon(FontAwesomeIcons.github,
+                        color: Colors.black, size: 25.0),
+                    onTap: () async {
+                      const url = "https://github.com/flutter";
+                      await launch(url);
+                    },
+                  ),
+                  const SizedBox(width: 30),
+                  InkWell(
+                    child: FaIcon(FontAwesomeIcons.linkedin,
+                        color: Colors.blue[400], size: 25.0),
+                    onTap: () async {
+                      const url = "https://twitter.com/flutterdev";
+                      await launch(url);
+                    },
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+        ),
+      ),
     );
   }
 }

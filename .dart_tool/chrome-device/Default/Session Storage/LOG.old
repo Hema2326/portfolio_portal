@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-2022/01/26-18:17:48.418 5003 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.GcVk3z/flutter_tools_chrome_device.R9TI3j/Default/Session Storage/MANIFEST-000001
-2022/01/26-18:17:48.421 5003 Recovering log #3
-2022/01/26-18:17:48.424 5003 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.GcVk3z/flutter_tools_chrome_device.R9TI3j/Default/Session Storage/000003.log 
-=======
-2022/01/24-19:37:27.511 4d03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.s9HXNF/flutter_tools_chrome_device.Sms20A/Default/Session Storage/MANIFEST-000001
-2022/01/24-19:37:27.534 4d03 Recovering log #4
-2022/01/24-19:37:27.538 4d03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.s9HXNF/flutter_tools_chrome_device.Sms20A/Default/Session Storage/000004.log 
->>>>>>> 729bc652ff4b7fc52c07d892ebe4ba03770b77b5
+2022/01/28-14:44:27.746 5203 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.qjsFM5/flutter_tools_chrome_device.itTclY/Default/Session Storage/MANIFEST-000001
+2022/01/28-14:44:27.754 5203 Recovering log #4
+2022/01/28-14:44:27.755 5203 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.qjsFM5/flutter_tools_chrome_device.itTclY/Default/Session Storage/000004.log 
+2022/01/28-14:44:27.756 5203 Delete type=0 #3

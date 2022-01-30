@@ -1,9 +1,15 @@
+import 'dart:ui';
+
+import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../models.dart/models.dart';
 import '../widgets/draw_clip.dart';
+import '../widgets/flip_widget.dart';
 
 class SmallScreen extends StatefulWidget {
   const SmallScreen({Key? key}) : super(key: key);
@@ -76,7 +82,13 @@ class _SideBarState extends State<SideBar> {
             height: 30,
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const PortfolioScreen()),
+              );
+            },
             onHover: (value) {
               setState(() {
                 isHovering1 = value;
@@ -494,5 +506,230 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
             )
           ]),
         ));
+  }
+}
+
+class PortfolioScreen extends StatefulWidget {
+  const PortfolioScreen({Key? key}) : super(key: key);
+
+  @override
+  State<PortfolioScreen> createState() => _PortfolioScreenState();
+}
+
+class _PortfolioScreenState extends State<PortfolioScreen> {
+  late FixedExtentScrollController controller;
+  static const double _itemHeight = 300;
+  static const int _itemCount = 100;
+
+  @override
+  void initState() {
+    controller = FixedExtentScrollController();
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    List<PortfolioModel> digits = [
+      PortfolioModel('assets/flutter-engage.png', 'Mari'),
+      PortfolioModel('assets/flutter-engage.png', 'Chinnadurai'),
+      PortfolioModel('assets/alexia.png', 'Alexia'),
+      PortfolioModel('assets/flutter-engage.png', 'Hema'),
+      PortfolioModel('assets/flutter-engage.png', 'Seema'),
+      PortfolioModel('assets/flutter-engage.png', 'Nandhakumar'),
+      PortfolioModel('assets/flutter-engage.png', 'Jones'),
+    ];
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.blue.shade600,
+                Colors.blueAccent.shade100,
+                Colors.pink
+              ]),
+        ),
+        child: Stack(
+          alignment: Alignment.topLeft,
+          children: [
+            Positioned(
+              left: 40,
+              top: 40,
+              child: Container(
+                color: Colors.black,
+                child: FlipPanel.builder(
+                  itemBuilder: (context, index) => Container(
+                    width: 106.0,
+                    height: 128.0,
+                    decoration: const BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.all(Radius.circular(4.0)),
+                    ),
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.asset(
+                            '${digits[index].image}',
+                            fit: BoxFit.fill,
+                            height: 50,
+                            width: 50,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                          child: Text(
+                            '${digits[index].name}',
+                            style: const TextStyle(
+                                fontSize: 14.0, color: Colors.yellow),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  itemsCount: digits.length,
+                  period: const Duration(milliseconds: 1000),
+                  loop: -1,
+                ),
+              ),
+            ),
+            ClickableListWheelScrollView(
+              scrollController: controller,
+              onItemTapCallback: (index) {
+                switch (index) {
+                  case 0:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MariScreen()),
+                    );
+                    break;
+
+                  case 1:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ChinnaduraiScreen()),
+                    );
+                    break;
+                  case 2:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AlexiaScreen()),
+                    );
+                    break;
+                  case 3:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HemaScreen()),
+                    );
+                    break;
+                  case 4:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SeemaScreen()),
+                    );
+                    break;
+                  case 5:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => NadhaScreen()),
+                    );
+                    break;
+                  case 6:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => JonesScreen()),
+                    );
+                    break;
+
+                  default:
+                }
+              },
+              itemHeight: _itemHeight,
+              itemCount: digits.length,
+              child: ListWheelScrollView.useDelegate(
+                  itemExtent: _itemHeight,
+                  diameterRatio: 1,
+                  controller: controller,
+                  onSelectedItemChanged: (index) {},
+                  childDelegate: ListWheelChildBuilderDelegate(
+                      childCount: digits.length,
+                      builder: (context, index) {
+                        return GestureDetector(
+                          behavior: HitTestBehavior.translucent,
+                          onTap: () {},
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 250,
+                                width: 250,
+                                decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: Image.asset(
+                                        '${digits[index].image}',
+                                        fit: BoxFit.cover,
+                                      ).image,
+                                    ),
+                                    shape: BoxShape.rectangle,
+                                    border: Border.all(
+                                      color: Colors.blue,
+                                      width: 8,
+                                    ),
+                                    borderRadius: BorderRadius.circular(15),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.black,
+                                        offset: Offset(
+                                          5.0,
+                                          5.0,
+                                        ), //Offset
+                                        blurRadius: 10.0,
+                                        spreadRadius: 2.0,
+                                      )
+                                    ]),
+                                child: ClipRRect(
+                                    child: BackdropFilter(
+                                  filter:
+                                      ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                                  child: Container(
+                                      alignment: Alignment.center,
+                                      color: Colors.grey.withOpacity(0.1),
+                                      child: Image.asset(
+                                        '${digits[index].image}',
+                                        height: 180,
+                                        width: 180,
+                                      )),
+                                )),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  '${digits[index].name}',
+                                  style: const TextStyle(
+                                      fontSize: 20.0,
+                                      color: Colors.white,
+                                      fontStyle: FontStyle.italic),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      })),
+            ),
+          ],
+          clipBehavior: Clip.hardEdge,
+        ),
+      ),
+    );
   }
 }
