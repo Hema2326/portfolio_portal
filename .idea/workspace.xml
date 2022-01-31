@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -23,7 +28,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit">
-      <change afterPath="$PROJECT_DIR$/lib/screens/m2pProducts_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Extension Scripts/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Favicons" afterDir="false" />
@@ -31,8 +35,6 @@
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Preferences" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Preferences" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Reporting and NEL" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Reporting and NEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2/767016fa-8565-4339-9766-395ceafafcb7/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2/767016fa-8565-4339-9766-395ceafafcb7/index-dir/the-real-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/CacheStorage/8f7abdeb3486c1b8780fede76afc20e044eff1b5/84376204-05e0-4b31-835c-bf3b6925762d/index-dir/the-real-index" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/CacheStorage/8f7abdeb3486c1b8780fede76afc20e044eff1b5/84376204-05e0-4b31-835c-bf3b6925762d/index-dir/the-real-index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/000003.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/LOG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Service Worker/Database/LOG.old" afterDir="false" />
@@ -44,13 +46,27 @@
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Visited Links" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Visited Links" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Web Data" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/chrome-device/Default/Web Data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/NOTICES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/large_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/m2pProducts_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/m2pProducts_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/medium_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/small_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,12 +197,12 @@
       <option name="project" value="LOCAL" />
       <updated>1643018104600</updated>
     </task>
-    <task id="LOCAL-00013" summary="conflicts">
-      <created>1643018837417</created>
+    <task id="LOCAL-00013" summary="conflicts resolved">
+      <created>1643374958136</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1643018837417</updated>
+      <updated>1643374958137</updated>
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
@@ -212,46 +228,47 @@
     <MESSAGE value="conflict resolved" />
     <MESSAGE value="conflicts changes" />
     <MESSAGE value="conflicts" />
-    <option name="LAST_COMMIT_MESSAGE" value="conflicts" />
+    <MESSAGE value="conflicts resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="conflicts resolved" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643373667906">
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643602008825">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643373667906" />
-    <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.25.1680.934@0.25.1680.934" timestamp="1643300174488" />
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008825" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.25.1680.934@0.25.1680.934" timestamp="1642530423150" />
     <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
-    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1643373667905">
+    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1643602008816">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643373667905" />
-    <state width="1638" height="241" key="GridCell.Tab.0.center/0.25.1680.934@0.25.1680.934" timestamp="1643300174486" />
+    <state width="1638" height="240" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008816" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center/0.25.1680.934@0.25.1680.934" timestamp="1642530423147" />
     <state width="1638" height="241" key="GridCell.Tab.0.center/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
-    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1643373667904">
+    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1643602008815">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643373667904" />
-    <state width="1638" height="241" key="GridCell.Tab.0.left/0.25.1680.934@0.25.1680.934" timestamp="1643300174485" />
+    <state width="1638" height="240" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008815" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left/0.25.1680.934@0.25.1680.934" timestamp="1642530423146" />
     <state width="1638" height="241" key="GridCell.Tab.0.left/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
-    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1643373667906">
+    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1643602008816">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643373667906" />
-    <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1643300174487" />
+    <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643602008816" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1642530423148" />
     <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
-    <state x="175" y="60" key="MergeDialog" timestamp="1642410964624">
+    <state x="175" y="60" key="MergeDialog" timestamp="1643375062257">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642410964624" />
-    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1642762681545">
+    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375062257" />
+    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643375069662">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642762681545" />
+    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375069662" />
     <state x="478" y="257" key="MultipleFileMergeDialog/0.25.1680.942@0.25.1680.942" timestamp="1641968234125" />
-    <state x="349" y="115" key="SettingsEditor" timestamp="1642924137025">
+    <state x="349" y="115" key="SettingsEditor" timestamp="1643563291614">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1642924137025" />
+    <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1643563291614" />
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643018108367">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -259,9 +276,9 @@
     <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1643018108367" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.25.1680.937@0.25.1680.937" timestamp="1641968062204" />
     <state x="440" y="230" key="Vcs.Push.Dialog.v2/0.25.1680.942@0.25.1680.942" timestamp="1641968788808" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1643269711034">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1643001765872">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1643269711034" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1643001765872" />
   </component>
 </project>

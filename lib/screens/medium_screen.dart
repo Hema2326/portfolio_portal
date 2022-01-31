@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -7,8 +8,6 @@ import 'package:marquee/marquee.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:math' as math;
-
-import '../widgets/draw_clip.dart';
 
 import '../utils/color_resource.dart';
 import '../utils/custom_text.dart';
@@ -25,6 +24,8 @@ class MediumScreen extends StatefulWidget {
 class _MediumScreenState extends State<MediumScreen>
     with TickerProviderStateMixin {
   late ScrollController _scrollController;
+  late AnimationController animation;
+  late Animation<double> _fadeInFadeOut;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   bool isSelected = false;
   bool isSelected1 = false;
@@ -65,6 +66,22 @@ class _MediumScreenState extends State<MediumScreen>
       lowerBound: -3,
       vsync: this,
     )..repeat();
+    animation = AnimationController(
+      vsync: this,
+      duration: Duration(seconds: 3),
+    );
+    _fadeInFadeOut = CurvedAnimation(
+        parent: controller, curve: Curves.fastLinearToSlowEaseIn);
+    // _fadeInFadeOut = Tween<double>(begin: 0.0, end: 0.5).animate(animation);
+
+    animation.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        animation.reverse();
+      } else if (status == AnimationStatus.dismissed) {
+        animation.forward();
+      }
+    });
+    animation.forward();
     super.initState();
   }
 
@@ -1083,13 +1100,34 @@ class _MediumScreenState extends State<MediumScreen>
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text(
-                                'Enable',
-                                style: TextStyle(
-                                  fontSize: 70,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                              AnimatedTextKit(
+                                isRepeatingAnimation: true,
+                                animatedTexts: [
+                                  ScaleAnimatedText(
+                                    'Enable',
+                                    textStyle: TextStyle(
+                                      fontSize: 60,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  ScaleAnimatedText('Embed',
+                                    textStyle: TextStyle(
+                                      fontSize: 60,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                                onTap: () {
+                                  print("Tap Event");
+                                },
                               ),
+                              // Text(
+                              //   'Enable',
+                              //   style: TextStyle(
+                              //     fontSize: 70,
+                              //     fontWeight: FontWeight.bold,
+                              //   ),
+                              // ),
                               Text(
                                 'Fintech',
                                 style: TextStyle(
@@ -1103,14 +1141,14 @@ class _MediumScreenState extends State<MediumScreen>
                           Container(
                             child: Image.asset(
                               'assets/camera.png',
-                              height: 400,
+                              height: 500,
                             ),
                           ),
                         ],
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.only(top:40,left:35),
+                      padding: EdgeInsets.only(top: 40, left: 25),
                       decoration: BoxDecoration(
                         color: Colors.pink,
                       ),
@@ -1128,26 +1166,28 @@ class _MediumScreenState extends State<MediumScreen>
                                   color: Colors.white,
                                 ),
                               ),
-                              SizedBox(height: 30),
+                              SizedBox(height: 20),
                               Text(
                                 'Build your Fintech Product',
                                 style: TextStyle(
-                                  fontSize: 30,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.white,
                                 ),
                               ),
-
-                              SizedBox(height: 30),
-                              Text(
-                                'Check out our API docs to jump-start your product journey.',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.normal,
-                                  color: Colors.white.withOpacity(0.7),
+                              SizedBox(height: 20),
+                              Container(
+                                width:550,
+                                child: Text(
+                                  'Check out our API docs to jump-start your product journey.',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.normal,
+                                    color: Colors.white.withOpacity(0.7),
+                                  ),
                                 ),
                               ),
-                              SizedBox(height: 60),
+                              SizedBox(height: 50),
                               ElevatedButton(
                                 onPressed: () async {
                                   const url =
@@ -1165,7 +1205,7 @@ class _MediumScreenState extends State<MediumScreen>
                                     primary: Colors.grey.withOpacity(0.6),
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
-                                        BorderRadius.circular(30.0),
+                                        BorderRadius.circular(15.0),
                                         side: const BorderSide(
                                             color: Colors.white)),
                                     padding: const EdgeInsets.symmetric(
@@ -1178,10 +1218,499 @@ class _MediumScreenState extends State<MediumScreen>
                           ),
                           Spacer(),
                           Image.asset('assets/docs.png',
-                            height: 300,
+                            height:300,
+                              ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                        margin: EdgeInsets.only(top: 20),
+                        child: Text('OUR VALUES',
+                            style: TextStyle(
+                                fontSize: 30, fontWeight: FontWeight.bold))),
+                    Image.asset(
+                      'assets/value.png',
+                      height: 500,
+                      width: 800,
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 30, top: 10),
+                      color: Colors.orangeAccent,
+                      width: MediaQuery.of(context).size.width,
+                      child: Column(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.only(bottom: 30),
+                            child: Text('M2P PRODUCTS',
+                                style: TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.bold)),
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.only(left: 70),
+                                child: InkWell(
+                                  onTap: () async {
+                                    const url =
+                                        "https://m2pfintech.com/card-issuing-platform/";
+                                    await launch(url);
+                                  },
+                                  child: FadeTransition(
+                                    opacity: _fadeInFadeOut,
+                                    child: Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.white,
+                                        border: Border.all(color: Colors.white),
+                                      ),
+                                      child: Text('Card Issuance'),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 50),
+                              InkWell(
+                                onTap: () async {
+                                  const url =
+                                      "https://m2pfintech.com/issue-credit-cards/";
+                                  await launch(url);
+                                },
+                                child: FadeTransition(
+                                  opacity: _fadeInFadeOut,
+                                  child: Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.white,
+                                        border: Border.all(color: Colors.white),
+                                      ),
+                                      child: Text('Credit Card')),
+                                ),
+                              ),
+                              SizedBox(width: 50),
+                              InkWell(
+                                onTap: () async {
+                                  const url =
+                                      "https://m2pfintech.com/neobanking-platform/";
+                                  await launch(url);
+                                },
+                                child: FadeTransition(
+                                  opacity: _fadeInFadeOut,
+                                  child: Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.white,
+                                        border: Border.all(color: Colors.white),
+                                      ),
+                                      child: Text('Neo Banking')),
+                                ),
+                              ),
+                              SizedBox(width: 50),
+                              InkWell(
+                                onTap: () async {
+                                  const url =
+                                      "https://m2pfintech.com/fleet-drive/";
+                                  await launch(url);
+                                },
+                                child: FadeTransition(
+                                  opacity: _fadeInFadeOut,
+                                  child: Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.white,
+                                        border: Border.all(color: Colors.white),
+                                      ),
+                                      child: Text('Fleet Drive')),
+                                ),
+                              ),
+                              SizedBox(width: 50),
+                              InkWell(
+                                onTap: () async {
+                                  const url =
+                                      "https://m2pfintech.com/buy-now-pay-later/";
+                                  await launch(url);
+                                },
+                                child: FadeTransition(
+                                  opacity: _fadeInFadeOut,
+                                  child: Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: Colors.white,
+                                        border: Border.all(color: Colors.white),
+                                      ),
+                                      child: Text('Buy Now Pay later')),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
+                    ),
+                    Container(
+                        child: Row(
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset('assets/fintech.png',
+                              height:300,
+                            ),
+                            Container(
+                              width:500,
+                              margin: EdgeInsets.only(left: 30),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'CONTACT US',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: TextStyle(
+                                            fontSize: 28,
+                                            fontWeight: FontWeight.bold)),
+                                  ),
+                                  SizedBox(height: 40),
+                                  Text(
+                                    'Redefine Innovation With Us',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.normal)),
+                                  ),
+                                  SizedBox(height: 40),
+                                  Container(
+                                    width: 700,
+                                    child: Text(
+                                      'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
+                                      maxLines: 2,
+                                      style: GoogleFonts.aBeeZee(
+                                          textStyle: TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.normal)),
+                                    ),
+                                  ),
+                                  SizedBox(height: 50),
+                                  Container(
+                                    width:200,
+                                    child: ElevatedButton(
+                                      onPressed: () async {
+                                        const url =
+                                            "https://m2pfintech.com/contact-us/";
+                                        await launch(url);
+                                      },
+                                      child: Row(
+                                        children: [
+                                          Text('Contact us'),
+                                          SizedBox(width: 10),
+                                          Icon(Icons.arrow_forward_rounded),
+                                        ],
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          primary: Colors.blueAccent,
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                              BorderRadius.circular(30.0),
+                                              side: const BorderSide(
+                                                  color: Colors.white)),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 30, vertical: 20),
+                                          textStyle: const TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold)),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        )),
+                    Stack(
+                      children: [
+                        AnimatedBuilder(
+                            animation: _controller,
+                            builder: (BuildContext context, Widget? child) {
+                              return ClipPath(
+                                  clipper: DrawClip(_controller.value),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                        height: 270,
+                                        width: double.maxFinite,
+                                        decoration: BoxDecoration(
+                                          gradient: LinearGradient(
+                                              begin: Alignment.bottomLeft,
+                                              end: Alignment.topRight,
+                                              colors: [
+                                                Colors.blue.shade600,
+                                                Colors.blueAccent.shade100
+                                              ]),
+                                        )),
+                                  ));
+                            }),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Careers',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url = "https://medium.com/flutter";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'News',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url = "https://flutter.dev/brand";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Brand',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url = "https://flutter.dev/culture";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Culture',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://flutter.dev/multi-platform/mobile";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Mobile',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://flutter.dev/multi-platform/web";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Web',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://flutter.dev/multi-platform/desktop";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Desktop',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  GestureDetector(
+                                    onTap: () async {
+                                      const url =
+                                          "https://flutter.dev/multi-platform/embedded";
+                                      await launch(url);
+                                    },
+                                    child: const Text(
+                                      'Embedded',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 20),
+                                ],
+                              ),
+                              Column(
+                                children: [
+                                  RotationTransition(
+                                    turns: _animation,
+                                    child: InkWell(
+                                      child: FaIcon(FontAwesomeIcons.medium,
+                                          color: isSelected
+                                              ? Colors.black
+                                              : Colors.white,
+                                          size: 25.0),
+                                      onTap: () async {
+                                        const url =
+                                            "https://medium.com/flutter";
+                                        await launch(url);
+                                      },
+                                      onHover: (value) {
+                                        setState(() {
+                                          isSelected = value;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  RotationTransition(
+                                    turns: _animation,
+                                    child: InkWell(
+                                      child: FaIcon(FontAwesomeIcons.meetup,
+                                          color: isSelected2
+                                              ? Colors.red[700]
+                                              : Colors.white,
+                                          size: 25.0),
+                                      onTap: () async {
+                                        const url =
+                                            "https://www.meetup.com/pro/flutter/";
+                                        await launch(url);
+                                      },
+                                      onHover: (value) {
+                                        setState(() {
+                                          isSelected2 = value;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  RotationTransition(
+                                    turns: _animation,
+                                    child: InkWell(
+                                      child: FaIcon(FontAwesomeIcons.github,
+                                          color: isSelected1
+                                              ? Colors.black
+                                              : Colors.white,
+                                          size: 25.0),
+                                      onTap: () async {
+                                        const url =
+                                            "https://github.com/flutter";
+                                        await launch(url);
+                                      },
+                                      onHover: (value) {
+                                        setState(() {
+                                          isSelected1 = value;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  RotationTransition(
+                                    turns: _animation,
+                                    child: InkWell(
+                                      child: FaIcon(FontAwesomeIcons.twitter,
+                                          color: isSelected3
+                                              ? Colors.blue[400]
+                                              : Colors.white,
+                                          size: 25.0),
+                                      onTap: () async {
+                                        const url =
+                                            "https://twitter.com/flutterdev";
+                                        await launch(url);
+                                      },
+                                      onHover: (value) {
+                                        setState(() {
+                                          isSelected3 = value;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  RotationTransition(
+                                    turns: _animation,
+                                    child: InkWell(
+                                      child: FaIcon(FontAwesomeIcons.youtube,
+                                          color: isSelected4
+                                              ? Colors.red
+                                              : Colors.white,
+                                          size: 25.0),
+                                      onTap: () async {
+                                        const url =
+                                            "https://www.youtube.com/flutterdev";
+                                        await launch(url);
+                                      },
+                                      onHover: (value) {
+                                        setState(() {
+                                          isSelected4 = value;
+                                        });
+                                      },
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Positioned(
+                          right: 30,
+                          bottom: 70,
+                          child: RotationTransition(
+                            turns: _arrowAnimation,
+                            child: InkWell(
+                              child: const Icon(
+                                Icons.arrow_circle_up,
+                                color: Colors.white,
+                              ),
+                              onTap: () {
+                                _scrollToTop();
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -1189,3 +1718,33 @@ class _MediumScreenState extends State<MediumScreen>
             ]),
           ),
         ])); }}
+
+class DrawClip extends CustomClipper<Path> {
+  double move = 0;
+  double slice = math.pi;
+  DrawClip(this.move);
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+
+    path.lineTo(0, size.height * 0.6);
+
+    double xCenter =
+        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
+    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
+    path.quadraticBezierTo(
+      xCenter,
+      yCenter,
+      size.width,
+      size.height * 0.8,
+    );
+
+    path.lineTo(size.width, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return true;
+  }
+}
