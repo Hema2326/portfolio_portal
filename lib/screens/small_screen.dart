@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/m2pProducts_screen.dart';
+import 'package:portfolio_portal/screens/projects_screen.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
@@ -146,7 +147,12 @@ class _SideBarState extends State<SideBar> {
             height: 30,
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ProjectsScreen()));
+            },
             onHover: (value) {
               setState(() {
                 isHovering2 = value;

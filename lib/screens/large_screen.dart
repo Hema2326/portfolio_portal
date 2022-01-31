@@ -1352,7 +1352,7 @@ class _LargeScreenState extends State<LargeScreen>
                                   'Description',
                                   style: GoogleFonts.aBeeZee(
                                     textStyle: const TextStyle(
-                                      fontSize: 60,
+                                      fontSize: 40,
                                       fontWeight: FontWeight.bold,
                                       color: ColorResource.colorFFFFFF,
                                     ),
@@ -1470,10 +1470,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Image.asset(
-                            ImageResource.icici2,
-                            width: 700,
-                            height: 700,
+                          Container(
+                            alignment: Alignment.center,
+                            child: Image.asset(
+                              ImageResource.icici2,
+                              width: 500,
+                              height: 500,
+                            ),
                           ),
                         ],
                       ),
@@ -1557,12 +1560,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(right: 80),
                             child: Image.asset(
                               ImageResource.visa,
-                              width: 400,
-                              height: 400,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                         ],
@@ -1656,12 +1660,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(right: 80),
                             child: Image.asset(
                               ImageResource.genericcomponenets,
-                              width: 400,
-                              height: 400,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                         ],
