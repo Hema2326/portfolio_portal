@@ -39,11 +39,11 @@ class StringResource {
       'Flutter is powered by Dart, a language optimized for fast apps on any platform.';
   static const String dartdev = 'Visit dart.dev';
   static const String getpackages = 'Get Packages';
-  static const String icici = 'ICICI';
+  static const String icici = 'ICICI POCKETS';
   static const String module1 = 'Module 1 & Module 2 has been completed.....';
   static const String api = 'Need to integrate API......';
   static const String bitbucketlink = 'BitBucket Link:';
-  static const String flutterprojects = 'Flutter Projects done by our team!!';
+  static const String flutterprojects = 'Flutter Projects!!';
   static const String genericcomponents =
       'Instead of Packages we can make use of it..';
   static const String generic = 'Generic Components';
