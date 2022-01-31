@@ -6,7 +6,7 @@ class StringResource {
   static const String flutter =
       'Flutter - The Frame Work for cross-platform Applications.';
   static const String buildapps = 'Build Apps for any Screen';
-  static const String welcomeflutter = 'Welcome to Flutter';
+  static const String welcomeflutter = 'Welcome to Flutter!';
   static const String opensource =
       'Flutter is an open source framework by google for building beautiful, natively compiled, multi-platform applications from a single codebase.';
   static const String sevenways =
@@ -39,4 +39,16 @@ class StringResource {
       'Flutter is powered by Dart, a language optimized for fast apps on any platform.';
   static const String dartdev = 'Visit dart.dev';
   static const String getpackages = 'Get Packages';
+  static const String icici = 'ICICI POCKETS';
+  static const String module1 = 'Module 1 & Module 2 has been completed.....';
+  static const String api = 'Need to integrate API......';
+  static const String bitbucketlink = 'BitBucket Link:';
+  static const String flutterprojects = 'Flutter Projects!!';
+  static const String genericcomponents =
+      'Instead of Packages we can make use of it..';
+  static const String generic = 'Generic Components';
+  static const String visa = 'Visa Digital App';
+  static const String visa1 = 'Design and implementation has been completed';
+  static const String yet = 'Yet to launch......';
+  static const String moreprojects = 'More Projects to come.......';
 }

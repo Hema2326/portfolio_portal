@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -14,7 +13,6 @@ import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'dart:math' as math;
 
 import 'package:video_player/video_player.dart';
 
@@ -188,827 +186,1801 @@ class _LargeScreenState extends State<LargeScreen>
             ),
           ),
           Expanded(
-            child: TabBarView(controller: _tabController, children: [
-              SingleChildScrollView(
-                  child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  AspectRatio(
-                    aspectRatio: 3.0,
-                    child: Image.asset(
-                      ImageResource.flutterengage,
-                      fit: BoxFit.fill,
-                      height: 600,
-                      width: MediaQuery.of(context).size.width,
-                    ),
+              child: TabBarView(controller: _tabController, children: [
+            SingleChildScrollView(
+                child: Column(
+              // crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                AspectRatio(
+                  aspectRatio: 3.0,
+                  child: Image.asset(
+                    ImageResource.flutterengage,
+                    fit: BoxFit.fill,
+                    height: 600,
+                    width: MediaQuery.of(context).size.width,
                   ),
-                  Center(
-                    child: Container(
-                      height: 700,
-                      child: Padding(
-                        padding: EdgeInsets.zero,
-                        child: CarouselSlider(
-                          items: [
-                            Padding(
-                              padding: EdgeInsets.zero,
-                              child: Row(
-                                children: [
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        margin: const EdgeInsets.only(
-                                            left: 30, right: 10),
-                                        height: 180,
-                                        width: 800,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(15),
-                                            gradient: LinearGradient(
-                                              begin: Alignment.topRight,
-                                              end: Alignment.bottomLeft,
-                                              colors: [
-                                                Colors.blueAccent.shade100,
-                                                Colors.blueAccent,
-                                              ],
-                                            )),
-                                        child: Container(
-                                          margin: const EdgeInsets.only(
-                                              left: 40, bottom: 20),
-                                          child: Row(
-                                            children: [
-                                              Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  const SizedBox(height: 15),
-                                                  CustomText(
-                                                      StringResource.dart,
-                                                      style:
-                                                          GoogleFonts.aBeeZee(
-                                                              textStyle:
-                                                                  const TextStyle(
-                                                        color: ColorResource
-                                                            .colorFFFFFF,
-                                                        fontSize: 28,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ))),
-                                                  const SizedBox(height: 15),
-                                                  CustomText(
-                                                    StringResource.dart1,
-                                                    style: GoogleFonts.aBeeZee(
-                                                      textStyle:
-                                                          const TextStyle(
-                                                        color: ColorResource
-                                                            .colorFFFFFF,
-                                                        fontSize: 16,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const SizedBox(height: 16),
-                                                  Row(
-                                                    children: [
-                                                      ElevatedButton(
-                                                        onPressed: () async {
-                                                          const url =
-                                                              "https://dart.dev";
-                                                          await launch(url);
-                                                        },
-                                                        child: CustomText(
-                                                          StringResource
-                                                              .dartdev,
-                                                          style: GoogleFonts
-                                                              .aBeeZee(
-                                                            textStyle:
-                                                                const TextStyle(
-                                                              color: Colors
-                                                                  .lightBlueAccent,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .normal,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                        style: ElevatedButton.styleFrom(
-                                                            primary: ColorResource
-                                                                .colorFFFFFF,
-                                                            shape: RoundedRectangleBorder(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            30.0),
-                                                                side: const BorderSide(
-                                                                    color: Colors
-                                                                        .white)),
-                                                            padding: const EdgeInsets
-                                                                    .symmetric(
-                                                                horizontal: 30,
-                                                                vertical: 20),
-                                                            textStyle: const TextStyle(
-                                                                fontSize: 20,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold)),
-                                                      ),
-                                                      const SizedBox(width: 10),
-                                                      InkWell(
-                                                        onTap: () async {
-                                                          const url =
-                                                              "https://pub.dev";
-                                                          await launch(url);
-                                                        },
-                                                        child: Row(
-                                                          children: [
-                                                            CustomText(
-                                                              StringResource
-                                                                  .getpackages,
-                                                              style: GoogleFonts
-                                                                  .aBeeZee(
-                                                                textStyle:
-                                                                    const TextStyle(
-                                                                  color: ColorResource
-                                                                      .colorFFFFFF,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold,
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            const Icon(
-                                                              Icons
-                                                                  .arrow_forward,
-                                                              color: ColorResource
-                                                                  .colorFFFFFF,
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ],
-                                              ),
+                ),
+                Center(
+                  child: Container(
+                    height: 700,
+                    child: Padding(
+                      padding: EdgeInsets.zero,
+                      child: CarouselSlider(
+                        items: [
+                          Padding(
+                            padding: EdgeInsets.zero,
+                            child: Row(
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(
+                                          left: 30, right: 10),
+                                      height: 180,
+                                      width: 800,
+                                      decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.blueAccent.shade100,
+                                              Colors.blueAccent,
                                             ],
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Spacer(),
-                                  Container(
-                                    color: Colors.white,
-                                    // padding: const EdgeInsets.only(bottom: 20),
-                                    child: Lottie.network(
-                                      'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
-                                      height: 500.0,
-                                      width: 600,
-                                      repeat: true,
-                                      reverse: true,
-                                      animate: true,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.zero,
-                              child: Row(
-                                children: [
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
+                                          )),
+                                      child: Container(
                                         margin: const EdgeInsets.only(
-                                            left: 30, right: 10),
-                                        height: 180,
-                                        width: 800,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(15),
-                                            gradient: LinearGradient(
-                                              begin: Alignment.topRight,
-                                              end: Alignment.bottomLeft,
-                                              colors: [
-                                                Colors.redAccent.shade100,
-                                                Colors.blueAccent,
-                                              ],
-                                            )),
-                                        child: Container(
-                                          margin: const EdgeInsets.only(
-                                              left: 40, bottom: 20),
-                                          child: Row(
-                                            children: [
-                                              Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  const SizedBox(height: 15),
-                                                  Text('Get Started',
-                                                      style: GoogleFonts
-                                                          .sourceSansPro(
-                                                              textStyle:
-                                                                  const TextStyle(
-                                                        color: ColorResource
-                                                            .colorFFFFFF,
-                                                        fontSize: 28,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ))),
-                                                  const SizedBox(height: 15),
-                                                  Text(
-                                                    'Instant access to the power of the Flutter framework',
-                                                    style: GoogleFonts
-                                                        .sourceSansPro(
-                                                      textStyle:
-                                                          const TextStyle(
-                                                        color: ColorResource
-                                                            .colorFFFFFF,
-                                                        fontSize: 20,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const SizedBox(height: 16),
-                                                  Row(
-                                                    children: [
-                                                      ElevatedButton(
-                                                        onPressed: () async {
-                                                          const url =
-                                                              "https://docs.flutter.dev/get-started/install";
-                                                          await launch(url);
-                                                        },
-                                                        child: Text(
-                                                          'Install',
-                                                          style: GoogleFonts
-                                                              .sourceSansPro(
-                                                            textStyle:
-                                                                const TextStyle(
-                                                              color: Colors
-                                                                  .lightBlueAccent,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                        style: ElevatedButton.styleFrom(
-                                                            primary: ColorResource
-                                                                .colorFFFFFF,
-                                                            shape: RoundedRectangleBorder(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            30.0),
-                                                                side: const BorderSide(
-                                                                    color: Colors
-                                                                        .white)),
-                                                            padding: const EdgeInsets
-                                                                    .symmetric(
-                                                                horizontal: 30,
-                                                                vertical: 20),
-                                                            textStyle: const TextStyle(
-                                                                fontSize: 20,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold)),
-                                                      ),
-                                                      const SizedBox(width: 10),
-                                                      InkWell(
-                                                        onTap: () async {
-                                                          const url =
-                                                              "https://docs.flutter.dev";
-                                                          await launch(url);
-                                                        },
-                                                        child: Row(
-                                                          children: [
-                                                            Text(
-                                                              'See the Documentation',
-                                                              style: GoogleFonts
-                                                                  .aBeeZee(
-                                                                textStyle:
-                                                                    const TextStyle(
-                                                                  color: ColorResource
-                                                                      .colorFFFFFF,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold,
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            const Icon(
-                                                              Icons
-                                                                  .arrow_forward,
-                                                              color: ColorResource
-                                                                  .colorFFFFFF,
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Spacer(),
-                                  Container(
-                                    color: Colors.white,
-                                    // padding: const EdgeInsets.only(bottom: 20),
-                                    child: Lottie.network(
-                                      'https://assets3.lottiefiles.com/packages/lf20_awhygdgw.json',
-                                      height: 500.0,
-                                      width: 600,
-                                      repeat: true,
-                                      reverse: true,
-                                      animate: true,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.zero,
-                              child: Row(
-                                children: [
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        margin: const EdgeInsets.only(
-                                            left: 40, right: 10),
-                                        height: 180,
-                                        width: 800,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(15),
-                                            gradient: LinearGradient(
-                                              begin: Alignment.topRight,
-                                              end: Alignment.bottomLeft,
-                                              colors: [
-                                                Colors.blueAccent.shade100,
-                                                Colors.blueAccent,
-                                              ],
-                                            )),
-                                        child: Container(
-                                          margin: const EdgeInsets.only(
-                                              left: 40, bottom: 20),
-                                          child: Row(
-                                            children: [
-                                              Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  const SizedBox(height: 15),
-                                                  CustomText(
-                                                      StringResource.dart,
-                                                      style:
-                                                          GoogleFonts.aBeeZee(
-                                                              textStyle:
-                                                                  const TextStyle(
-                                                        color: ColorResource
-                                                            .colorFFFFFF,
-                                                        fontSize: 28,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ))),
-                                                  const SizedBox(height: 15),
-                                                  CustomText(
-                                                    StringResource.dart1,
-                                                    style: GoogleFonts.aBeeZee(
-                                                      textStyle:
-                                                          const TextStyle(
-                                                        color: ColorResource
-                                                            .colorFFFFFF,
-                                                        fontSize: 16,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  const SizedBox(height: 16),
-                                                  Row(
-                                                    children: [
-                                                      ElevatedButton(
-                                                        onPressed: () async {
-                                                          const url =
-                                                              "https://dart.dev";
-                                                          await launch(url);
-                                                        },
-                                                        child: CustomText(
-                                                          StringResource
-                                                              .dartdev,
-                                                          style: GoogleFonts
-                                                              .aBeeZee(
-                                                            textStyle:
-                                                                const TextStyle(
-                                                              color: Colors
-                                                                  .lightBlueAccent,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .normal,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                        style: ElevatedButton.styleFrom(
-                                                            primary: ColorResource
-                                                                .colorFFFFFF,
-                                                            shape: RoundedRectangleBorder(
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            30.0),
-                                                                side: const BorderSide(
-                                                                    color: Colors
-                                                                        .white)),
-                                                            padding: const EdgeInsets
-                                                                    .symmetric(
-                                                                horizontal: 30,
-                                                                vertical: 20),
-                                                            textStyle: const TextStyle(
-                                                                fontSize: 20,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold)),
-                                                      ),
-                                                      const SizedBox(width: 10),
-                                                      InkWell(
-                                                        onTap: () async {
-                                                          const url =
-                                                              "https://pub.dev";
-                                                          await launch(url);
-                                                        },
-                                                        child: Row(
-                                                          children: [
-                                                            CustomText(
-                                                              StringResource
-                                                                  .getpackages,
-                                                              style: GoogleFonts
-                                                                  .aBeeZee(
-                                                                textStyle:
-                                                                    const TextStyle(
-                                                                  color: ColorResource
-                                                                      .colorFFFFFF,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold,
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            const Icon(
-                                                              Icons
-                                                                  .arrow_forward,
-                                                              color: ColorResource
-                                                                  .colorFFFFFF,
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Spacer(),
-                                  Container(
-                                    color: ColorResource.colorFFFFFF,
-                                    // padding: const EdgeInsets.only(bottom: 20),
-                                    child: Lottie.network(
-                                      'https://assets2.lottiefiles.com/packages/lf20_lvgmrl5j.json',
-                                      height: 500.0,
-                                      width: 600,
-                                      repeat: true,
-                                      reverse: true,
-                                      animate: true,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                          //Slider Container properties
-                          options: CarouselOptions(
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            disableCenter: true,
-                            enlargeCenterPage: true,
-                            aspectRatio: 2.5,
-                            autoPlay: true,
-                            viewportFraction: 1,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Stack(
-                    alignment: Alignment.bottomRight,
-                    children: [
-                      // Spacer(),
-                      Container(
-                        margin: const EdgeInsets.only(top: 15),
-                        color: Colors.white,
-                        // padding: const EdgeInsets.only(bottom: 20),
-                        child: Lottie.network(
-                          'https://assets4.lottiefiles.com/packages/lf20_WjWoQM.json',
-                          height: 400.0,
-                          width: 500,
-                          repeat: true,
-                          reverse: true,
-                          animate: true,
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.only(left: 20, right: 10),
-                        height: 180,
-                        width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            gradient: LinearGradient(
-                              begin: Alignment.topRight,
-                              end: Alignment.bottomLeft,
-                              colors: [
-                                Colors.redAccent.shade100,
-                                Colors.blueAccent,
-                              ],
-                            )),
-                        child: Container(
-                          margin: const EdgeInsets.only(left: 20, bottom: 20),
-                          child: Row(
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const SizedBox(height: 15),
-                                  Text('Get Started',
-                                      style: GoogleFonts.sourceSansPro(
-                                          textStyle: const TextStyle(
-                                        color: ColorResource.colorFFFFFF,
-                                        fontSize: 28,
-                                        fontWeight: FontWeight.bold,
-                                      ))),
-                                  const SizedBox(height: 15),
-                                  Text(
-                                    'Instant access to the power of the Flutter framework',
-                                    style: GoogleFonts.sourceSansPro(
-                                      textStyle: const TextStyle(
-                                        color: ColorResource.colorFFFFFF,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.normal,
-                                      ),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 16),
-                                  Row(
-                                    children: [
-                                      ElevatedButton(
-                                        onPressed: () async {
-                                          const url =
-                                              "https://docs.flutter.dev/get-started/install";
-                                          await launch(url);
-                                        },
-                                        child: Text(
-                                          'Install',
-                                          style: GoogleFonts.sourceSansPro(
-                                            textStyle: const TextStyle(
-                                              color: Colors.lightBlueAccent,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                        ),
-                                        style: ElevatedButton.styleFrom(
-                                            primary: ColorResource.colorFFFFFF,
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(30.0),
-                                                side: const BorderSide(
-                                                    color: Colors.white)),
-                                            padding: const EdgeInsets.symmetric(
-                                                horizontal: 30, vertical: 20),
-                                            textStyle: const TextStyle(
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.bold)),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      InkWell(
-                                        onTap: () async {
-                                          const url =
-                                              "https://docs.flutter.dev";
-                                          await launch(url);
-                                        },
+                                            left: 40, bottom: 20),
                                         child: Row(
                                           children: [
-                                            Text(
-                                              'See the Documentation',
-                                              style: GoogleFonts.aBeeZee(
-                                                textStyle: const TextStyle(
-                                                  color:
-                                                      ColorResource.colorFFFFFF,
-                                                  fontWeight: FontWeight.bold,
+                                            Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                const SizedBox(height: 15),
+                                                CustomText(StringResource.dart,
+                                                    style: GoogleFonts.aBeeZee(
+                                                        textStyle:
+                                                            const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 28,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ))),
+                                                const SizedBox(height: 15),
+                                                CustomText(
+                                                  StringResource.dart1,
+                                                  style: GoogleFonts.aBeeZee(
+                                                    textStyle: const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
+                                                  ),
                                                 ),
-                                              ),
-                                            ),
-                                            const Icon(
-                                              Icons.arrow_forward,
-                                              color: ColorResource.colorFFFFFF,
+                                                const SizedBox(height: 16),
+                                                Row(
+                                                  children: [
+                                                    ElevatedButton(
+                                                      onPressed: () async {
+                                                        const url =
+                                                            "https://dart.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: CustomText(
+                                                        StringResource.dartdev,
+                                                        style:
+                                                            GoogleFonts.aBeeZee(
+                                                          textStyle:
+                                                              const TextStyle(
+                                                            color: Colors
+                                                                .lightBlueAccent,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      style: ElevatedButton.styleFrom(
+                                                          primary: ColorResource
+                                                              .colorFFFFFF,
+                                                          shape: RoundedRectangleBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          30.0),
+                                                              side: const BorderSide(
+                                                                  color: Colors
+                                                                      .white)),
+                                                          padding:
+                                                              const EdgeInsets.symmetric(
+                                                                  horizontal:
+                                                                      30,
+                                                                  vertical: 20),
+                                                          textStyle:
+                                                              const TextStyle(
+                                                                  fontSize: 20,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold)),
+                                                    ),
+                                                    const SizedBox(width: 10),
+                                                    InkWell(
+                                                      onTap: () async {
+                                                        const url =
+                                                            "https://pub.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: Row(
+                                                        children: [
+                                                          CustomText(
+                                                            StringResource
+                                                                .getpackages,
+                                                            style: GoogleFonts
+                                                                .aBeeZee(
+                                                              textStyle:
+                                                                  const TextStyle(
+                                                                color: ColorResource
+                                                                    .colorFFFFFF,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          const Icon(
+                                                            Icons.arrow_forward,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
                                             ),
                                           ],
                                         ),
                                       ),
-                                    ],
+                                    ),
+                                  ],
+                                ),
+                                const Spacer(),
+                                Container(
+                                  color: Colors.white,
+                                  // padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets1.lottiefiles.com/packages/lf20_w7401juf.json',
+                                    height: 500.0,
+                                    width: 600,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
                                   ),
-                                ],
-                              ),
-                            ],
+                                ),
+                              ],
+                            ),
                           ),
+                          Padding(
+                            padding: EdgeInsets.zero,
+                            child: Row(
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(
+                                          left: 30, right: 10),
+                                      height: 180,
+                                      width: 800,
+                                      decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.redAccent.shade100,
+                                              Colors.blueAccent,
+                                            ],
+                                          )),
+                                      child: Container(
+                                        margin: const EdgeInsets.only(
+                                            left: 40, bottom: 20),
+                                        child: Row(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                const SizedBox(height: 15),
+                                                Text('Get Started',
+                                                    style: GoogleFonts
+                                                        .sourceSansPro(
+                                                            textStyle:
+                                                                const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 28,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ))),
+                                                const SizedBox(height: 15),
+                                                Text(
+                                                  'Instant access to the power of the Flutter framework',
+                                                  style:
+                                                      GoogleFonts.sourceSansPro(
+                                                    textStyle: const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 16),
+                                                Row(
+                                                  children: [
+                                                    ElevatedButton(
+                                                      onPressed: () async {
+                                                        const url =
+                                                            "https://docs.flutter.dev/get-started/install";
+                                                        await launch(url);
+                                                      },
+                                                      child: Text(
+                                                        'Install',
+                                                        style: GoogleFonts
+                                                            .sourceSansPro(
+                                                          textStyle:
+                                                              const TextStyle(
+                                                            color: Colors
+                                                                .lightBlueAccent,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      style: ElevatedButton.styleFrom(
+                                                          primary: ColorResource
+                                                              .colorFFFFFF,
+                                                          shape: RoundedRectangleBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          30.0),
+                                                              side: const BorderSide(
+                                                                  color: Colors
+                                                                      .white)),
+                                                          padding:
+                                                              const EdgeInsets.symmetric(
+                                                                  horizontal:
+                                                                      30,
+                                                                  vertical: 20),
+                                                          textStyle:
+                                                              const TextStyle(
+                                                                  fontSize: 20,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold)),
+                                                    ),
+                                                    const SizedBox(width: 10),
+                                                    InkWell(
+                                                      onTap: () async {
+                                                        const url =
+                                                            "https://docs.flutter.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: Row(
+                                                        children: [
+                                                          Text(
+                                                            'See the Documentation',
+                                                            style: GoogleFonts
+                                                                .aBeeZee(
+                                                              textStyle:
+                                                                  const TextStyle(
+                                                                color: ColorResource
+                                                                    .colorFFFFFF,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          const Icon(
+                                                            Icons.arrow_forward,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const Spacer(),
+                                Container(
+                                  color: Colors.white,
+                                  // padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets3.lottiefiles.com/packages/lf20_awhygdgw.json',
+                                    height: 500.0,
+                                    width: 600,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.zero,
+                            child: Row(
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.only(
+                                          left: 40, right: 10),
+                                      height: 180,
+                                      width: 800,
+                                      decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15),
+                                          gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Colors.blueAccent.shade100,
+                                              Colors.blueAccent,
+                                            ],
+                                          )),
+                                      child: Container(
+                                        margin: const EdgeInsets.only(
+                                            left: 40, bottom: 20),
+                                        child: Row(
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                const SizedBox(height: 15),
+                                                CustomText(StringResource.dart,
+                                                    style: GoogleFonts.aBeeZee(
+                                                        textStyle:
+                                                            const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 28,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ))),
+                                                const SizedBox(height: 15),
+                                                CustomText(
+                                                  StringResource.dart1,
+                                                  style: GoogleFonts.aBeeZee(
+                                                    textStyle: const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 16,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 16),
+                                                Row(
+                                                  children: [
+                                                    ElevatedButton(
+                                                      onPressed: () async {
+                                                        const url =
+                                                            "https://dart.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: CustomText(
+                                                        StringResource.dartdev,
+                                                        style:
+                                                            GoogleFonts.aBeeZee(
+                                                          textStyle:
+                                                              const TextStyle(
+                                                            color: Colors
+                                                                .lightBlueAccent,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      style: ElevatedButton.styleFrom(
+                                                          primary: ColorResource
+                                                              .colorFFFFFF,
+                                                          shape: RoundedRectangleBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          30.0),
+                                                              side: const BorderSide(
+                                                                  color: Colors
+                                                                      .white)),
+                                                          padding:
+                                                              const EdgeInsets.symmetric(
+                                                                  horizontal:
+                                                                      30,
+                                                                  vertical: 20),
+                                                          textStyle:
+                                                              const TextStyle(
+                                                                  fontSize: 20,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold)),
+                                                    ),
+                                                    const SizedBox(width: 10),
+                                                    InkWell(
+                                                      onTap: () async {
+                                                        const url =
+                                                            "https://pub.dev";
+                                                        await launch(url);
+                                                      },
+                                                      child: Row(
+                                                        children: [
+                                                          CustomText(
+                                                            StringResource
+                                                                .getpackages,
+                                                            style: GoogleFonts
+                                                                .aBeeZee(
+                                                              textStyle:
+                                                                  const TextStyle(
+                                                                color: ColorResource
+                                                                    .colorFFFFFF,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          const Icon(
+                                                            Icons.arrow_forward,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const Spacer(),
+                                Container(
+                                  color: ColorResource.colorFFFFFF,
+                                  // padding: const EdgeInsets.only(bottom: 20),
+                                  child: Lottie.network(
+                                    'https://assets2.lottiefiles.com/packages/lf20_lvgmrl5j.json',
+                                    height: 500.0,
+                                    width: 600,
+                                    repeat: true,
+                                    reverse: true,
+                                    animate: true,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                        //Slider Container properties
+                        options: CarouselOptions(
+                          autoPlayCurve: Curves.fastOutSlowIn,
+                          disableCenter: true,
+                          enlargeCenterPage: true,
+                          aspectRatio: 2.5,
+                          autoPlay: true,
+                          viewportFraction: 1,
                         ),
                       ),
-                    ],
+                    ),
                   ),
-                  Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                ),
+                Stack(
+                  alignment: Alignment.bottomRight,
+                  children: [
+                    // Spacer(),
+                    Container(
+                      margin: const EdgeInsets.only(top: 15),
+                      color: Colors.white,
+                      // padding: const EdgeInsets.only(bottom: 20),
+                      child: Lottie.network(
+                        'https://assets4.lottiefiles.com/packages/lf20_WjWoQM.json',
+                        height: 400.0,
+                        width: 500,
+                        repeat: true,
+                        reverse: true,
+                        animate: true,
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.only(left: 20, right: 10),
+                      height: 180,
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          gradient: LinearGradient(
+                            begin: Alignment.topRight,
+                            end: Alignment.bottomLeft,
+                            colors: [
+                              Colors.redAccent.shade100,
+                              Colors.blueAccent,
+                            ],
+                          )),
+                      child: Container(
+                        margin: const EdgeInsets.only(left: 20, bottom: 20),
+                        child: Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const SizedBox(height: 15),
+                                Text('Get Started',
+                                    style: GoogleFonts.sourceSansPro(
+                                        textStyle: const TextStyle(
+                                      color: ColorResource.colorFFFFFF,
+                                      fontSize: 28,
+                                      fontWeight: FontWeight.bold,
+                                    ))),
+                                const SizedBox(height: 15),
+                                Text(
+                                  'Instant access to the power of the Flutter framework',
+                                  style: GoogleFonts.sourceSansPro(
+                                    textStyle: const TextStyle(
+                                      color: ColorResource.colorFFFFFF,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(height: 16),
+                                Row(
+                                  children: [
+                                    ElevatedButton(
+                                      onPressed: () async {
+                                        const url =
+                                            "https://docs.flutter.dev/get-started/install";
+                                        await launch(url);
+                                      },
+                                      child: Text(
+                                        'Install',
+                                        style: GoogleFonts.sourceSansPro(
+                                          textStyle: const TextStyle(
+                                            color: Colors.lightBlueAccent,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                          primary: ColorResource.colorFFFFFF,
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(30.0),
+                                              side: const BorderSide(
+                                                  color: Colors.white)),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 30, vertical: 20),
+                                          textStyle: const TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold)),
+                                    ),
+                                    const SizedBox(width: 10),
+                                    InkWell(
+                                      onTap: () async {
+                                        const url = "https://docs.flutter.dev";
+                                        await launch(url);
+                                      },
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            'See the Documentation',
+                                            style: GoogleFonts.aBeeZee(
+                                              textStyle: const TextStyle(
+                                                color:
+                                                    ColorResource.colorFFFFFF,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                          ),
+                                          const Icon(
+                                            Icons.arrow_forward,
+                                            color: ColorResource.colorFFFFFF,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(left: 20, top: 30),
+                          child: Text(
+                            'Join our News Letter Keep up with the latest Flutter news, releases, and more',
+                            style: GoogleFonts.aBeeZee(
+                              textStyle: const TextStyle(
+                                  color: ColorResource.color222222,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 30),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 40),
+                    SizedBox(
+                      height: 100,
+                      width: 300,
+                      child: TextField(
+                        controller: emailController,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(30)),
+                          labelText: 'E-mail',
+                          prefixIcon: const Icon(Icons.mail_outline),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: ElevatedButton(
+                        onPressed: () async {
+                          const url =
+                              "https://docs.flutter.dev/get-started/install";
+                          await launch(url);
+                        },
+                        child: Text(
+                          'Subcribe',
+                          style: GoogleFonts.sourceSansPro(
+                            textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.blueAccent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                                side:
+                                    const BorderSide(color: Colors.blueAccent)),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 30, vertical: 20),
+                            textStyle: const TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold)),
+                      ),
+                    ),
+                  ],
+                ),
+                // Container(
+                //   margin: const EdgeInsets.only(left: 10, right: 10),
+                //   height: 180,
+                //   width: 1000,
+                //   decoration: BoxDecoration(
+                //       borderRadius: BorderRadius.circular(15),
+                //       gradient: LinearGradient(
+                //         begin: Alignment.topRight,
+                //         end: Alignment.bottomLeft,
+                //         colors: [
+                //           Colors.blueAccent.shade100,
+                //           Colors.blueAccent,
+                //         ],
+                //       )),
+                //   child: Container(
+                //     margin: const EdgeInsets.only(left: 40, bottom: 20),
+                //     child: Row(
+                //       children: [
+                //         Column(
+                //           crossAxisAlignment: CrossAxisAlignment.start,
+                //           children: [
+                //             const SizedBox(height: 15),
+                //             CustomText(StringResource.dart,
+                //                 style: GoogleFonts.aBeeZee(
+                //                     textStyle: const TextStyle(
+                //                   color: ColorResource.colorFFFFFF,
+                //                   fontSize: 28,
+                //                   fontWeight: FontWeight.bold,
+                //                 ))),
+                //             const SizedBox(height: 15),
+                //             CustomText(
+                //               StringResource.dart1,
+                //               style: GoogleFonts.aBeeZee(
+                //                 textStyle: const TextStyle(
+                //                   color: ColorResource.colorFFFFFF,
+                //                   fontSize: 16,
+                //                   fontWeight: FontWeight.normal,
+                //                 ),
+                //               ),
+                //             ),
+                //             const SizedBox(height: 16),
+                //             Row(
+                //               children: [
+                //                 ElevatedButton(
+                //                   onPressed: () async {
+                //                     const url = "https://dart.dev";
+                //                     await launch(url);
+                //                   },
+                //                   child: CustomText(
+                //                     StringResource.dartdev,
+                //                     style: GoogleFonts.aBeeZee(
+                //                       textStyle: const TextStyle(
+                //                         color: Colors.lightBlueAccent,
+                //                         fontWeight: FontWeight.normal,
+                //                       ),
+                //                     ),
+                //                   ),
+                //                   style: ElevatedButton.styleFrom(
+                //                       primary: ColorResource.colorFFFFFF,
+                //                       shape: RoundedRectangleBorder(
+                //                           borderRadius:
+                //                               BorderRadius.circular(30.0),
+                //                           side: const BorderSide(
+                //                               color: Colors.white)),
+                //                       padding: const EdgeInsets.symmetric(
+                //                           horizontal: 30, vertical: 20),
+                //                       textStyle: const TextStyle(
+                //                           fontSize: 20,
+                //                           fontWeight: FontWeight.bold)),
+                //                 ),
+                //                 const SizedBox(width: 10),
+                //                 InkWell(
+                //                   onTap: () async {
+                //                     const url = "https://pub.dev";
+                //                     await launch(url);
+                //                   },
+                //                   child: Row(
+                //                     children: [
+                //                       CustomText(
+                //                         StringResource.getpackages,
+                //                         style: GoogleFonts.aBeeZee(
+                //                           textStyle: const TextStyle(
+                //                             color: ColorResource.colorFFFFFF,
+                //                             fontWeight: FontWeight.bold,
+                //                           ),
+                //                         ),
+                //                       ),
+                //                       const Icon(
+                //                         Icons.arrow_forward,
+                //                         color: ColorResource.colorFFFFFF,
+                //                       ),
+                //                     ],
+                //                   ),
+                //                 ),
+                //               ],
+                //             ),
+                //           ],
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 20,
+                // ),
+                Stack(
+                  children: [
+                    AnimatedBuilder(
+                        animation: _controller,
+                        builder: (BuildContext context, Widget? child) {
+                          return ClipPath(
+                              clipper: DrawClip(_controller.value),
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                    height: 270,
+                                    width: double.maxFinite,
+                                    decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          begin: Alignment.bottomLeft,
+                                          end: Alignment.topRight,
+                                          colors: [
+                                            Colors.blue.shade600,
+                                            Colors.blueAccent.shade100
+                                          ]),
+                                    )),
+                              ));
+                        }),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              GestureDetector(
+                                onTap: () async {
+                                  const url =
+                                      "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Careers',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              GestureDetector(
+                                onTap: () async {
+                                  const url = "https://medium.com/flutter";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'News',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              GestureDetector(
+                                onTap: () async {
+                                  const url = "https://flutter.dev/brand";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Brand',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              GestureDetector(
+                                onTap: () async {
+                                  const url = "https://flutter.dev/culture";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Culture',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                            ],
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              GestureDetector(
+                                onTap: () async {
+                                  const url =
+                                      "https://flutter.dev/multi-platform/mobile";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Mobile',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              GestureDetector(
+                                onTap: () async {
+                                  const url =
+                                      "https://flutter.dev/multi-platform/web";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Web',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              GestureDetector(
+                                onTap: () async {
+                                  const url =
+                                      "https://flutter.dev/multi-platform/desktop";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Desktop',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              GestureDetector(
+                                onTap: () async {
+                                  const url =
+                                      "https://flutter.dev/multi-platform/embedded";
+                                  await launch(url);
+                                },
+                                child: const Text(
+                                  'Embedded',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              RotationTransition(
+                                turns: _animation,
+                                child: InkWell(
+                                  child: FaIcon(FontAwesomeIcons.medium,
+                                      color: isSelected
+                                          ? Colors.black
+                                          : Colors.white,
+                                      size: 25.0),
+                                  onTap: () async {
+                                    const url = "https://medium.com/flutter";
+                                    await launch(url);
+                                  },
+                                  onHover: (value) {
+                                    setState(() {
+                                      isSelected = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              RotationTransition(
+                                turns: _animation,
+                                child: InkWell(
+                                  child: FaIcon(FontAwesomeIcons.meetup,
+                                      color: isSelected2
+                                          ? Colors.red[700]
+                                          : Colors.white,
+                                      size: 25.0),
+                                  onTap: () async {
+                                    const url =
+                                        "https://www.meetup.com/pro/flutter/";
+                                    await launch(url);
+                                  },
+                                  onHover: (value) {
+                                    setState(() {
+                                      isSelected2 = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              RotationTransition(
+                                turns: _animation,
+                                child: InkWell(
+                                  child: FaIcon(FontAwesomeIcons.github,
+                                      color: isSelected1
+                                          ? Colors.black
+                                          : Colors.white,
+                                      size: 25.0),
+                                  onTap: () async {
+                                    const url = "https://github.com/flutter";
+                                    await launch(url);
+                                  },
+                                  onHover: (value) {
+                                    setState(() {
+                                      isSelected1 = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              RotationTransition(
+                                turns: _animation,
+                                child: InkWell(
+                                  child: FaIcon(FontAwesomeIcons.twitter,
+                                      color: isSelected3
+                                          ? Colors.blue[400]
+                                          : Colors.white,
+                                      size: 25.0),
+                                  onTap: () async {
+                                    const url =
+                                        "https://twitter.com/flutterdev";
+                                    await launch(url);
+                                  },
+                                  onHover: (value) {
+                                    setState(() {
+                                      isSelected3 = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              RotationTransition(
+                                turns: _animation,
+                                child: InkWell(
+                                  child: FaIcon(FontAwesomeIcons.youtube,
+                                      color: isSelected4
+                                          ? Colors.red
+                                          : Colors.white,
+                                      size: 25.0),
+                                  onTap: () async {
+                                    const url =
+                                        "https://www.youtube.com/flutterdev";
+                                    await launch(url);
+                                  },
+                                  onHover: (value) {
+                                    setState(() {
+                                      isSelected4 = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Positioned(
+                      right: 30,
+                      bottom: 70,
+                      child: RotationTransition(
+                        turns: _arrowAnimation,
+                        child: InkWell(
+                          child: const Icon(
+                            Icons.arrow_circle_up,
+                            color: Colors.white,
+                          ),
+                          onTap: () {
+                            _scrollToTop();
+                          },
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            )),
+            const PortfolioScreen(),
+            Column(children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 40, bottom: 20),
+                child: CustomText(
+                  StringResource.flutterprojects,
+                  style: GoogleFonts.aBeeZee(
+                    textStyle: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                  child: SingleChildScrollView(
+                child: Column(children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height,
+                    color: Colors.pink[400],
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 30),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
-                            margin: const EdgeInsets.only(left: 20, top: 30),
-                            child: Text(
-                              'Join our News Letter Keep up with the latest Flutter news, releases, and more',
-                              style: GoogleFonts.aBeeZee(
-                                textStyle: const TextStyle(
+                          Padding(
+                            padding: const EdgeInsets.only(left: 30),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                CustomText(
+                                  StringResource.icici,
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 50,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.bold,
+                                  )),
+                                ),
+                                Image.asset(
+                                  ImageResource.pockets,
+                                  width: 300,
+                                  height: 300,
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Description',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 60,
+                                      fontWeight: FontWeight.bold,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Container(
+                                  width: 1000,
+                                  height: 100,
+                                  child: CustomText(
+                                    'It’s a VISA-powered e-wallet that customer of any bank can use to recharge mobile, send money, shop anywhere, pay bills and much more.',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 25,
+                                        // fontWeight: FontWeight.bold,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  width: 1000,
+                                  height: 100,
+                                  child: CustomText(
+                                    'Pockets wallet also comes with a physical shopping card which can be used to shop on any website or retail stores.',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 25,
+                                        // fontWeight: FontWeight.bold,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomText(
+                                  'Fund Transfer',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.normal,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomText(
+                                  'Making NFC Payments',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.normal,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomText(
+                                  'Recharges',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.normal,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomText(
+                                  'Benefits of Physical Card',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.normal,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomText(
+                                  'Pay Utility Bills',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.normal,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                CustomText(
+                                  'Shopping',
+                                  style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.normal,
+                                      color: ColorResource.colorFFFFFF,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Image.asset(
+                            ImageResource.icici2,
+                            width: 700,
+                            height: 700,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 600,
+                    color: ColorResource.colorFFFFFF,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 30),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 30),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                CustomText(
+                                  StringResource.visa,
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 50,
                                     color: ColorResource.color222222,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 30),
-                              ),
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Container(
+                                  width: 1000,
+                                  child: CustomText(
+                                    'Visa Digital Solutions equip you with the tools you need to create, manage and accept secure digital payments in-store, online or in-app.',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 25,
+                                      color: ColorResource.color222222,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Digital',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.color222222,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Travel',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.color222222,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Money',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.color222222,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                )
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 50),
+                            child: Image.asset(
+                              ImageResource.visa,
+                              width: 400,
+                              height: 400,
                             ),
                           ),
                         ],
                       ),
-                      const SizedBox(height: 40),
-                      SizedBox(
-                        height: 100,
-                        width: 300,
-                        child: TextField(
-                          controller: emailController,
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30)),
-                            labelText: 'E-mail',
-                            prefixIcon: const Icon(Icons.mail_outline),
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 600,
+                    color: Colors.black,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 30),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 30),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                CustomText(
+                                  StringResource.generic,
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 50,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.bold,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 30,
+                                ),
+                                CustomText(
+                                  'Instead of packages we can make use of it.',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 40,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Currency Converter',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Google Maps',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'Otp View and Returning User',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                CustomText(
+                                  'International phone field and country code',
+                                  style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                    fontSize: 25,
+                                    color: ColorResource.colorFFFFFF,
+                                    fontWeight: FontWeight.w100,
+                                  )),
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 50),
+                            child: Image.asset(
+                              ImageResource.genericcomponenets,
+                              width: 400,
+                              height: 400,
+                            ),
+                          ),
+                        ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            const url =
-                                "https://docs.flutter.dev/get-started/install";
-                            await launch(url);
-                          },
-                          child: Text(
-                            'Subcribe',
-                            style: GoogleFonts.sourceSansPro(
-                              textStyle: const TextStyle(
-                                color: Colors.white,
+                    ),
+                  ),
+                ]),
+              )),
+            ]),
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(left: 95),
+                    child: Row(
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text(
+                              'We',
+                              style: TextStyle(
+                                fontSize: 55,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
+                            AnimatedTextKit(
+                              isRepeatingAnimation: true,
+                              animatedTexts: [
+                                ScaleAnimatedText(
+                                  'Enable',
+                                  textStyle: const TextStyle(
+                                    fontSize: 60,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                ScaleAnimatedText(
+                                  'Embed',
+                                  textStyle: const TextStyle(
+                                    fontSize: 60,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                              onTap: () {
+                                print("Tap Event");
+                              },
+                            ),
+                            // Text(
+                            //   'Enable',
+                            //   style: TextStyle(
+                            //     fontSize: 70,
+                            //     fontWeight: FontWeight.bold,
+                            //   ),
+                            // ),
+                            const Text(
+                              'Fintech',
+                              style: TextStyle(
+                                fontSize: 90,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const Spacer(),
+                        Container(
+                          child: Image.asset(
+                            'assets/camera.png',
+                            height: 800,
                           ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.blueAccent,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30.0),
-                                  side: const BorderSide(
-                                      color: Colors.blueAccent)),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              textStyle: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(top: 40, left: 35),
+                    decoration: const BoxDecoration(
+                      color: Colors.pink,
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'API Docs',
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 30),
+                            const Text(
+                              'Build your Fintech Product',
+                              style: TextStyle(
+                                fontSize: 40,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 30),
+                            Text(
+                              'Check out our API docs to jump-start your product journey.',
+                              style: TextStyle(
+                                fontSize: 30,
+                                fontWeight: FontWeight.normal,
+                                color: Colors.white.withOpacity(0.7),
+                              ),
+                            ),
+                            const SizedBox(height: 60),
+                            ElevatedButton(
+                              onPressed: () async {
+                                const url =
+                                    "https://docs.yappay.in/singledocs#error_msg";
+                                await launch(url);
+                              },
+                              child: Row(
+                                children: [
+                                  const Text('Explore'),
+                                  const SizedBox(width: 10),
+                                  const Icon(Icons.arrow_forward_rounded),
+                                ],
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.grey.withOpacity(0.6),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.white)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          ],
+                        ),
+                        const Spacer(),
+                        Image.asset('assets/docs.png'),
+                      ],
+                    ),
+                  ),
+                  Container(
+                      margin: const EdgeInsets.only(top: 20),
+                      child: const Text('OUR VALUES',
+                          style: TextStyle(
+                              fontSize: 30, fontWeight: FontWeight.bold))),
+                  Image.asset(
+                    'assets/value.png',
+                    height: 700,
+                    width: 1050,
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(bottom: 30, top: 10),
+                    color: Colors.orangeAccent,
+                    width: MediaQuery.of(context).size.width,
+                    child: Column(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.only(bottom: 30),
+                          child: const Text('M2P PRODUCTS',
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold)),
+                        ),
+                        Wrap(
+                          children: [
+                            InkWell(
+                              onTap: () async {
+                                const url =
+                                    "https://m2pfintech.com/card-issuing-platform/";
+                                await launch(url);
+                              },
+                              child: FadeTransition(
+                                opacity: _fadeInFadeOut,
+                                child: Container(
+                                  padding: const EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: Colors.white,
+                                    border: Border.all(color: Colors.white),
+                                  ),
+                                  child: const Text('Card Issuance'),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 50),
+                            InkWell(
+                              onTap: () async {
+                                const url =
+                                    "https://m2pfintech.com/issue-credit-cards/";
+                                await launch(url);
+                              },
+                              child: FadeTransition(
+                                opacity: _fadeInFadeOut,
+                                child: Container(
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.white),
+                                    ),
+                                    child: const Text('Credit Card')),
+                              ),
+                            ),
+                            const SizedBox(width: 50),
+                            InkWell(
+                              onTap: () async {
+                                const url =
+                                    "https://m2pfintech.com/neobanking-platform/";
+                                await launch(url);
+                              },
+                              child: FadeTransition(
+                                opacity: _fadeInFadeOut,
+                                child: Container(
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.white),
+                                    ),
+                                    child: const Text('Neo Banking')),
+                              ),
+                            ),
+                            const SizedBox(width: 50),
+                            InkWell(
+                              onTap: () async {
+                                const url =
+                                    "https://m2pfintech.com/fleet-drive/";
+                                await launch(url);
+                              },
+                              child: FadeTransition(
+                                opacity: _fadeInFadeOut,
+                                child: Container(
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.white),
+                                    ),
+                                    child: const Text('Fleet Drive')),
+                              ),
+                            ),
+                            const SizedBox(width: 50),
+                            InkWell(
+                              onTap: () async {
+                                const url =
+                                    "https://m2pfintech.com/buy-now-pay-later/";
+                                await launch(url);
+                              },
+                              child: FadeTransition(
+                                opacity: _fadeInFadeOut,
+                                child: Container(
+                                    padding: const EdgeInsets.all(10),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.white),
+                                    ),
+                                    child: const Text('Buy Now Pay later')),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  Row(
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    // mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset('assets/fintech.png'),
+                      Container(
+                        margin: const EdgeInsets.only(left: 30),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              'CONTACT US',
+                              style: GoogleFonts.aBeeZee(
+                                  textStyle: const TextStyle(
+                                      fontSize: 28,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                            const SizedBox(height: 40),
+                            Text(
+                              'Redefine Innovation With Us',
+                              style: GoogleFonts.aBeeZee(
+                                  textStyle: const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.normal)),
+                            ),
+                            const SizedBox(height: 40),
+                            Container(
+                              width: 700,
+                              child: Text(
+                                'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
+                                maxLines: 2,
+                                style: GoogleFonts.aBeeZee(
+                                    textStyle: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.normal)),
+                              ),
+                            ),
+                            const SizedBox(height: 50),
+                            ElevatedButton(
+                              onPressed: () async {
+                                const url =
+                                    "https://m2pfintech.com/contact-us/";
+                                await launch(url);
+                              },
+                              child: Row(
+                                children: [
+                                  const Text('Contact us'),
+                                  const SizedBox(width: 10),
+                                  const Icon(Icons.arrow_forward_rounded),
+                                ],
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.white)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
-                  // Container(
-                  //   margin: const EdgeInsets.only(left: 10, right: 10),
-                  //   height: 180,
-                  //   width: 1000,
-                  //   decoration: BoxDecoration(
-                  //       borderRadius: BorderRadius.circular(15),
-                  //       gradient: LinearGradient(
-                  //         begin: Alignment.topRight,
-                  //         end: Alignment.bottomLeft,
-                  //         colors: [
-                  //           Colors.blueAccent.shade100,
-                  //           Colors.blueAccent,
-                  //         ],
-                  //       )),
-                  //   child: Container(
-                  //     margin: const EdgeInsets.only(left: 40, bottom: 20),
-                  //     child: Row(
-                  //       children: [
-                  //         Column(
-                  //           crossAxisAlignment: CrossAxisAlignment.start,
-                  //           children: [
-                  //             const SizedBox(height: 15),
-                  //             CustomText(StringResource.dart,
-                  //                 style: GoogleFonts.aBeeZee(
-                  //                     textStyle: const TextStyle(
-                  //                   color: ColorResource.colorFFFFFF,
-                  //                   fontSize: 28,
-                  //                   fontWeight: FontWeight.bold,
-                  //                 ))),
-                  //             const SizedBox(height: 15),
-                  //             CustomText(
-                  //               StringResource.dart1,
-                  //               style: GoogleFonts.aBeeZee(
-                  //                 textStyle: const TextStyle(
-                  //                   color: ColorResource.colorFFFFFF,
-                  //                   fontSize: 16,
-                  //                   fontWeight: FontWeight.normal,
-                  //                 ),
-                  //               ),
-                  //             ),
-                  //             const SizedBox(height: 16),
-                  //             Row(
-                  //               children: [
-                  //                 ElevatedButton(
-                  //                   onPressed: () async {
-                  //                     const url = "https://dart.dev";
-                  //                     await launch(url);
-                  //                   },
-                  //                   child: CustomText(
-                  //                     StringResource.dartdev,
-                  //                     style: GoogleFonts.aBeeZee(
-                  //                       textStyle: const TextStyle(
-                  //                         color: Colors.lightBlueAccent,
-                  //                         fontWeight: FontWeight.normal,
-                  //                       ),
-                  //                     ),
-                  //                   ),
-                  //                   style: ElevatedButton.styleFrom(
-                  //                       primary: ColorResource.colorFFFFFF,
-                  //                       shape: RoundedRectangleBorder(
-                  //                           borderRadius:
-                  //                               BorderRadius.circular(30.0),
-                  //                           side: const BorderSide(
-                  //                               color: Colors.white)),
-                  //                       padding: const EdgeInsets.symmetric(
-                  //                           horizontal: 30, vertical: 20),
-                  //                       textStyle: const TextStyle(
-                  //                           fontSize: 20,
-                  //                           fontWeight: FontWeight.bold)),
-                  //                 ),
-                  //                 const SizedBox(width: 10),
-                  //                 InkWell(
-                  //                   onTap: () async {
-                  //                     const url = "https://pub.dev";
-                  //                     await launch(url);
-                  //                   },
-                  //                   child: Row(
-                  //                     children: [
-                  //                       CustomText(
-                  //                         StringResource.getpackages,
-                  //                         style: GoogleFonts.aBeeZee(
-                  //                           textStyle: const TextStyle(
-                  //                             color: ColorResource.colorFFFFFF,
-                  //                             fontWeight: FontWeight.bold,
-                  //                           ),
-                  //                         ),
-                  //                       ),
-                  //                       const Icon(
-                  //                         Icons.arrow_forward,
-                  //                         color: ColorResource.colorFFFFFF,
-                  //                       ),
-                  //                     ],
-                  //                   ),
-                  //                 ),
-                  //               ],
-                  //             ),
-                  //           ],
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ),
-                  // ),
-                  // const SizedBox(
-                  //   height: 20,
-                  // ),
                   Stack(
                     children: [
                       AnimatedBuilder(
@@ -1293,629 +2265,9 @@ class _LargeScreenState extends State<LargeScreen>
                     ],
                   ),
                 ],
-              )),
-              const PortfolioScreen(),
-              const Icon(Icons.movie),
-              SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(left: 95),
-                      child: Row(
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Text(
-                                'We',
-                                style: TextStyle(
-                                  fontSize: 55,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              AnimatedTextKit(
-                                isRepeatingAnimation: true,
-                                animatedTexts: [
-                                  ScaleAnimatedText(
-                                    'Enable',
-                                    textStyle: const TextStyle(
-                                      fontSize: 60,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  ScaleAnimatedText(
-                                    'Embed',
-                                    textStyle: const TextStyle(
-                                      fontSize: 60,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
-                                onTap: () {
-                                  print("Tap Event");
-                                },
-                              ),
-                              // Text(
-                              //   'Enable',
-                              //   style: TextStyle(
-                              //     fontSize: 70,
-                              //     fontWeight: FontWeight.bold,
-                              //   ),
-                              // ),
-                              const Text(
-                                'Fintech',
-                                style: TextStyle(
-                                  fontSize: 90,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const Spacer(),
-                          Container(
-                            child: Image.asset(
-                              'assets/camera.png',
-                              height: 800,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.only(top: 40, left: 35),
-                      decoration: const BoxDecoration(
-                        color: Colors.pink,
-                      ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              const Text(
-                                'API Docs',
-                                style: TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              const SizedBox(height: 30),
-                              const Text(
-                                'Build your Fintech Product',
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              const SizedBox(height: 30),
-                              Text(
-                                'Check out our API docs to jump-start your product journey.',
-                                style: TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.normal,
-                                  color: Colors.white.withOpacity(0.7),
-                                ),
-                              ),
-                              const SizedBox(height: 60),
-                              ElevatedButton(
-                                onPressed: () async {
-                                  const url =
-                                      "https://docs.yappay.in/singledocs#error_msg";
-                                  await launch(url);
-                                },
-                                child: Row(
-                                  children: [
-                                    const Text('Explore'),
-                                    const SizedBox(width: 10),
-                                    const Icon(Icons.arrow_forward_rounded),
-                                  ],
-                                ),
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.grey.withOpacity(0.6),
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(30.0),
-                                        side: const BorderSide(
-                                            color: Colors.white)),
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 30, vertical: 20),
-                                    textStyle: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold)),
-                              ),
-                            ],
-                          ),
-                          const Spacer(),
-                          Image.asset('assets/docs.png'),
-                        ],
-                      ),
-                    ),
-                    Container(
-                        margin: const EdgeInsets.only(top: 20),
-                        child: const Text('OUR VALUES',
-                            style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold))),
-                    Image.asset(
-                      'assets/value.png',
-                      height: 700,
-                      width: 1050,
-                    ),
-                    Container(
-                      padding: const EdgeInsets.only(bottom: 30, top: 10),
-                      color: Colors.orangeAccent,
-                      width: MediaQuery.of(context).size.width,
-                      child: Column(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.only(bottom: 30),
-                            child: const Text('M2P PRODUCTS',
-                                style: TextStyle(
-                                    fontSize: 30, fontWeight: FontWeight.bold)),
-                          ),
-                          Wrap(
-                            children: [
-                              InkWell(
-                                onTap: () async {
-                                  const url =
-                                      "https://m2pfintech.com/card-issuing-platform/";
-                                  await launch(url);
-                                },
-                                child: FadeTransition(
-                                  opacity: _fadeInFadeOut,
-                                  child: Container(
-                                    padding: const EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                      color: Colors.white,
-                                      border: Border.all(color: Colors.white),
-                                    ),
-                                    child: const Text('Card Issuance'),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 50),
-                              InkWell(
-                                onTap: () async {
-                                  const url =
-                                      "https://m2pfintech.com/issue-credit-cards/";
-                                  await launch(url);
-                                },
-                                child: FadeTransition(
-                                  opacity: _fadeInFadeOut,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: Colors.white,
-                                        border: Border.all(color: Colors.white),
-                                      ),
-                                      child: const Text('Credit Card')),
-                                ),
-                              ),
-                              const SizedBox(width: 50),
-                              InkWell(
-                                onTap: () async {
-                                  const url =
-                                      "https://m2pfintech.com/neobanking-platform/";
-                                  await launch(url);
-                                },
-                                child: FadeTransition(
-                                  opacity: _fadeInFadeOut,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: Colors.white,
-                                        border: Border.all(color: Colors.white),
-                                      ),
-                                      child: const Text('Neo Banking')),
-                                ),
-                              ),
-                              const SizedBox(width: 50),
-                              InkWell(
-                                onTap: () async {
-                                  const url =
-                                      "https://m2pfintech.com/fleet-drive/";
-                                  await launch(url);
-                                },
-                                child: FadeTransition(
-                                  opacity: _fadeInFadeOut,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: Colors.white,
-                                        border: Border.all(color: Colors.white),
-                                      ),
-                                      child: const Text('Fleet Drive')),
-                                ),
-                              ),
-                              const SizedBox(width: 50),
-                              InkWell(
-                                onTap: () async {
-                                  const url =
-                                      "https://m2pfintech.com/buy-now-pay-later/";
-                                  await launch(url);
-                                },
-                                child: FadeTransition(
-                                  opacity: _fadeInFadeOut,
-                                  child: Container(
-                                      padding: const EdgeInsets.all(10),
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: Colors.white,
-                                        border: Border.all(color: Colors.white),
-                                      ),
-                                      child: const Text('Buy Now Pay later')),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Row(
-                      // crossAxisAlignment: CrossAxisAlignment.start,
-                      // mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Image.asset('assets/fintech.png'),
-                        Container(
-                          margin: const EdgeInsets.only(left: 30),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text(
-                                'CONTACT US',
-                                style: GoogleFonts.aBeeZee(
-                                    textStyle: const TextStyle(
-                                        fontSize: 28,
-                                        fontWeight: FontWeight.bold)),
-                              ),
-                              const SizedBox(height: 40),
-                              Text(
-                                'Redefine Innovation With Us',
-                                style: GoogleFonts.aBeeZee(
-                                    textStyle: const TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.normal)),
-                              ),
-                              const SizedBox(height: 40),
-                              Container(
-                                width: 700,
-                                child: Text(
-                                  'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
-                                  maxLines: 2,
-                                  style: GoogleFonts.aBeeZee(
-                                      textStyle: const TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.normal)),
-                                ),
-                              ),
-                              const SizedBox(height: 50),
-                              ElevatedButton(
-                                onPressed: () async {
-                                  const url =
-                                      "https://m2pfintech.com/contact-us/";
-                                  await launch(url);
-                                },
-                                child: Row(
-                                  children: [
-                                    const Text('Contact us'),
-                                    const SizedBox(width: 10),
-                                    const Icon(Icons.arrow_forward_rounded),
-                                  ],
-                                ),
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.blueAccent,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(30.0),
-                                        side: const BorderSide(
-                                            color: Colors.white)),
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 30, vertical: 20),
-                                    textStyle: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold)),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    Stack(
-                      children: [
-                        AnimatedBuilder(
-                            animation: _controller,
-                            builder: (BuildContext context, Widget? child) {
-                              return ClipPath(
-                                  clipper: DrawClip(_controller.value),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                        height: 270,
-                                        width: double.maxFinite,
-                                        decoration: BoxDecoration(
-                                          gradient: LinearGradient(
-                                              begin: Alignment.bottomLeft,
-                                              end: Alignment.topRight,
-                                              colors: [
-                                                Colors.blue.shade600,
-                                                Colors.blueAccent.shade100
-                                              ]),
-                                        )),
-                                  ));
-                            }),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url =
-                                          "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Careers',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url = "https://medium.com/flutter";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'News',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url = "https://flutter.dev/brand";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Brand',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url = "https://flutter.dev/culture";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Culture',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url =
-                                          "https://flutter.dev/multi-platform/mobile";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Mobile',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url =
-                                          "https://flutter.dev/multi-platform/web";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Web',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url =
-                                          "https://flutter.dev/multi-platform/desktop";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Desktop',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      const url =
-                                          "https://flutter.dev/multi-platform/embedded";
-                                      await launch(url);
-                                    },
-                                    child: const Text(
-                                      'Embedded',
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 20),
-                                ],
-                              ),
-                              Column(
-                                children: [
-                                  RotationTransition(
-                                    turns: _animation,
-                                    child: InkWell(
-                                      child: FaIcon(FontAwesomeIcons.medium,
-                                          color: isSelected
-                                              ? Colors.black
-                                              : Colors.white,
-                                          size: 25.0),
-                                      onTap: () async {
-                                        const url =
-                                            "https://medium.com/flutter";
-                                        await launch(url);
-                                      },
-                                      onHover: (value) {
-                                        setState(() {
-                                          isSelected = value;
-                                        });
-                                      },
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  RotationTransition(
-                                    turns: _animation,
-                                    child: InkWell(
-                                      child: FaIcon(FontAwesomeIcons.meetup,
-                                          color: isSelected2
-                                              ? Colors.red[700]
-                                              : Colors.white,
-                                          size: 25.0),
-                                      onTap: () async {
-                                        const url =
-                                            "https://www.meetup.com/pro/flutter/";
-                                        await launch(url);
-                                      },
-                                      onHover: (value) {
-                                        setState(() {
-                                          isSelected2 = value;
-                                        });
-                                      },
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  RotationTransition(
-                                    turns: _animation,
-                                    child: InkWell(
-                                      child: FaIcon(FontAwesomeIcons.github,
-                                          color: isSelected1
-                                              ? Colors.black
-                                              : Colors.white,
-                                          size: 25.0),
-                                      onTap: () async {
-                                        const url =
-                                            "https://github.com/flutter";
-                                        await launch(url);
-                                      },
-                                      onHover: (value) {
-                                        setState(() {
-                                          isSelected1 = value;
-                                        });
-                                      },
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  RotationTransition(
-                                    turns: _animation,
-                                    child: InkWell(
-                                      child: FaIcon(FontAwesomeIcons.twitter,
-                                          color: isSelected3
-                                              ? Colors.blue[400]
-                                              : Colors.white,
-                                          size: 25.0),
-                                      onTap: () async {
-                                        const url =
-                                            "https://twitter.com/flutterdev";
-                                        await launch(url);
-                                      },
-                                      onHover: (value) {
-                                        setState(() {
-                                          isSelected3 = value;
-                                        });
-                                      },
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  RotationTransition(
-                                    turns: _animation,
-                                    child: InkWell(
-                                      child: FaIcon(FontAwesomeIcons.youtube,
-                                          color: isSelected4
-                                              ? Colors.red
-                                              : Colors.white,
-                                          size: 25.0),
-                                      onTap: () async {
-                                        const url =
-                                            "https://www.youtube.com/flutterdev";
-                                        await launch(url);
-                                      },
-                                      onHover: (value) {
-                                        setState(() {
-                                          isSelected4 = value;
-                                        });
-                                      },
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        Positioned(
-                          right: 30,
-                          bottom: 70,
-                          child: RotationTransition(
-                            turns: _arrowAnimation,
-                            child: InkWell(
-                              child: const Icon(
-                                Icons.arrow_circle_up,
-                                color: Colors.white,
-                              ),
-                              onTap: () {
-                                _scrollToTop();
-                              },
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
               ),
-            ]),
-          ),
+            ),
+          ]))
         ]));
   }
 }
