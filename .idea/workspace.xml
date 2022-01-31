@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643605905711</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="conflicts commit">
+      <created>1643610015123</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643610015123</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,12 +226,12 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="intial commit" />
-    <MESSAGE value="conflicts commit" />
     <MESSAGE value="conflict resolved" />
     <MESSAGE value="conflicts changes" />
     <MESSAGE value="conflicts" />
     <MESSAGE value="conflicts resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="conflicts resolved" />
+    <MESSAGE value="conflicts commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="conflicts commit" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643602008825">
