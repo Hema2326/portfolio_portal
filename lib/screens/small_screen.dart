@@ -4,6 +4,7 @@ import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
+import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/m2pProducts_screen.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
@@ -20,7 +21,6 @@ class SmallScreen extends StatefulWidget {
 }
 
 class _SmallScreenState extends State<SmallScreen> {
-
   @override
   Widget build(BuildContext context) {
     return ZoomDrawer(
@@ -114,7 +114,13 @@ class _SideBarState extends State<SideBar> {
             height: 30,
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const PortfolioScreen()),
+              );
+            },
             onHover: (value) {
               setState(() {
                 isHovering1 = value;
@@ -135,7 +141,6 @@ class _SideBarState extends State<SideBar> {
               ),
             ),
           ),
-
           SizedBox(
             width: screenSize.width / 20,
             height: 30,
@@ -150,7 +155,7 @@ class _SideBarState extends State<SideBar> {
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                borderRadius: const BorderRadius.all(const Radius.circular(15)),
                 border: Border.all(color: Colors.white),
               ),
               child: Text(
@@ -167,13 +172,16 @@ class _SideBarState extends State<SideBar> {
             height: 30,
           ),
           InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => M2PproductScreen()));
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const M2PproductScreen()));
             },
             child: Container(
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                borderRadius: const BorderRadius.all(Radius.circular(15)),
                 border: Border.all(color: Colors.white),
               ),
               child: Text(
@@ -185,7 +193,6 @@ class _SideBarState extends State<SideBar> {
               ),
             ),
           ),
-
         ],
       ),
     );
@@ -229,7 +236,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
     vsync: this,
   )..repeat(reverse: true);
   late final Animation<double> _arrowAnimation =
-  CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   @override
   void initState() {
@@ -266,9 +273,9 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
             leading: IconButton(
                 onPressed: () => ZoomDrawer.of(context)!.toggle(),
                 icon: const Icon(Icons.menu))),
-        body:  SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 AspectRatio(
                   aspectRatio: 3.0,
@@ -280,7 +287,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                   ),
                 ),
                 Center(
-                  child: Container(
+                  child: SizedBox(
                     height: 700,
                     child: Padding(
                       padding: EdgeInsets.zero,
@@ -292,15 +299,16 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                               children: [
                                 Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment:
-                                  CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      margin: const EdgeInsets.only(left: 30, right: 10),
+                                      margin: const EdgeInsets.only(
+                                          left: 30, right: 10),
                                       height: 180,
                                       width: 500,
                                       decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           gradient: LinearGradient(
                                             begin: Alignment.topRight,
                                             end: Alignment.bottomLeft,
@@ -310,28 +318,35 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                             ],
                                           )),
                                       child: Container(
-                                        margin: const EdgeInsets.only(left: 40, bottom: 20),
+                                        margin: const EdgeInsets.only(
+                                            left: 40, bottom: 20),
                                         child: Row(
                                           children: [
                                             Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
                                               children: [
                                                 const SizedBox(height: 15),
                                                 CustomText(StringResource.dart,
                                                     style: GoogleFonts.aBeeZee(
-                                                        textStyle: const TextStyle(
-                                                          color: ColorResource.colorFFFFFF,
-                                                          fontSize: 20,
-                                                          fontWeight: FontWeight.bold,
-                                                        ))),
+                                                        textStyle:
+                                                            const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ))),
                                                 const SizedBox(height: 15),
                                                 CustomText(
                                                   StringResource.dart1,
                                                   style: GoogleFonts.aBeeZee(
                                                     textStyle: const TextStyle(
-                                                      color: ColorResource.colorFFFFFF,
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.normal,
+                                                      fontWeight:
+                                                          FontWeight.normal,
                                                     ),
                                                   ),
                                                 ),
@@ -340,51 +355,75 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                   children: [
                                                     ElevatedButton(
                                                       onPressed: () async {
-                                                        const url = "https://dart.dev";
+                                                        const url =
+                                                            "https://dart.dev";
                                                         await launch(url);
                                                       },
                                                       child: CustomText(
                                                         StringResource.dartdev,
-                                                        style: GoogleFonts.aBeeZee(
-                                                          textStyle: const TextStyle(
-                                                            color: Colors.lightBlueAccent,
-                                                            fontWeight: FontWeight.normal,
+                                                        style:
+                                                            GoogleFonts.aBeeZee(
+                                                          textStyle:
+                                                              const TextStyle(
+                                                            color: Colors
+                                                                .lightBlueAccent,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
                                                           ),
                                                         ),
                                                       ),
                                                       style: ElevatedButton.styleFrom(
-                                                          primary: ColorResource.colorFFFFFF,
+                                                          primary: ColorResource
+                                                              .colorFFFFFF,
                                                           shape: RoundedRectangleBorder(
                                                               borderRadius:
-                                                              BorderRadius.circular(30.0),
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          30.0),
                                                               side: const BorderSide(
-                                                                  color: Colors.white)),
-                                                          padding: const EdgeInsets.symmetric(
-                                                              horizontal: 30, vertical: 20),
-                                                          textStyle: const TextStyle(
-                                                              fontSize: 20,
-                                                              fontWeight: FontWeight.bold)),
+                                                                  color: Colors
+                                                                      .white)),
+                                                          padding:
+                                                              const EdgeInsets.symmetric(
+                                                                  horizontal:
+                                                                      30,
+                                                                  vertical: 20),
+                                                          textStyle:
+                                                              const TextStyle(
+                                                                  fontSize: 20,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold)),
                                                     ),
                                                     const SizedBox(width: 10),
                                                     InkWell(
                                                       onTap: () async {
-                                                        const url = "https://pub.dev";
+                                                        const url =
+                                                            "https://pub.dev";
                                                         await launch(url);
                                                       },
                                                       child: Row(
                                                         children: [
                                                           CustomText(
-                                                            StringResource.getpackages,
-                                                            style: GoogleFonts.aBeeZee(
-                                                              textStyle: const TextStyle(
-                                                                color: ColorResource.colorFFFFFF,
-                                                                fontWeight: FontWeight.bold,
+                                                            StringResource
+                                                                .getpackages,
+                                                            style: GoogleFonts
+                                                                .aBeeZee(
+                                                              textStyle:
+                                                                  const TextStyle(
+                                                                color: ColorResource
+                                                                    .colorFFFFFF,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
                                                               ),
                                                             ),
                                                           ),
                                                           const Icon(
                                                             Icons.arrow_forward,
-                                                            color: ColorResource.colorFFFFFF,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
                                                           ),
                                                         ],
                                                       ),
@@ -421,16 +460,16 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                               children: [
                                 Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment:
-                                  CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      margin: EdgeInsets.only(left: 30, right: 10),
+                                      margin: const EdgeInsets.only(
+                                          left: 30, right: 10),
                                       height: 180,
-
                                       width: 800,
                                       decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           gradient: LinearGradient(
                                             begin: Alignment.topRight,
                                             end: Alignment.bottomLeft,
@@ -440,32 +479,41 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                             ],
                                           )),
                                       child: Container(
-                                        margin: EdgeInsets.only(left: 40, bottom: 20),
+                                        margin: const EdgeInsets.only(
+                                            left: 40, bottom: 20),
                                         child: Column(
                                           children: [
                                             Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
                                               children: [
-                                                SizedBox(height: 15),
+                                                const SizedBox(height: 15),
                                                 Text('Get Started',
-                                                    style: GoogleFonts.sourceSansPro(
-                                                        textStyle: TextStyle(
-                                                          color: ColorResource.colorFFFFFF,
-                                                          fontSize: 28,
-                                                          fontWeight: FontWeight.bold,
-                                                        ))),
-                                                SizedBox(height: 15),
+                                                    style: GoogleFonts
+                                                        .sourceSansPro(
+                                                            textStyle:
+                                                                const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 28,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ))),
+                                                const SizedBox(height: 15),
                                                 Text(
                                                   'Instant access to the power of the Flutter framework',
-                                                  style: GoogleFonts.sourceSansPro(
-                                                    textStyle: TextStyle(
-                                                      color: ColorResource.colorFFFFFF,
+                                                  style:
+                                                      GoogleFonts.sourceSansPro(
+                                                    textStyle: const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
                                                       fontSize: 20,
-                                                      fontWeight: FontWeight.normal,
+                                                      fontWeight:
+                                                          FontWeight.normal,
                                                     ),
                                                   ),
                                                 ),
-                                                SizedBox(height: 16),
+                                                const SizedBox(height: 16),
                                                 Row(
                                                   children: [
                                                     ElevatedButton(
@@ -476,27 +524,41 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                       },
                                                       child: Text(
                                                         'Install',
-                                                        style: GoogleFonts.sourceSansPro(
-                                                          textStyle: TextStyle(
-                                                            color: Colors.lightBlueAccent,
-                                                            fontWeight: FontWeight.bold,
+                                                        style: GoogleFonts
+                                                            .sourceSansPro(
+                                                          textStyle:
+                                                              const TextStyle(
+                                                            color: Colors
+                                                                .lightBlueAccent,
+                                                            fontWeight:
+                                                                FontWeight.bold,
                                                           ),
                                                         ),
                                                       ),
                                                       style: ElevatedButton.styleFrom(
-                                                          primary: ColorResource.colorFFFFFF,
+                                                          primary: ColorResource
+                                                              .colorFFFFFF,
                                                           shape: RoundedRectangleBorder(
                                                               borderRadius:
-                                                              BorderRadius.circular(30.0),
-                                                              side: BorderSide(
-                                                                  color: Colors.white)),
-                                                          padding: EdgeInsets.symmetric(
-                                                              horizontal: 30, vertical: 20),
-                                                          textStyle: TextStyle(
-                                                              fontSize: 20,
-                                                              fontWeight: FontWeight.bold)),
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          30.0),
+                                                              side: const BorderSide(
+                                                                  color: Colors
+                                                                      .white)),
+                                                          padding:
+                                                              const EdgeInsets.symmetric(
+                                                                  horizontal:
+                                                                      30,
+                                                                  vertical: 20),
+                                                          textStyle:
+                                                              const TextStyle(
+                                                                  fontSize: 20,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold)),
                                                     ),
-                                                    SizedBox(width: 10),
+                                                    const SizedBox(width: 10),
                                                     InkWell(
                                                       onTap: () async {
                                                         const url =
@@ -507,17 +569,22 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                         children: [
                                                           Text(
                                                             'See the Documentation',
-                                                            style: GoogleFonts.aBeeZee(
-                                                              textStyle: TextStyle(
-                                                                color:
-                                                                ColorResource.colorFFFFFF,
-                                                                fontWeight: FontWeight.bold,
+                                                            style: GoogleFonts
+                                                                .aBeeZee(
+                                                              textStyle:
+                                                                  const TextStyle(
+                                                                color: ColorResource
+                                                                    .colorFFFFFF,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
                                                               ),
                                                             ),
                                                           ),
-                                                          Icon(
+                                                          const Icon(
                                                             Icons.arrow_forward,
-                                                            color: ColorResource.colorFFFFFF,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
                                                           ),
                                                         ],
                                                       ),
@@ -532,7 +599,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                     ),
                                   ],
                                 ),
-
                                 Container(
                                   color: Colors.white,
                                   // padding: const EdgeInsets.only(bottom: 20),
@@ -554,15 +620,16 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                               children: [
                                 Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment:
-                                  CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
-                                      margin: const EdgeInsets.only(left: 40, right: 10),
+                                      margin: const EdgeInsets.only(
+                                          left: 40, right: 10),
                                       height: 180,
                                       width: 800,
                                       decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(15),
+                                          borderRadius:
+                                              BorderRadius.circular(15),
                                           gradient: LinearGradient(
                                             begin: Alignment.topRight,
                                             end: Alignment.bottomLeft,
@@ -572,28 +639,35 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                             ],
                                           )),
                                       child: Container(
-                                        margin: const EdgeInsets.only(left: 40, bottom: 20),
+                                        margin: const EdgeInsets.only(
+                                            left: 40, bottom: 20),
                                         child: Column(
                                           children: [
                                             Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
                                               children: [
                                                 const SizedBox(height: 15),
                                                 CustomText(StringResource.dart,
                                                     style: GoogleFonts.aBeeZee(
-                                                        textStyle: const TextStyle(
-                                                          color: ColorResource.colorFFFFFF,
-                                                          fontSize: 20,
-                                                          fontWeight: FontWeight.bold,
-                                                        ))),
+                                                        textStyle:
+                                                            const TextStyle(
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ))),
                                                 const SizedBox(height: 15),
                                                 CustomText(
                                                   StringResource.dart1,
                                                   style: GoogleFonts.aBeeZee(
                                                     textStyle: const TextStyle(
-                                                      color: ColorResource.colorFFFFFF,
+                                                      color: ColorResource
+                                                          .colorFFFFFF,
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.normal,
+                                                      fontWeight:
+                                                          FontWeight.normal,
                                                     ),
                                                   ),
                                                 ),
@@ -602,51 +676,75 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                   children: [
                                                     ElevatedButton(
                                                       onPressed: () async {
-                                                        const url = "https://dart.dev";
+                                                        const url =
+                                                            "https://dart.dev";
                                                         await launch(url);
                                                       },
                                                       child: CustomText(
                                                         StringResource.dartdev,
-                                                        style: GoogleFonts.aBeeZee(
-                                                          textStyle: const TextStyle(
-                                                            color: Colors.lightBlueAccent,
-                                                            fontWeight: FontWeight.normal,
+                                                        style:
+                                                            GoogleFonts.aBeeZee(
+                                                          textStyle:
+                                                              const TextStyle(
+                                                            color: Colors
+                                                                .lightBlueAccent,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .normal,
                                                           ),
                                                         ),
                                                       ),
                                                       style: ElevatedButton.styleFrom(
-                                                          primary: ColorResource.colorFFFFFF,
+                                                          primary: ColorResource
+                                                              .colorFFFFFF,
                                                           shape: RoundedRectangleBorder(
                                                               borderRadius:
-                                                              BorderRadius.circular(30.0),
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          30.0),
                                                               side: const BorderSide(
-                                                                  color: Colors.white)),
-                                                          padding: const EdgeInsets.symmetric(
-                                                              horizontal: 30, vertical: 20),
-                                                          textStyle: const TextStyle(
-                                                              fontSize: 20,
-                                                              fontWeight: FontWeight.bold)),
+                                                                  color: Colors
+                                                                      .white)),
+                                                          padding:
+                                                              const EdgeInsets.symmetric(
+                                                                  horizontal:
+                                                                      30,
+                                                                  vertical: 20),
+                                                          textStyle:
+                                                              const TextStyle(
+                                                                  fontSize: 20,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold)),
                                                     ),
                                                     const SizedBox(width: 10),
                                                     InkWell(
                                                       onTap: () async {
-                                                        const url = "https://pub.dev";
+                                                        const url =
+                                                            "https://pub.dev";
                                                         await launch(url);
                                                       },
                                                       child: Row(
                                                         children: [
                                                           CustomText(
-                                                            StringResource.getpackages,
-                                                            style: GoogleFonts.aBeeZee(
-                                                              textStyle: const TextStyle(
-                                                                color: ColorResource.colorFFFFFF,
-                                                                fontWeight: FontWeight.bold,
+                                                            StringResource
+                                                                .getpackages,
+                                                            style: GoogleFonts
+                                                                .aBeeZee(
+                                                              textStyle:
+                                                                  const TextStyle(
+                                                                color: ColorResource
+                                                                    .colorFFFFFF,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
                                                               ),
                                                             ),
                                                           ),
                                                           const Icon(
                                                             Icons.arrow_forward,
-                                                            color: ColorResource.colorFFFFFF,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
                                                           ),
                                                         ],
                                                       ),
@@ -661,8 +759,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                     ),
                                   ],
                                 ),
-
-
                                 Container(
                                   color: ColorResource.colorFFFFFF,
                                   // padding: const EdgeInsets.only(bottom: 20),
@@ -697,7 +793,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                   children: [
                     // Spacer(),
                     Container(
-                      margin: EdgeInsets.only(top: 15),
+                      margin: const EdgeInsets.only(top: 15),
                       color: Colors.white,
                       // padding: const EdgeInsets.only(bottom: 20),
                       child: Lottie.network(
@@ -710,7 +806,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 20, right: 10),
+                      margin: const EdgeInsets.only(left: 20, right: 10),
                       height: 180,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
@@ -724,32 +820,32 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                             ],
                           )),
                       child: Container(
-                        margin: EdgeInsets.only(left: 20, bottom: 20),
+                        margin: const EdgeInsets.only(left: 20, bottom: 20),
                         child: Row(
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                SizedBox(height: 15),
+                                const SizedBox(height: 15),
                                 Text('Get Started',
                                     style: GoogleFonts.sourceSansPro(
-                                        textStyle: TextStyle(
-                                          color: ColorResource.colorFFFFFF,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ))),
-                                SizedBox(height: 15),
+                                        textStyle: const TextStyle(
+                                      color: ColorResource.colorFFFFFF,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                    ))),
+                                const SizedBox(height: 15),
                                 Text(
                                   'Instant access to the power of the Flutter framework',
                                   style: GoogleFonts.sourceSansPro(
-                                    textStyle: TextStyle(
+                                    textStyle: const TextStyle(
                                       color: ColorResource.colorFFFFFF,
                                       fontSize: 20,
                                       fontWeight: FontWeight.normal,
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 16),
+                                const SizedBox(height: 16),
                                 Row(
                                   children: [
                                     ElevatedButton(
@@ -761,7 +857,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                       child: Text(
                                         'Install',
                                         style: GoogleFonts.sourceSansPro(
-                                          textStyle: TextStyle(
+                                          textStyle: const TextStyle(
                                             color: Colors.lightBlueAccent,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -771,20 +867,19 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                           primary: ColorResource.colorFFFFFF,
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
-                                              BorderRadius.circular(30.0),
-                                              side: BorderSide(
+                                                  BorderRadius.circular(30.0),
+                                              side: const BorderSide(
                                                   color: Colors.white)),
-                                          padding: EdgeInsets.symmetric(
+                                          padding: const EdgeInsets.symmetric(
                                               horizontal: 30, vertical: 20),
-                                          textStyle: TextStyle(
+                                          textStyle: const TextStyle(
                                               fontSize: 20,
                                               fontWeight: FontWeight.bold)),
                                     ),
-                                    SizedBox(width: 10),
+                                    const SizedBox(width: 10),
                                     InkWell(
                                       onTap: () async {
-                                        const url =
-                                            "https://docs.flutter.dev";
+                                        const url = "https://docs.flutter.dev";
                                         await launch(url);
                                       },
                                       child: Row(
@@ -792,14 +887,14 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                           Text(
                                             'See the Documentation',
                                             style: GoogleFonts.aBeeZee(
-                                              textStyle: TextStyle(
+                                              textStyle: const TextStyle(
                                                 color:
-                                                ColorResource.colorFFFFFF,
+                                                    ColorResource.colorFFFFFF,
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
                                           ),
-                                          Icon(
+                                          const Icon(
                                             Icons.arrow_forward,
                                             color: ColorResource.colorFFFFFF,
                                           ),
@@ -822,11 +917,11 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(left: 20, top: 30),
+                          margin: const EdgeInsets.only(left: 20, top: 30),
                           child: Text(
                             'Join our News Letter Keep up with the latest Flutter news, releases, and more',
                             style: GoogleFonts.aBeeZee(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   color: ColorResource.color222222,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 14),
@@ -835,8 +930,8 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                         ),
                       ],
                     ),
-                    SizedBox(height: 40),
-                    Container(
+                    const SizedBox(height: 40),
+                    SizedBox(
                       height: 100,
                       width: 200,
                       child: TextField(
@@ -845,12 +940,12 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30)),
                           labelText: 'E-mail',
-                          prefixIcon: Icon(Icons.mail_outline),
+                          prefixIcon: const Icon(Icons.mail_outline),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(bottom: 10),
+                      padding: const EdgeInsets.only(bottom: 10),
                       child: ElevatedButton(
                         onPressed: () async {
                           const url =
@@ -860,7 +955,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                         child: Text(
                           'Subcribe',
                           style: GoogleFonts.sourceSansPro(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
@@ -870,19 +965,16 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                             primary: Colors.blueAccent,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30.0),
-                                side: BorderSide(color: Colors.blueAccent)),
-                            padding: EdgeInsets.symmetric(
+                                side:
+                                    const BorderSide(color: Colors.blueAccent)),
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 20),
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
                     ),
                   ],
                 ),
-
-
-
-
                 Stack(
                   children: [
                     AnimatedBuilder(
@@ -1044,8 +1136,9 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                 turns: _animation,
                                 child: InkWell(
                                   child: FaIcon(FontAwesomeIcons.medium,
-                                      color:
-                                      isSelected ? Colors.black : Colors.white,
+                                      color: isSelected
+                                          ? Colors.black
+                                          : Colors.white,
                                       size: 25.0),
                                   onTap: () async {
                                     const url = "https://medium.com/flutter";
@@ -1084,8 +1177,9 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                 turns: _animation,
                                 child: InkWell(
                                   child: FaIcon(FontAwesomeIcons.github,
-                                      color:
-                                      isSelected1 ? Colors.black : Colors.white,
+                                      color: isSelected1
+                                          ? Colors.black
+                                          : Colors.white,
                                       size: 25.0),
                                   onTap: () async {
                                     const url = "https://github.com/flutter";
@@ -1108,7 +1202,8 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                           : Colors.white,
                                       size: 25.0),
                                   onTap: () async {
-                                    const url = "https://twitter.com/flutterdev";
+                                    const url =
+                                        "https://twitter.com/flutterdev";
                                     await launch(url);
                                   },
                                   onHover: (value) {
@@ -1123,8 +1218,9 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                 turns: _animation,
                                 child: InkWell(
                                   child: FaIcon(FontAwesomeIcons.youtube,
-                                      color:
-                                      isSelected4 ? Colors.red : Colors.white,
+                                      color: isSelected4
+                                          ? Colors.red
+                                          : Colors.white,
                                       size: 25.0),
                                   onTap: () async {
                                     const url =
