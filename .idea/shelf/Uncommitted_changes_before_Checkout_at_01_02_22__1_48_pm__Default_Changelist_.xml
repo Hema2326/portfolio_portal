@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_01_02_22,_1_48_pm_[Default_Changelist]" date="1643703614894" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_1_48_pm_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 01/02/22, 1:48 pm [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Favicons" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Favicons" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_1_48_pm_[Default_Changelist]/Favicons" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Visited Links" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Visited Links" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_1_48_pm_[Default_Changelist]/Visited Links" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Service Worker/Database/000003.log" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Service Worker/Database/000003.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_1_48_pm_[Default_Changelist]/000003.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Reporting and NEL" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Reporting and NEL" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_1_48_pm_[Default_Changelist]/Reporting and NEL" />
+  </binary>
+</changelist>
