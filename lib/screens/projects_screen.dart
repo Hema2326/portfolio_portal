@@ -26,12 +26,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
               color: Colors.pink[400],
               child: Padding(
                 padding: const EdgeInsets.only(top: 30),
-                child:
-                    // Row(
-                    // crossAxisAlignment: CrossAxisAlignment.start,
-                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    // children: [
-                    Padding(
+                child: Padding(
                   padding: const EdgeInsets.only(left: 30),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -176,17 +171,14 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           child: Image.asset(
                             ImageResource.icici2,
                             alignment: Alignment.center,
-                            width: 260,
-                            height: 260,
+                            width: 220,
+                            height: 220,
                           ),
                         ),
                       ),
                     ],
                   ),
                 ),
-
-                // ],
-                // ),
               ),
             ),
             Container(

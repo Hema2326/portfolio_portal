@@ -908,111 +908,6 @@ class _LargeScreenState extends State<LargeScreen>
                     ),
                   ],
                 ),
-                // Container(
-                //   margin: const EdgeInsets.only(left: 10, right: 10),
-                //   height: 180,
-                //   width: 1000,
-                //   decoration: BoxDecoration(
-                //       borderRadius: BorderRadius.circular(15),
-                //       gradient: LinearGradient(
-                //         begin: Alignment.topRight,
-                //         end: Alignment.bottomLeft,
-                //         colors: [
-                //           Colors.blueAccent.shade100,
-                //           Colors.blueAccent,
-                //         ],
-                //       )),
-                //   child: Container(
-                //     margin: const EdgeInsets.only(left: 40, bottom: 20),
-                //     child: Row(
-                //       children: [
-                //         Column(
-                //           crossAxisAlignment: CrossAxisAlignment.start,
-                //           children: [
-                //             const SizedBox(height: 15),
-                //             CustomText(StringResource.dart,
-                //                 style: GoogleFonts.aBeeZee(
-                //                     textStyle: const TextStyle(
-                //                   color: ColorResource.colorFFFFFF,
-                //                   fontSize: 28,
-                //                   fontWeight: FontWeight.bold,
-                //                 ))),
-                //             const SizedBox(height: 15),
-                //             CustomText(
-                //               StringResource.dart1,
-                //               style: GoogleFonts.aBeeZee(
-                //                 textStyle: const TextStyle(
-                //                   color: ColorResource.colorFFFFFF,
-                //                   fontSize: 16,
-                //                   fontWeight: FontWeight.normal,
-                //                 ),
-                //               ),
-                //             ),
-                //             const SizedBox(height: 16),
-                //             Row(
-                //               children: [
-                //                 ElevatedButton(
-                //                   onPressed: () async {
-                //                     const url = "https://dart.dev";
-                //                     await launch(url);
-                //                   },
-                //                   child: CustomText(
-                //                     StringResource.dartdev,
-                //                     style: GoogleFonts.aBeeZee(
-                //                       textStyle: const TextStyle(
-                //                         color: Colors.lightBlueAccent,
-                //                         fontWeight: FontWeight.normal,
-                //                       ),
-                //                     ),
-                //                   ),
-                //                   style: ElevatedButton.styleFrom(
-                //                       primary: ColorResource.colorFFFFFF,
-                //                       shape: RoundedRectangleBorder(
-                //                           borderRadius:
-                //                               BorderRadius.circular(30.0),
-                //                           side: const BorderSide(
-                //                               color: Colors.white)),
-                //                       padding: const EdgeInsets.symmetric(
-                //                           horizontal: 30, vertical: 20),
-                //                       textStyle: const TextStyle(
-                //                           fontSize: 20,
-                //                           fontWeight: FontWeight.bold)),
-                //                 ),
-                //                 const SizedBox(width: 10),
-                //                 InkWell(
-                //                   onTap: () async {
-                //                     const url = "https://pub.dev";
-                //                     await launch(url);
-                //                   },
-                //                   child: Row(
-                //                     children: [
-                //                       CustomText(
-                //                         StringResource.getpackages,
-                //                         style: GoogleFonts.aBeeZee(
-                //                           textStyle: const TextStyle(
-                //                             color: ColorResource.colorFFFFFF,
-                //                             fontWeight: FontWeight.bold,
-                //                           ),
-                //                         ),
-                //                       ),
-                //                       const Icon(
-                //                         Icons.arrow_forward,
-                //                         color: ColorResource.colorFFFFFF,
-                //                       ),
-                //                     ],
-                //                   ),
-                //                 ),
-                //               ],
-                //             ),
-                //           ],
-                //         ),
-                //       ],
-                //     ),
-                //   ),
-                // ),
-                // const SizedBox(
-                //   height: 20,
-                // ),
                 Stack(
                   children: [
                     AnimatedBuilder(
@@ -1557,12 +1452,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(right: 80),
                             child: Image.asset(
                               ImageResource.visa,
-                              width: 400,
-                              height: 400,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                         ],
@@ -1656,12 +1552,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(right: 80),
                             child: Image.asset(
                               ImageResource.genericcomponenets,
-                              width: 400,
-                              height: 400,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                         ],
