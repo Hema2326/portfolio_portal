@@ -27,7 +27,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts resolved" />
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts resolved">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/home_screen_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/home_screen_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/products_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/products_widget.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643717089011</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="conflicts resolved">
+      <created>1643717322243</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1643717322243</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
