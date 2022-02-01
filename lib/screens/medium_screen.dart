@@ -54,22 +54,25 @@ class _MediumScreenState extends State<MediumScreen>
 
   late final Animation<double> _arrowAnimation =
       CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+
   showAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = InkWell(
-      child: Text("Cancel",
+      child: Text(
+        "Cancel",
         style: TextStyle(color: Colors.red),
       ),
-      onTap:  () {
+      onTap: () {
         Navigator.pop(context);
       },
     );
     SizedBox(width: 20);
     Widget continueButton = InkWell(
-      child: Text("Continue",
+      child: Text(
+        "Continue",
         style: TextStyle(color: Colors.blue),
       ),
-      onTap:  () {
+      onTap: () {
         Navigator.pop(context);
       },
     );
@@ -90,7 +93,6 @@ class _MediumScreenState extends State<MediumScreen>
       },
     );
   }
-
 
   @override
   void initState() {
@@ -905,7 +907,7 @@ class _MediumScreenState extends State<MediumScreen>
                         padding: const EdgeInsets.only(bottom: 10),
                         child: ElevatedButton(
                           onPressed: () async {
-showAlertDialog(context);
+                            showAlertDialog(context);
                           },
                           child: Text(
                             'Subcribe',
@@ -2230,7 +2232,9 @@ showAlertDialog(context);
 class DrawClip extends CustomClipper<Path> {
   double move = 0;
   double slice = math.pi;
+
   DrawClip(this.move);
+
   @override
   Path getClip(Size size) {
     Path path = Path();
