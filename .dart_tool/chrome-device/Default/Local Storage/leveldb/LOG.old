@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-2022/01/31-21:40:40.033 5307 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.c5tGJt/flutter_tools_chrome_device.MJiNb8/Default/Local Storage/leveldb/MANIFEST-000001
-2022/01/31-21:40:40.056 5307 Recovering log #11
-2022/01/31-21:40:40.062 5307 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.c5tGJt/flutter_tools_chrome_device.MJiNb8/Default/Local Storage/leveldb/000011.log 
-2022/01/31-21:40:40.069 5307 Delete type=0 #8
-=======
-2022/01/31-21:10:42.828 4a03 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.Drlolo/flutter_tools_chrome_device.6YOGvo/Default/Local Storage/leveldb/MANIFEST-000001
-2022/01/31-21:10:42.830 4a03 Recovering log #3
-2022/01/31-21:10:42.832 4a03 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.Drlolo/flutter_tools_chrome_device.6YOGvo/Default/Local Storage/leveldb/000003.log 
->>>>>>> d053c2735ecd2a2fe8f3ddde59b50794f28eeaad
+2022/01/31-22:43:44.738 4d03 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.iw3IwN/flutter_tools_chrome_device.sa7gJW/Default/Local Storage/leveldb/MANIFEST-000001
+2022/01/31-22:43:44.765 4d03 Recovering log #11
+2022/01/31-22:43:44.790 4d03 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.iw3IwN/flutter_tools_chrome_device.sa7gJW/Default/Local Storage/leveldb/000011.log 
+2022/01/31-22:43:44.812 4d03 Delete type=0 #3
+2022/01/31-22:43:44.814 4d03 Delete type=0 #8
