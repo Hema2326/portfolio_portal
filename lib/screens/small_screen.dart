@@ -89,6 +89,7 @@ class _SideBarState extends State<SideBar> {
   bool isHovering = false;
   bool isHovering1 = false;
   bool isHovering2 = false;
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -223,6 +224,24 @@ class MainView extends StatefulWidget {
 
 class _MainViewState extends State<MainView> with TickerProviderStateMixin {
   TextEditingController emailController = TextEditingController();
+  bool isSelected = false;
+  void clearText() {
+    emailController.clear();
+  }
+
+  late AnimationController _controller;
+
+  double value = 0;
+
+  late final AnimationController controller = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
+
+  late final Animation<double> _animation = CurvedAnimation(
+    parent: controller,
+    curve: Curves.bounceIn,
+  );
 
   @override
   void initState() {
@@ -882,38 +901,85 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                           labelText: 'E-mail',
                           prefixIcon: const Icon(Icons.mail_outline),
                         ),
+                        onEditingComplete: () {
+                          if (emailController.text.isEmpty) {
+                            isSelected = false;
+                          } else {
+                            isSelected = true;
+                          }
+                        },
+                        onChanged: (value) {
+                          setState(() {
+                            if (emailController.text.isEmpty) {
+                              isSelected = false;
+                            } else {
+                              isSelected = true;
+                            }
+                            print(value);
+                          });
+                        },
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          showAlertDialog(context);
-                          // const url =
-                          //     "https://docs.flutter.dev/get-started/install";
-                          // await launch(url);
-                        },
-                        child: Text(
-                          'Subcribe',
-                          style: GoogleFonts.sourceSansPro(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                    isSelected
+                        ? Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                isSelected = true;
+                                showAlertDialog(context);
+                                clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          )
+                        : Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                // showAlertDialog(context);
+                                // clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent.shade100,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
                             ),
                           ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.blueAccent,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                side:
-                                    const BorderSide(color: Colors.blueAccent)),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 20),
-                            textStyle: const TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                      ),
-                    ),
                   ],
                 ),
                 const BottomContainerWidget()

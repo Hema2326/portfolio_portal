@@ -28,7 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/large_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/medium_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/small_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643689179426</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="conflicts commit">
+      <created>1643703968754</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1643703968754</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,38 +267,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="conflicts commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643656537577">
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643698745441">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643656537577" />
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643698745441" />
     <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.25.1680.934@0.25.1680.934" timestamp="1643640206749" />
     <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
-    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1643656537574">
+    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1643698745435">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643656537574" />
+    <state width="1638" height="240" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643698745435" />
     <state width="1638" height="240" key="GridCell.Tab.0.center/0.25.1680.934@0.25.1680.934" timestamp="1643640206746" />
     <state width="1638" height="241" key="GridCell.Tab.0.center/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
-    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1643656537573">
+    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1643698745434">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643656537573" />
+    <state width="1638" height="240" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643698745434" />
     <state width="1638" height="240" key="GridCell.Tab.0.left/0.25.1680.934@0.25.1680.934" timestamp="1643640206745" />
     <state width="1638" height="241" key="GridCell.Tab.0.left/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
-    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1643656537575">
+    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1643698745440">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643656537575" />
+    <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643698745440" />
     <state width="1638" height="240" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1643640206748" />
     <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
     <state x="175" y="60" key="MergeDialog" timestamp="1643375062257">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375062257" />
-    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643606034980">
+    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643703958585">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643606034980" />
+    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643703958585" />
     <state x="478" y="257" key="MultipleFileMergeDialog/0.25.1680.942@0.25.1680.942" timestamp="1641968234125" />
     <state x="349" y="115" key="SettingsEditor" timestamp="1643563291614">
       <screen x="0" y="0" width="1680" height="1050" />

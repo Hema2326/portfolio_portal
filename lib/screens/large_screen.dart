@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:marquee/marquee.dart';
 import 'package:portfolio_portal/screens/portfolio_screen.dart';
+import 'package:portfolio_portal/screens/small_screen.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
@@ -24,6 +25,8 @@ class _LargeScreenState extends State<LargeScreen>
     with TickerProviderStateMixin {
   late AnimationController animation;
   late Animation<double> _fadeInFadeOut;
+
+  bool isSelected = false;
 
   TextEditingController emailController = TextEditingController();
 
@@ -148,6 +151,7 @@ class _LargeScreenState extends State<LargeScreen>
           Expanded(
               child: TabBarView(controller: _tabController, children: [
             SingleChildScrollView(
+                // controller: _scrollController,
                 child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -818,37 +822,85 @@ class _LargeScreenState extends State<LargeScreen>
                           labelText: 'E-mail',
                           prefixIcon: const Icon(Icons.mail_outline),
                         ),
+                        onEditingComplete: () {
+                          if (emailController.text.isEmpty) {
+                            isSelected = false;
+                          } else {
+                            isSelected = true;
+                          }
+                        },
+                        onChanged: (value) {
+                          setState(() {
+                            if (emailController.text.isEmpty) {
+                              isSelected = false;
+                            } else {
+                              isSelected = true;
+                            }
+                            print(value);
+                          });
+                        },
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: ElevatedButton(
-                        onPressed: () async {
-                          const url =
-                              "https://docs.flutter.dev/get-started/install";
-                          await launch(url);
-                        },
-                        child: Text(
-                          'Subcribe',
-                          style: GoogleFonts.sourceSansPro(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                    isSelected
+                        ? Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                isSelected = true;
+                                showAlertDialog(context);
+                                // clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          )
+                        : Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                // showAlertDialog(context);
+                                // clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent.shade100,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
                             ),
                           ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.blueAccent,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                side:
-                                    const BorderSide(color: Colors.blueAccent)),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 20),
-                            textStyle: const TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                      ),
-                    ),
                   ],
                 ),
                 const BottomContainerWidget()
