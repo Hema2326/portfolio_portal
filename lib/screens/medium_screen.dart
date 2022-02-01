@@ -5,10 +5,14 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:marquee/marquee.dart';
+import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/portfolio_screen.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
+import 'package:portfolio_portal/widgets/home_screen_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'dart:math' as math;
+
 import '../utils/color_resource.dart';
 import '../utils/custom_text.dart';
 import '../utils/image_resource.dart';
@@ -22,12 +26,15 @@ class MediumScreen extends StatefulWidget {
 
 class _MediumScreenState extends State<MediumScreen>
     with TickerProviderStateMixin {
-  // late ScrollController _scrollController;
+  late ScrollController _scrollController;
   late AnimationController animation;
   late Animation<double> _fadeInFadeOut;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   bool isSelected = false;
-
+  bool isSelected1 = false;
+  bool isSelected2 = false;
+  bool isSelected3 = false;
+  bool isSelected4 = false;
   TextEditingController emailController = TextEditingController();
 
   TabController? _tabController;
@@ -45,6 +52,14 @@ class _MediumScreenState extends State<MediumScreen>
     parent: controller,
     curve: Curves.bounceIn,
   );
+
+  late final AnimationController arrow = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
+
+  late final Animation<double> _arrowAnimation =
+      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   showAlertDialog(BuildContext context) {
     // set up the buttons
@@ -87,7 +102,7 @@ class _MediumScreenState extends State<MediumScreen>
 
   @override
   void initState() {
-    // _scrollController = ScrollController();
+    _scrollController = ScrollController();
     _tabController = TabController(vsync: this, length: 4);
     _controller = AnimationController(
       value: 0.0,
@@ -117,16 +132,16 @@ class _MediumScreenState extends State<MediumScreen>
 
   @override
   void dispose() {
-    // _scrollController.dispose();
+    _scrollController.dispose();
     _controller.dispose();
     controller.dispose();
     super.dispose();
   }
 
-  // _scrollToTop() {
-  //   _scrollController.animateTo(_scrollController.position.minScrollExtent,
-  //       duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
-  // }
+  _scrollToTop() {
+    _scrollController.animateTo(_scrollController.position.minScrollExtent,
+        duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
+  }
 
   List<MaterialColor> colorizeColors = [
     Colors.purple,
@@ -210,6 +225,7 @@ class _MediumScreenState extends State<MediumScreen>
           ),
           Expanded(
             child: TabBarView(controller: _tabController, children: [
+              // HomeScreenWidget(),
               SingleChildScrollView(
                   child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.start,
@@ -892,87 +908,87 @@ class _MediumScreenState extends State<MediumScreen>
                             labelText: 'E-mail',
                             prefixIcon: const Icon(Icons.mail_outline),
                           ),
-                          onEditingComplete: () {
-                            if (emailController.text.isEmpty) {
+                          onEditingComplete:() {
+                            if(emailController.text.isEmpty) {
                               isSelected = false;
-                            } else {
+                            }
+                            else {
                               isSelected = true;
                             }
                           },
-                          onChanged: (value) {
+                          onChanged:(value) {
                             setState(() {
-                              if (emailController.text.isEmpty) {
+                              if(emailController.text.isEmpty) {
                                 isSelected = false;
-                              } else {
+                              }
+                              else {
                                 isSelected = true;
                               }
                               print(value);
                             });
+
                           },
+
+
                         ),
                       ),
-                      isSelected
-                          ? Padding(
-                              padding: const EdgeInsets.only(bottom: 10),
-                              child: ElevatedButton(
-                                onPressed: () async {
-                                  isSelected = true;
-                                  showAlertDialog(context);
-                                  clearText();
-                                },
-                                child: Text(
-                                  'Subcribe',
-                                  style: GoogleFonts.sourceSansPro(
-                                    textStyle: const TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.blueAccent,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(30.0),
-                                        side: const BorderSide(
-                                            color: Colors.blueAccent)),
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 30, vertical: 20),
-                                    textStyle: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold)),
-                              ),
-                            )
-                          : Padding(
-                              padding: const EdgeInsets.only(bottom: 10),
-                              child: ElevatedButton(
-                                onPressed: () async {
-                                  // showAlertDialog(context);
-                                  // clearText();
-                                },
-                                child: Text(
-                                  'Subcribe',
-                                  style: GoogleFonts.sourceSansPro(
-                                    textStyle: const TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.blueAccent.shade100,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(30.0),
-                                        side: const BorderSide(
-                                            color: Colors.blueAccent)),
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 30, vertical: 20),
-                                    textStyle: const TextStyle(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold)),
+                      isSelected ? Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: ElevatedButton(
+                          onPressed: () async {
+                            isSelected = true;
+                            showAlertDialog(context);
+                            clearText();
+                          },
+                          child: Text(
+                            'Subcribe',
+                            style: GoogleFonts.sourceSansPro(
+                              textStyle: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              primary: Colors.blueAccent,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30.0),
+                                  side:
+                                  const BorderSide(color: Colors.blueAccent)),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 30, vertical: 20),
+                              textStyle: const TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ),
+                      ):  Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: ElevatedButton(
+                          onPressed: () async {
+
+                            // showAlertDialog(context);
+                            // clearText();
+                          },
+                          child: Text(
+                            'Subcribe',
+                            style: GoogleFonts.sourceSansPro(
+                              textStyle: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              primary: Colors.blueAccent.shade100,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30.0),
+                                  side:
+                                  const BorderSide(color: Colors.blueAccent)),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 30, vertical: 20),
+                              textStyle: const TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ),
+                      ),
                     ],
                   ),
                   const BottomContainerWidget()
@@ -1703,5 +1719,37 @@ class _MediumScreenState extends State<MediumScreen>
             ]),
           ),
         ]));
+  }
+}
+
+class DrawClip extends CustomClipper<Path> {
+  double move = 0;
+  double slice = math.pi;
+
+  DrawClip(this.move);
+
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+
+    path.lineTo(0, size.height * 0.6);
+
+    double xCenter =
+        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
+    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
+    path.quadraticBezierTo(
+      xCenter,
+      yCenter,
+      size.width,
+      size.height * 0.8,
+    );
+
+    path.lineTo(size.width, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return true;
   }
 }
