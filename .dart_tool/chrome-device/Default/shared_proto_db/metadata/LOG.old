@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-2022/02/01-11:59:58.532 10703 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.A9KgrD/flutter_tools_chrome_device.nH9HE2/Default/shared_proto_db/metadata/MANIFEST-000001
-2022/02/01-11:59:58.532 10703 Recovering log #3
-2022/02/01-11:59:58.533 10703 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.A9KgrD/flutter_tools_chrome_device.nH9HE2/Default/shared_proto_db/metadata/000003.log 
-=======
-<<<<<<< HEAD
-2022/01/31-21:40:40.823 c603 Reusing MANIFEST /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.c5tGJt/flutter_tools_chrome_device.MJiNb8/Default/shared_proto_db/metadata/MANIFEST-000001
-2022/01/31-21:40:40.829 c603 Recovering log #3
-2022/01/31-21:40:40.829 c603 Reusing old log /private/var/folders/00/b2r7485952x29tshctv2dfg00000gn/T/flutter_tools.c5tGJt/flutter_tools_chrome_device.MJiNb8/Default/shared_proto_db/metadata/000003.log 
-=======
-2022/01/31-21:10:43.651 10903 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.Drlolo/flutter_tools_chrome_device.6YOGvo/Default/shared_proto_db/metadata/MANIFEST-000001
-2022/01/31-21:10:43.651 10903 Recovering log #3
-2022/01/31-21:10:43.651 10903 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.Drlolo/flutter_tools_chrome_device.6YOGvo/Default/shared_proto_db/metadata/000003.log 
->>>>>>> d053c2735ecd2a2fe8f3ddde59b50794f28eeaad
->>>>>>> 34f85c64c28959140af6e21160d364ae3a28f2de
+2022/02/01-12:03:25.802 12803 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.TLZTmE/flutter_tools_chrome_device.9qqUre/Default/shared_proto_db/metadata/MANIFEST-000001
+2022/02/01-12:03:25.802 12803 Recovering log #3
+2022/02/01-12:03:25.803 12803 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.TLZTmE/flutter_tools_chrome_device.9qqUre/Default/shared_proto_db/metadata/000003.log 

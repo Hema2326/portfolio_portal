@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-2022/02/01-11:59:58.238 b503 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.A9KgrD/flutter_tools_chrome_device.nH9HE2/Default/Service Worker/Database/MANIFEST-000001
-2022/02/01-11:59:58.238 b503 Recovering log #3
-2022/02/01-11:59:58.239 b503 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.A9KgrD/flutter_tools_chrome_device.nH9HE2/Default/Service Worker/Database/000003.log 
-=======
-2022/01/31-14:44:16.450 eb03 Creating DB /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.i2ZnDB/flutter_tools_chrome_device.bQaHUH/Default/Service Worker/Database since it was missing.
-2022/01/31-14:44:16.464 eb03 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.i2ZnDB/flutter_tools_chrome_device.bQaHUH/Default/Service Worker/Database/MANIFEST-000001
-2022/01/31-14:44:16.465 eb03 Recovering log #3
-2022/01/31-14:44:16.465 eb03 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.i2ZnDB/flutter_tools_chrome_device.bQaHUH/Default/Service Worker/Database/000003.log 
->>>>>>> 34f85c64c28959140af6e21160d364ae3a28f2de
+2022/02/01-12:03:25.698 9407 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.TLZTmE/flutter_tools_chrome_device.9qqUre/Default/Service Worker/Database/MANIFEST-000001
+2022/02/01-12:03:25.699 9407 Recovering log #3
+2022/02/01-12:03:25.699 9407 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.TLZTmE/flutter_tools_chrome_device.9qqUre/Default/Service Worker/Database/000003.log 
