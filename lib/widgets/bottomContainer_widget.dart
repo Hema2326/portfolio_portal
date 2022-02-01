@@ -35,19 +35,18 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
     curve: Curves.bounceIn,
   );
 
-  // late final AnimationController arrow = AnimationController(
-  //   duration: const Duration(seconds: 2),
-  //   vsync: this,
-  // )..repeat(reverse: true);
+  late final AnimationController arrow = AnimationController(
+    duration: const Duration(seconds: 2),
+    vsync: this,
+  )..repeat(reverse: true);
 
-  // late final Animation<double> _arrowAnimation =
-  //     CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+  late final Animation<double> _arrowAnimation =
+      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   @override
   void initState() {
     super.initState();
-
-    // _scrollController = ScrollController();
+    _scrollController = ScrollController();
 
     _controller = AnimationController(
       value: 0.0,
@@ -62,18 +61,14 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
   void dispose() {
     _controller.dispose();
     controller.dispose();
-    // _scrollController.dispose();
+    _scrollController.dispose();
     super.dispose();
   }
 
-  // _scrollToTop() {
-  //   _scrollController.animateTo(_scrollController.position.minScrollExtent,
-  //       duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
-  // }
-  // void _scrollToTop() {
-  //   _scrollController.animateTo(0,
-  //       duration: Duration(seconds: 3), curve: Curves.linear);
-  // }
+  _scrollToTop() {
+    _scrollController.animateTo(_scrollController.position.minScrollExtent,
+        duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -108,33 +103,123 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  buildBottomDetails(
-                    'Career',
-                    "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter",
+                  GestureDetector(
+                    onTap: () async {
+                      const url =
+                          "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Careers',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
                   const SizedBox(height: 20),
-                  buildBottomDetails('News', "https://medium.com/flutter"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://medium.com/flutter";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'News',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
-                  buildBottomDetails('Brand', "https://flutter.dev/brand"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://flutter.dev/brand";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Brand',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
-                  buildBottomDetails('Culture', "https://flutter.dev/culture"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://flutter.dev/culture";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Culture',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
                 ],
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  buildBottomDetails(
-                      'Mobile', "https://flutter.dev/multi-platform/mobile"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://flutter.dev/multi-platform/mobile";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Mobile',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
-                  buildBottomDetails(
-                      'Web', "https://flutter.dev/multi-platform/web"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://flutter.dev/multi-platform/web";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Web',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
-                  buildBottomDetails(
-                      'Desktop', "https://flutter.dev/multi-platform/desktop"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://flutter.dev/multi-platform/desktop";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Desktop',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
-                  buildBottomDetails('Embedded',
-                      "https://flutter.dev/multi-platform/embedded"),
+                  GestureDetector(
+                    onTap: () async {
+                      const url = "https://flutter.dev/multi-platform/embedded";
+                      await launch(url);
+                    },
+                    child: const Text(
+                      'Embedded',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
                   const SizedBox(height: 20),
                 ],
               ),
@@ -235,36 +320,23 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
             ],
           ),
         ),
-        // Positioned(
-        //   right: 30,
-        //   bottom: 70,
-        //   child: RotationTransition(
-        //     turns: _arrowAnimation,
-        //     child: InkWell(
-        //       child: const Icon(
-        //         Icons.arrow_circle_up,
-        //         color: Colors.white,
-        //       ),
-        //       onTap: () {
-        //         _scrollToTop();
-        //       },
-        //     ),
-        //   ),
-        // ),
+        Positioned(
+          right: 30,
+          bottom: 70,
+          child: RotationTransition(
+            turns: _arrowAnimation,
+            child: InkWell(
+              child: const Icon(
+                Icons.arrow_circle_up,
+                color: Colors.white,
+              ),
+              onTap: () {
+                _scrollToTop();
+              },
+            ),
+          ),
+        ),
       ],
-    );
-  }
-
-  Widget buildBottomDetails(String title, String url) {
-    return GestureDetector(
-      onTap: () async {
-        await launch(url);
-      },
-      child: Text(
-        title,
-        style: const TextStyle(
-            color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
-      ),
     );
   }
 }
