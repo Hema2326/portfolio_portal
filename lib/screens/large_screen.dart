@@ -11,10 +11,7 @@ import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:portfolio_portal/widgets/home_screen_widget.dart';
 import 'package:portfolio_portal/widgets/products_widget.dart';
-import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key? key}) : super(key: key);
@@ -26,6 +23,8 @@ class LargeScreen extends StatefulWidget {
 class _LargeScreenState extends State<LargeScreen>
     with TickerProviderStateMixin {
   late AnimationController animation;
+
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   bool isSelected = false;
 
