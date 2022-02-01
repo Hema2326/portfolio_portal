@@ -36,9 +36,9 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
   Widget build(BuildContext context) {
     List<PortfolioModel> digits = [
       PortfolioModel('assets/mari.png', 'Mari'),
-      PortfolioModel('assets/flutter-engage.png', 'Chinnadurai'),
+      PortfolioModel('assets/chinnadurai.png', 'Chinnadurai'),
       PortfolioModel('assets/alexia.png', 'Alexia'),
-      PortfolioModel('assets/flutter-engage.png', 'Hema'),
+      PortfolioModel('assets/hema.png', 'Hema'),
       PortfolioModel('assets/seema.png', 'Seema'),
       PortfolioModel('assets/nandha.png', 'Nandhakumar'),
       PortfolioModel('assets/jones.png', 'Jones'),
@@ -121,25 +121,29 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
                   case 2:
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AlexiaScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => const AlexiaScreen()),
                     );
                     break;
                   case 3:
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HemaScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => const HemaScreen()),
                     );
                     break;
                   case 4:
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SeemaScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => const SeemaScreen()),
                     );
                     break;
                   case 5:
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => NandhaScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => const NandhaScreen()),
                     );
                     break;
                   case 6:
@@ -313,27 +317,31 @@ class _ChinnaduraiScreenState extends State<ChinnaduraiScreen> {
       body: SingleChildScrollView(
         child: Contact.details(
             context,
-            "assets/flutter-engage.png",
-            "Chinnadurai",
+            "assets/chinnadurai.png",
+            "Chinnadurai Viswanathan",
             "Senior Software Engineer",
-            "Work for money and code for love! I’m Ganesh, Software Engineer based in India.",
-            "Hello, I'm an iOS / Flutter developer with 4+ years of professional experience in dynamic and deadline- driven work environments. Eager to make mobile applications to delight customers with magical experiences. In previous roles developed 7+ mobile apps that were published in App Store and Play Store.",
+            "I am Chinnadurai Viswanathan. I completed my M.C.A in 2015 at the Hindusthan Institute of Technology affiliated with Anna University, Chennai, India. ",
+            "Hands-on 6.5 years of experience in Mobile development Software and successful Engineer with leading teams in delivering appropriate technology solutions for mobile products. Comprehensive knowledge of platform development, basic architecture, agile & scrum methodologies. Innovative change agent with a unique mix of high-level technology direction and deep technical expertise. \n\nTechnologies: \nAndroid - Using core java\nFlutter(Dart - Android(Java & Kotlin)\niOS (Swift) )\nSolr Search\nPega development",
             [
               ExperienceModel(
-                "Senior Software Engineer (Flutter)\nM2P Fintech,Chennai\n03/2021 - present",
-                "1.Created Visa digital mobile application using flutter.\n2.Support the team to build generic components for upcoming flutter projects.\n3.Help the team to learn about Bloc state management and live project architecture\n4.M2P fintech web portal is my ongoing projects.",
-              ),
+                  "Senior Software Engineer (Flutter)\nM2P Fintech,Chennai\nJune 2021 - present",
+                  "1.Coordinate with other professionals, such as contractors, architects, engineers to ensure job success.\n2.Prepare scale drawings.\n3.Established compatibility with third-party software products by developing the programme for modification and integration.\n4.Developed and implemented complex Internet and Intranet applications on multiple platforms.\n5.Designed strategic plan for component development practices to support future projects.\n6.Organised and created shooting schedules for the graphic design team, supervising the progress of projects from production to post-production.\n7.Consistently met deadlines and requirements for all production work orders.\n8.Managed creative projects from concept to completion while managing outside vendors.\n9.Developed workflow charts and diagrams to ensure production team compliance with client deadlines.\n10.Trained junior members of the IT team regarding the android application. "),
               ExperienceModel(
-                "Native IOS / Flutter Developer\nTartLabs\n09/2018 - 03/2021",
-                "1.Coimbatore Tart Labs is a top-notch software design and development company bringing in transformational outcomes to all the customers across various industries.\n2.Experienced in Cross-Platform Mobile Development using Flutter based mobile app.\n3.Good understanding and usage of States and Flutter Blocs.\n4.Up to date on Apple development standards Build app for both online and Offline storage.\n5.Use SOAP and RESTful API's. Work along with Third party integrated tools.\n6.Experience with versioning tools like Git-Lab .",
-              ),
+                  "MOBILE APP DEVELOPER - Flutter\nTeamLease Services Ltd - Working with FPT Software. Hyderabad, Telangana\nAug. 2020 – Jun. 2021",
+                  "1.Coordinate with other professionals, such as contractors, architects, engineers to ensure job success.\n2.Prepare scale drawings.\n3.Established compatibility with third-party software products by developing the programme for modification and integration.\n4.Developed and implemented complex Internet and Intranet applications on multiple platforms.\n5.Designed strategic plan for component development practices to support future projects.\n6.Organised and created shooting schedules for the graphic design team, supervising the progress of projects from production to post-production.\n7.Consistently met deadlines and requirements for all production work orders.\n8.Managed creative projects from concept to completion while managing outside vendors.\n9.Developed workflow charts and diagrams to ensure production team compliance with client deadlines.\n10.Trained junior members of the IT team regarding the android application. "),
               ExperienceModel(
-                  "IOS Developer\nHCL Technologies Ltd\n08/2017 - 09/2018, Chennai",
-                  "1.iOS application Developing & Testing.\n2.Design and build advanced app features for the iOS platform with Swift language Involvement in Software Product Life Cycle.\n3.Familiar with defect Tracking Tools & Process.\n4.Interacting with SME’s , senior management, developers, testers and across different competencies to get the task accomplished within the given deadlines. Performed technical designs and implementation of 3+ iOS apps."),
+                  "Research & Development Engineer\nImpiger Technologies. Coimbatore, Tamil Nadu\nOct. 2018 – Jul. 2020",
+                  "1.Coordinate with other professionals, such as contractors, architects, engineers to ensure job success.\n2.Prepare scale drawings.\n3.Established compatibility with third-party software products by developing the programme for modification and integration.\n4.Developed and implemented complex Internet and Intranet applications on multiple platforms.\n5.Designed strategic plan for component development practices to support future projects.\n6.Organised and created shooting schedules for the graphic design team, supervising the progress of projects from production to post-production.\n7.Consistently met deadlines and requirements for all production work orders.\n8.Managed creative projects from concept to completion while managing outside vendors.\n9.Developed workflow charts and diagrams to ensure production team compliance with client deadlines.\n10.Trained junior members of the IT team regarding the android application. "),
+              ExperienceModel(
+                  "Project Lead\nPattronize InfoTech/FrotiGrid ICT India Pvt Ltd. Coimbatore, Tamil Nadu\nOct. 2016 – Sep. 2018",
+                  "1.Coordinate with other professionals, such as contractors, architects, engineers to ensure job success.\n2.Prepare scale drawings.\n3.Established compatibility with third-party software products by developing the programme for modification and integration.\n4.Developed and implemented complex Internet and Intranet applications on multiple platforms.\n5.Designed strategic plan for component development practices to support future projects.\n6.Organised and created shooting schedules for the graphic design team, supervising the progress of projects from production to post-production.\n7.Consistently met deadlines and requirements for all production work orders.\n8.Managed creative projects from concept to completion while managing outside vendors.\n9.Developed workflow charts and diagrams to ensure production team compliance with client deadlines.\n10.Trained junior members of the IT team regarding the android application. "),
+              ExperienceModel(
+                  "Junior Android Developer\nAver Soft Solution. Tiruppur, Tamil Nadu\nJun. 2015 – Jun. 2016",
+                  "1.Established compatibility with third-party software products by developing the programme for modification and integration.\n2.Developed workflow charts and diagrams to ensure production team compliance with client deadlines ")
             ],
-            "mariganeshthangam@gmail.com",
-            "https://github.com/mariganesh555",
-            "https://www.linkedin.com/in/mariganesh-t-02831b104"),
+            "chinnaduraiv@live.in",
+            "https://github.com/chinnaduraiv",
+            "https://www.linkedin.com/in/chinnadurai-viswanathan-b2b6b7a5"),
       ),
     );
   }
@@ -357,7 +365,7 @@ class _AlexiaScreenState extends State<AlexiaScreen> {
             "Antony Ruby Alexia",
             "Software Engineer",
             "MBA graduate with 6.5+ years of total experience developed my own app and published in play store and for clients. I enjoy learning new things and developing apps",
-            "Am a software developer with 2.6+ years of experience prototyping, developing & deploying over 6 Android & iOS applications using Flutter. Robust applications designed with UX in mind and backed by firebase to enhance the user experience.\n\n Few Technologies am working with\n- Flutter \n- Dart \n- Firebase",
+            "Am a software developer with 2.6+ years of experience prototyping, developing & deploying over 6 Android & iOS applications using Flutter. Robust applications designed with UX in mind and backed by firebase to enhance the user experience.\n\nFew Technologies am working with\n- Flutter \n- Dart \n- Firebase",
             [
               ExperienceModel(
                 "Software Engineer (Flutter)\nM2P Fintech\nApr 2021 - Present",
@@ -398,27 +406,24 @@ class _HemaScreenState extends State<HemaScreen> {
       body: SingleChildScrollView(
         child: Contact.details(
             context,
-            "assets/flutter-engage.png",
+            "assets/hema.png",
             "Hemavathi",
             "Software Engineer",
-            "Work for money and code for love! I’m Ganesh, Software Engineer based in India.",
-            "Hello, I'm an iOS / Flutter developer with 4+ years of professional experience in dynamic and deadline- driven work environments. Eager to make mobile applications to delight customers with magical experiences. In previous roles developed 7+ mobile apps that were published in App Store and Play Store.",
+            "Software Engineer || UI/UX Designer || Website Developer",
+            "Eager to work at Mobile Application Development and Website Developer and Passionate at Designing",
             [
               ExperienceModel(
-                "Senior Software Engineer (Flutter)\nM2P Fintech,Chennai\n03/2021 - present",
-                "1.Created Visa digital mobile application using flutter.\n2.Support the team to build generic components for upcoming flutter projects.\n3.Help the team to learn about Bloc state management and live project architecture\n4.M2P fintech web portal is my ongoing projects.",
-              ),
+                  "Software Engineer (Flutter)\nM2P Fintech,Chennai\nJuly 2021 - present",
+                  "1.Working at ICICI projects\n2.Website Developments\n3.Worked on GeneriC Components SDK"),
+              ExperienceModel("Website Developer\nSS Tech\nJuly 2016-2019",
+                  "Projects Details\n1.Binaryview.in\n2.Zheetec.com\n3.Sstechpark.in\n4.onspotevents.com"),
               ExperienceModel(
-                "Native IOS / Flutter Developer\nTartLabs\n09/2018 - 03/2021",
-                "1.Coimbatore Tart Labs is a top-notch software design and development company bringing in transformational outcomes to all the customers across various industries.\n2.Experienced in Cross-Platform Mobile Development using Flutter based mobile app.\n3.Good understanding and usage of States and Flutter Blocs.\n4.Up to date on Apple development standards Build app for both online and Offline storage.\n5.Use SOAP and RESTful API's. Work along with Third party integrated tools.\n6.Experience with versioning tools like Git-Lab .",
-              ),
-              ExperienceModel(
-                  "IOS Developer\nHCL Technologies Ltd\n08/2017 - 09/2018, Chennai",
-                  "1.iOS application Developing & Testing.\n2.Design and build advanced app features for the iOS platform with Swift language Involvement in Software Product Life Cycle.\n3.Familiar with defect Tracking Tools & Process.\n4.Interacting with SME’s , senior management, developers, testers and across different competencies to get the task accomplished within the given deadlines. Performed technical designs and implementation of 3+ iOS apps."),
+                  "Accounts Assistant\nSS colour Impression Private Limited\nDec 2016-july2017",
+                  "Worked as Assistant in a Accounts team.")
             ],
-            "mariganeshthangam@gmail.com",
-            "https://github.com/mariganesh555",
-            "https://www.linkedin.com/in/mariganesh-t-02831b104"),
+            "email@gmail.com",
+            "",
+            ""),
       ),
     );
   }

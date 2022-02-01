@@ -1,8 +1,5 @@
-2022/02/01-13:51:28.626 5203 Reusing MANIFEST /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.wTAlfV/flutter_tools_chrome_device.6q24Tj/Default/Session Storage/MANIFEST-000001
-2022/02/01-13:51:28.628 5203 Recovering log #3
-2022/02/01-13:51:28.628 5203 Level-0 table #3: started
-2022/02/01-13:51:28.633 5203 Level-0 table #3: 584 bytes OK
-2022/02/01-13:51:28.636 5203 Recovering log #4
-2022/02/01-13:51:28.637 5203 Reusing old log /private/var/folders/zk/z30tk_l54t92lz4g0fx0kcfc0000gn/T/flutter_tools.wTAlfV/flutter_tools_chrome_device.6q24Tj/Default/Session Storage/000004.log 
-2022/02/01-13:51:28.666 5203 Delete type=0 #3
-2022/02/01-13:51:28.670 5203 Delete type=2 #5
+2022/02/01-14:25:18.615 1b07 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.otuMZa/flutter_tools_chrome_device.0x7NPa/Default/Session Storage/MANIFEST-000001
+2022/02/01-14:25:18.617 1b07 Recovering log #4
+2022/02/01-14:25:18.618 1b07 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.otuMZa/flutter_tools_chrome_device.0x7NPa/Default/Session Storage/000004.log 
+2022/02/01-14:25:18.620 1b07 Delete type=0 #3
+2022/02/01-14:25:18.620 1b07 Delete type=2 #5
