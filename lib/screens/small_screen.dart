@@ -38,6 +38,42 @@ class _SmallScreenState extends State<SmallScreen> {
     );
   }
 }
+showAlertDialog(BuildContext context) {
+  // set up the buttons
+  Widget cancelButton = InkWell(
+    child: Text("Cancel",
+      style: TextStyle(color: Colors.red),
+    ),
+    onTap:  () {
+      Navigator.pop(context);
+    },
+  );
+  SizedBox(width: 20);
+  Widget continueButton = InkWell(
+    child: Text("Continue",
+      style: TextStyle(color: Colors.blue),
+    ),
+    onTap:  () {
+      Navigator.pop(context);
+    },
+  );
+  // set up the AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("AlertDialog"),
+    content: Text("Would you like to subsribe our news letter?"),
+    actions: [
+      cancelButton,
+      continueButton,
+    ],
+  );
+  // show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
+}
 
 class DrawClip extends CustomClipper<Path> {
   double move = 0;
@@ -304,14 +340,14 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                             child: Column(
                               children: [
                                 Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
                                       margin: const EdgeInsets.only(
                                           left: 30, right: 10),
-                                      height: 180,
-                                      width: 500,
+                                      // height: 180,
+                                      // width: 800,
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(15),
@@ -326,115 +362,111 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                       child: Container(
                                         margin: const EdgeInsets.only(
                                             left: 40, bottom: 20),
-                                        child: Row(
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
                                           children: [
-                                            Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
+                                            const SizedBox(height: 15),
+                                            CustomText(StringResource.dart,
+                                                style: GoogleFonts.aBeeZee(
+                                                    textStyle:
+                                                        const TextStyle(
+                                                  color: ColorResource
+                                                      .colorFFFFFF,
+                                                  fontSize: 18,
+                                                  fontWeight:
+                                                      FontWeight.bold,
+                                                ))),
+                                            const SizedBox(height: 15),
+                                            CustomText(
+                                              StringResource.dart1,
+                                              style: GoogleFonts.aBeeZee(
+                                                textStyle: const TextStyle(
+                                                  color: ColorResource
+                                                      .colorFFFFFF,
+                                                  fontSize: 12,
+                                                  fontWeight:
+                                                      FontWeight.normal,
+                                                ),
+                                              ),
+                                            ),
+                                            const SizedBox(height: 16),
+                                            Row(
                                               children: [
-                                                const SizedBox(height: 15),
-                                                CustomText(StringResource.dart,
-                                                    style: GoogleFonts.aBeeZee(
-                                                        textStyle:
-                                                            const TextStyle(
-                                                      color: ColorResource
-                                                          .colorFFFFFF,
-                                                      fontSize: 20,
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                    ))),
-                                                const SizedBox(height: 15),
-                                                CustomText(
-                                                  StringResource.dart1,
-                                                  style: GoogleFonts.aBeeZee(
-                                                    textStyle: const TextStyle(
-                                                      color: ColorResource
-                                                          .colorFFFFFF,
-                                                      fontSize: 12,
-                                                      fontWeight:
-                                                          FontWeight.normal,
+                                                ElevatedButton(
+                                                  onPressed: () async {
+                                                    const url =
+                                                        "https://dart.dev";
+                                                    await launch(url);
+                                                  },
+                                                  child: CustomText(
+                                                    StringResource.dartdev,
+                                                    style:
+                                                        GoogleFonts.aBeeZee(
+                                                      textStyle:
+                                                          const TextStyle(
+                                                        color: Colors
+                                                            .lightBlueAccent,
+                                                        fontWeight:
+                                                            FontWeight
+                                                                .normal,
+                                                      ),
                                                     ),
                                                   ),
+                                                  style: ElevatedButton.styleFrom(
+                                                      primary: ColorResource
+                                                          .colorFFFFFF,
+                                                      shape: RoundedRectangleBorder(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      15.0),
+                                                          side: const BorderSide(
+                                                              color: Colors
+                                                                  .white)),
+                                                      padding:
+                                                          const EdgeInsets.symmetric(
+                                                              horizontal:
+                                                                  20,
+                                                              vertical: 20),
+                                                      textStyle:
+                                                          const TextStyle(
+                                                              fontSize: 18,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .normal)),
                                                 ),
-                                                const SizedBox(height: 16),
-                                                Row(
-                                                  children: [
-                                                    ElevatedButton(
-                                                      onPressed: () async {
-                                                        const url =
-                                                            "https://dart.dev";
-                                                        await launch(url);
-                                                      },
-                                                      child: CustomText(
-                                                        StringResource.dartdev,
-                                                        style:
-                                                            GoogleFonts.aBeeZee(
+                                                const SizedBox(width: 10),
+                                                InkWell(
+                                                  onTap: () async {
+                                                    const url =
+                                                        "https://pub.dev";
+                                                    await launch(url);
+                                                  },
+                                                  child: Row(
+                                                    children: [
+                                                      CustomText(
+                                                        StringResource
+                                                            .getpackages,
+                                                        style: GoogleFonts
+                                                            .aBeeZee(
                                                           textStyle:
                                                               const TextStyle(
-                                                            color: Colors
-                                                                .lightBlueAccent,
+                                                            color: ColorResource
+                                                                .colorFFFFFF,
                                                             fontWeight:
                                                                 FontWeight
-                                                                    .normal,
+                                                                    .bold,
                                                           ),
                                                         ),
                                                       ),
-                                                      style: ElevatedButton.styleFrom(
-                                                          primary: ColorResource
-                                                              .colorFFFFFF,
-                                                          shape: RoundedRectangleBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          30.0),
-                                                              side: const BorderSide(
-                                                                  color: Colors
-                                                                      .white)),
-                                                          padding:
-                                                              const EdgeInsets.symmetric(
-                                                                  horizontal:
-                                                                      30,
-                                                                  vertical: 20),
-                                                          textStyle:
-                                                              const TextStyle(
-                                                                  fontSize: 20,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .bold)),
-                                                    ),
-                                                    const SizedBox(width: 10),
-                                                    InkWell(
-                                                      onTap: () async {
-                                                        const url =
-                                                            "https://pub.dev";
-                                                        await launch(url);
-                                                      },
-                                                      child: Row(
-                                                        children: [
-                                                          CustomText(
-                                                            StringResource
-                                                                .getpackages,
-                                                            style: GoogleFonts
-                                                                .aBeeZee(
-                                                              textStyle:
-                                                                  const TextStyle(
-                                                                color: ColorResource
-                                                                    .colorFFFFFF,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          const Icon(
-                                                            Icons.arrow_forward,
-                                                            color: ColorResource
-                                                                .colorFFFFFF,
-                                                          ),
-                                                        ],
+                                                      const Icon(
+                                                        Icons.arrow_forward,
+                                                        color: ColorResource
+                                                            .colorFFFFFF,
                                                       ),
-                                                    ),
-                                                  ],
+                                                    ],
+                                                  ),
                                                 ),
                                               ],
                                             ),
@@ -471,8 +503,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                     Container(
                                       margin: const EdgeInsets.only(
                                           left: 30, right: 10),
-                                      height: 180,
-                                      width: 800,
+
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(15),
@@ -797,7 +828,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                 Stack(
                   alignment: Alignment.bottomRight,
                   children: [
-                    // Spacer(),
+
                     Container(
                       margin: const EdgeInsets.only(top: 15),
                       color: Colors.white,
@@ -827,87 +858,83 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                           )),
                       child: Container(
                         margin: const EdgeInsets.only(left: 20, bottom: 20),
-                        child: Row(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const SizedBox(height: 15),
-                                Text('Get Started',
-                                    style: GoogleFonts.sourceSansPro(
-                                        textStyle: const TextStyle(
-                                      color: ColorResource.colorFFFFFF,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ))),
-                                const SizedBox(height: 15),
-                                Text(
-                                  'Instant access to the power of the Flutter framework',
-                                  style: GoogleFonts.sourceSansPro(
+                            const SizedBox(height: 10),
+                            Text('Get Started',
+                                style: GoogleFonts.sourceSansPro(
                                     textStyle: const TextStyle(
-                                      color: ColorResource.colorFFFFFF,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.normal,
+                                  color: ColorResource.colorFFFFFF,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ))),
+                            const SizedBox(height: 15),
+                            Text(
+                              'Instant access to the power of the Flutter framework',
+                              style: GoogleFonts.sourceSansPro(
+                                textStyle: const TextStyle(
+                                  color: ColorResource.colorFFFFFF,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 16),
+                            Row(
+                              children: [
+                                ElevatedButton(
+                                  onPressed: () async {
+                                    const url =
+                                        "https://docs.flutter.dev/get-started/install";
+                                    await launch(url);
+                                  },
+                                  child: Text(
+                                    'Install',
+                                    style: GoogleFonts.sourceSansPro(
+                                      textStyle: const TextStyle(
+                                        color: Colors.lightBlueAccent,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
+                                  style: ElevatedButton.styleFrom(
+                                      primary: ColorResource.colorFFFFFF,
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
+                                          side: const BorderSide(
+                                              color: Colors.white)),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 30, vertical: 20),
+                                      textStyle: const TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold)),
                                 ),
-                                const SizedBox(height: 16),
-                                Row(
-                                  children: [
-                                    ElevatedButton(
-                                      onPressed: () async {
-                                        const url =
-                                            "https://docs.flutter.dev/get-started/install";
-                                        await launch(url);
-                                      },
-                                      child: Text(
-                                        'Install',
-                                        style: GoogleFonts.sourceSansPro(
+                                const SizedBox(width: 10),
+                                InkWell(
+                                  onTap: () async {
+                                    const url = "https://docs.flutter.dev";
+                                    await launch(url);
+                                  },
+                                  child: Row(
+                                    children: [
+                                      Text(
+                                        'See the Documentation',
+                                        style: GoogleFonts.aBeeZee(
                                           textStyle: const TextStyle(
-                                            color: Colors.lightBlueAccent,
+                                            color:
+                                                ColorResource.colorFFFFFF,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
                                       ),
-                                      style: ElevatedButton.styleFrom(
-                                          primary: ColorResource.colorFFFFFF,
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(30.0),
-                                              side: const BorderSide(
-                                                  color: Colors.white)),
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 30, vertical: 20),
-                                          textStyle: const TextStyle(
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.bold)),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    InkWell(
-                                      onTap: () async {
-                                        const url = "https://docs.flutter.dev";
-                                        await launch(url);
-                                      },
-                                      child: Row(
-                                        children: [
-                                          Text(
-                                            'See the Documentation',
-                                            style: GoogleFonts.aBeeZee(
-                                              textStyle: const TextStyle(
-                                                color:
-                                                    ColorResource.colorFFFFFF,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ),
-                                          const Icon(
-                                            Icons.arrow_forward,
-                                            color: ColorResource.colorFFFFFF,
-                                          ),
-                                        ],
+                                      const Icon(
+                                        Icons.arrow_forward,
+                                        color: ColorResource.colorFFFFFF,
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
@@ -919,22 +946,17 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                 ),
                 Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.only(left: 20, top: 30),
-                          child: Text(
-                            'Join our News Letter Keep up with the latest Flutter news, releases, and more',
-                            style: GoogleFonts.aBeeZee(
-                              textStyle: const TextStyle(
-                                  color: ColorResource.color222222,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14),
-                            ),
-                          ),
+                    Container(
+                      margin: const EdgeInsets.only(left: 20, top: 30),
+                      child: Text(
+                        'Join our News Letter Keep up with the latest Flutter news, releases, and more',
+                        style: GoogleFonts.aBeeZee(
+                          textStyle: const TextStyle(
+                              color: ColorResource.color222222,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12),
                         ),
-                      ],
+                      ),
                     ),
                     const SizedBox(height: 40),
                     SizedBox(
@@ -953,10 +975,11 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 10),
                       child: ElevatedButton(
-                        onPressed: () async {
-                          const url =
-                              "https://docs.flutter.dev/get-started/install";
-                          await launch(url);
+                        onPressed: ()  {
+                          showAlertDialog(context);
+                          // const url =
+                          //     "https://docs.flutter.dev/get-started/install";
+                          // await launch(url);
                         },
                         child: Text(
                           'Subcribe',
