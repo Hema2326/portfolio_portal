@@ -108,7 +108,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 65),
+              margin: EdgeInsets.only(left: 45),
               child: Row(
                 children: [
                   Column(
@@ -117,7 +117,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                       Text(
                         'We',
                         style: TextStyle(
-                          fontSize: 35,
+                          fontSize: 30,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -127,14 +127,14 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           ScaleAnimatedText(
                             'Enable',
                             textStyle: TextStyle(
-                              fontSize: 40,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           ScaleAnimatedText(
                             'Embed',
                             textStyle: TextStyle(
-                              fontSize: 40,
+                              fontSize: 30,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -143,13 +143,6 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           print("Tap Event");
                         },
                       ),
-                      // Text(
-                      //   'Enable',
-                      //   style: TextStyle(
-                      //     fontSize: 70,
-                      //     fontWeight: FontWeight.bold,
-                      //   ),
-                      // ),
                       Text(
                         'Fintech',
                         style: TextStyle(
@@ -163,14 +156,14 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                   Container(
                     child: Image.asset(
                       'assets/camera.png',
-                      height: 300,
+                      height: 200,
                     ),
                   ),
                 ],
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 40, left: 25),
+              padding: EdgeInsets.only(top: 40, left: 15),
               decoration: BoxDecoration(
                 color: Colors.pink,
               ),
@@ -192,17 +185,17 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                       Text(
                         'Build your Fintech Product',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w600,
                           color: Colors.white,
                         ),
                       ),
                       SizedBox(height: 30),
-                      Container(
-                        width: 300,
+                      SizedBox(
+                        width: 200,
                         child: Text(
                           'Check out our API docs to jump-start your product journey.',
-                          maxLines: 2,
+                          maxLines: 3,
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.normal,
@@ -232,7 +225,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                                   borderRadius: BorderRadius.circular(15.0),
                                   side: const BorderSide(color: Colors.white)),
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
+                                  horizontal: 20, vertical: 20),
                               textStyle: const TextStyle(
                                   fontSize: 15, fontWeight: FontWeight.bold)),
                         ),
@@ -254,7 +247,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                         TextStyle(fontSize: 30, fontWeight: FontWeight.bold))),
             Image.asset(
               'assets/value.png',
-              height: 500,
+              height: 400,
               width: 700,
             ),
             Container(
@@ -333,46 +326,47 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                         ),
                       ),
                       SizedBox(width: 50),
-                      InkWell(
-                        onTap: () async {
-                          const url = "https://m2pfintech.com/fleet-drive/";
-                          await launch(url);
-                        },
-                        child: FadeTransition(
-                          opacity: _fadeInFadeOut,
-                          child: Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: Colors.white,
-                                border: Border.all(color: Colors.white),
-                              ),
-                              child: Text('Fleet Drive')),
+                      Container(
+                        margin: EdgeInsets.only(top: 20, left: 20),
+                        child: InkWell(
+                          onTap: () async {
+                            const url = "https://m2pfintech.com/fleet-drive/";
+                            await launch(url);
+                          },
+                          child: FadeTransition(
+                            opacity: _fadeInFadeOut,
+                            child: Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.white),
+                                ),
+                                child: Text('Fleet Drive')),
+                          ),
                         ),
                       ),
                       SizedBox(
                         width: 50,
                       ),
-                      Center(
-                        child: Container(
-                          margin: EdgeInsets.only(top: 20),
-                          child: InkWell(
-                            onTap: () async {
-                              const url =
-                                  "https://m2pfintech.com/buy-now-pay-later/";
-                              await launch(url);
-                            },
-                            child: FadeTransition(
-                              opacity: _fadeInFadeOut,
-                              child: Container(
-                                  padding: EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(15),
-                                    color: Colors.white,
-                                    border: Border.all(color: Colors.white),
-                                  ),
-                                  child: Text('Buy Now Pay later')),
-                            ),
+                      Container(
+                        margin: EdgeInsets.only(top: 20),
+                        child: InkWell(
+                          onTap: () async {
+                            const url =
+                                "https://m2pfintech.com/buy-now-pay-later/";
+                            await launch(url);
+                          },
+                          child: FadeTransition(
+                            opacity: _fadeInFadeOut,
+                            child: Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.white),
+                                ),
+                                child: Text('Buy Now Pay later')),
                           ),
                         ),
                       ),
@@ -385,71 +379,72 @@ class _M2PproductScreenState extends State<M2PproductScreen>
               children: [
                 Image.asset(
                   'assets/fintech.png',
-                  height: 250,
+                  height: 220,
                 ),
-                Container(
-                  // height: 300,
-                  width: 330 ,
-                  margin: EdgeInsets.only(left: 20, top: 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Text(
-                        'CONTACT US',
-                        style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
-                                fontSize: 18, fontWeight: FontWeight.bold)),
-                      ),
-                      SizedBox(height: 30),
-                      Text(
-                        'Redefine Innovation With Us',
-                        style: GoogleFonts.aBeeZee(
-                            textStyle: TextStyle(
-                                fontSize: 12, fontWeight: FontWeight.normal)),
-                      ),
-                      SizedBox(height: 30),
-                      Container(
-
-                        child: Wrap(
-                          children: [
-                            Text(
-                              'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
-                              // maxLines: 2,
-                              style: GoogleFonts.aBeeZee(
-                                  textStyle: TextStyle(
-                                      fontSize: 12, fontWeight: FontWeight.normal)),
-                            ),
-                          ],
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.only(left: 20, top: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'CONTACT US',
+                          style: GoogleFonts.aBeeZee(
+                              textStyle: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                      SizedBox(height: 30),
-                      Container(
-                        width: 180,
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            const url = "https://m2pfintech.com/contact-us/";
-                            await launch(url);
-                          },
-                          child: Row(
+                        SizedBox(height: 30),
+                        Text(
+                          'Redefine Innovation With Us',
+                          style: GoogleFonts.aBeeZee(
+                              textStyle: TextStyle(
+                                  fontSize: 12, fontWeight: FontWeight.normal)),
+                        ),
+                        SizedBox(height: 30),
+                        Container(
+                          child: Wrap(
                             children: [
-                              Text('Contact us'),
-                              SizedBox(width: 10),
-                              Icon(Icons.arrow_forward_rounded),
+                              Text(
+                                'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
+                                // maxLines: 2,
+                                style: GoogleFonts.aBeeZee(
+                                    textStyle: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.normal)),
+                              ),
                             ],
                           ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.blueAccent,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15.0),
-                                  side: const BorderSide(color: Colors.white)),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              textStyle: const TextStyle(
-                                  fontSize: 15, fontWeight: FontWeight.bold)),
                         ),
-                      ),
-                    ],
+                        SizedBox(height: 30),
+                        Container(
+                          width: 180,
+                          child: ElevatedButton(
+                            onPressed: () async {
+                              const url = "https://m2pfintech.com/contact-us/";
+                              await launch(url);
+                            },
+                            child: Row(
+                              children: [
+                                Text('Contact us'),
+                                SizedBox(width: 10),
+                                Icon(Icons.arrow_forward_rounded),
+                              ],
+                            ),
+                            style: ElevatedButton.styleFrom(
+                                primary: Colors.blueAccent,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                    side:
+                                        const BorderSide(color: Colors.white)),
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 30, vertical: 20),
+                                textStyle: const TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold)),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
