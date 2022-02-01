@@ -36,6 +36,9 @@ class _MediumScreenState extends State<MediumScreen>
 
   TabController? _tabController;
   late AnimationController _controller;
+  void clearText() {
+    emailController.clear();
+  }
 
   late final AnimationController controller = AnimationController(
     duration: const Duration(seconds: 2),
@@ -901,13 +904,37 @@ class _MediumScreenState extends State<MediumScreen>
                             labelText: 'E-mail',
                             prefixIcon: const Icon(Icons.mail_outline),
                           ),
+                          onEditingComplete:() {
+                            if(emailController.text.isEmpty) {
+                              isSelected = false;
+                            }
+                            else {
+                              isSelected = true;
+                            }
+                          },
+                          onChanged:(value) {
+                            setState(() {
+                              if(emailController.text.isEmpty) {
+                                isSelected = false;
+                              }
+                              else {
+                                isSelected = true;
+                              }
+                              print(value);
+                            });
+
+                          },
+
+
                         ),
                       ),
-                      Padding(
+                      isSelected ? Padding(
                         padding: const EdgeInsets.only(bottom: 10),
                         child: ElevatedButton(
                           onPressed: () async {
+                            isSelected = true;
                             showAlertDialog(context);
+                            clearText();
                           },
                           child: Text(
                             'Subcribe',
@@ -922,8 +949,36 @@ class _MediumScreenState extends State<MediumScreen>
                               primary: Colors.blueAccent,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(30.0),
-                                  side: const BorderSide(
-                                      color: Colors.blueAccent)),
+                                  side:
+                                  const BorderSide(color: Colors.blueAccent)),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 30, vertical: 20),
+                              textStyle: const TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
+                        ),
+                      ):  Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: ElevatedButton(
+                          onPressed: () async {
+
+                            // showAlertDialog(context);
+                            // clearText();
+                          },
+                          child: Text(
+                            'Subcribe',
+                            style: GoogleFonts.sourceSansPro(
+                              textStyle: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                              primary: Colors.blueAccent.shade100,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30.0),
+                                  side:
+                                  const BorderSide(color: Colors.blueAccent)),
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
                               textStyle: const TextStyle(
