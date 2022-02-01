@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-2022/02/01-16:51:00.773 bb03 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.xeBQyN/flutter_tools_chrome_device.sEYEXI/Default/Service Worker/Database/MANIFEST-000001
-2022/02/01-16:51:00.774 bb03 Recovering log #3
-2022/02/01-16:51:00.774 bb03 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.xeBQyN/flutter_tools_chrome_device.sEYEXI/Default/Service Worker/Database/000003.log 
-=======
-2022/02/01-15:12:33.169 8e03 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.5J2Irc/flutter_tools_chrome_device.ggwizl/Default/Service Worker/Database/MANIFEST-000001
-2022/02/01-15:12:33.170 8e03 Recovering log #3
-2022/02/01-15:12:33.170 8e03 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.5J2Irc/flutter_tools_chrome_device.ggwizl/Default/Service Worker/Database/000003.log 
->>>>>>> ecb803c3a9e184d596d487f8b8a4684d44cd200c
+2022/02/01-19:40:32.634 b803 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.Sw0kaN/flutter_tools_chrome_device.XUgYY4/Default/Service Worker/Database/MANIFEST-000001
+2022/02/01-19:40:32.635 b803 Recovering log #3
+2022/02/01-19:40:32.635 b803 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.Sw0kaN/flutter_tools_chrome_device.XUgYY4/Default/Service Worker/Database/000003.log 
