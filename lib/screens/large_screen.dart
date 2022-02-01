@@ -63,6 +63,48 @@ class _LargeScreenState extends State<LargeScreen>
 
   late final Animation<double> _arrowAnimation =
       CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+  showAlertDialog(BuildContext context) {
+    // set up the buttons
+    Widget cancelButton = InkWell(
+      child: Text(
+        "Cancel",
+        style: TextStyle(color: Colors.red),
+      ),
+      onTap: () {
+        Navigator.pop(context);
+      },
+    );
+    SizedBox(width: 20);
+    Widget continueButton = InkWell(
+      child: Text(
+        "Continue",
+        style: TextStyle(color: Colors.blue),
+      ),
+      onTap: () {
+        Navigator.pop(context);
+      },
+    );
+    // set up the AlertDialog
+    AlertDialog alert = AlertDialog(
+      title: Text("AlertDialog"),
+      content: Text("Would you like to subsribe our news letter?"),
+      actions: [
+        cancelButton,
+        continueButton,
+      ],
+    );
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
+  void clearText() {
+    emailController.clear();
+  }
+
 
   @override
   void initState() {
@@ -874,16 +916,39 @@ class _LargeScreenState extends State<LargeScreen>
                               borderRadius: BorderRadius.circular(30)),
                           labelText: 'E-mail',
                           prefixIcon: const Icon(Icons.mail_outline),
+
                         ),
+                         onEditingComplete:() {
+                         if(emailController.text.isEmpty) {
+                           isSelected = false;
+                         }
+                         else {
+                           isSelected = true;
+                         }
+                         },
+                          onChanged:(value) {
+                          setState(() {
+                            if(emailController.text.isEmpty) {
+                              isSelected = false;
+                            }
+                            else {
+                              isSelected = true;
+                            }
+                            print(value);
+                          });
+
+                          },
+
+
                       ),
                     ),
-                    Padding(
+                    isSelected ? Padding(
                       padding: const EdgeInsets.only(bottom: 10),
                       child: ElevatedButton(
                         onPressed: () async {
-                          const url =
-                              "https://docs.flutter.dev/get-started/install";
-                          await launch(url);
+                          isSelected = true;
+                          showAlertDialog(context);
+                          clearText();
                         },
                         child: Text(
                           'Subcribe',
@@ -905,7 +970,36 @@ class _LargeScreenState extends State<LargeScreen>
                             textStyle: const TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
+                    ):  Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: ElevatedButton(
+                        onPressed: () async {
+
+                          // showAlertDialog(context);
+                          // clearText();
+                        },
+                        child: Text(
+                          'Subcribe',
+                          style: GoogleFonts.sourceSansPro(
+                            textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.blueAccent.shade100,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0),
+                                side:
+                                const BorderSide(color: Colors.blueAccent)),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 30, vertical: 20),
+                            textStyle: const TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold)),
+                      ),
                     ),
+
                   ],
                 ),
                 Stack(
