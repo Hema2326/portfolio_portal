@@ -457,7 +457,7 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
                 ),
               ],
             ),
-            BottomContainerWidget(),
+            const BottomContainerWidget(),
 
           ],
         ),
