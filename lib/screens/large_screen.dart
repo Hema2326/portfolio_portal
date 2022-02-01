@@ -534,6 +534,7 @@ class _LargeScreenState extends State<LargeScreen>
             ]),
             ProductWidget(),
 
+
           ]))
         ]));
   }
