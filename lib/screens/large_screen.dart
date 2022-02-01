@@ -39,14 +39,6 @@ class _LargeScreenState extends State<LargeScreen>
     vsync: this,
   )..repeat(reverse: true);
 
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
-
   @override
   void initState() {
     _tabController = TabController(vsync: this, length: 4);

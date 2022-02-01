@@ -12,8 +12,6 @@ class BottomContainerWidget extends StatefulWidget {
 
 class _BottomContainerWidgetState extends State<BottomContainerWidget>
     with TickerProviderStateMixin {
-  late ScrollController _scrollController;
-
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   bool isSelected = false;
@@ -35,18 +33,9 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
     curve: Curves.bounceIn,
   );
 
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
-
   @override
   void initState() {
     super.initState();
-    _scrollController = ScrollController();
 
     _controller = AnimationController(
       value: 0.0,
@@ -61,13 +50,7 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
   void dispose() {
     _controller.dispose();
     controller.dispose();
-    _scrollController.dispose();
     super.dispose();
-  }
-
-  _scrollToTop() {
-    _scrollController.animateTo(_scrollController.position.minScrollExtent,
-        duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
   }
 
   @override
@@ -228,22 +211,6 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
                 ],
               ),
             ],
-          ),
-        ),
-        Positioned(
-          right: 30,
-          bottom: 70,
-          child: RotationTransition(
-            turns: _arrowAnimation,
-            child: InkWell(
-              child: const Icon(
-                Icons.arrow_circle_up,
-                color: Colors.white,
-              ),
-              onTap: () {
-                _scrollToTop();
-              },
-            ),
           ),
         ),
       ],
