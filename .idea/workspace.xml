@@ -27,7 +27,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit" />
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/large_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/medium_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643630908349</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="conflicts commit">
+      <created>1643689179426</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1643689179426</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,10 +297,10 @@
     </state>
     <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1643563291614" />
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
-    <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643689022157">
+    <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643689189358">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1643689022157" />
+    <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1643689189358" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.25.1680.937@0.25.1680.937" timestamp="1641968062204" />
     <state x="440" y="230" key="Vcs.Push.Dialog.v2/0.25.1680.942@0.25.1680.942" timestamp="1641968788808" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1643001765872">

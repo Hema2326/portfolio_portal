@@ -93,6 +93,42 @@ class _LargeScreenState extends State<LargeScreen>
     animation.forward();
     super.initState();
   }
+  showAlertDialog(BuildContext context) {
+    // set up the buttons
+    Widget cancelButton = InkWell(
+      child: Text("Cancel",
+        style: TextStyle(color: Colors.red),
+      ),
+      onTap:  () {
+        Navigator.pop(context);
+      },
+    );
+    SizedBox(width: 20);
+    Widget continueButton = InkWell(
+      child: Text("Continue",
+        style: TextStyle(color: Colors.blue),
+      ),
+      onTap:  () {
+        Navigator.pop(context);
+      },
+    );
+    // set up the AlertDialog
+    AlertDialog alert = AlertDialog(
+      title: Text("AlertDialog"),
+      content: Text("Would you like to subsribe our news letter?"),
+      actions: [
+        cancelButton,
+        continueButton,
+      ],
+    );
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
 
   @override
   void dispose() {
@@ -873,9 +909,7 @@ class _LargeScreenState extends State<LargeScreen>
                         padding: const EdgeInsets.only(bottom: 10),
                         child: ElevatedButton(
                           onPressed: () async {
-                            const url =
-                                "https://docs.flutter.dev/get-started/install";
-                            await launch(url);
+                            showAlertDialog(context);
                           },
                           child: Text(
                             'Subcribe',
