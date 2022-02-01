@@ -7,6 +7,7 @@ import 'package:lottie/lottie.dart';
 import 'package:marquee/marquee.dart';
 import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
+import 'package:portfolio_portal/widgets/home_screen_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:math' as math;
 
@@ -222,6 +223,7 @@ class _MediumScreenState extends State<MediumScreen>
           ),
           Expanded(
             child: TabBarView(controller: _tabController, children: [
+              // HomeScreenWidget(),
               SingleChildScrollView(
                   child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.start,
