@@ -1,12 +1,10 @@
-import 'dart:ui';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:marquee/marquee.dart';
 import 'package:portfolio_portal/screens/portfolio_screen.dart';
+import 'package:portfolio_portal/screens/small_screen.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
@@ -17,13 +15,6 @@ import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import '../widgets/contact_widget.dart';
-
-import 'package:video_player/video_player.dart';
-
-import '../models.dart/models.dart';
-import '../widgets/draw_clip.dart';
-import '../widgets/flip_widget.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key? key}) : super(key: key);
@@ -36,6 +27,8 @@ class _LargeScreenState extends State<LargeScreen>
     with TickerProviderStateMixin {
   late AnimationController animation;
 
+
+  bool isSelected = false;
 
   TextEditingController emailController = TextEditingController();
 
