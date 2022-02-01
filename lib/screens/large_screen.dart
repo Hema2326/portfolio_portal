@@ -1,8 +1,5 @@
-import 'dart:ui';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:clickable_list_wheel_view/clickable_list_wheel_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:marquee/marquee.dart';
@@ -15,13 +12,6 @@ import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import '../widgets/contact_widget.dart';
-
-import 'package:video_player/video_player.dart';
-
-import '../models.dart/models.dart';
-import '../widgets/draw_clip.dart';
-import '../widgets/flip_widget.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key? key}) : super(key: key);
@@ -1122,12 +1112,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(right: 80),
                             child: Image.asset(
                               ImageResource.visa,
-                              width: 400,
-                              height: 400,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                         ],
@@ -1221,12 +1212,13 @@ class _LargeScreenState extends State<LargeScreen>
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 50),
+                          Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(right: 80),
                             child: Image.asset(
                               ImageResource.genericcomponenets,
-                              width: 400,
-                              height: 400,
+                              width: 300,
+                              height: 300,
                             ),
                           ),
                         ],

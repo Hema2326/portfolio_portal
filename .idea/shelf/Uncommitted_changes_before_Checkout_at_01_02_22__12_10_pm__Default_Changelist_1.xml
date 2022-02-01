@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1" date="1643698689077" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 01/02/22, 12:10 pm [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Extension Scripts/000003.log" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Extension Scripts/000003.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/000003.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Favicons" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Favicons" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/Favicons" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Visited Links" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Visited Links" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/Visited Links" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Service Worker/Database/000003.log" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Service Worker/Database/000003.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/000003.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Session Storage/000004.log" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Session Storage/000004.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/000004.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Session Storage/MANIFEST-000001" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Session Storage/MANIFEST-000001" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/MANIFEST-000001" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Reporting and NEL" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Reporting and NEL" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/Reporting and NEL" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Site Characteristics Database/000003.log" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Site Characteristics Database/000003.log" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/000003.log" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".dart_tool/chrome-device/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2/767016fa-8565-4339-9766-395ceafafcb7/index-dir/the-real-index" />
+    <option name="AFTER_PATH" value=".dart_tool/chrome-device/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2/767016fa-8565-4339-9766-395ceafafcb7/index-dir/the-real-index" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_22,_12_10_pm_[Default_Changelist]1/the-real-index" />
+  </binary>
+</changelist>

@@ -5,13 +5,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:marquee/marquee.dart';
-import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/portfolio_screen.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:math' as math;
-
 import '../utils/color_resource.dart';
 import '../utils/custom_text.dart';
 import '../utils/image_resource.dart';
@@ -56,6 +53,45 @@ class _MediumScreenState extends State<MediumScreen>
 
   late final Animation<double> _arrowAnimation =
       CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+
+  showAlertDialog(BuildContext context) {
+    // set up the buttons
+    Widget cancelButton = InkWell(
+      child: Text(
+        "Cancel",
+        style: TextStyle(color: Colors.red),
+      ),
+      onTap: () {
+        Navigator.pop(context);
+      },
+    );
+    SizedBox(width: 20);
+    Widget continueButton = InkWell(
+      child: Text(
+        "Continue",
+        style: TextStyle(color: Colors.blue),
+      ),
+      onTap: () {
+        Navigator.pop(context);
+      },
+    );
+    // set up the AlertDialog
+    AlertDialog alert = AlertDialog(
+      title: Text("AlertDialog"),
+      content: Text("Would you like to subsribe our news letter?"),
+      actions: [
+        cancelButton,
+        continueButton,
+      ],
+    );
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return alert;
+      },
+    );
+  }
 
   @override
   void initState() {
@@ -870,9 +906,7 @@ class _MediumScreenState extends State<MediumScreen>
                         padding: const EdgeInsets.only(bottom: 10),
                         child: ElevatedButton(
                           onPressed: () async {
-                            const url =
-                                "https://docs.flutter.dev/get-started/install";
-                            await launch(url);
+                            showAlertDialog(context);
                           },
                           child: Text(
                             'Subcribe',
@@ -901,7 +935,376 @@ class _MediumScreenState extends State<MediumScreen>
                 ],
               )),
               const PortfolioScreen(),
-              const Icon(Icons.movie),
+              Column(children: [
+                Expanded(
+                    child: SingleChildScrollView(
+                  child: Column(children: [
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: MediaQuery.of(context).size.height,
+                      color: Colors.pink[400],
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 30),
+                        child: Row(
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  CustomText(
+                                    StringResource.icici,
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 50,
+                                      color: ColorResource.colorFFFFFF,
+                                      fontWeight: FontWeight.bold,
+                                    )),
+                                  ),
+                                  Image.asset(
+                                    ImageResource.pockets,
+                                    width: 300,
+                                    height: 300,
+                                  ),
+                                  CustomText(
+                                    'Description',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 40,
+                                        fontWeight: FontWeight.bold,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    width: 800,
+                                    height: 100,
+                                    child: CustomText(
+                                      'It’s a VISA-powered e-wallet that customer of any bank can use to recharge mobile, send money, shop anywhere, pay bills and much more.',
+                                      style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                          fontSize: 20,
+                                          // fontWeight: FontWeight.bold,
+                                          color: ColorResource.colorFFFFFF,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    width: 800,
+                                    height: 100,
+                                    child: CustomText(
+                                      'Pockets wallet also comes with a physical shopping card which can be used to shop on any website or retail stores.',
+                                      style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                          fontSize: 20,
+                                          // fontWeight: FontWeight.bold,
+                                          color: ColorResource.colorFFFFFF,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  CustomText(
+                                    'Fund Transfer',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  CustomText(
+                                    'Making NFC Payments',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  CustomText(
+                                    'Recharges',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  CustomText(
+                                    'Benefits of Physical Card',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  CustomText(
+                                    'Pay Utility Bills',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  CustomText(
+                                    'Shopping',
+                                    style: GoogleFonts.aBeeZee(
+                                      textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.normal,
+                                        color: ColorResource.colorFFFFFF,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Spacer(),
+                            Container(
+                              alignment: Alignment.center,
+                              child: Image.asset(
+                                ImageResource.icici2,
+                                alignment: Alignment.center,
+                                width: 325,
+                                height: 325,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 600,
+                      color: ColorResource.colorFFFFFF,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 30),
+                        child: Row(
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  CustomText(
+                                    StringResource.visa,
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 50,
+                                      color: ColorResource.color222222,
+                                      fontWeight: FontWeight.bold,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    width: 800,
+                                    height: 100,
+                                    child: CustomText(
+                                      'Visa Digital Solutions equip you with the tools you need to create, manage and accept secure digital payments in-store, online or in-app.',
+                                      style: GoogleFonts.aBeeZee(
+                                          textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        color: ColorResource.color222222,
+                                        fontWeight: FontWeight.w100,
+                                      )),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'Digital',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.color222222,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'Travel',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.color222222,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'Money',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.color222222,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const Spacer(),
+                            Container(
+                              padding: EdgeInsets.only(right: 80),
+                              alignment: Alignment.center,
+                              child: Image.asset(
+                                ImageResource.visa,
+                                width: 200,
+                                height: 200,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 600,
+                      color: Colors.black,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 30),
+                        child: Row(
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  CustomText(
+                                    StringResource.generic,
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 50,
+                                      color: ColorResource.colorFFFFFF,
+                                      fontWeight: FontWeight.bold,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 30,
+                                  ),
+                                  Container(
+                                    width: 800,
+                                    height: 100,
+                                    child: CustomText(
+                                      'Instead of packages we can make use of it. We have created generic components for our upcoming flutter projects.',
+                                      style: GoogleFonts.aBeeZee(
+                                          textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        color: ColorResource.colorFFFFFF,
+                                        fontWeight: FontWeight.w100,
+                                      )),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'Currency Converter',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.colorFFFFFF,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'Google Maps',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.colorFFFFFF,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'Otp View and Returning User',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.colorFFFFFF,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  CustomText(
+                                    'International phone field and country code',
+                                    style: GoogleFonts.aBeeZee(
+                                        textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      color: ColorResource.colorFFFFFF,
+                                      fontWeight: FontWeight.w100,
+                                    )),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Spacer(),
+                            Container(
+                              padding: const EdgeInsets.only(right: 80),
+                              alignment: Alignment.center,
+                              child: Image.asset(
+                                ImageResource.genericcomponenets,
+                                width: 200,
+                                height: 200,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ]),
+                )),
+              ]),
               SingleChildScrollView(
                 child: Column(
                   children: [
