@@ -27,9 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts resolved">
-      <change beforePath="$PROJECT_DIR$/lib/widgets/products_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/products_widget.dart" afterDir="false" />
-    </list>
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts resolved" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,11 +235,11 @@
       <updated>1643703968754</updated>
     </task>
     <task id="LOCAL-00024" summary="conflicts resolved">
-      <created>1643715974600</created>
+      <created>1643717644288</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1643715974600</updated>
+      <updated>1643717644288</updated>
     </task>
     <option name="localTasksCounter" value="25" />
     <servers />
@@ -295,24 +293,24 @@
     <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643713346338" />
     <state width="1638" height="240" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1643640206748" />
     <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
-    <state x="175" y="60" key="MergeDialog" timestamp="1643715957333">
+    <state x="175" y="60" key="MergeDialog" timestamp="1643375062257">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643715957333" />
-    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643715960439">
+    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375062257" />
+    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643717707103">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643715960439" />
+    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643717707103" />
     <state x="478" y="257" key="MultipleFileMergeDialog/0.25.1680.942@0.25.1680.942" timestamp="1641968234125" />
     <state x="349" y="115" key="SettingsEditor" timestamp="1643563291614">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1643563291614" />
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
-    <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643716291353">
+    <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643717658016">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1643716291353" />
+    <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1643717658016" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.25.1680.937@0.25.1680.937" timestamp="1641968062204" />
     <state x="440" y="230" key="Vcs.Push.Dialog.v2/0.25.1680.942@0.25.1680.942" timestamp="1641968788808" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1643001765872">
