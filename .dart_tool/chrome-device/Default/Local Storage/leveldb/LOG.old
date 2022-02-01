@@ -1,21 +1,8 @@
-<<<<<<< HEAD
-2022/02/01-13:11:08.109 2d03 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.h0pNxj/flutter_tools_chrome_device.lvWhQ9/Default/Local Storage/leveldb/MANIFEST-000001
-2022/02/01-13:11:08.111 2d03 Recovering log #11
-2022/02/01-13:11:08.112 2d03 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.h0pNxj/flutter_tools_chrome_device.lvWhQ9/Default/Local Storage/leveldb/000011.log 
-2022/02/01-13:11:08.113 2d03 Delete type=0 #3
-2022/02/01-13:11:08.113 2d03 Delete type=2 #6
-2022/02/01-13:11:08.113 2d03 Delete type=2 #9
-2022/02/01-13:11:08.113 2d03 Delete type=0 #8
-=======
-2022/02/01-12:25:48.290 2307 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.PnwPNS/flutter_tools_chrome_device.1frZh0/Default/Local Storage/leveldb/MANIFEST-000001
-2022/02/01-12:25:48.292 2307 Recovering log #8
-2022/02/01-12:25:48.293 2307 Level-0 table #10: started
-2022/02/01-12:25:48.319 2307 Level-0 table #10: 14857 bytes OK
-2022/02/01-12:25:48.319 2307 Recovering log #11
-2022/02/01-12:25:48.320 2307 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.PnwPNS/flutter_tools_chrome_device.1frZh0/Default/Local Storage/leveldb/000011.log 
-2022/02/01-12:25:48.372 2307 Delete type=0 #3
-2022/02/01-12:25:48.372 2307 Delete type=2 #12
-2022/02/01-12:25:48.372 2307 Delete type=2 #6
-2022/02/01-12:25:48.372 2307 Delete type=2 #9
-2022/02/01-12:25:48.372 2307 Delete type=0 #8
->>>>>>> 5e2ae0194b40587e712311efa04faf34aff6e5e5
+2022/02/01-14:25:18.553 1b07 Reusing MANIFEST /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.otuMZa/flutter_tools_chrome_device.0x7NPa/Default/Local Storage/leveldb/MANIFEST-000001
+2022/02/01-14:25:18.555 1b07 Recovering log #11
+2022/02/01-14:25:18.556 1b07 Reusing old log /private/var/folders/6q/js4lgv250jxbfqc7pbq_ww840000gn/T/flutter_tools.otuMZa/flutter_tools_chrome_device.0x7NPa/Default/Local Storage/leveldb/000011.log 
+2022/02/01-14:25:18.557 1b07 Delete type=0 #3
+2022/02/01-14:25:18.557 1b07 Delete type=2 #12
+2022/02/01-14:25:18.557 1b07 Delete type=2 #6
+2022/02/01-14:25:18.557 1b07 Delete type=2 #9
+2022/02/01-14:25:18.557 1b07 Delete type=0 #8

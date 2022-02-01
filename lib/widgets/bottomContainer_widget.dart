@@ -103,123 +103,33 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  GestureDetector(
-                    onTap: () async {
-                      const url =
-                          "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Careers',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
+                  buildBottomDetails(
+                    'Career',
+                    "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter",
                   ),
                   const SizedBox(height: 20),
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://medium.com/flutter";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'News',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails('News', "https://medium.com/flutter"),
                   const SizedBox(height: 20),
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://flutter.dev/brand";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Brand',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails('Brand', "https://flutter.dev/brand"),
                   const SizedBox(height: 20),
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://flutter.dev/culture";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Culture',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails('Culture', "https://flutter.dev/culture"),
                   const SizedBox(height: 20),
                 ],
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://flutter.dev/multi-platform/mobile";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Mobile',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails(
+                      'Mobile', "https://flutter.dev/multi-platform/mobile"),
                   const SizedBox(height: 20),
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://flutter.dev/multi-platform/web";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Web',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails(
+                      'Web', "https://flutter.dev/multi-platform/web"),
                   const SizedBox(height: 20),
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://flutter.dev/multi-platform/desktop";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Desktop',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails(
+                      'Desktop', "https://flutter.dev/multi-platform/desktop"),
                   const SizedBox(height: 20),
-                  GestureDetector(
-                    onTap: () async {
-                      const url = "https://flutter.dev/multi-platform/embedded";
-                      await launch(url);
-                    },
-                    child: const Text(
-                      'Embedded',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
+                  buildBottomDetails('Embedded',
+                      "https://flutter.dev/multi-platform/embedded"),
                   const SizedBox(height: 20),
                 ],
               ),
@@ -337,6 +247,19 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
           ),
         ),
       ],
+    );
+  }
+
+  Widget buildBottomDetails(String title, String url) {
+    return GestureDetector(
+      onTap: () async {
+        await launch(url);
+      },
+      child: Text(
+        title,
+        style: const TextStyle(
+            color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+      ),
     );
   }
 }
