@@ -2323,7 +2323,7 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
       PortfolioModel('assets/alexia.png', 'Alexia'),
       PortfolioModel('assets/flutter-engage.png', 'Hema'),
       PortfolioModel('assets/seema.png', 'Seema'),
-      PortfolioModel('assets/flutter-engage.png', 'Nandhakumar'),
+      PortfolioModel('assets/nandha.png', 'Nandhakumar'),
       PortfolioModel('assets/jones.png', 'Jones'),
     ];
     return Scaffold(
@@ -2422,7 +2422,7 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
                   case 5:
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => NadhaScreen()),
+                      MaterialPageRoute(builder: (context) => NandhaScreen()),
                     );
                     break;
                   case 6:
@@ -2596,8 +2596,8 @@ class _ChinnaduraiScreenState extends State<ChinnaduraiScreen> {
       body: SingleChildScrollView(
         child: Contact.details(
             context,
-            "assets/mari.png",
-            "Mariganesh Thangaraj",
+            "assets/flutter-engage.png",
+            "Chinnadurai",
             "Senior Software Engineer",
             "Work for money and code for love! I’m Ganesh, Software Engineer based in India.",
             "Hello, I'm an iOS / Flutter developer with 4+ years of professional experience in dynamic and deadline- driven work environments. Eager to make mobile applications to delight customers with magical experiences. In previous roles developed 7+ mobile apps that were published in App Store and Play Store.",
@@ -2681,9 +2681,9 @@ class _HemaScreenState extends State<HemaScreen> {
       body: SingleChildScrollView(
         child: Contact.details(
             context,
-            "assets/mari.png",
-            "Mariganesh Thangaraj",
-            "Senior Software Engineer",
+            "assets/flutter-engage.png",
+            "Hemavathi",
+            "Software Engineer",
             "Work for money and code for love! I’m Ganesh, Software Engineer based in India.",
             "Hello, I'm an iOS / Flutter developer with 4+ years of professional experience in dynamic and deadline- driven work environments. Eager to make mobile applications to delight customers with magical experiences. In previous roles developed 7+ mobile apps that were published in App Store and Play Store.",
             [
@@ -2739,31 +2739,36 @@ class _SeemaScreenState extends State<SeemaScreen> {
   }
 }
 
-class NadhaScreen extends StatefulWidget {
+class NandhaScreen extends StatefulWidget {
+  const NandhaScreen({Key? key}) : super(key: key);
+
   @override
-  _NadhaScreenState createState() => _NadhaScreenState();
+  _NandhaScreenState createState() => _NandhaScreenState();
 }
 
-class _NadhaScreenState extends State<NadhaScreen> {
+class _NandhaScreenState extends State<NandhaScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Contact.details(
             context,
-            "assets/mari.png",
-            "Mariganesh Thangaraj",
-            "Senior Software Engineer",
-            "Work for money and code for love! I’m Ganesh, Software Engineer based in India.",
-            "Hello, I'm an iOS / Flutter developer with 4+ years of professional experience in dynamic and deadline- driven work environments. Eager to make mobile applications to delight customers with magical experiences. In previous roles developed 7+ mobile apps that were published in App Store and Play Store.",
+            "assets/nandha.png",
+            "Nandhakumar Krishnan",
+            "Software Engineer",
+            "Hi! I'm Nandha, I work as a professional  Software Engineer.\"Write code! get money\"",
+            "Professional Software Engineer with over 2+ years of experience in Mobile app development using(Flutter, Dart). Involved in in-app Architecture, Design, Development and Testing.  I have developed 5+applications that were published in Play Store and App Store. currently, 1000+ customers using theseapplications.",
             [
               ExperienceModel(
-                  "Software Engineer\nMobile Development (Flutter)\nM2P Fintech,\nChennai.\n06/09/2021 - present",
-                  "Working in the Origa Project.")
+                  "Software Engineer\nMobile Development (Flutter)\nM2P Fintech,\nChennai.\nAugust - present",
+                  "1.Created Instalmint (Origa) mobile application using Flutter.\n2.I have learned how to handle the project and move on with day by day activities.\n3.Good understanding & Implementation of Flutter Blocs and Offline implementations."),
+              ExperienceModel(
+                  "Flutter Developer#REF Technologies Ltd - Dharmapuri, Tamil Nadu \nAugust 2019 to August 2021",
+                  "1.Mobile Application Developing & Testing for both Android & iOS using Flutter and Dart.\n2.Good understanding & Implementation of API integration with REST & RESTful API. Work alongwith Third-party integrated tools.\n3.Design and build advanced app features for the Android & iOS platform with Flutter.\n4.Product Life Cycle.Experience with versioning tools like Git-Lab, GitHub and Jira.")
             ],
-            "mariganeshthangam@gmail.com",
-            "https://github.com/mariganesh555",
-            "https://www.linkedin.com/in/mariganesh-t-02831b104"),
+            "nandhu4011@gmail.com",
+            "https://gitlab.com/NandhakumarKrishnanNK/",
+            "https://www.linkedin.com/in/nandhakumar-k-14828813a"),
       ),
     );
   }
