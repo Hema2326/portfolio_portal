@@ -132,7 +132,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                         height: 10,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 10),
+                        padding: const EdgeInsets.only(right: 10),
                         width: 700,
                         height: 75,
                         child: CustomText(

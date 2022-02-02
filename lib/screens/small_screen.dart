@@ -4,8 +4,8 @@ import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:portfolio_portal/screens/large_screen.dart';
 import 'package:portfolio_portal/screens/m2pProducts_screen.dart';
+import 'package:portfolio_portal/screens/portfolio_screen.dart';
 import 'package:portfolio_portal/screens/projects_screen.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
@@ -13,6 +13,9 @@ import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:math' as math;
+
+import '../widgets/bottomContainer_widget.dart';
+import '../widgets/draw_clip.dart';
 
 class SmallScreen extends StatefulWidget {
   const SmallScreen({Key? key}) : super(key: key);
@@ -38,22 +41,25 @@ class _SmallScreenState extends State<SmallScreen> {
     );
   }
 }
+
 showAlertDialog(BuildContext context) {
   // set up the buttons
   Widget cancelButton = InkWell(
-    child: Text("Cancel",
+    child: Text(
+      "Cancel",
       style: TextStyle(color: Colors.red),
     ),
-    onTap:  () {
+    onTap: () {
       Navigator.pop(context);
     },
   );
   SizedBox(width: 20);
   Widget continueButton = InkWell(
-    child: Text("Continue",
+    child: Text(
+      "Continue",
       style: TextStyle(color: Colors.blue),
     ),
-    onTap:  () {
+    onTap: () {
       Navigator.pop(context);
     },
   );
@@ -116,6 +122,7 @@ class _SideBarState extends State<SideBar> {
   bool isHovering = false;
   bool isHovering1 = false;
   bool isHovering2 = false;
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -249,16 +256,12 @@ class MainView extends StatefulWidget {
 }
 
 class _MainViewState extends State<MainView> with TickerProviderStateMixin {
-  late ScrollController _scrollController;
-
-  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+  TextEditingController emailController = TextEditingController();
+  void clearText() {
+    emailController.clear();
+  }
 
   bool isSelected = false;
-  bool isSelected1 = false;
-  bool isSelected2 = false;
-  bool isSelected3 = false;
-  bool isSelected4 = false;
-  TextEditingController emailController = TextEditingController();
   late AnimationController _controller;
 
   double value = 0;
@@ -273,38 +276,9 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
     curve: Curves.bounceIn,
   );
 
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
-
   @override
   void initState() {
     super.initState();
-    _scrollController = ScrollController();
-
-    _controller = AnimationController(
-      value: 0.0,
-      duration: const Duration(seconds: 25),
-      upperBound: 1,
-      lowerBound: -3,
-      vsync: this,
-    )..repeat();
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    controller.dispose();
-    _scrollController.dispose();
-    super.dispose();
-  }
-
-  _scrollToTop() {
-    _scrollController.animateTo(_scrollController.position.minScrollExtent,
-        duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
   }
 
   @override
@@ -369,24 +343,21 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                             const SizedBox(height: 15),
                                             CustomText(StringResource.dart,
                                                 style: GoogleFonts.aBeeZee(
-                                                    textStyle:
-                                                        const TextStyle(
-                                                  color: ColorResource
-                                                      .colorFFFFFF,
+                                                    textStyle: const TextStyle(
+                                                  color:
+                                                      ColorResource.colorFFFFFF,
                                                   fontSize: 18,
-                                                  fontWeight:
-                                                      FontWeight.bold,
+                                                  fontWeight: FontWeight.bold,
                                                 ))),
                                             const SizedBox(height: 15),
                                             CustomText(
                                               StringResource.dart1,
                                               style: GoogleFonts.aBeeZee(
                                                 textStyle: const TextStyle(
-                                                  color: ColorResource
-                                                      .colorFFFFFF,
+                                                  color:
+                                                      ColorResource.colorFFFFFF,
                                                   fontSize: 12,
-                                                  fontWeight:
-                                                      FontWeight.normal,
+                                                  fontWeight: FontWeight.normal,
                                                 ),
                                               ),
                                             ),
@@ -401,15 +372,13 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                   },
                                                   child: CustomText(
                                                     StringResource.dartdev,
-                                                    style:
-                                                        GoogleFonts.aBeeZee(
+                                                    style: GoogleFonts.aBeeZee(
                                                       textStyle:
                                                           const TextStyle(
                                                         color: Colors
                                                             .lightBlueAccent,
                                                         fontWeight:
-                                                            FontWeight
-                                                                .normal,
+                                                            FontWeight.normal,
                                                       ),
                                                     ),
                                                   ),
@@ -418,17 +387,16 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                           .colorFFFFFF,
                                                       shape: RoundedRectangleBorder(
                                                           borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      15.0),
-                                                          side: const BorderSide(
-                                                              color: Colors
-                                                                  .white)),
-                                                      padding:
-                                                          const EdgeInsets.symmetric(
-                                                              horizontal:
-                                                                  20,
-                                                              vertical: 20),
+                                                              BorderRadius.circular(
+                                                                  15.0),
+                                                          side:
+                                                              const BorderSide(
+                                                                  color: Colors
+                                                                      .white)),
+                                                      padding: const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 20,
+                                                          vertical: 20),
                                                       textStyle:
                                                           const TextStyle(
                                                               fontSize: 18,
@@ -448,15 +416,14 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                       CustomText(
                                                         StringResource
                                                             .getpackages,
-                                                        style: GoogleFonts
-                                                            .aBeeZee(
+                                                        style:
+                                                            GoogleFonts.aBeeZee(
                                                           textStyle:
                                                               const TextStyle(
                                                             color: ColorResource
                                                                 .colorFFFFFF,
                                                             fontWeight:
-                                                                FontWeight
-                                                                    .bold,
+                                                                FontWeight.bold,
                                                           ),
                                                         ),
                                                       ),
@@ -503,7 +470,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                     Container(
                                       margin: const EdgeInsets.only(
                                           left: 30, right: 10),
-
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(15),
@@ -828,7 +794,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                 Stack(
                   alignment: Alignment.bottomRight,
                   children: [
-
                     Container(
                       margin: const EdgeInsets.only(top: 15),
                       color: Colors.white,
@@ -923,8 +888,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                         'See the Documentation',
                                         style: GoogleFonts.aBeeZee(
                                           textStyle: const TextStyle(
-                                            color:
-                                                ColorResource.colorFFFFFF,
+                                            color: ColorResource.colorFFFFFF,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -970,323 +934,88 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                           labelText: 'E-mail',
                           prefixIcon: const Icon(Icons.mail_outline),
                         ),
+                        onEditingComplete: () {
+                          if (emailController.text.isEmpty) {
+                            isSelected = false;
+                          } else {
+                            isSelected = true;
+                          }
+                        },
+                        onChanged: (value) {
+                          setState(() {
+                            if (emailController.text.isEmpty) {
+                              isSelected = false;
+                            } else {
+                              isSelected = true;
+                            }
+                            print(value);
+                          });
+                        },
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: ElevatedButton(
-                        onPressed: ()  {
-                          showAlertDialog(context);
-                          // const url =
-                          //     "https://docs.flutter.dev/get-started/install";
-                          // await launch(url);
-                        },
-                        child: Text(
-                          'Subcribe',
-                          style: GoogleFonts.sourceSansPro(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                    isSelected
+                        ? Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                isSelected = true;
+                                showAlertDialog(context);
+                                clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          )
+                        : Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                // showAlertDialog(context);
+                                // clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent.shade100,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
                             ),
                           ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.blueAccent,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                side:
-                                    const BorderSide(color: Colors.blueAccent)),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 20),
-                            textStyle: const TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                      ),
-                    ),
                   ],
                 ),
-                Stack(
-                  children: [
-                    AnimatedBuilder(
-                        animation: _controller,
-                        builder: (BuildContext context, Widget? child) {
-                          return ClipPath(
-                              clipper: DrawClip(_controller.value),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                    height: 270,
-                                    width: double.maxFinite,
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                          begin: Alignment.bottomLeft,
-                                          end: Alignment.topRight,
-                                          colors: [
-                                            Colors.blue.shade600,
-                                            Colors.blueAccent.shade100
-                                          ]),
-                                    )),
-                              ));
-                        }),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://careers.google.com/jobs/results/?distance=50&hl=en_US&jlo=en_US&q=flutter";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Careers',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://medium.com/flutter";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'News',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://flutter.dev/brand";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Brand',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url = "https://flutter.dev/culture";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Culture',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                            ],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/mobile";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Mobile',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/web";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Web',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/desktop";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Desktop',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              GestureDetector(
-                                onTap: () async {
-                                  const url =
-                                      "https://flutter.dev/multi-platform/embedded";
-                                  await launch(url);
-                                },
-                                child: const Text(
-                                  'Embedded',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.medium,
-                                      color: isSelected
-                                          ? Colors.black
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url = "https://medium.com/flutter";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.meetup,
-                                      color: isSelected2
-                                          ? Colors.red[700]
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url =
-                                        "https://www.meetup.com/pro/flutter/";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected2 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.github,
-                                      color: isSelected1
-                                          ? Colors.black
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url = "https://github.com/flutter";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected1 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.twitter,
-                                      color: isSelected3
-                                          ? Colors.blue[400]
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url =
-                                        "https://twitter.com/flutterdev";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected3 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                              RotationTransition(
-                                turns: _animation,
-                                child: InkWell(
-                                  child: FaIcon(FontAwesomeIcons.youtube,
-                                      color: isSelected4
-                                          ? Colors.red
-                                          : Colors.white,
-                                      size: 25.0),
-                                  onTap: () async {
-                                    const url =
-                                        "https://www.youtube.com/flutterdev";
-                                    await launch(url);
-                                  },
-                                  onHover: (value) {
-                                    setState(() {
-                                      isSelected4 = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                              const SizedBox(height: 10),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Positioned(
-                      right: 30,
-                      bottom: 70,
-                      child: RotationTransition(
-                        turns: _arrowAnimation,
-                        child: InkWell(
-                          child: const Icon(
-                            Icons.arrow_circle_up,
-                            color: Colors.white,
-                          ),
-                          onTap: () {
-                            _scrollToTop();
-                          },
-                        ),
-                      ),
-                    ),
-                  ],
-                )
+                const BottomContainerWidget()
               ]),
         ));
   }
