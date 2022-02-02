@@ -1,20 +1,13 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:marquee/marquee.dart';
 import 'package:portfolio_portal/screens/portfolio_screen.dart';
-import 'package:portfolio_portal/screens/small_screen.dart';
 import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:portfolio_portal/widgets/home_screen_widget.dart';
 import 'package:portfolio_portal/widgets/products_widget.dart';
-import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:lottie/lottie.dart';
 
 class LargeScreen extends StatefulWidget {
   const LargeScreen({Key? key}) : super(key: key);
@@ -27,7 +20,6 @@ class _LargeScreenState extends State<LargeScreen>
     with TickerProviderStateMixin {
   late AnimationController animation;
 
-
   bool isSelected = false;
 
   TextEditingController emailController = TextEditingController();
@@ -39,19 +31,6 @@ class _LargeScreenState extends State<LargeScreen>
     duration: const Duration(seconds: 2),
     vsync: this,
   )..repeat(reverse: true);
-
-
-
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
-
-
-
 
   @override
   void initState() {
@@ -156,8 +135,7 @@ class _LargeScreenState extends State<LargeScreen>
           ),
           Expanded(
               child: TabBarView(controller: _tabController, children: [
-                HomeScreenWidget(),
-
+            HomeScreenWidget(),
             const PortfolioScreen(),
             Column(children: [
               Padding(
@@ -533,8 +511,6 @@ class _LargeScreenState extends State<LargeScreen>
               )),
             ]),
             ProductWidget(),
-
-
           ]))
         ]));
   }

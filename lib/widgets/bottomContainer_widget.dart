@@ -35,14 +35,6 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
     curve: Curves.bounceIn,
   );
 
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
-
   @override
   void initState() {
     super.initState();
@@ -228,22 +220,6 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
                 ],
               ),
             ],
-          ),
-        ),
-        Positioned(
-          right: 30,
-          bottom: 70,
-          child: RotationTransition(
-            turns: _arrowAnimation,
-            child: InkWell(
-              child: const Icon(
-                Icons.arrow_circle_up,
-                color: Colors.white,
-              ),
-              onTap: () {
-                _scrollToTop();
-              },
-            ),
           ),
         ),
       ],
