@@ -256,7 +256,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                       ),
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.only(bottom: 50),
+                          padding: const EdgeInsets.only(bottom: 50),
                           alignment: Alignment.center,
                           child: Image.asset(
                             ImageResource.icici2,
@@ -276,12 +276,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
               color: ColorResource.colorFFFFFF,
               child: Padding(
                 padding: const EdgeInsets.only(top: 30),
-                child:
-                    // Row(
-                    // crossAxisAlignment: CrossAxisAlignment.start,
-                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    // children: [
-                    Padding(
+                child: Padding(
                   padding: const EdgeInsets.only(left: 30, top: 30),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -349,7 +344,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                       ),
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.only(
+                          padding: const EdgeInsets.only(
                             right: 60,
                           ),
                           alignment: Alignment.center,
@@ -363,9 +358,6 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                     ],
                   ),
                 ),
-
-                //   ],
-                // ),
               ),
             ),
             Container(
@@ -396,7 +388,6 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                         height: 100,
                         child: CustomText(
                           'Instead of packages we can make use of it and we can use for our upcoming projects.',
-                          // 'Instead of packages we can make use of it. We have created generic components for our upcoming flutter projects.',
                           style: GoogleFonts.aBeeZee(
                               textStyle: const TextStyle(
                             fontSize: 20,
@@ -543,7 +534,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                       ),
                       Expanded(
                         child: Container(
-                          padding: EdgeInsets.only(right: 60),
+                          padding: const EdgeInsets.only(right: 60),
                           alignment: Alignment.center,
                           child: Image.asset(
                             ImageResource.genericcomponenets1,
