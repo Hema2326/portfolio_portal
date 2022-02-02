@@ -50,6 +50,7 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
   void dispose() {
     _controller.dispose();
     controller.dispose();
+
     super.dispose();
   }
 

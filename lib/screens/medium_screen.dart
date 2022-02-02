@@ -26,7 +26,6 @@ class MediumScreen extends StatefulWidget {
 
 class _MediumScreenState extends State<MediumScreen>
     with TickerProviderStateMixin {
-  late ScrollController _scrollController;
   late AnimationController animation;
   late Animation<double> _fadeInFadeOut;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -52,14 +51,6 @@ class _MediumScreenState extends State<MediumScreen>
     parent: controller,
     curve: Curves.bounceIn,
   );
-
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   showAlertDialog(BuildContext context) {
     // set up the buttons
@@ -102,7 +93,6 @@ class _MediumScreenState extends State<MediumScreen>
 
   @override
   void initState() {
-    _scrollController = ScrollController();
     _tabController = TabController(vsync: this, length: 4);
     _controller = AnimationController(
       value: 0.0,
@@ -132,15 +122,9 @@ class _MediumScreenState extends State<MediumScreen>
 
   @override
   void dispose() {
-    _scrollController.dispose();
     _controller.dispose();
     controller.dispose();
     super.dispose();
-  }
-
-  _scrollToTop() {
-    _scrollController.animateTo(_scrollController.position.minScrollExtent,
-        duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
   }
 
   List<MaterialColor> colorizeColors = [
@@ -908,87 +892,87 @@ class _MediumScreenState extends State<MediumScreen>
                             labelText: 'E-mail',
                             prefixIcon: const Icon(Icons.mail_outline),
                           ),
-                          onEditingComplete:() {
-                            if(emailController.text.isEmpty) {
+                          onEditingComplete: () {
+                            if (emailController.text.isEmpty) {
                               isSelected = false;
-                            }
-                            else {
+                            } else {
                               isSelected = true;
                             }
                           },
-                          onChanged:(value) {
+                          onChanged: (value) {
                             setState(() {
-                              if(emailController.text.isEmpty) {
+                              if (emailController.text.isEmpty) {
                                 isSelected = false;
-                              }
-                              else {
+                              } else {
                                 isSelected = true;
                               }
                               print(value);
                             });
-
                           },
-
-
                         ),
                       ),
-                      isSelected ? Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: ElevatedButton(
-                          onPressed: () async {
-                            isSelected = true;
-                            showAlertDialog(context);
-                            clearText();
-                          },
-                          child: Text(
-                            'Subcribe',
-                            style: GoogleFonts.sourceSansPro(
-                              textStyle: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
+                      isSelected
+                          ? Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: ElevatedButton(
+                                onPressed: () async {
+                                  isSelected = true;
+                                  showAlertDialog(context);
+                                  clearText();
+                                },
+                                child: Text(
+                                  'Subcribe',
+                                  style: GoogleFonts.sourceSansPro(
+                                    textStyle: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.blueAccent,
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                        side: const BorderSide(
+                                            color: Colors.blueAccent)),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 30, vertical: 20),
+                                    textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold)),
+                              ),
+                            )
+                          : Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: ElevatedButton(
+                                onPressed: () async {
+                                  // showAlertDialog(context);
+                                  // clearText();
+                                },
+                                child: Text(
+                                  'Subcribe',
+                                  style: GoogleFonts.sourceSansPro(
+                                    textStyle: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.blueAccent.shade100,
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                        side: const BorderSide(
+                                            color: Colors.blueAccent)),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 30, vertical: 20),
+                                    textStyle: const TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold)),
                               ),
                             ),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.blueAccent,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30.0),
-                                  side:
-                                  const BorderSide(color: Colors.blueAccent)),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              textStyle: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold)),
-                        ),
-                      ):  Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: ElevatedButton(
-                          onPressed: () async {
-
-                            // showAlertDialog(context);
-                            // clearText();
-                          },
-                          child: Text(
-                            'Subcribe',
-                            style: GoogleFonts.sourceSansPro(
-                              textStyle: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.blueAccent.shade100,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30.0),
-                                  side:
-                                  const BorderSide(color: Colors.blueAccent)),
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              textStyle: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold)),
-                        ),
-                      ),
                     ],
                   ),
                   const BottomContainerWidget()

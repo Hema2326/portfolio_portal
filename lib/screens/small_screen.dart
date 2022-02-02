@@ -12,10 +12,8 @@ import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:math' as math;
 
 import '../widgets/bottomContainer_widget.dart';
-import '../widgets/draw_clip.dart';
 
 class SmallScreen extends StatefulWidget {
   const SmallScreen({Key? key}) : super(key: key);
@@ -45,19 +43,21 @@ class _SmallScreenState extends State<SmallScreen> {
 showAlertDialog(BuildContext context) {
   // set up the buttons
   Widget cancelButton = InkWell(
-    child: Text("Cancel",
+    child: Text(
+      "Cancel",
       style: TextStyle(color: Colors.red),
     ),
-    onTap:  () {
+    onTap: () {
       Navigator.pop(context);
     },
   );
   SizedBox(width: 20);
   Widget continueButton = InkWell(
-    child: Text("Continue",
+    child: Text(
+      "Continue",
       style: TextStyle(color: Colors.blue),
     ),
-    onTap:  () {
+    onTap: () {
       Navigator.pop(context);
     },
   );
@@ -77,36 +77,6 @@ showAlertDialog(BuildContext context) {
       return alert;
     },
   );
-}
-
-class DrawClip extends CustomClipper<Path> {
-  double move = 0;
-  double slice = math.pi;
-  DrawClip(this.move);
-  @override
-  Path getClip(Size size) {
-    Path path = Path();
-
-    path.lineTo(0, size.height * 0.6);
-
-    double xCenter =
-        size.width * 0.5 + (size.width * 0.6 + 1) * math.sin(move * slice);
-    double yCenter = size.height * 0.8 + 69 * math.cos(move * slice);
-    path.quadraticBezierTo(
-      xCenter,
-      yCenter,
-      size.width,
-      size.height * 0.8,
-    );
-
-    path.lineTo(size.width, 0);
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return true;
-  }
 }
 
 class SideBar extends StatefulWidget {
@@ -258,6 +228,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
   void clearText() {
     emailController.clear();
   }
+
   bool isSelected = false;
   late AnimationController _controller;
 
@@ -272,13 +243,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
     parent: controller,
     curve: Curves.bounceIn,
   );
-
-  late final AnimationController arrow = AnimationController(
-    duration: const Duration(seconds: 2),
-    vsync: this,
-  )..repeat(reverse: true);
-  late final Animation<double> _arrowAnimation =
-      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
 
   @override
   void initState() {
@@ -347,24 +311,21 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                             const SizedBox(height: 15),
                                             CustomText(StringResource.dart,
                                                 style: GoogleFonts.aBeeZee(
-                                                    textStyle:
-                                                        const TextStyle(
-                                                  color: ColorResource
-                                                      .colorFFFFFF,
+                                                    textStyle: const TextStyle(
+                                                  color:
+                                                      ColorResource.colorFFFFFF,
                                                   fontSize: 18,
-                                                  fontWeight:
-                                                      FontWeight.bold,
+                                                  fontWeight: FontWeight.bold,
                                                 ))),
                                             const SizedBox(height: 15),
                                             CustomText(
                                               StringResource.dart1,
                                               style: GoogleFonts.aBeeZee(
                                                 textStyle: const TextStyle(
-                                                  color: ColorResource
-                                                      .colorFFFFFF,
+                                                  color:
+                                                      ColorResource.colorFFFFFF,
                                                   fontSize: 12,
-                                                  fontWeight:
-                                                      FontWeight.normal,
+                                                  fontWeight: FontWeight.normal,
                                                 ),
                                               ),
                                             ),
@@ -379,15 +340,13 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                   },
                                                   child: CustomText(
                                                     StringResource.dartdev,
-                                                    style:
-                                                        GoogleFonts.aBeeZee(
+                                                    style: GoogleFonts.aBeeZee(
                                                       textStyle:
                                                           const TextStyle(
                                                         color: Colors
                                                             .lightBlueAccent,
                                                         fontWeight:
-                                                            FontWeight
-                                                                .normal,
+                                                            FontWeight.normal,
                                                       ),
                                                     ),
                                                   ),
@@ -396,17 +355,16 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                           .colorFFFFFF,
                                                       shape: RoundedRectangleBorder(
                                                           borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      15.0),
-                                                          side: const BorderSide(
-                                                              color: Colors
-                                                                  .white)),
-                                                      padding:
-                                                          const EdgeInsets.symmetric(
-                                                              horizontal:
-                                                                  20,
-                                                              vertical: 20),
+                                                              BorderRadius.circular(
+                                                                  15.0),
+                                                          side:
+                                                              const BorderSide(
+                                                                  color: Colors
+                                                                      .white)),
+                                                      padding: const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 20,
+                                                          vertical: 20),
                                                       textStyle:
                                                           const TextStyle(
                                                               fontSize: 18,
@@ -426,15 +384,14 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                                       CustomText(
                                                         StringResource
                                                             .getpackages,
-                                                        style: GoogleFonts
-                                                            .aBeeZee(
+                                                        style:
+                                                            GoogleFonts.aBeeZee(
                                                           textStyle:
                                                               const TextStyle(
                                                             color: ColorResource
                                                                 .colorFFFFFF,
                                                             fontWeight:
-                                                                FontWeight
-                                                                    .bold,
+                                                                FontWeight.bold,
                                                           ),
                                                         ),
                                                       ),
@@ -481,7 +438,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                     Container(
                                       margin: const EdgeInsets.only(
                                           left: 30, right: 10),
-
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(15),
@@ -806,7 +762,6 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                 Stack(
                   alignment: Alignment.bottomRight,
                   children: [
-
                     Container(
                       margin: const EdgeInsets.only(top: 15),
                       color: Colors.white,
@@ -901,8 +856,7 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                                         'See the Documentation',
                                         style: GoogleFonts.aBeeZee(
                                           textStyle: const TextStyle(
-                                            color:
-                                                ColorResource.colorFFFFFF,
+                                            color: ColorResource.colorFFFFFF,
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
@@ -948,87 +902,85 @@ class _MainViewState extends State<MainView> with TickerProviderStateMixin {
                           labelText: 'E-mail',
                           prefixIcon: const Icon(Icons.mail_outline),
                         ),
-                        onEditingComplete:() {
-                          if(emailController.text.isEmpty) {
+                        onEditingComplete: () {
+                          if (emailController.text.isEmpty) {
                             isSelected = false;
-                          }
-                          else {
+                          } else {
                             isSelected = true;
                           }
                         },
-                        onChanged:(value) {
+                        onChanged: (value) {
                           setState(() {
-                            if(emailController.text.isEmpty) {
+                            if (emailController.text.isEmpty) {
                               isSelected = false;
-                            }
-                            else {
+                            } else {
                               isSelected = true;
                             }
                             print(value);
                           });
-
                         },
-
-
                       ),
                     ),
-                    isSelected ? Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: ElevatedButton(
-                        onPressed: () async {
-                          isSelected = true;
-                          showAlertDialog(context);
-                          clearText();
-                        },
-                        child: Text(
-                          'Subcribe',
-                          style: GoogleFonts.sourceSansPro(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                    isSelected
+                        ? Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                isSelected = true;
+                                showAlertDialog(context);
+                                clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          )
+                        : Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: ElevatedButton(
+                              onPressed: () async {
+                                // showAlertDialog(context);
+                                // clearText();
+                              },
+                              child: Text(
+                                'Subcribe',
+                                style: GoogleFonts.sourceSansPro(
+                                  textStyle: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blueAccent.shade100,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                      side: const BorderSide(
+                                          color: Colors.blueAccent)),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 30, vertical: 20),
+                                  textStyle: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
                             ),
                           ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.blueAccent,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                side:
-                                const BorderSide(color: Colors.blueAccent)),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 20),
-                            textStyle: const TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                      ),
-                    ):  Padding(
-                      padding: const EdgeInsets.only(bottom: 10),
-                      child: ElevatedButton(
-                        onPressed: () async {
-
-                          // showAlertDialog(context);
-                          // clearText();
-                        },
-                        child: Text(
-                          'Subcribe',
-                          style: GoogleFonts.sourceSansPro(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.blueAccent.shade100,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                side:
-                                const BorderSide(color: Colors.blueAccent)),
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 30, vertical: 20),
-                            textStyle: const TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold)),
-                      ),
-                    ),
                   ],
                 ),
                 const BottomContainerWidget()
