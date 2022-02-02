@@ -66,6 +66,7 @@ flutter:
     - assets/projects.png
     - assets/pockets.png
     - assets/generic_components.png
+    - assets/genericcomponents1.png
     - assets/visa.png
     - assets/icici1.png
     - assets/icici2.png
@@ -77,6 +78,7 @@ flutter:
     - assets/alexia.png
     - assets/seema.png
     - assets/jones.png
+    - assets/project1.png
     - assets/nandha.png
     - assets/chinnadurai.png
   #   - images/a_dot_ham.jpeg

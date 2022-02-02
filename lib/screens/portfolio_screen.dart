@@ -421,9 +421,9 @@ class _HemaScreenState extends State<HemaScreen> {
                   "Accounts Assistant\nSS colour Impression Private Limited\nDec 2016-july2017",
                   "Worked as Assistant in a Accounts team.")
             ],
-            "email@gmail.com",
-            "",
-            ""),
+            "gd.hema98@gmail.com",
+            "https://github.com/Hema2326",
+            "https://www.linkedin.com/in/hemavathi-g-34571b214"),
       ),
     );
   }
@@ -497,6 +497,8 @@ class _NandhaScreenState extends State<NandhaScreen> {
 }
 
 class JonesScreen extends StatefulWidget {
+  const JonesScreen({Key? key}) : super(key: key);
+
   @override
   _JonesScreenState createState() => _JonesScreenState();
 }
