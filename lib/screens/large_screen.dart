@@ -118,6 +118,7 @@ class _LargeScreenState extends State<LargeScreen>
           ),
           const SizedBox(height: 10),
           Container(
+            padding: const EdgeInsets.only(left: 20,right: 20),
             height: 50,
             width: MediaQuery.of(context).size.width,
             color: Colors.lightBlueAccent,

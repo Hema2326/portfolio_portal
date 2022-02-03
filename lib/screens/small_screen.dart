@@ -90,6 +90,7 @@ class _SideBarState extends State<SideBar> {
   bool isHovering = false;
   bool isHovering1 = false;
   bool isHovering2 = false;
+  bool isHovering3 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -99,6 +100,13 @@ class _SideBarState extends State<SideBar> {
       child: Column(
         children: [
           const SizedBox(height: 50),
+          Text('Portfolio Portal',
+            style: const TextStyle(
+                color:  Colors.white,
+                fontSize: 18,
+                fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 50),
           InkWell(
             onTap: () {},
             onHover: (value) {
@@ -107,15 +115,17 @@ class _SideBarState extends State<SideBar> {
               });
             },
             child: Container(
-              padding: const EdgeInsets.all(10),
+              width: 200,
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(5),
                 border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'Home',
                 style: TextStyle(
-                    color: isHovering ? Colors.white : Colors.black,
+                    color: isHovering ? Colors.pink : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
@@ -139,15 +149,17 @@ class _SideBarState extends State<SideBar> {
               });
             },
             child: Container(
-              padding: const EdgeInsets.all(10),
+              width: 200,
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
+                color: Colors.white,
+                // borderRadius: BorderRadius.circular(15),
                 border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'Portfolio',
                 style: TextStyle(
-                    color: isHovering1 ? Colors.white : Colors.black,
+                    color: isHovering1 ? Colors.pink : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
@@ -170,15 +182,17 @@ class _SideBarState extends State<SideBar> {
               });
             },
             child: Container(
-              padding: const EdgeInsets.all(10),
+              width: 200,
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(const Radius.circular(15)),
+                color: Colors.white,
+                borderRadius: const BorderRadius.all(const Radius.circular(5)),
                 border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'Projects',
                 style: TextStyle(
-                    color: isHovering2 ? Colors.white : Colors.black,
+                    color: isHovering2 ? Colors.pink : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
@@ -195,16 +209,23 @@ class _SideBarState extends State<SideBar> {
                   MaterialPageRoute(
                       builder: (context) => const M2PproductScreen()));
             },
+            onHover: (value) {
+              setState(() {
+                isHovering3 = value;
+              });
+            },
             child: Container(
-              padding: const EdgeInsets.all(10),
+              width: 200,
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(15)),
+                 color: Colors.white,
+                borderRadius: const BorderRadius.all(Radius.circular(5)),
                 border: Border.all(color: Colors.white),
               ),
               child: Text(
                 'M2P products',
                 style: TextStyle(
-                    color: isHovering ? Colors.white : Colors.black,
+                    color: isHovering3 ? Colors.pink : Colors.black,
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
