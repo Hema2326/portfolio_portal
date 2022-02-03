@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:portfolio_portal/screens/app_bar.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class CustomScreen extends StatefulWidget {
@@ -41,6 +41,7 @@ class _CustomScreenState extends State<CustomScreen> {
     _scrollController.animateTo(_scrollController.position.minScrollExtent,
         duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
   }
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -146,28 +147,24 @@ class _CustomScreenState extends State<CustomScreen> {
               Container(height: 50),
               Center(
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(70, 0, 0, 0),
+                  margin: const EdgeInsets.fromLTRB(70, 0, 0, 0),
                   height: 300,
                   width: 500,
                   child: Center(
                     child: AnimatedTextKit(
-
                       // repeatForever: true,
 
                       animatedTexts: [
-                        TypewriterAnimatedText('The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of CiceroDe finibus bonorum et malorum The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum suggesting that the galley type of that page was mixed up to make the dummy text seen today.',
+                        TypewriterAnimatedText(
+                            'The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of CiceroDe finibus bonorum et malorum The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum suggesting that the galley type of that page was mixed up to make the dummy text seen today.',
                             textAlign: TextAlign.center,
                             textStyle: GoogleFonts.aBeeZee(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
-
                               ),
                             ),
-
                             cursor: '|'),
-
-
                       ],
                       displayFullTextOnTap: true,
                       totalRepeatCount: 1,
@@ -176,15 +173,10 @@ class _CustomScreenState extends State<CustomScreen> {
                   ),
                 ),
               ),
-
-
-
-              SizedBox(
-                  height: 59
-              ),
-              ElevatedButton(onPressed: (){
-
-              }, child: Text('Portfolio'),
+              const SizedBox(height: 59),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('Portfolio'),
                 style: ElevatedButton.styleFrom(
                   primary: Colors.red, // background
                   // onPrimary: Colors.yellow, // foreground
@@ -207,7 +199,7 @@ class _CustomScreenState extends State<CustomScreen> {
                 decoration: const BoxDecoration(
                     color: Colors.black,
                     borderRadius:
-                    BorderRadius.vertical(top: Radius.circular(30.0))),
+                        BorderRadius.vertical(top: Radius.circular(30.0))),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 38.0),
                   child: Row(
@@ -414,7 +406,6 @@ class _CustomScreenState extends State<CustomScreen> {
                       ),
                     ],
                   ),
-                )))
-    );
+                ))));
   }
 }
