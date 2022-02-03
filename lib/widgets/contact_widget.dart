@@ -154,53 +154,6 @@ class DesignWidget extends StatefulWidget {
   _DesignWidgetState createState() => _DesignWidgetState();
 }
 
-// class _DesignWidgetState extends State<DesignWidget> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Row(
-//       children: [
-//         Column(
-//           children: [
-//             Container(
-//                 padding: const EdgeInsets.all(12.0),
-//                 decoration: const BoxDecoration(
-//                     color: Colors.blue,
-//                     borderRadius: BorderRadius.all(Radius.circular(20))),
-//                 child: const Icon(
-//                   Icons.phone_android,
-//                   color: Colors.white,
-//                 )),
-//             const SizedBox(
-//                 height: 300,
-//                 width: 20,
-//                 child: VerticalDivider(color: Colors.blue)),
-//           ],
-//         ),
-//         Expanded(
-//           child: Padding(
-//             padding: const EdgeInsets.only(left: 38.0),
-//             child: Column(
-//               crossAxisAlignment: CrossAxisAlignment.start,
-//               children: [
-//                 Text(widget.title,
-//                     style: const TextStyle(
-//                       fontSize: 16,
-//                       fontWeight: FontWeight.w600,
-//                     )),
-//                 const SizedBox(height: 20),
-//                 Text(
-//                   widget.subTitle,
-//                 ),
-//                 // const SizedBox(height: 30)
-//               ],
-//             ),
-//           ),
-//         )
-//       ],
-//     );
-//   }
-// }
-
 class _DesignWidgetState extends State<DesignWidget> {
   @override
   Widget build(BuildContext context) {
