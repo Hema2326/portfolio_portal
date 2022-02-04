@@ -12,8 +12,6 @@ class BottomContainerWidget extends StatefulWidget {
 
 class _BottomContainerWidgetState extends State<BottomContainerWidget>
     with TickerProviderStateMixin {
-  late ScrollController _scrollController;
-
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   bool isSelected = false;
@@ -38,7 +36,6 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
   @override
   void initState() {
     super.initState();
-    _scrollController = ScrollController();
 
     _controller = AnimationController(
       value: 0.0,
@@ -53,13 +50,8 @@ class _BottomContainerWidgetState extends State<BottomContainerWidget>
   void dispose() {
     _controller.dispose();
     controller.dispose();
-    _scrollController.dispose();
-    super.dispose();
-  }
 
-  _scrollToTop() {
-    _scrollController.animateTo(_scrollController.position.minScrollExtent,
-        duration: const Duration(milliseconds: 1000), curve: Curves.easeIn);
+    super.dispose();
   }
 
   @override

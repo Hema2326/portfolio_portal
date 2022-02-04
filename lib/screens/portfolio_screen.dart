@@ -246,31 +246,7 @@ class MariScreen extends StatefulWidget {
   State<MariScreen> createState() => _MariScreenState();
 }
 
-class _MariScreenState extends State<MariScreen> with TickerProviderStateMixin {
-  late AnimationController _animationController;
-  late Animation _sizeAnimation;
-  late final int seconds = 10;
-
-  bool reverse = false;
-
-  @override
-  void initState() {
-    super.initState();
-
-    _animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: seconds))
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed) {
-              _animationController.repeat(reverse: !reverse);
-              reverse = !reverse;
-            }
-          });
-
-    _sizeAnimation =
-        Tween<double>(begin: 50.0, end: 100.0).animate(_animationController);
-    _animationController.forward();
-  }
-
+class _MariScreenState extends State<MariScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

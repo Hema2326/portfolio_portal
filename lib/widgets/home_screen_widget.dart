@@ -96,17 +96,6 @@ class _HomeScreenWidgetState extends State<HomeScreenWidget>
 
   @override
   void initState() {
-    // _scrollController = ScrollController();
-    _scrollController = ScrollController()
-      ..addListener(() {
-        setState(() {
-          if (_scrollController.offset >= 400) {
-            _showBackToTopButton = true; // show the back-to-top button
-          } else {
-            _showBackToTopButton = false; // hide the back-to-top button
-          }
-        });
-      });
     _tabController = TabController(vsync: this, length: 4);
     _controller = AnimationController(
       value: 0.0,
