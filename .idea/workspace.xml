@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -9,24 +14,35 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="intial commit">
-      <change afterPath="$PROJECT_DIR$/lib/bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/app_bar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/custom_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/home_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/responsive_widget.dart" afterDir="false" />
+    <list default="true" id="3b1c36c4-4fad-4d78-b82b-d1c9c0ef239d" name="Default Changelist" comment="conflicts resolved">
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/NOTICES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/large_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/large_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/medium_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/medium_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/small_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/small_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +54,12 @@
     <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -74,7 +96,168 @@
       <option name="project" value="LOCAL" />
       <updated>1641968268878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="conflicts commit">
+      <created>1642410994655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642410994655</updated>
+    </task>
+    <task id="LOCAL-00003" summary="conflicts commit">
+      <created>1642411247266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642411247266</updated>
+    </task>
+    <task id="LOCAL-00004" summary="conflict resolved">
+      <created>1642530234620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642530234620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="conflict resolved">
+      <created>1642530247426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642530247427</updated>
+    </task>
+    <task id="LOCAL-00006" summary="conflicts changes">
+      <created>1642762373382</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642762373382</updated>
+    </task>
+    <task id="LOCAL-00007" summary="conflicts changes">
+      <created>1642762378089</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642762378089</updated>
+    </task>
+    <task id="LOCAL-00008" summary="conflicts changes">
+      <created>1642773580653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642773580653</updated>
+    </task>
+    <task id="LOCAL-00009" summary="conflicts changes">
+      <created>1642773806856</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642773806856</updated>
+    </task>
+    <task id="LOCAL-00010" summary="conflicts">
+      <created>1642998915085</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642998915085</updated>
+    </task>
+    <task id="LOCAL-00011" summary="conflicts">
+      <created>1643018066382</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643018066383</updated>
+    </task>
+    <task id="LOCAL-00012" summary="conflicts">
+      <created>1643018104600</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643018104600</updated>
+    </task>
+    <task id="LOCAL-00013" summary="conflicts resolved">
+      <created>1643374958136</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643374958137</updated>
+    </task>
+    <task id="LOCAL-00014" summary="conflicts commit">
+      <created>1643605831144</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643605831144</updated>
+    </task>
+    <task id="LOCAL-00015" summary="conflicts commit">
+      <created>1643605843149</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1643605843149</updated>
+    </task>
+    <task id="LOCAL-00016" summary="conflicts commit">
+      <created>1643605857555</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643605857555</updated>
+    </task>
+    <task id="LOCAL-00017" summary="conflicts commit">
+      <created>1643605875333</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643605875333</updated>
+    </task>
+    <task id="LOCAL-00018" summary="conflicts commit">
+      <created>1643605905711</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643605905711</updated>
+    </task>
+    <task id="LOCAL-00019" summary="conflicts commit">
+      <created>1643612712454</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643612712454</updated>
+    </task>
+    <task id="LOCAL-00020" summary="conflicts">
+      <created>1643629799568</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1643629799568</updated>
+    </task>
+    <task id="LOCAL-00021" summary="conflicts">
+      <created>1643630908348</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643630908349</updated>
+    </task>
+    <task id="LOCAL-00022" summary="conflicts commit">
+      <created>1643689179426</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1643689179426</updated>
+    </task>
+    <task id="LOCAL-00023" summary="conflicts commit">
+      <created>1643703968754</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1643703968754</updated>
+    </task>
+    <task id="LOCAL-00024" summary="conflicts resolved">
+      <created>1643717644288</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1643717644288</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,43 +270,68 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="intial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="intial commit" />
+    <MESSAGE value="conflict resolved" />
+    <MESSAGE value="conflicts changes" />
+    <MESSAGE value="conflicts" />
+    <MESSAGE value="conflicts commit" />
+    <MESSAGE value="conflicts resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="conflicts resolved" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1641983201574">
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom" timestamp="1643862811390">
+      <screen x="0" y="25" width="1680" height="934" />
+    </state>
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1643862545596" />
+    <state width="1638" height="240" key="GridCell.Tab.0.bottom/0.25.1680.934@0.25.1680.934" timestamp="1643862811390" />
+    <state width="1638" height="241" key="GridCell.Tab.0.bottom/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
+    <state width="1638" height="240" key="GridCell.Tab.0.center" timestamp="1643862811390">
+      <screen x="0" y="25" width="1680" height="934" />
+    </state>
+    <state width="1638" height="240" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1643862545595" />
+    <state width="1638" height="240" key="GridCell.Tab.0.center/0.25.1680.934@0.25.1680.934" timestamp="1643862811390" />
+    <state width="1638" height="241" key="GridCell.Tab.0.center/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
+    <state width="1638" height="240" key="GridCell.Tab.0.left" timestamp="1643862811389">
+      <screen x="0" y="25" width="1680" height="934" />
+    </state>
+    <state width="1638" height="240" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1643862545594" />
+    <state width="1638" height="240" key="GridCell.Tab.0.left/0.25.1680.934@0.25.1680.934" timestamp="1643862811389" />
+    <state width="1638" height="241" key="GridCell.Tab.0.left/0.25.1680.937@0.25.1680.937" timestamp="1642924979653" />
+    <state width="1638" height="240" key="GridCell.Tab.0.right" timestamp="1643862811390">
+      <screen x="0" y="25" width="1680" height="934" />
+    </state>
+    <state width="1638" height="240" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1643862545596" />
+    <state width="1638" height="240" key="GridCell.Tab.0.right/0.25.1680.934@0.25.1680.934" timestamp="1643862811390" />
+    <state width="1638" height="241" key="GridCell.Tab.0.right/0.25.1680.937@0.25.1680.937" timestamp="1642924979654" />
+    <state x="175" y="60" key="MergeDialog" timestamp="1643375062257">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201574" />
-    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1641983201573">
+    <state x="175" y="60" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643375062257" />
+    <state x="478" y="259" key="MultipleFileMergeDialog" timestamp="1643717707103">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201573" />
-    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1641983201572">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201572" />
-    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1641983201574">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1641983201574" />
-    <state x="478" y="257" key="MultipleFileMergeDialog" timestamp="1641968234125">
-      <screen x="0" y="25" width="1680" height="942" />
-    </state>
+    <state x="478" y="259" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1643717707103" />
     <state x="478" y="257" key="MultipleFileMergeDialog/0.25.1680.942@0.25.1680.942" timestamp="1641968234125" />
-    <state x="349" y="128" key="SettingsEditor" timestamp="1641968437449">
-      <screen x="0" y="25" width="1680" height="940" />
+    <state x="349" y="115" key="SettingsEditor" timestamp="1643563291614">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="349" y="115" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1643563291614" />
     <state x="349" y="128" key="SettingsEditor/0.25.1680.940@0.25.1680.940" timestamp="1641968437449" />
-    <state x="440" y="230" key="Vcs.Push.Dialog.v2" timestamp="1641968788808">
-      <screen x="0" y="25" width="1680" height="942" />
+    <state x="440" y="229" key="Vcs.Push.Dialog.v2" timestamp="1643717658016">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1643717658016" />
     <state x="440" y="229" key="Vcs.Push.Dialog.v2/0.25.1680.937@0.25.1680.937" timestamp="1641968062204" />
     <state x="440" y="230" key="Vcs.Push.Dialog.v2/0.25.1680.942@0.25.1680.942" timestamp="1641968788808" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1643001765872">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1643001765872" />
   </component>
 </project>
