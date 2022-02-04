@@ -134,10 +134,10 @@ class _LargeScreenState extends State<LargeScreen>
           ),
           Expanded(
               child: TabBarView(controller: _tabController, children: [
-            HomeScreenWidget(),
-            PortfolioScreen(),
-            ProjectsLargeScreenWidget(),
-            ProductWidget(),
+            const HomeScreenWidget(),
+            const PortfolioScreen(),
+            const ProjectsLargeScreenWidget(),
+            const ProductWidget(),
           ]))
         ]));
   }
