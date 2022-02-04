@@ -1,12 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:math' as math;
-
-import '../widgets/draw_clip.dart';
 
 class M2PproductScreen extends StatefulWidget {
   const M2PproductScreen({Key? key}) : super(key: key);
@@ -109,13 +106,13 @@ class _M2PproductScreenState extends State<M2PproductScreen>
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 45),
+              margin: const EdgeInsets.only(left: 45),
               child: Row(
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'We',
                         style: TextStyle(
                           fontSize: 30,
@@ -127,14 +124,14 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                         animatedTexts: [
                           ScaleAnimatedText(
                             'Enable',
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               fontSize: 35,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           ScaleAnimatedText(
                             'Embed',
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
                             ),
@@ -144,7 +141,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           print("Tap Event");
                         },
                       ),
-                      Text(
+                      const Text(
                         'Fintech',
                         style: TextStyle(
                           fontSize: 60,
@@ -153,7 +150,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     child: Image.asset(
                       'assets/camera.png',
@@ -164,8 +161,8 @@ class _M2PproductScreenState extends State<M2PproductScreen>
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 40, left: 15),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.only(top: 40, left: 15),
+              decoration: const BoxDecoration(
                 color: Colors.pink,
               ),
               child: Row(
@@ -174,7 +171,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'API Docs',
                         style: TextStyle(
                           fontSize: 20,
@@ -182,8 +179,8 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(height: 30),
-                      Text(
+                      const SizedBox(height: 30),
+                      const Text(
                         'Build your Fintech Product',
                         style: TextStyle(
                           fontSize: 18,
@@ -191,7 +188,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(height: 30),
+                      const SizedBox(height: 30),
                       SizedBox(
                         width: 200,
                         child: Text(
@@ -204,9 +201,9 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           ),
                         ),
                       ),
-                      SizedBox(height: 40),
+                      const SizedBox(height: 40),
                       Container(
-                        margin: EdgeInsets.only(bottom: 20),
+                        margin: const EdgeInsets.only(bottom: 20),
                         child: ElevatedButton(
                           onPressed: () async {
                             const url =
@@ -215,9 +212,9 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           },
                           child: Row(
                             children: [
-                              Text('Explore'),
-                              SizedBox(width: 10),
-                              Icon(Icons.arrow_forward_rounded),
+                              const Text('Explore'),
+                              const SizedBox(width: 10),
+                              const Icon(Icons.arrow_forward_rounded),
                             ],
                           ),
                           style: ElevatedButton.styleFrom(
@@ -233,7 +230,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Image.asset(
                     'assets/docs.png',
                     height: 200,
@@ -242,8 +239,8 @@ class _M2PproductScreenState extends State<M2PproductScreen>
               ),
             ),
             Container(
-                margin: EdgeInsets.only(top: 20),
-                child: Text('OUR VALUES',
+                margin: const EdgeInsets.only(top: 20),
+                child: const Text('OUR VALUES',
                     style:
                         TextStyle(fontSize: 30, fontWeight: FontWeight.bold))),
             Image.asset(
@@ -252,14 +249,14 @@ class _M2PproductScreenState extends State<M2PproductScreen>
               width: 700,
             ),
             Container(
-              padding: EdgeInsets.only(bottom: 30, top: 10),
+              padding: const EdgeInsets.only(bottom: 30, top: 10),
               color: Colors.orangeAccent,
               width: MediaQuery.of(context).size.width,
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(bottom: 30),
-                    child: Text('M2P PRODUCTS',
+                    padding: const EdgeInsets.only(bottom: 30),
+                    child: const Text('M2P PRODUCTS',
                         style: TextStyle(
                             fontSize: 30, fontWeight: FontWeight.bold)),
                   ),
@@ -267,7 +264,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                     clipBehavior: Clip.antiAlias,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 20),
+                        margin: const EdgeInsets.only(left: 20),
                         child: InkWell(
                           onTap: () async {
                             const url =
@@ -277,18 +274,18 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           child: FadeTransition(
                             opacity: _fadeInFadeOut,
                             child: Container(
-                              padding: EdgeInsets.all(10),
+                              padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.white,
                                 border: Border.all(color: Colors.white),
                               ),
-                              child: Text('Card Issuance'),
+                              child: const Text('Card Issuance'),
                             ),
                           ),
                         ),
                       ),
-                      SizedBox(width: 50),
+                      const SizedBox(width: 50),
                       InkWell(
                         onTap: () async {
                           const url =
@@ -298,16 +295,16 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                         child: FadeTransition(
                           opacity: _fadeInFadeOut,
                           child: Container(
-                              padding: EdgeInsets.all(10),
+                              padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.white,
                                 border: Border.all(color: Colors.white),
                               ),
-                              child: Text('Credit Card')),
+                              child: const Text('Credit Card')),
                         ),
                       ),
-                      SizedBox(width: 50),
+                      const SizedBox(width: 50),
                       InkWell(
                         onTap: () async {
                           const url =
@@ -317,18 +314,18 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                         child: FadeTransition(
                           opacity: _fadeInFadeOut,
                           child: Container(
-                              padding: EdgeInsets.all(10),
+                              padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
                                 color: Colors.white,
                                 border: Border.all(color: Colors.white),
                               ),
-                              child: Text('Neo Banking')),
+                              child: const Text('Neo Banking')),
                         ),
                       ),
-                      SizedBox(width: 50),
+                      const SizedBox(width: 50),
                       Container(
-                        margin: EdgeInsets.only(top: 20, left: 20),
+                        margin: const EdgeInsets.only(top: 20, left: 20),
                         child: InkWell(
                           onTap: () async {
                             const url = "https://m2pfintech.com/fleet-drive/";
@@ -337,21 +334,21 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           child: FadeTransition(
                             opacity: _fadeInFadeOut,
                             child: Container(
-                                padding: EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
                                   color: Colors.white,
                                   border: Border.all(color: Colors.white),
                                 ),
-                                child: Text('Fleet Drive')),
+                                child: const Text('Fleet Drive')),
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 50,
                       ),
                       Container(
-                        margin: EdgeInsets.only(top: 20),
+                        margin: const EdgeInsets.only(top: 20),
                         child: InkWell(
                           onTap: () async {
                             const url =
@@ -361,13 +358,13 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                           child: FadeTransition(
                             opacity: _fadeInFadeOut,
                             child: Container(
-                                padding: EdgeInsets.all(10),
+                                padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
                                   color: Colors.white,
                                   border: Border.all(color: Colors.white),
                                 ),
-                                child: Text('Buy Now Pay later')),
+                                child: const Text('Buy Now Pay later')),
                           ),
                         ),
                       ),
@@ -384,7 +381,7 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.only(left: 20, top: 20),
+                    margin: const EdgeInsets.only(left: 20, top: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -392,17 +389,17 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                         Text(
                           'CONTACT US',
                           style: GoogleFonts.aBeeZee(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.bold)),
                         ),
-                        SizedBox(height: 30),
+                        const SizedBox(height: 30),
                         Text(
                           'Redefine Innovation With Us',
                           style: GoogleFonts.aBeeZee(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                   fontSize: 12, fontWeight: FontWeight.normal)),
                         ),
-                        SizedBox(height: 30),
+                        const SizedBox(height: 30),
                         Container(
                           child: Wrap(
                             children: [
@@ -410,14 +407,14 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                                 'M2P experts with proven experience in fintech businesses and banking help you co-create products, access reputed bank networks and offer mentorship support.',
                                 // maxLines: 2,
                                 style: GoogleFonts.aBeeZee(
-                                    textStyle: TextStyle(
+                                    textStyle: const TextStyle(
                                         fontSize: 12,
                                         fontWeight: FontWeight.normal)),
                               ),
                             ],
                           ),
                         ),
-                        SizedBox(height: 30),
+                        const SizedBox(height: 30),
                         Container(
                           width: 180,
                           child: ElevatedButton(
@@ -427,9 +424,9 @@ class _M2PproductScreenState extends State<M2PproductScreen>
                             },
                             child: Row(
                               children: [
-                                Text('Contact us'),
-                                SizedBox(width: 10),
-                                Icon(Icons.arrow_forward_rounded),
+                                const Text('Contact us'),
+                                const SizedBox(width: 10),
+                                const Icon(Icons.arrow_forward_rounded),
                               ],
                             ),
                             style: ElevatedButton.styleFrom(

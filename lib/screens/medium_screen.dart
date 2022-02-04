@@ -1,17 +1,16 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:marquee/marquee.dart';
-import 'package:portfolio_portal/screens/large_screen.dart';
+
 import 'package:portfolio_portal/screens/portfolio_screen.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
 import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
-import 'package:portfolio_portal/widgets/home_screen_widget.dart';
+
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:math' as math;
 
 import '../utils/color_resource.dart';
 import '../utils/custom_text.dart';
@@ -55,7 +54,7 @@ class _MediumScreenState extends State<MediumScreen>
   showAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = InkWell(
-      child: Text(
+      child: const Text(
         "Cancel",
         style: TextStyle(color: Colors.red),
       ),
@@ -63,9 +62,9 @@ class _MediumScreenState extends State<MediumScreen>
         Navigator.pop(context);
       },
     );
-    SizedBox(width: 20);
+    const SizedBox(width: 20);
     Widget continueButton = InkWell(
-      child: Text(
+      child: const Text(
         "Continue",
         style: TextStyle(color: Colors.blue),
       ),
@@ -75,8 +74,8 @@ class _MediumScreenState extends State<MediumScreen>
     );
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
-      title: Text("AlertDialog"),
-      content: Text("Would you like to subsribe our news letter?"),
+      title: const Text("AlertDialog"),
+      content: const Text("Would you like to subsribe our news letter?"),
       actions: [
         cancelButton,
         continueButton,
@@ -1332,7 +1331,7 @@ class _MediumScreenState extends State<MediumScreen>
                               ),
                               Expanded(
                                 child: Container(
-                                  padding: EdgeInsets.only(right: 60),
+                                  padding: const EdgeInsets.only(right: 60),
                                   alignment: Alignment.center,
                                   child: Image.asset(
                                     ImageResource.visa,
@@ -1377,7 +1376,6 @@ class _MediumScreenState extends State<MediumScreen>
                                       height: 100,
                                       child: CustomText(
                                         'Instead of packages we can make use of it and we can use for our upcoming projects.',
-                                        // 'Instead of packages we can make use of it. We have created generic components for our upcoming flutter projects.',
                                         style: GoogleFonts.aBeeZee(
                                             textStyle: const TextStyle(
                                           fontSize: 20,
@@ -1528,7 +1526,7 @@ class _MediumScreenState extends State<MediumScreen>
                               // const Spacer(),
                               Expanded(
                                 child: Container(
-                                  padding: EdgeInsets.only(right: 60),
+                                  padding: const EdgeInsets.only(right: 60),
                                   alignment: Alignment.center,
                                   child: Image.asset(
                                     ImageResource.genericcomponenets1,

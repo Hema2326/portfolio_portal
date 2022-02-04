@@ -9,7 +9,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
           ? Row(
               children: [
                 Container(
-                  padding: EdgeInsets.only(left: 20),
+                  padding: const EdgeInsets.only(left: 20),
                   child: Image.asset(
                     'assets/logo.png',
                     width: 28,
@@ -21,7 +21,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               onPressed: () {
                 key.currentState!.openDrawer();
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: Colors.redAccent,
               )),

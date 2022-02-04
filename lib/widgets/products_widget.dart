@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 class ProductWidget extends StatefulWidget {
   const ProductWidget({Key? key}) : super(key: key);
 
@@ -10,7 +11,8 @@ class ProductWidget extends StatefulWidget {
   _ProductWidgetState createState() => _ProductWidgetState();
 }
 
-class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateMixin {
+class _ProductWidgetState extends State<ProductWidget>
+    with TickerProviderStateMixin {
   bool _showBackToTopButton = false;
   late ScrollController _scrollController;
   late AnimationController animation;
@@ -43,11 +45,11 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
   )..repeat(reverse: true);
 
   late final Animation<double> _arrowAnimation =
-  CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
+      CurvedAnimation(parent: arrow, curve: Curves.easeInCubic);
   showAlertDialog(BuildContext context) {
     // set up the buttons
     Widget cancelButton = InkWell(
-      child: Text(
+      child: const Text(
         "Cancel",
         style: TextStyle(color: Colors.red),
       ),
@@ -55,9 +57,9 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
         Navigator.pop(context);
       },
     );
-    SizedBox(width: 20);
+    const SizedBox(width: 20);
     Widget continueButton = InkWell(
-      child: Text(
+      child: const Text(
         "Continue",
         style: TextStyle(color: Colors.blue),
       ),
@@ -67,8 +69,8 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
     );
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
-      title: Text("AlertDialog"),
-      content: Text("Would you like to subsribe our news letter?"),
+      title: const Text("AlertDialog"),
+      content: const Text("Would you like to subsribe our news letter?"),
       actions: [
         cancelButton,
         continueButton,
@@ -82,9 +84,11 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
       },
     );
   }
+
   void clearText() {
     emailController.clear();
   }
+
   @override
   void initState() {
     // _scrollController = ScrollController();
@@ -125,11 +129,10 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:  SingleChildScrollView(
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Container(
@@ -249,13 +252,11 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
                             primary: Colors.grey.withOpacity(0.6),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30.0),
-                                side: const BorderSide(
-                                    color: Colors.white)),
+                                side: const BorderSide(color: Colors.white)),
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 20),
                             textStyle: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold)),
+                                fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
                     ],
                   ),
@@ -267,8 +268,8 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
             Container(
                 margin: const EdgeInsets.only(top: 20),
                 child: const Text('OUR VALUES',
-                    style: TextStyle(
-                        fontSize: 30, fontWeight: FontWeight.bold))),
+                    style:
+                        TextStyle(fontSize: 30, fontWeight: FontWeight.bold))),
             Image.asset(
               'assets/value.png',
               height: 700,
@@ -348,8 +349,7 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
                       const SizedBox(width: 50),
                       InkWell(
                         onTap: () async {
-                          const url =
-                              "https://m2pfintech.com/fleet-drive/";
+                          const url = "https://m2pfintech.com/fleet-drive/";
                           await launch(url);
                         },
                         child: FadeTransition(
@@ -403,16 +403,14 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
                         'CONTACT US',
                         style: GoogleFonts.aBeeZee(
                             textStyle: const TextStyle(
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold)),
+                                fontSize: 28, fontWeight: FontWeight.bold)),
                       ),
                       const SizedBox(height: 40),
                       Text(
                         'Redefine Innovation With Us',
                         style: GoogleFonts.aBeeZee(
                             textStyle: const TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.normal)),
+                                fontSize: 18, fontWeight: FontWeight.normal)),
                       ),
                       const SizedBox(height: 40),
                       Container(
@@ -422,15 +420,13 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
                           maxLines: 2,
                           style: GoogleFonts.aBeeZee(
                               textStyle: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.normal)),
+                                  fontSize: 16, fontWeight: FontWeight.normal)),
                         ),
                       ),
                       const SizedBox(height: 50),
                       ElevatedButton(
                         onPressed: () async {
-                          const url =
-                              "https://m2pfintech.com/contact-us/";
+                          const url = "https://m2pfintech.com/contact-us/";
                           await launch(url);
                         },
                         child: Row(
@@ -444,13 +440,11 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
                             primary: Colors.blueAccent,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30.0),
-                                side: const BorderSide(
-                                    color: Colors.white)),
+                                side: const BorderSide(color: Colors.white)),
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 20),
                             textStyle: const TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold)),
+                                fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
                     ],
                   ),
@@ -458,7 +452,6 @@ class _ProductWidgetState extends State<ProductWidget> with TickerProviderStateM
               ],
             ),
             const BottomContainerWidget(),
-
           ],
         ),
       ),
