@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_portal/screens/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
 
+  final PageStorageBucket _bucket = PageStorageBucket();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: PageStorage(
+        bucket: _bucket,
+        child: HomePage(),
+      ),
     );
   }
 }

@@ -23,13 +23,34 @@ class _HomePageState extends State<HomePage> {
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
+  final PageStorageBucket _bucket = PageStorageBucket();
+
+  ScrollController? _scrollController;
+  double _scrollPosition = 0;
+  double _opacity = 0;
+
+  _scrollListener() {
+    setState(() {
+      _scrollPosition = _scrollController!.position.pixels;
+    });
+  }
+
+  @override
+  void initState() {
+    _scrollController = ScrollController();
+    _scrollController!.addListener(_scrollListener);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
-
+    // _opacity = _scrollPosition < screenSize.height * 0.40
+    //     ? _scrollPosition / (screenSize.height * 0.40)
+    //     : 1;
     return Scaffold(
       backgroundColor: ColorResource.colorFFFFFF,
-      key: scaffoldKey,
+      // key: scaffoldKey,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         toolbarHeight: 20,
@@ -37,11 +58,18 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: ColorResource.colorFFFFFF,
         elevation: 7,
       ),
-      body: const ResponsiveWidget(
-          largeScreen: LargeScreen(),
-          mediumScreen: MediumScreen(),
-          smallScreen: SmallScreen(),
-          customScreen: CustomScreen()),
+      body: PageStorage(
+        bucket: _bucket,
+        child: const ResponsiveWidget(
+            largeScreen: LargeScreen(
+              key: PageStorageKey('view'),
+            ),
+            mediumScreen: MediumScreen(
+              key: PageStorageKey('view1'),
+            ),
+            smallScreen: SmallScreen(key: PageStorageKey('view2')),
+            customScreen: CustomScreen(key: PageStorageKey('view3'))),
+      ),
     );
   }
 }

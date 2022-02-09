@@ -15,7 +15,7 @@ class M2PproductScreen extends StatefulWidget {
 class _M2PproductScreenState extends State<M2PproductScreen>
     with TickerProviderStateMixin {
   late ScrollController _scrollController;
-  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+  // final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   bool isSelected = false;
   bool isSelected1 = false;
   bool isSelected2 = false;

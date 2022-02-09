@@ -5,6 +5,7 @@ import 'package:portfolio_portal/utils/color_resource.dart';
 import 'package:portfolio_portal/utils/custom_text.dart';
 import 'package:portfolio_portal/utils/image_resource.dart';
 import 'package:portfolio_portal/utils/string_resource.dart';
+import 'package:portfolio_portal/widgets/bottomContainer_widget.dart';
 
 class ProjectsScreen extends StatefulWidget {
   const ProjectsScreen({Key? key}) : super(key: key);
@@ -568,7 +569,9 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                   repeatForever: true,
                 ))
           ]),
+          const BottomContainerWidget(),
         ]),
+        
       ),
     );
   }
